@@ -7,7 +7,12 @@
     "node": true,
     "es2021": true
   },
-  "extends": ["airbnb", "prettier", "plugin:react-hooks/recommended", "next/core-web-vitals"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -30,7 +35,7 @@
     "routes.jsx",
     "dist/",
     "src/main.jsx",
-    "src/**/index.jsx", 
+    "src/**/index.jsx",
     "public/workbox-8f0e986c.js",
     "public/workbox-8f0e986c.js.map",
     "public/sw.js",
@@ -93,10 +98,7 @@
         "src/**/": "PASCAL_CASE"
       }
     ],
-    "import/no-unresolved": [
-      2,
-      { "ignore": ["^@/", "^~/", "^\\.", "^\\.\\."] }
-    ],
+    "import/no-unresolved": [2, { "ignore": ["^@/", "^~/", "^\\.", "^\\.\\."] }],
     "import/extensions": [
       2,
       // "ignorePackages",
