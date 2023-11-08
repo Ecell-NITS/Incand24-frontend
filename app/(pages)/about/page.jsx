@@ -7,7 +7,7 @@ export const metadata = {
   description: "About",
 };
 
-const page = () => {
+const About = () => {
   return (
     <div>
       <main className={styles.top}>
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
