@@ -1,14 +1,14 @@
 import "./globals.scss";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import connectToDb from "@/lib/db";
 import QueryProvider from "./QueryProvider";
 import ContProvider from "./ContextProvider";
-const inter = Inter({ subsets: ["latin"] });
+
+const BastianRichardo = localFont({ src: "./Bastian_Richardo.otf" });
 
 export const metadata = {
-  title: " Home",
-  description: "Next JS Template",
-  manifest: "/manifest.webmanifest",
+  title: " Incandescence 2024",
+  description: "Incand 2024 website",
 };
 
 connectToDb();
@@ -16,7 +16,7 @@ connectToDb();
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={BastianRichardo.className}>
         <ContProvider>
           <QueryProvider>{children}</QueryProvider>
         </ContProvider>
