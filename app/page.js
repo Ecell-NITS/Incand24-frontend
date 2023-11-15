@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Hero from "./components/Hero/hero";
 
 const Home = () => {
   return (
     <main>
-      <h1>This is home page</h1>
+      <Hero />
       <Link href="/about">About</Link>
     </main>
   );

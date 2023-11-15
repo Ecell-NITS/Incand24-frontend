@@ -1,0 +1,215 @@
+/* hero.css */
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: auto;
+}
+
+.hero-top-title {
+  padding-top: 5.47vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 0.2vw;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 19.28vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.free-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 18.46vh;
+}
+/* For the wave patterns */
+.wave-logo .wave-1 {
+  margin-top: -19.22vw;
+  margin-left: -27.78vw;
+}
+
+.wave-logo .wave-2 {
+  margin-top: -39.36vw;
+  margin-left: -7.04vw;
+}
+
+.wave-logo .wave-3 {
+  margin-top: -43.53vw;
+  margin-left: 24.39vw;
+}
+
+.wave-logo .wave-4 {
+  margin-top: -39.36vw;
+  margin-left: 45.12vw;
+}
+
+.wave-logo .wave-5 {
+  margin-top: -44.22vw;
+  margin-left: 74.82vw;
+}
+
+.title-flame {
+  margin-top: -10.35vw;
+  margin-left: 36.5vw;
+}
+
+.yellow-dot {
+  transform: rotate(58.864deg);
+  flex-shrink: 0;
+}
+.yellow-dot img {
+  filter: drop-shadow(0px 0px 13px #ffc700);
+}
+/* For the large yellow dots */
+
+.dot-1 {
+  margin-top: -109.4vh;
+  margin-left: 76.82vw;
+}
+.dot-2 {
+  margin-top: 13.67vh;
+  margin-left: 78.12vw;
+}
+.dot-3 {
+  margin-top: 0vh;
+  margin-left: 36.45vw;
+}
+.dot-4 {
+  margin-top: -23.25vh;
+  margin-left: 26.04vw;
+}
+.dot-5 {
+  margin-top: -15.04vh;
+  margin-left: 19.53vw;
+}
+.dot-6 {
+  margin-top: 83.44vh;
+  margin-left: 78.12vw;
+}
+.dot-7 {
+  margin-top: -17.78vh;
+  margin-left: 65.1vw;
+}
+/* For small dots */
+.sdot-1 {
+  margin-top: -82.07vh;
+  margin-left: 74.21vw;
+}
+.sdot-2 {
+  margin-top: 54.71vh;
+  margin-left: 71.61vw;
+}
+
+/* For buterfly */
+.butfly-1 {
+  margin-top: -64.84vh;
+  margin-left: 74.21vw;
+}
+.butfly-2 {
+  margin-top: 54.71vh;
+  margin-left: 71.61vw;
+}
+.butfly-3 {
+  margin-top: -51.98vh;
+  margin-left: 37.76vw;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+    width: auto;
+    overflow-x: hidden;
+  }
+  .hero-title {
+    margin-top: 5vh;
+    font-size: 8vh;
+    position: relative;
+  }
+
+  .free-logo {
+    padding-bottom: 5vh;
+  }
+  .jugnu {
+    display: none;
+  }
+  .title-flame {
+    position: absolute;
+    margin-top: -24vh;
+    margin-left: 50vw;
+    width: 10vw;
+  }
+  .wave-logo .wave-1 {
+    margin-top: -15vh;
+    margin-left: -50vw;
+  }
+  .wave-logo .wave-2 {
+    margin-top: -30vh;
+    margin-left: -16vw;
+  }
+  .wave-logo .wave-3 {
+    margin-top: -33vh;
+    margin-left: 36vw;
+  }
+  .wave-logo .wave-4 {
+    display: none;
+  }
+  .wave-logo .wave-5 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    height: 100vh;
+    width: auto;
+    overflow-x: hidden;
+  }
+  .hero-title {
+    z-index: 3;
+    margin-top: 5vh;
+    font-size: 8vh;
+    position: relative;
+  }
+
+  .free-logo {
+    padding-bottom: 5vh;
+  }
+  .yellow-dot {
+    display: none;
+  }
+
+  .title-flame {
+    z-index: 3;
+    position: absolute;
+    margin-top: -24vh;
+    margin-left: 50vw;
+    width: 10vw;
+  }
+  .wave-logo .wave-1 {
+    margin-top: -15vh;
+    margin-left: -50vw;
+  }
+  .wave-logo .wave-2 {
+    margin-top: -30vh;
+    margin-left: -16vw;
+  }
+  .wave-logo .wave-3 {
+    margin-top: -33vh;
+    margin-left: 36vw;
+  }
+  .wave-logo .wave-4 {
+    display: none;
+  }
+  .wave-logo .wave-5 {
+    display: none;
+  }
+}
