@@ -6,6 +6,10 @@ body {
   width: auto;
 }
 
+.Hero-body {
+  z-index: 9999;
+}
+
 .hero-top-title {
   padding-top: 5.47vh;
   display: flex;
@@ -22,6 +26,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: transparent;
+  white-space: nowrap;
+  user-select: none;
 }
 
 .free-logo {
@@ -59,7 +66,7 @@ body {
 
 .title-flame {
   margin-top: -10.35vw;
-  margin-left: 36.5vw;
+  margin-left: 35.5vw;
 }
 
 .yellow-dot {
@@ -194,6 +201,7 @@ body {
     margin-left: 50vw;
     width: 10vw;
   }
+
   .wave-logo .wave-1 {
     margin-top: -15vh;
     margin-left: -50vw;
@@ -212,4 +220,106 @@ body {
   .wave-logo .wave-5 {
     display: none;
   }
+}
+
+/************************Animation************************/
+.title-flame {
+  -webkit-animation: tracking-in-expand-fwd-bottom 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand-fwd-bottom 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+    transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+    transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) 2s
+    both;
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) 2s both,
+    colorchange 5s infinite alternate;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: white;
+  }
+  30% {
+    color: #73cddb;
+  }
+}
+
+/***spotlight**/
+
+.light {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, transparent 10%, #060020 20%);
 }
