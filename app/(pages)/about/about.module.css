@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Oswald:wght@200;300&family=Sai');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shizuru&family=Whisper&display=swap');
+
+.bglogo{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  top: 50vh;
+  left: 45vw;
+  z-index: 0;
+}
+.p1{
+  position: relative;
+  bottom: 5px;
+}
+.p3{
+  position: absolute;
+  top: 150px;
+  left: 25px;
+}
+.p4{
+  position: relative;
+  left: 5px;
+}
+.p5{
+  position: relative;
+  left: 20px;
+}
+
+.body{
+  min-height: 100vh;
+  background: var(--gradient, linear-gradient(123deg, #12124e, #070020));
+  color: #fff;
+  padding: 2vw;
+  font-family: cursive;
+  position: relative;
+}
+.heading{
+  text-align: center;
+
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 10px;
+  font-family: 'Whisper', cursive;
+  margin-bottom: 5vh;
+}
+.clr{
+  background: var(--gradient, linear-gradient(90deg, #73CDDB 51.48%, #333EF2 113.1%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  line-height: normal;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.leftPortion, .rightPortion{
+  width: 378px;
+  
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  min-height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 600px;
+}
+.tittle{
+  font-size:30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 5px;
+  font-family: 'Whisper', cursive;
+}
+.para{
+  border-left: 5px solid;
+  border-color: var(--gradient, #73CDDB);
+  padding-left: 10px;
+}
+.glimpes{
+  border-left: 5px solid;
+  border-color: var(--gradient, #73CDDB);
+}
+.embed{
+  box-sizing: border-box;
+  border: 1px solid #333EF2;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 20px;
+  height: 295px;
+
+  background: var(--gradient, linear-gradient(90deg, #7381db 51.48%, #333EF2 113.1%));
+  flex-shrink: 0;
+}
+
+
+/* For Responsive Layout */
+
+@media only screen and (max-width: 1000px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+  }
+  .cards{
+    height: 400px;
+  }
+  .leftPortion, .rightPortion {
+      width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cards{
+    height: 600px;
+  }
+  .bglogo{
+    top: 70vh;
+    left: 40vw;
+  }
+}
+
+
