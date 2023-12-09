@@ -1,10 +1,10 @@
 import Link from "next/link";
+import About from "./(pages)/about/page";
 
 const Home = () => {
   return (
     <main>
-      <h1>This is home page</h1>
-      <Link href="/about">About</Link>
+      <About />
     </main>
   );
 };
