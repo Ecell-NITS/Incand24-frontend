@@ -2,14 +2,17 @@
   margin-top: 20vh;
   box-sizing: border-box;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   border-image: linear-gradient(180deg, #031431 0%, #070020 100%);
   border-top-width: 5px;
   border-top-style: solid;
+  overflow-y: hidden;
 }
 
 .liquid {
-  background-color: #031633;
+  // background-color: #031633;
+
+  background-image: linear-gradient(90deg, #031431 20%, #070020 80%);
   width: 100%;
   height: 100%;
   position: relative;
@@ -25,33 +28,63 @@
   background-color: #012863;
   top: 0;
   left: 0;
-  animation: liquid2 10s linear infinite;
+  animation: liquid-lower 10s linear infinite;
 }
 
 .liquid::after {
   content: "";
   position: absolute;
-  width: 240vw;
+  width: 260vw;
   height: calc(120vw * 2);
   border-radius: 45%;
   background-color: black;
-  animation: liquid 10s linear infinite;
+  animation: liquid-upper 10s linear infinite;
 }
 
-@keyframes liquid {
+@keyframes liquid-upper {
   0% {
-    transform: translate(-30%, -97%) rotate(0deg);
+    transform: translate(-30%, -95%) rotate(0deg);
   }
   100% {
-    transform: translate(-30%, -97%) rotate(360deg);
+    transform: translate(-30%, -95%) rotate(360deg);
   }
 }
 
-@keyframes liquid2 {
+@keyframes liquid-lower {
   0% {
-    transform: translate(-25%, -95%) rotate(0deg);
+    transform: translate(-25%, -90%) rotate(0deg);
   }
   100% {
-    transform: translate(-25%, -95%) rotate(360deg);
+    transform: translate(-25%, -90%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes liquid-upper {
+    0% {
+      transform: translate(-30%, -90%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-30%, -90%) rotate(360deg);
+    }
+  }
+
+  @keyframes liquid-lower {
+    0% {
+      transform: translate(-25%, -83%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-25%, -83%) rotate(360deg);
+    }
+  }
+
+  .liquid::after {
+    border-radius: 40%;
+    animation: liquid-upper 10s linear infinite;
+  }
+
+  .liquid::before {
+    border-radius: 35%;
+    animation: liquid-lower 10s linear infinite;
   }
 }
