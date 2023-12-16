@@ -1,10 +1,12 @@
 import Link from "next/link";
-import About from "./(pages)/about/page";
-
+import Social from "./components/SocialHandles/Social";
+import styles from "./Home.module.scss";
 const Home = () => {
   return (
-    <main>
-      <About />
+    <main className={styles.home}>
+      <h1>This is home page</h1>
+      <Link href="/about">About</Link>
+      <Social />
     </main>
   );
 };
