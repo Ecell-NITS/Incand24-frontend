@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shizuru&family=Whisper&display=swap');
+
+
+.body {
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: "Oswald";
+    font-size: large;
+
+}
+
+.bglogo {
+    position: absolute;
+    left: 38vw;
+    top: 40vh;
+    width: 30vw;
+    opacity: .7;
+}
+
+.container {
+    min-height: 100vh;
+    background: var(--gradient, linear-gradient(123deg, #12124e, #070020));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vw 7vh;
+    position: relative;
+    /* Converted padding to viewport units */
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top1,
+.top2 {
+    width: 40vw;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.0417vw;
+    /* Converted gap to viewport units */
+}
+
+.top1 {
+    align-items: start;
+}
+
+.top2 {
+    align-items: end;
+}
+
+.top_tittle {
+    font-family: 'Whisper', cursive;
+    font-size: 45px;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.top_tittle a:before,
+.top_tittle a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: #0A274C;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.top_tittle a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.top_tittle a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.top_tittle a:hover:before,
+.top_tittle a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom1 {
+    display: flex;
+    gap: 3.125vw;
+    /* Converted gap to viewport units */
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    left: -1.0417vw;
+    /* Converted left position to viewport units */
+    bottom: 1.3889vw;
+    /* Converted bottom position to viewport units */
+    transition-property: all;
+    transition-duration: .3s;
+}
+
+.bottom2_1 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 0.6944vw;
+    /* Converted margin to viewport units */
+    transition-property: "letter-spacing";
+    transition-duration: .3s;
+}
+
+.bar2 {
+    position: absolute;
+    right: 13.8889vw;
+    /* Converted right position to viewport units */
+    transition-property: "right";
+    transition-duration: .3s;
+}
+
+.bottom2_2 {
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
+.icons {
+    transition-property: all;
+    transition-duration: .3s;
+    height: 5.3vh;
+    filter: brightness(.5);
+    transform: scale(1);
+}
+
+.icons:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.icons:hover+.bar {
+    bottom: 30px;
+}
+
+.icons:hover+.icons+.bar {
+    bottom: 30px;
+}
+
+.icons:hover+.icons+.icons+.bar {
+    bottom: 30px;
+}
+
+.mail:before {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 0px;
+    left: 0px;
+    content: attr(alt);/*  */
+    transition: all 0.5s;
+    transform: scale(0.6);
+    opacity: 0;
+}
+
+.mail:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.top_tittle:hover+.mail:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mail {
+    color: #2f2b3a;
+    position: relative;
+    z-index: 0;
+}
+
+.p:before {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 0px;
+    left: 0px;
+    content: attr(alt); /*  */
+    transition: all 0.5s;
+    transform: scale(0.6);
+    opacity: 0;
+}
+
+.p:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.top_tittle:hover+.p:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.p {
+    color: #2b363a;
+    position: relative;
+    z-index: 0;
+}
+
+.bottom2_1:hover {
+    letter-spacing: 5px;
+}
+
+.bottom2_1:hover .bar2 {
+    right: 100px;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 900px) {
+    .bar {
+        display: none;
+    }
+    
+    .bar2 {
+        display: none;
+    }
+    
+    .bglogo {
+        width: 50vw;
+        left: 25vw;
+        top: 48vh;
+        opacity: .5;
+    }
+    .body{
+        min-height: none;
+    }
+    .container {
+        justify-content: space-evenly;
+        min-height: none;
+    }
+    
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6vh;
+        /* background-color: green; */
+    }
+    
+    .top1,
+    .top2 {
+        align-items: center;
+        gap: 3vh;
+        /* background-color: red; */
+    }
+    
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+        align-items: center;
+        /* background-color: red; */
+    }
+    
+    .bottom2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bottom1 {
+        justify-content: center;
+    }
+    
+    .bottom2 {
+        align-items: center;
+    }
+    .icons{
+        filter: brightness(1);
+    }
+    .insta, .fb, .lkdin{
+       width: 5vw;
+    }
+    
+    /* font size */
+    .top_tittle {
+        font-size: 5vw;
+    }
+    
+    .bottom2_1 {
+        font-size: 4vw;
+    }
+    
+    .bottom2_2 {
+        font-size: 2vw;
+    }
+    .p{
+        font-size: 2vw;
+        color: white;
+    }
+    .mail {
+        font-size: 2vw;
+        color: white;
+    }
+}
