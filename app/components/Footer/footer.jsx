@@ -1,3 +1,4 @@
+// Footer Sec code by Suraj Verma
 import React from "react";
 import styles from "./Footer.module.css";
 
