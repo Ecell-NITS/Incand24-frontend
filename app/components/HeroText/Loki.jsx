@@ -1,46 +1,47 @@
-'use client'
-import React from "react";
-import { useState, useEffect } from "react";
+"use client";
+
+import { useState, useEffect, useCallback } from "react";
 import styles from "./Loki.module.scss";
 
 const Loki = () => {
-  const fonts = [
-    "Gilroy-light",
-    "Give You Glory",
-    "Geo",
-    "Gloria Hallelujah",
-    "Grey Qo",
-    "HeadlandOne",
-  ];
-
   const [count, setCount] = useState(0);
-  const rollIntro = () => {
+
+  const rollIntro = useCallback(() => {
+    const fonts = [
+      "Gilroy-light",
+      "Give You Glory",
+      "Geo",
+      "Gloria Hallelujah",
+      "Grey Qo",
+      "HeadlandOne",
+    ];
     const letters = document.querySelectorAll(".letter");
     letters.forEach((letter) => {
-      let randomFontIndex = Math.floor(Math.random() * fonts.length);
-      let randomFont = fonts[randomFontIndex];
-      letter.style.fontFamily = randomFont;
+      const currentLetter = letter;
+      const randomFontIndex = Math.floor(Math.random() * fonts.length);
+      const randomFont = fonts[randomFontIndex];
+      currentLetter.style.fontFamily = randomFont;
     });
-  };
+  }, []);
 
   useEffect(() => {
     const introAnimation = setInterval(() => {
       rollIntro();
       setCount((prevCount) => {
-        const newCount = prevCount + 1;
-        if (newCount > 8) {
+        setCount(prevCount + 1);
+        if (count > 8) {
           clearInterval(introAnimation);
           // const letters = document.querySelectorAll(".letter");
           // letters.forEach((letter)=>{
           //   letter.removeAttribute('style');
           // })
         }
-        return newCount;
+        return setCount(count);
       });
     }, 550);
 
     return () => clearInterval(introAnimation);
-  }, []);
+  }, [count, rollIntro]);
 
   return (
     <div className={styles.heroText}>

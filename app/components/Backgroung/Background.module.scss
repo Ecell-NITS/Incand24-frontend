@@ -1,13 +1,9 @@
 .wrapper {
-  min-height: 100vh;
+  min-height: 60vh;
   background: black;
   width: 100%;
   overflow-y: hidden;
   z-index: -99;
-}
-
-.children {
-  z-index: 999;
 }
 
 .stars1 {

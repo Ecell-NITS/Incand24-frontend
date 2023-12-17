@@ -1,16 +1,9 @@
-import Link from "next/link";
-import Social from "./components/SocialHandles/Social";
 import styles from "./Home.module.scss";
-import Background from "./components/Backgroung/Background";
-import Loki from "./components/HeroText/Loki";
-import River from "./components/River/River";
+import Hero from "./components/Backgroung/Hero_Section/Hero";
 const Home = () => {
   return (
     <main className={styles.home}>
-      <Background>
-        <Loki/>
-        <River/>
-      </Background>
+      <Hero />
     </main>
   );
 };
