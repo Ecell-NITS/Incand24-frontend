@@ -228,11 +228,7 @@
 /* Responsive CSS */
 
 @media only screen and (max-width: 900px) {
-    .bar {
-        display: none;
-    }
-    
-    .bar2 {
+    .bar, .bar2 {
         display: none;
     }
     
@@ -242,6 +238,7 @@
         top: 48vh;
         opacity: .5;
     }
+    
     .body{
         min-height: none;
     }
@@ -255,14 +252,12 @@
         flex-direction: column;
         align-items: center;
         gap: 6vh;
-        /* background-color: green; */
     }
     
     .top1,
     .top2 {
         align-items: center;
         gap: 3vh;
-        /* background-color: red; */
     }
     
     .bottom {
@@ -270,7 +265,6 @@
         flex-direction: column;
         gap: 6vh;
         align-items: center;
-        /* background-color: red; */
     }
     
     .bottom2 {
@@ -285,6 +279,7 @@
     .bottom2 {
         align-items: center;
     }
+    
     .icons{
         filter: brightness(1);
     }
@@ -304,11 +299,8 @@
     .bottom2_2 {
         font-size: 2vw;
     }
-    .p{
-        font-size: 2vw;
-        color: white;
-    }
-    .mail {
+    
+    .p, .mail {
         font-size: 2vw;
         color: white;
     }
