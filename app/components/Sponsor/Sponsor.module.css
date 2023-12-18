@@ -1,0 +1,98 @@
+@keyframes slide1 {
+  from {
+    transform: translateX(10);
+  }
+
+  to {
+    transform: translateX(calc(-230px * 8));
+  }
+}
+.main {
+  position: relative;
+  padding: 60px 0;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sponsor1 {
+  animation: 7s slide1 infinite linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.sponsor1 img {
+  height: 20vw;
+  margin: 0 1.6vw;
+  padding: 2.2vw 0;
+  display: inline-block;
+}
+
+.sponsor1:hover {
+  animation-play-state: paused;
+}
+
+.ellipse1 {
+  position: absolute;
+  top: 0.9vw;
+  height: 5vw;
+  width: 100%;
+  background: white;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  z-index: 5;
+}
+
+.ellipse2 {
+  position: absolute;
+  bottom: -2.2vw;
+  height: 6.3vw;
+  width: 100%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  background: white;
+  z-index: 5;
+}
+
+.title h2 {
+  color: black;
+  font-family: Bastian Richardo;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title {
+  height: 30%;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 189px;
+  z-index: 6;
+}
+.container:before {
+  left: 0;
+  top: 1vw;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.container:after {
+  right: 0;
+  top: 1vw;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
