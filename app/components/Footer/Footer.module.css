@@ -222,35 +222,39 @@
 }
 
 .bottom2_1:hover .bar2 {
-    right: 100px;
+    right: 110px;
 }
 
 /* Responsive CSS */
 
 @media only screen and (max-width: 900px) {
-    .bar, .bar2 {
+    
+    .bar {
+        display: none;
+    }
+    
+    .bar2 {
         display: none;
     }
     
     .bglogo {
         width: 50vw;
         left: 25vw;
-        top: 48vh;
+        top: 69vh;
         opacity: .5;
     }
-    
     .body{
-        min-height: none;
+        background: blue;
     }
     .container {
-        justify-content: space-evenly;
-        min-height: none;
+        justify-content: flex-start;
+        gap: 6vh;
+        padding: 4vw;
     }
     
     .top {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 6vh;
     }
     
@@ -258,28 +262,28 @@
     .top2 {
         align-items: center;
         gap: 3vh;
+        width: 100%;
     }
     
     .bottom {
         display: flex;
         flex-direction: column;
-        gap: 6vh;
-        align-items: center;
+        gap: 4vh;
     }
     
     .bottom2 {
         display: flex;
         flex-direction: column;
+        gap: 1.5vh;
     }
     
     .bottom1 {
-        justify-content: center;
+        justify-content: space-evenly;
     }
     
     .bottom2 {
         align-items: center;
     }
-    
     .icons{
         filter: brightness(1);
     }
@@ -288,20 +292,24 @@
     }
     
     /* font size */
+    
     .top_tittle {
         font-size: 5vw;
     }
     
     .bottom2_1 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     
     .bottom2_2 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
-    
-    .p, .mail {
-        font-size: 2vw;
+    .p{
+        font-size: 3vw;
+        color: white;
+    }
+    .mail {
+        font-size: 3vw;
         color: white;
     }
 }
