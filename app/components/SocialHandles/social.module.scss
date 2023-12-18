@@ -1,0 +1,16 @@
+.socialHandle {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% 4%;
+  height: 23rem;
+  z-index: 98;
+  justify-content: space-evenly;
+
+  .verticalLine {
+    position: relative;
+    height: 7rem;
+    border-left: 1px solid white;
+  }
+}
