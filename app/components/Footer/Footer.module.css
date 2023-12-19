@@ -321,4 +321,25 @@
     font-size: 3vw;
     color: white;
   }
+
+  /* font size */
+  .top_tittle {
+    font-size: 5vw;
+  }
+
+  .bottom2_1 {
+    font-size: 4.5vw;
+  }
+
+  .bottom2_2 {
+    font-size: 3vw;
+  }
+  .p {
+    font-size: 3vw;
+    color: white;
+  }
+  .mail {
+    font-size: 3vw;
+    color: white;
+  }
 }
