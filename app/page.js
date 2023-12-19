@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Social from "./components/SocialHandles/Social";
 import styles from "./Home.module.scss";
+
 const Home = () => {
   return (
     <main className={styles.home}>

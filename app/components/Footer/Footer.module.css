@@ -224,6 +224,11 @@
   right: 110px;
 }
 
+/* Text Level error Resolve */
+.textLevel {
+  display: none;
+}
+
 /* Responsive CSS */
 
 @media only screen and (max-width: 900px) {
@@ -294,11 +299,6 @@
   .fb,
   .lkdin {
     width: 5vw;
-  }
-
-  /* Text Level error Resolve */
-  .textLevel {
-    display: none;
   }
 
   /* font size */
