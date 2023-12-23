@@ -8,6 +8,7 @@ const Home = () => {
     <main className={styles.home}>
       <h1>This is home page</h1>
       <Link href="/about">About</Link>
+
       <Sponsor />
       <Social />
     </main>
