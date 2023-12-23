@@ -1,0 +1,45 @@
+.treloader {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.treeloaderContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.leftTree,
+.rightTree {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: transform 3s ease-in-out;
+}
+
+.leftTree {
+  z-index: 60;
+}
+.rightTree {
+  z-index: 65;
+}
+
+.treeloader.animate .leftTree {
+  transform: translateX(-100%);
+}
+
+.treeloader.animate .rightTree {
+  transform: translateX(100%);
+}
