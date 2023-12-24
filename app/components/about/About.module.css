@@ -1,189 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Saira+Stencil+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Oswald:wght@200;300&family=Sai");
-@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Shizuru&family=Whisper&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
-
-.bglogo {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 500px;
-  position: absolute;
-  top: 50vh;
-  left: 45vw;
-  z-index: 0;
-}
-
-.p1 {
-  position: relative;
-  bottom: 5px;
-}
-
-.p3 {
-  position: absolute;
-  top: 150px;
-  left: 25px;
-}
-
-.p4 {
-  position: relative;
-  left: 5px;
-}
-
-.p5 {
-  position: relative;
-  left: 20px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato&family=Neucha&display=swap");
 
 .body {
   min-height: 100vh;
-  background: var(--gradient, linear-gradient(123deg, #12124e, #070020));
+  background: linear-gradient(180deg, #063347 0%, #02161f 100%);
   color: #fff;
-  padding: 2vw 5vw;
-  font-family: cursive;
+  padding: 10vh 5vw;
+  font-family: Neucha;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+}
+
+.about_us {
+  position: relative;
+  left: 10vw;
+
+  width: 40vw;
+  font-size: min(24px, 5vw);
+  align-self: flex-start;
+}
+
+.about_nits {
+  position: relative;
+  right: 10vw;
+
+  width: 40vw;
+  font-size: min(24px, 5vw);
+  align-self: flex-end;
 }
 
 .heading {
-  text-align: center;
+  font-family: allura;
+  font-size: min(40px, 8vw);
+  letter-spacing: 2px;
+  font-weight: bold;
 
-  color: #fff;
-  font-size: 4vw;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 1.5vw;
-  font-family: "Whisper", cursive;
-  margin-bottom: 5vh;
-}
-
-.clr {
-  background: var(--gradient, linear-gradient(90deg, #73cddb 51.48%, #333ef2 113.1%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-style: normal;
-  line-height: normal;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-.leftPortion,
-.rightPortion {
-  width: 37vw;
-
-  color: #fff;
-  font-size: 1.2vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 6vh;
   position: relative;
-  z-index: 1;
+  width: fit-content;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3vh;
-  box-sizing: border-box;
+.heading:before,
+.heading:after {
+  position: absolute;
+  left: 0px;
   width: 100%;
-  height: 50vh;
+  height: 2px;
+  background: #ffffc7;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.tittle {
-  font-size: 2vw;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 0.8vw;
-  font-family: "Whisper", cursive;
+.heading:before {
+  top: 2px;
+  transform: translateY(10px);
 }
 
-.para {
-  border-left: 0.5vw solid;
-  border-color: var(--gradient, #73cddb);
-  padding-left: 1vw;
+.heading:after {
+  bottom: 2px;
+  transform: translateY(-10px);
 }
 
-.glimpes {
-  border-left: 0.5vw solid;
-  border-color: var(--gradient, #73cddb);
+.heading:hover:before,
+.heading:hover:after {
+  opacity: 0.8;
+  transform: translateY(0px);
 }
 
-.embed {
-  box-sizing: border-box;
-  border: 1px solid #333ef2;
-  margin-left: 2vw;
-  margin-right: 0.5vw;
-  margin-top: 2vh;
-  /* height: 295px; */
-
-  background: var(--gradient, linear-gradient(90deg, #7381db 51.48%, #333ef2 113.1%));
-  flex-shrink: 0;
+.content {
+  line-height: 1.4;
 }
 
-/* For Responsive Layout */
-
-/* Tablet View */
-
-@media only screen and (max-width: 1000px) {
-  .heading {
-    font-size: 8vw;
+/* Responsive CSS */
+@media only screen and (max-width: 900px) {
+  .body {
+    gap: 10vh;
   }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 6vh;
-  }
-
-  .cards {
-    height: 20vh;
-  }
-
-  .leftPortion,
-  .rightPortion {
+  .about_us,
+  .about_nits {
     width: 100%;
-    font-size: 1.8vw;
-  }
-
-  .tittle {
-    font-size: 3vw;
-  }
-
-  .bglogo {
-    top: 37vh;
-    left: 43vw;
-    opacity: 0.5;
+    align-self: baseline;
+    left: 0;
+    right: 0;
   }
 }
-
-/* Mobile View */
-
-@media only screen and (max-width: 600px) {
-  .cards {
-    height: 10vh;
-  }
-
-  .bglogo {
-    top: 20vh;
-    left: 37vw;
-    opacity: 0.5;
-  }
-}
-
-/* Absolute: wrt Parent
-   Realative: wrt Original Position */
