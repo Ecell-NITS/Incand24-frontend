@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  height: 50vh;
+  overflow-y: hidden;
+}
+
+.liquid {
+  background-color: #031633;
+  // background-image: linear-gradient(90deg, #031431 20%, #070020 80%);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid::before {
+  content: "";
+  position: absolute;
+  width: 300vw;
+  height: calc(150vw * 2);
+  border-radius: 38%;
+  background-color: #0b67f4;
+  top: 0;
+  left: 0;
+  animation: liquid-lower 10s linear infinite;
+}
+
+.liquid::after {
+  content: "";
+  position: absolute;
+  width: 300vw;
+  height: calc(150vw * 2);
+  border-radius: 42%;
+  background-color: black;
+  animation: liquid-upper 10s linear infinite;
+}
+
+@keyframes liquid-upper {
+  0% {
+    transform: translate(-33%, -97%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-33%, -97%) rotate(360deg);
+  }
+}
+
+@keyframes liquid-lower {
+  0% {
+    transform: translate(-31%, -95%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-31%, -95%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .liquid::after {
+    border-radius: 40%;
+    animation: liquid-upper 10s linear infinite;
+  }
+
+  .liquid::before {
+    border-radius: 35%;
+    animation: liquid-lower 10s linear infinite;
+  }
+}
