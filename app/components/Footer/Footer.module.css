@@ -1,227 +1,553 @@
-@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Shizuru&family=Whisper&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Montserrat+Alternates:wght@300&display=swap");
+
+/* bubble properties */
+.bubble1 {
+  --size: 2.6335177957251634rem;
+  --distance: 9.56863401168497rem;
+  --position: 103.58917245557305%;
+  --time: 2.1187339051454606s;
+  --delay: -2.4730491182180865s;
+}
+.bubble2 {
+  --size: 2.795653345686059rem;
+  --distance: 9.314612318337796rem;
+  --position: 36.34960031327715%;
+  --time: 2.702748758639209s;
+  --delay: -2.749729490139585s;
+}
+.bubble3 {
+  --size: 4.604664148226995rem;
+  --distance: 7.827258373990904rem;
+  --position: 84.31675347405806%;
+  --time: 2.2778986922892797s;
+  --delay: -2.724420950714464s;
+}
+.bubble4 {
+  --size: 2.310377323934376rem;
+  --distance: 8.752736567112889rem;
+  --position: 55.59344055392012%;
+  --time: 2.136822265266677s;
+  --delay: -2.8098447278014147s;
+}
+.bubble5 {
+  --size: 5.541713037533996rem;
+  --distance: 8.885987873595358rem;
+  --position: 72.33033424680029%;
+  --time: 3.142306470760034s;
+  --delay: -3.4811553027010276s;
+}
+.bubble6 {
+  --size: 4.262019990751427rem;
+  --distance: 6.353683583323991rem;
+  --position: 44.73278708958204%;
+  --time: 3.111493091428071s;
+  --delay: -2.3348493195541846s;
+}
+.bubble7 {
+  --size: 5.326583118177008rem;
+  --distance: 6.291620695173996rem;
+  --position: 75.50712868497737%;
+  --time: 3.9496420179231864s;
+  --delay: -2.9280848988352854s;
+}
+.bubble8 {
+  --size: 2.6826303693729363rem;
+  --distance: 8.494245892120377rem;
+  --position: 9.09002828142232%;
+  --time: 3.4441518855257285s;
+  --delay: -3.726145331636723s;
+}
+.bubble9 {
+  --size: 4.987763336132874rem;
+  --distance: 6.814484283134457rem;
+  --position: 64.9942312268583%;
+  --time: 2.8340585194816623s;
+  --delay: -3.6950996079186424s;
+}
+.bubble10 {
+  --size: 4.973309602954982rem;
+  --distance: 8.818071189386302rem;
+  --position: 0.2568009673140681%;
+  --time: 3.2428157697009565s;
+  --delay: -3.632770839909731s;
+}
+.bubble11 {
+  --size: 5.247372866134527rem;
+  --distance: 9.030745921408357rem;
+  --position: 30.30841583692694%;
+  --time: 3.7591212866283583s;
+  --delay: -2.343997388200433s;
+}
+.bubble12 {
+  --size: 4.1349626882121635rem;
+  --distance: 6.837645801137537rem;
+  --position: 42.728486097710494%;
+  --time: 3.1025020699848147s;
+  --delay: -2.585919537530834s;
+}
+.bubble13 {
+  --size: 3.165397907520912rem;
+  --distance: 8.103156817964855rem;
+  --position: 75.63209550571679%;
+  --time: 2.470344306002933s;
+  --delay: -2.5706927316465835s;
+}
+.bubble14 {
+  --size: 3.964709297795622rem;
+  --distance: 8.911285189706996rem;
+  --position: -4.185867894131208%;
+  --time: 2.299815801756103s;
+  --delay: -2.6121824773680893s;
+}
+.bubble15 {
+  --size: 3.2599865060185937rem;
+  --distance: 7.293921612610214rem;
+  --position: 16.221645109659462%;
+  --time: 3.000014755571767s;
+  --delay: -2.369714407430678s;
+}
+.bubble16 {
+  --size: 4.318334212624653rem;
+  --distance: 6.0736502404009105rem;
+  --position: 6.588377872224134%;
+  --time: 2.5025309008648824s;
+  --delay: -3.306770322781987s;
+}
+.bubble17 {
+  --size: 4.853648814755054rem;
+  --distance: 7.290201312780056rem;
+  --position: 98.26487764847045%;
+  --time: 3.782536811120813s;
+  --delay: -2.559318143811794s;
+}
+.bubble18 {
+  --size: 4.108705113239968rem;
+  --distance: 9.952663059540669rem;
+  --position: 82.31163575197132%;
+  --time: 2.6055282301209703s;
+  --delay: -2.868851402329185s;
+}
+.bubble19 {
+  --size: 3.228338000620467rem;
+  --distance: 8.465135007125799rem;
+  --position: 3.082220933716931%;
+  --time: 2.835356688037s;
+  --delay: -3.618010453155892s;
+}
+.bubble20 {
+  --size: 3.4774153979812104rem;
+  --distance: 7.273937089032523rem;
+  --position: 101.21716817090059%;
+  --time: 2.3446446756403945s;
+  --delay: -2.219832128888938s;
+}
+.bubble21 {
+  --size: 3.327333023117638rem;
+  --distance: 9.977292491229822rem;
+  --position: 84.69653758481076%;
+  --time: 2.6192656470827105s;
+  --delay: -3.451795375148003s;
+}
+.bubble22 {
+  --size: 2.541768933033075rem;
+  --distance: 7.368464110258887rem;
+  --position: -0.2936552269693893%;
+  --time: 2.0245181007934443s;
+  --delay: -2.605173651735821s;
+}
+.bubble23 {
+  --size: 2.5143711620205833rem;
+  --distance: 6.750931434736295rem;
+  --position: -0.07152177522617986%;
+  --time: 2.9909294300080904s;
+  --delay: -3.135294412262336s;
+}
+.bubble24 {
+  --size: 5.541713037533996rem;
+  --distance: 8.885987873595358rem;
+  --position: 72.33033424680029%;
+  --time: 3.142306470760034s;
+  --delay: -3.4811553027010276s;
+}
+.bubble25 {
+  --size: 4.262019990751427rem;
+  --distance: 6.353683583323991rem;
+  --position: 44.73278708958204%;
+  --time: 3.111493091428071s;
+  --delay: -2.3348493195541846s;
+}
+.bubble26 {
+  --size: 5.326583118177008rem;
+  --distance: 6.291620695173996rem;
+  --position: 75.50712868497737%;
+  --time: 3.9496420179231864s;
+  --delay: -2.9280848988352854s;
+}
+.bubble27 {
+  --size: 2.6826303693729363rem;
+  --distance: 8.494245892120377rem;
+  --position: 9.09002828142232%;
+  --time: 3.4441518855257285s;
+  --delay: -3.726145331636723s;
+}
+.bubble28 {
+  --size: 4.987763336132874rem;
+  --distance: 6.814484283134457rem;
+  --position: 64.9942312268583%;
+  --time: 2.8340585194816623s;
+  --delay: -3.6950996079186424s;
+}
+.bubble29 {
+  --size: 4.973309602954982rem;
+  --distance: 8.818071189386302rem;
+  --position: 0.2568009673140681%;
+  --time: 3.2428157697009565s;
+  --delay: -3.632770839909731s;
+}
+.bubble30 {
+  --size: 5.247372866134527rem;
+  --distance: 9.030745921408357rem;
+  --position: 30.30841583692694%;
+  --time: 3.7591212866283583s;
+  --delay: -2.343997388200433s;
+}
+.bubble31 {
+  --size: 3.964709297795622rem;
+  --distance: 8.911285189706996rem;
+  --position: -4.185867894131208%;
+  --time: 2.299815801756103s;
+  --delay: -2.6121824773680893s;
+}
+.bubble32 {
+  --size: 3.2599865060185937rem;
+  --distance: 7.293921612610214rem;
+  --position: 16.221645109659462%;
+  --time: 3.000014755571767s;
+  --delay: -2.369714407430678s;
+}
+.bubble33 {
+  --size: 4.318334212624653rem;
+  --distance: 6.0736502404009105rem;
+  --position: 6.588377872224134%;
+  --time: 2.5025309008648824s;
+  --delay: -3.306770322781987s;
+}
+.bubble34 {
+  --size: 4.853648814755054rem;
+  --distance: 7.290201312780056rem;
+  --position: 98.26487764847045%;
+  --time: 3.782536811120813s;
+  --delay: -2.559318143811794s;
+}
+.bubble35 {
+  --size: 4.108705113239968rem;
+  --distance: 9.952663059540669rem;
+  --position: 82.31163575197132%;
+  --time: 2.6055282301209703s;
+  --delay: -2.868851402329185s;
+}
+.bubble36 {
+  --size: 2.667044654544794rem;
+  --distance: 9.734543641132188rem;
+  --position: 81.0080880930213%;
+  --time: 2.5670145598530807s;
+  --delay: -3.4658732964603156s;
+}
+.bubble37 {
+  --size: 2.1513652701241rem;
+  --distance: 7.137683381805784rem;
+  --position: 30.92343904435065%;
+  --time: 3.147378811176274s;
+  --delay: -2.2942418800014432s;
+}
+.bubble38 {
+  --size: 5.051794268454486rem;
+  --distance: 6.495315539260548rem;
+  --position: -4.846540112356128%;
+  --time: 2.541483963516001s;
+  --delay: -2.0508948001940874s;
+}
+.bubble39 {
+  --size: 4.377527646528744rem;
+  --distance: 9.64411280970474rem;
+  --position: 104.48214790975828%;
+  --time: 2.8812259205090665s;
+  --delay: -3.0544308394131545s;
+}
+.bubble40 {
+  --size: 3.4663167154306107rem;
+  --distance: 6.316241311944141rem;
+  --position: 65.1883007127254%;
+  --time: 3.174237282163037s;
+  --delay: -3.4706131305159453s;
+}
+.bubble41 {
+  --size: 2.8163757888828647rem;
+  --distance: 7.6079616228389275rem;
+  --position: 28.12274737916988%;
+  --time: 2.174480018818719s;
+  --delay: -2.2622810553983053s;
+}
+.bubble42 {
+  --size: 3.4164268623687724rem;
+  --distance: 7.090100882464749rem;
+  --position: 12.981929006377687%;
+  --time: 2.6414168458604252s;
+  --delay: -3.1934950081811184s;
+}
+.bubble43 {
+  --size: 4.772153580493187rem;
+  --distance: 9.423362937689202rem;
+  --position: 34.92797416090931%;
+  --time: 2.4041454087108347s;
+  --delay: -2.7402537330917873s;
+}
+.bubble44 {
+  --size: 5.383825164135794rem;
+  --distance: 6.541773626552565rem;
+  --position: 49.52478702524299%;
+  --time: 3.546375927266146s;
+  --delay: -2.632683735285801s;
+}
+.bubble45 {
+  --size: 5.558991176677718rem;
+  --distance: 8.225669498178913rem;
+  --position: 27.22563348766083%;
+  --time: 3.0095179730330543s;
+  --delay: -2.4737775245895492s;
+}
+.bubble46 {
+  --size: 5.254797663289408rem;
+  --distance: 8.932650728812344rem;
+  --position: 75.85068139368406%;
+  --time: 2.2171442772476104s;
+  --delay: -3.542033048824047s;
+}
+.bubble47 {
+  --size: 3.922538112154337rem;
+  --distance: 8.721975833869195rem;
+  --position: 34.393255861215565%;
+  --time: 2.598991804940547s;
+  --delay: -2.1989145413391764s;
+}
+.bubble48 {
+  --size: 3.641777628676322rem;
+  --distance: 9.331701109871716rem;
+  --position: 44.265909046720665%;
+  --time: 3.8626208994215228s;
+  --delay: -2.0574118155815935s;
+}
+.bubble49 {
+  --size: 3.1503155840157566rem;
+  --distance: 7.708220071311111rem;
+  --position: 90.33676946435561%;
+  --time: 3.334773803439332s;
+  --delay: -3.943336143832105s;
+}
+.bubble50 {
+  --size: 2.0463105748643358rem;
+  --distance: 6.050904737869286rem;
+  --position: 35.057296725398224%;
+  --time: 3.915508191407258s;
+  --delay: -3.088670525059308s;
+}
+
+/* Basic CSS */
 
 .body {
-  min-height: 100vh;
-  width: 100%;
-  color: white;
-  font-family: "Oswald";
-  font-size: large;
-}
-
-.bglogo {
-  position: absolute;
-  left: 38vw;
-  top: 40vh;
-  width: 30vw;
-  opacity: 0.7;
-}
-
-.container {
-  min-height: 100vh;
-  background: var(--gradient, linear-gradient(123deg, #12124e, #070020));
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 3vw 7vh;
-  position: relative;
-  /* Converted padding to viewport units */
+  justify-content: flex-end;
+  min-height: 100vh;
+  background-color: #010a19;
+  overflow-x: hidden;
 }
 
-.top {
-  display: flex;
-  justify-content: space-between;
-}
-
-.top1,
-.top2 {
-  width: 40vw;
-  /* height: 30vh; */
-  display: flex;
-  flex-direction: column;
-  gap: 1.0417vw;
-  /* Converted gap to viewport units */
-}
-
-.top1 {
-  align-items: start;
-}
-
-.top2 {
-  align-items: end;
-}
-
-.top_tittle {
-  font-family: "Whisper", cursive;
-  font-size: 45px;
-  font-weight: 600;
-  color: #ffffff;
-  position: relative;
-}
-
-.top_tittle a:before,
-.top_tittle a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 4px;
-  background: #0a274c;
+.body .footer::before {
+  /* blur effect at top border */
   content: "";
-  opacity: 0;
-  transition: all 0.3s;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 8px 20px 20px #184355;
 }
 
-.top_tittle a:before {
-  top: 0px;
-  transform: translateY(10px);
+.body .footer {
+  z-index: 1;
+  position: relative;
+  /* min-height: 100vh; */
 }
 
-.top_tittle a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
+.body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: #184355;
+  filter: url("#blob");
 }
 
-.top_tittle a:hover:before,
-.top_tittle a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
+.body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: #184355;
+  border-radius: 100%;
+  -webkit-animation: bubble-size 1.8s ease-in infinite var(--delay, 0s),
+    bubble-move 1.8s ease-in infinite var(--delay, 0s);
+  animation: bubble-size 1.8s ease-in infinite var(--delay, 0s),
+    bubble-move 1.8s ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 50%);
 }
 
-.bottom {
+/* Bubble Animations */
+
+@-webkit-keyframes bubble-size {
+  0%,
+  75% {
+    width: 1rem;
+    height: var(--size, 4rem);
+  }
+
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@keyframes bubble-size {
+  0%,
+  75% {
+    width: 1rem;
+    height: var(--size, 4rem);
+  }
+
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+/* Basic CSS */
+
+.body .footer .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat Alternates;
+}
+
+.content .brochure_sec {
+  background: #184355;
+  padding: 0 5vw 10vh 5vw;
+  flex-grow: 1;
+}
+
+.brochure_sec .heading {
+  font-family: Allan;
+  font-size: max(30px, 3vw);
+  font-weight: bold;
+  color: #ffffc7;
+  margin-bottom: 2.6vh;
+}
+
+.brochure_sec .para {
+  font-size: max(17px, 1.4vw);
+  width: 45%;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.content .logo_sec {
+  flex-grow: 1.5;
+  background: #ffffc7;
+  padding: 0 5vw 5vh 5vw;
   display: flex;
   justify-content: space-between;
 }
 
-.bottom1 {
+.logo_sec_left,
+.logo_sec_center,
+.logo_sec_right {
+  width: 30vw;
+}
+
+.logo_sec_center,
+.logo_sec_right {
   display: flex;
-  gap: 3.125vw;
-  /* Converted gap to viewport units */
-  position: relative;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 
-.bar {
-  position: absolute;
-  left: -1.0417vw;
-  /* Converted left position to viewport units */
-  bottom: 1.3889vw;
-  /* Converted bottom position to viewport units */
-  transition-property: all;
-  transition-duration: 0.3s;
+.logo_sec_left .p_1 svg {
+  width: max(100px, 6vw);
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
-.bottom2_1 {
-  font-family: "Montserrat";
-  font-size: 48px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  position: relative;
-  margin-bottom: 0.6944vw;
-  /* Converted margin to viewport units */
-  transition-property: "letter-spacing";
-  transition-duration: 0.3s;
+.logo_sec_left .p_1 span {
+  font-weight: bold;
+  color: #063347;
+  font-size: min(6vw, 40px);
 }
 
-.bar2 {
-  position: absolute;
-  right: 13.8889vw;
-  /* Converted right position to viewport units */
-  transition-property: "right";
-  transition-duration: 0.3s;
+.logo_sec_left .p_2 {
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: min(6vw, 40px);
+  letter-spacing: 3px;
 }
 
-.bottom2_2 {
-  letter-spacing: 2px;
-  font-size: larger;
+.logo_sec_left .p_3 {
+  color: #1e1e1e;
+  font-weight: lighter;
+  font-size: min(4vw, 20px);
 }
 
-.icons {
-  transition-property: all;
-  transition-duration: 0.3s;
-  height: 5.3vh;
-  filter: brightness(0.5);
-  transform: scale(1);
+.logo_sec_left .p_4 {
+  display: flex;
+  gap: 1vw;
 }
 
-.icons:hover {
-  transform: scale(1.1);
-  filter: brightness(1);
+.logo_sec_left .p_4 svg {
+  width: min(30px, 4vw);
 }
 
-.icons:hover + .bar {
-  bottom: 30px;
+.logo_sec_center .heading {
+  font-size: min(6vw, 40px);
+  font-weight: bold;
 }
 
-.icons:hover + .icons + .bar {
-  bottom: 30px;
+.logo_sec_right {
+  align-items: end;
+  font-weight: 600;
 }
 
-.icons:hover + .icons + .icons + .bar {
-  bottom: 30px;
-}
-
-.mail:before {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  top: 0px;
-  left: 0px;
-  content: attr(alt); /*  */
-  transition: all 0.5s;
-  transform: scale(0.6);
-  opacity: 0;
-}
-
-.mail:hover:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.top_tittle:hover + .mail:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.mail {
-  color: #2f2b3a;
-  position: relative;
-  z-index: 0;
-}
-
-.p:before {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  top: 0px;
-  left: 0px;
-  content: attr(alt); /*  */
-  transition: all 0.5s;
-  transform: scale(0.6);
-  opacity: 0;
-}
-
-.p:hover:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.top_tittle:hover + .p:before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.p {
-  color: #2b363a;
-  position: relative;
-  z-index: 0;
-}
-
-.bottom2_1:hover {
-  letter-spacing: 5px;
-}
-
-.bottom2_1:hover .bar2 {
-  right: 110px;
+.logo_sec_right .nits {
+  font-weight: bold;
+  font-size: min(6vw, 40px);
 }
 
 /* Text Level error Resolve */
@@ -232,114 +558,26 @@
 /* Responsive CSS */
 
 @media only screen and (max-width: 900px) {
-  .bar {
-    display: none;
+  .content .brochure_sec {
+    padding-bottom: 5vh;
   }
-
-  .bar2 {
-    display: none;
+  .brochure_sec .para {
+    width: 90%;
   }
-
-  .bglogo {
-    width: 50vw;
-    left: 25vw;
-    top: 69vh;
-    opacity: 0.5;
-  }
-  .body {
-    background: blue;
-  }
-  .container {
-    justify-content: flex-start;
-    gap: 6vh;
-    /* background: red; */
-    padding: 4vw;
-  }
-
-  .top {
-    display: flex;
+  .logo_sec {
     flex-direction: column;
-    /* align-items: center; */
-    gap: 6vh;
-    /* background-color: green; */
   }
-
-  .top1,
-  .top2 {
-    align-items: center;
-    gap: 3vh;
+  .logo_sec_left,
+  .logo_sec_center,
+  .logo_sec_right {
     width: 100%;
   }
-
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-    /* align-items: center; */
-    /* background-color: green; */
+  .logo_sec_center,
+  .logo_sec_right {
+    align-items: flex-start;
+    font-weight: normal;
   }
-
-  .bottom2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vh;
-  }
-
-  .bottom1 {
-    justify-content: space-evenly;
-  }
-
-  .bottom2 {
-    align-items: center;
-  }
-  .icons {
-    filter: brightness(1);
-  }
-  .insta,
-  .fb,
-  .lkdin {
-    width: 5vw;
-  }
-
-  /* font size */
-  .top_tittle {
-    font-size: 5vw;
-  }
-
-  .bottom2_1 {
-    font-size: 4.5vw;
-  }
-
-  .bottom2_2 {
-    font-size: 3vw;
-  }
-  .p {
-    font-size: 3vw;
-    color: white;
-  }
-  .mail {
-    font-size: 3vw;
-    color: white;
-  }
-
-  /* font size */
-  .top_tittle {
-    font-size: 5vw;
-  }
-
-  .bottom2_1 {
-    font-size: 4.5vw;
-  }
-
-  .bottom2_2 {
-    font-size: 3vw;
-  }
-  .p {
-    font-size: 3vw;
-    color: white;
-  }
-  .mail {
-    font-size: 3vw;
-    color: white;
+  .logo_sec_left .p_4 {
+    gap: 2vw;
   }
 }
