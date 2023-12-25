@@ -6,10 +6,22 @@
   perspective: 10px;
   overflow: hidden;
   text-align: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  #leftTree {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 199;
+  }
+  #rightTree {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 195;
+  }
 
   #foreground {
     width: 100%;
@@ -35,24 +47,22 @@
 
   .textWrapper {
     z-index: 98;
-    
-    color: #09394A;
-    
+
+    color: #09394a;
 
     .heading {
       font-size: 3rem;
       letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       margin-bottom: 1rem;
-     transform: translateY(50vh);
-     animation: animateTocentre 1s ease forwards;
-    animation-delay: 2.2s;
+      transform: translateY(50vh);
+      animation: animateTocentre 1s ease forwards;
+      animation-delay: 4.2s;
     }
 
     .comingSoon {
       transform: translateY(50vh);
-      animation: animateTocentre 1s ease forwards ;
-      animation-delay: 3s;
+      animation: animateTocentre 1s ease forwards;
+      animation-delay: 4.9s;
       font-weight: 900;
       font-size: 1.5rem;
       // font-family: poppins;
@@ -68,4 +78,3 @@
     transform: translateY(0);
   }
 }
-
