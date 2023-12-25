@@ -1,11 +1,29 @@
 "use client";
 
+// eslint-disable-next-line camelcase
+import { Allura,Passion_One} from "next/font/google";
 import React from "react";
 import Image from "next/image";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { motion } from "framer-motion";
 import styles from "./hero.module.scss";
 
+const passion = Passion_One({
+  weight: ["400"],   
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--passion-font",
+});
+
+
+const poppins = Allura({
+  weight: ["400"],   
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--allura-font",
+});
 const Hero = () => {
+  
   return (
     <div className={styles.wrapper}>
       <motion.div
@@ -20,7 +38,7 @@ const Hero = () => {
         }}
         transition={{ duration: 1.8 }}
       >
-        <Image src="/images/Foreground.png" layout="fill" />
+        <Image alt="hero-bg" src="/images/Foreground.png" fill/>
       </motion.div>
       <motion.div
         animate={{
@@ -31,7 +49,7 @@ const Hero = () => {
         transition={{ duration: 1.8 }}
         id={styles.hills}
       >
-        <Image src="/images/Hills.png" layout="fill" />
+        <Image alt="hero-bg" src="/images/Hills.png" fill />
       </motion.div>
       <motion.div
         initial={{
@@ -47,23 +65,16 @@ const Hero = () => {
         transition={{ duration: 1.8 }}
         id={styles.background}
       >
-        <Image src="/images/Background.png" layout="fill" />
+        <Image alt="hero-bg" src="/images/Background.png" fill />
       </motion.div>
 
       {/* coming Soon text */}
-      <motion.div
-        initial={{
-          y: 500,
-        }}
-        animate={{
-          y: 0,
-        }}
-        transition={{ duration: 1.5 }}
+      <div
         className={styles.textWrapper}
       >
-        <h1 id={styles.heading}>INCANDESCENCE‘24 </h1>
-        <h4 id={styles.comingSoon}>COMING SOON...</h4>
-      </motion.div>
+        <h1 className={`${styles.heading} ${passion.className}`}>INCANDESCENCE‘24 </h1>
+        <h4 className={`${styles.comingSoon} ${poppins.className}`}>COMING SOON...</h4>
+      </div>
     </div>
   );
 };

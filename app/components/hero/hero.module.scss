@@ -4,7 +4,7 @@
   position: relative;
   transform-style: preserve-3d;
   perspective: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
   text-align: center;
 
   display: flex;
@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
   }
 
   #background {
@@ -34,13 +34,38 @@
   }
 
   .textWrapper {
-    background: red;
-    z-index: 99;
+    z-index: 98;
+    
+    color: #09394A;
+    
 
-    #heading {
+    .heading {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 1rem;
+     transform: translateY(50vh);
+     animation: animateTocentre 1s ease forwards;
+    animation-delay: 2.2s;
     }
 
-    #comingSoon {
+    .comingSoon {
+      transform: translateY(50vh);
+      animation: animateTocentre 1s ease forwards ;
+      animation-delay: 3s;
+      font-weight: 900;
+      font-size: 1.5rem;
+      // font-family: poppins;
     }
   }
 }
+
+@keyframes animateTocentre {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
