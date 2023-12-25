@@ -26,6 +26,7 @@
   align-items: center;
   animation: slideshow1 20s linear reverse infinite;
 }
+
 .slider:hover .slide1 {
   animation-play-state: paused;
 }
@@ -33,14 +34,6 @@
   animation-play-state: paused;
 }
 
-.slide1 img {
-  height: 9rem;
-  padding: 0 1.5rem;
-}
-.slide2 img {
-  height: 9rem;
-  padding: 0 1.5rem;
-}
 @keyframes slideshow1 {
   0% {
     transform: translateX(-100%);

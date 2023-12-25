@@ -6,22 +6,105 @@ const Sponsor = () => {
     <div className={styles.wrapper}>
       <div className={styles.slider}>
         <div className={styles.slide1}>
-          <Image src="/sponsors/Amul.png" height={50} width={250} />
-          <Image src="/sponsors/cry.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-          <Image src="/sponsors/Noticebar.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-        </div>
-        <div className={styles.slide1}>
-          <Image src="/sponsors/Amul.png" height={50} width={250} />
-          <Image src="/sponsors/cry.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-          <Image src="/sponsors/Noticebar.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Noticebar.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Noticebar.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
         </div>
       </div>
       <div className={styles.text}>
@@ -29,22 +112,105 @@ const Sponsor = () => {
       </div>
       <div className={styles.slider}>
         <div className={styles.slide2}>
-          <Image src="/sponsors/Amul.png" height={50} width={250} />
-          <Image src="/sponsors/cry.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-          <Image src="/sponsors/Noticebar.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-        </div>
-        <div className={styles.slide2}>
-          <Image src="/sponsors/Amul.png" height={50} width={250} />
-          <Image src="/sponsors/cry.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
-          <Image src="/sponsors/Noticebar.png" height={50} width={250} />
-          <Image src="/sponsors/Gplus.png" height={50} width={250} />
-          <Image src="/sponsors/nai.png" height={50} width={250} />
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Noticebar.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Noticebar.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/Gplus.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
+          <Image
+            src="/sponsors/nai.png"
+            style={{ padding: "0 1.5rem" }}
+            height={50}
+            width={150}
+            layout="responsive"
+          />
         </div>
       </div>
     </div>
