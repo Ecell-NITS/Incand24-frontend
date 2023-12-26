@@ -20,9 +20,6 @@ dependencies:
   json-server:
     specifier: ^0.17.3
     version: 0.17.4
-  locomotive-scroll:
-    specifier: 5.0.0-beta.11
-    version: 5.0.0-beta.11
   mongoose:
     specifier: ^7.5.2
     version: 7.6.4
@@ -1556,10 +1553,6 @@ packages:
 
   /@rushstack/eslint-patch@1.5.1:
     resolution: {integrity: sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==}
-    dev: false
-
-  /@studio-freight/lenis@1.0.29:
-    resolution: {integrity: sha512-z/qS8ato5m2wlxQREYj5iALcxMrhhm06vEiLqYzLI+3HmpPzPscmJ8cXNiay4bj692vOot2hyTA3WP++AQVoKA==}
     dev: false
 
   /@surma/rollup-plugin-off-main-thread@2.2.3:
@@ -4149,13 +4142,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
-
-  /locomotive-scroll@5.0.0-beta.11:
-    resolution: {integrity: sha512-FQm0Yjk9X+euXmiaKVRVQNw/WuQXoTBp9eqPyZqsXDSwuiedaoJzzC0SGBM9CZRJ4tKaCHGa3pfp6CFgPyEq6Q==}
-    engines: {node: '>=17'}
-    dependencies:
-      '@studio-freight/lenis': 1.0.29
-    dev: false
 
   /lodash-id@0.14.1:
     resolution: {integrity: sha512-ikQPBTiq/d5m6dfKQlFdIXFzvThPi2Be9/AHxktOnDSfSxE1j9ICbBT5Elk1ke7HSTgM38LHTpmJovo9/klnLg==}

@@ -58,21 +58,31 @@ const Hero = () => {
           y: 100,
           scale: 1.25,
         }}
-        transition={{ duration: 1.8, delay: 2 }}
+        transition={{ duration: 1.8, delay: 3 }}
       >
-        <Image alt="hero-bg" src="/images/Foreground.png" fill />
+        <Image
+          alt="hero-bg"
+          src="/images/Foreground.png"
+          height={609}
+          width={1920}
+          style={{ height: "100%" }}
+        />
       </motion.div>
       <motion.div
-        animate={{
-          scale: 2.5,
-          z: -9,
-          y: -500,
-          animationDelay: 1.8,
-        }}
-        transition={{ duration: 1.8, delay: 2 }}
         id={styles.hills}
+        animate={{
+          z: 2,
+          y: -100,
+        }}
+        transition={{ duration: 1.8, delay: 3 }}
       >
-        <Image alt="hero-bg" src="/images/Hills.png" fill />
+        <Image
+          alt="hero-bg"
+          src="/images/Hills.png"
+          height={609}
+          width={1920}
+          style={{ height: "100%" }}
+        />
       </motion.div>
       <motion.div
         initial={{
@@ -85,10 +95,16 @@ const Hero = () => {
           scale: 1.6,
           top: -10,
         }}
-        transition={{ duration: 1.8, delay: 2 }}
+        transition={{ duration: 1.8, delay: 3 }}
         id={styles.background}
       >
-        <Image alt="hero-bg" src="/images/Background.png" fill />
+        <Image
+          alt="hero-bg"
+          src="/images/Background.png"
+          height={609}
+          width={1920}
+          style={{ height: "100%" }}
+        />
       </motion.div>
 
       {/* coming Soon text */}
