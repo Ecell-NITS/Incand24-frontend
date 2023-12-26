@@ -1,6 +1,10 @@
-'use client'
-import React from "react";
-import { useState, useEffect } from "react";
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-unused-vars */
+
+"use client";
+
+import React, { useState, useEffect } from "react";
+
 import styles from "./Loki.module.scss";
 
 const Loki = () => {
@@ -17,8 +21,8 @@ const Loki = () => {
   const rollIntro = () => {
     const letters = document.querySelectorAll(".letter");
     letters.forEach((letter) => {
-      let randomFontIndex = Math.floor(Math.random() * fonts.length);
-      let randomFont = fonts[randomFontIndex];
+      const randomFontIndex = Math.floor(Math.random() * fonts.length);
+      const randomFont = fonts[randomFontIndex];
       letter.style.fontFamily = randomFont;
     });
   };
