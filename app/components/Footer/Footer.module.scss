@@ -53,6 +53,7 @@
     .text {
       font-size: 30px;
       font-weight: 600;
+      margin-bottom: 0.5vh;
     }
 
     a {
@@ -98,6 +99,7 @@
     .boldText {
       font-size: 30px;
       font-weight: 600;
+      margin-bottom: 1vh;
     }
 
     .lightText {
@@ -119,6 +121,8 @@
   .footer {
     align-items: center;
     gap: 3vh;
+    padding-top: 4vh;
+    padding-bottom: 0;
   }
 
   .top,
@@ -161,6 +165,10 @@
     .nits {
       width: 100%;
       margin-bottom: 3vh;
+    }
+
+    .contact .text {
+      margin-bottom: 0;
     }
 
     // Font Size
