@@ -74,7 +74,7 @@
 .outterMandala {
   position: absolute;
   left: -15%;
-  bottom: calc(-45vw / 2.5);
+  bottom: 0;
   width: 50vw;
   height: calc(50vw);
   background: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/i1kc0xoxctbrxxgrzxj9);
@@ -110,9 +110,9 @@
 /* Responsive CSS */
 @media screen and (max-width: 1200px) {
   .outterMandala {
-    bottom: 0;
-    width: 55vw;
-    height: calc(55vw);
+    bottom: 20vh;
+    width: 45vw;
+    height: calc(45vw);
   }
 }
 
@@ -131,8 +131,8 @@
   }
   .outterMandala {
     position: static;
-    width: 80vw;
-    height: calc(80vw);
+    width: 60vw;
+    height: calc(60vw);
   }
   .branch {
     right: -5vw;
