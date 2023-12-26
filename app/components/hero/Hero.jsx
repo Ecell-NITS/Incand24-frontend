@@ -32,7 +32,7 @@ const Hero = () => {
         animate={{
           x: "-100%",
         }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 3.2 }}
       >
         <Image alt="left_Tree" src="/images/left_tree.png" layout="fill" />
       </motion.div>
@@ -44,7 +44,7 @@ const Hero = () => {
         animate={{
           x: "100%",
         }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 3.2 }}
       >
         <Image alt="left_Tree" src="/images/right_tree.png" layout="fill" />
       </motion.div>
