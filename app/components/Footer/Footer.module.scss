@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap");
+
+.footer {
+  background: #3ec5a4;
+  padding: 8vh 0;
+  min-height: 50vh;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  // font-family: Montserrat;
+  font-family: Montserrat Alternates;
+  position: relative;
+}
+
+.bglogo {
+  position: absolute;
+  z-index: 1;
+  left: 43vw;
+
+  svg {
+    width: 10vw;
+  }
+}
+
+.top {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+
+  .brochure {
+    width: 30%;
+    text-align: center;
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      // font-family: Montserrat;
+      font-family: Montserrat Alternates;
+      font-size: 30px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .contact {
+    width: 30%;
+    text-align: center;
+
+    .text {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1e1e1e;
+      font-family: Montserrat Alternates;
+      font-size: min(18px, 3vw);
+    }
+  }
+}
+
+.bottom {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+
+  .media_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    .text {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1.5vw;
+
+      svg {
+        width: 2.3vw;
+      }
+    }
+  }
+
+  .nits {
+    width: 30%;
+    text-align: center;
+
+    .boldText {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .lightText {
+      font-family: Montserrat Alternates;
+      font-size: min(18px, 3vw);
+    }
+  }
+}
+
+// Text Level error Resolve
+
+.textLevel {
+  display: none;
+}
+
+// Responsive CSS
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    align-items: center;
+    gap: 3vh;
+  }
+
+  .top,
+  .bottom {
+    flex-direction: column;
+    justify-content: baseline;
+
+    .brochure {
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box;
+
+      $border: 5px;
+      background: #3ec5a4;
+      background-clip: padding-box;
+      /* !important */
+      border: solid $border transparent;
+      /* !important */
+      border-radius: 55px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border;
+        /* !important */
+        border-radius: inherit;
+        /* !important */
+        background: linear-gradient(to right, #073548, rgb(239, 249, 192));
+      }
+    }
+
+    .brochure,
+    .contact,
+    .media_sec,
+    .nits {
+      width: 100%;
+      margin-bottom: 3vh;
+    }
+
+    // Font Size
+
+    .brochure button,
+    .contact .text,
+    .media_sec .text,
+    .nits .boldText {
+      font-size: min(30px, 6vw);
+    }
+
+    .media_sec .icons {
+      gap: 3vw;
+
+      svg {
+        width: min(7vw, 30px);
+      }
+    }
+  }
+
+  .bglogo {
+    position: static;
+
+    svg {
+      width: min(30vw, 80px);
+      height: fit-content;
+    }
+  }
+}
