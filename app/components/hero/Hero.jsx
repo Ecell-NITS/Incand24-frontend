@@ -2,10 +2,10 @@
 
 // eslint-disable-next-line camelcase
 import { Allura, Passion_One } from "next/font/google";
-import React from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import styles from "./hero.module.scss";
 
 const passion = Passion_One({
@@ -22,6 +22,32 @@ const poppins = Allura({
   variable: "--allura-font",
 });
 const Hero = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { scrollY } = window;
+      const fadeInThreshold = 200;
+      const fadeOutThreshold = 400;
+
+      if (scrollY < fadeInThreshold) {
+        controls.start({ opacity: 0 });
+      } else if (scrollY >= fadeInThreshold && scrollY < fadeOutThreshold) {
+        const opacityValue =
+          (scrollY - fadeInThreshold) / (fadeOutThreshold - fadeInThreshold);
+        controls.start({ opacity: opacityValue });
+      } else {
+        controls.start({ opacity: 1 });
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls]);
+
   return (
     <div className={styles.wrapper}>
       <motion.div
@@ -104,6 +130,34 @@ const Hero = () => {
           height={609}
           width={1920}
           style={{ height: "100%" }}
+        />
+      </motion.div>
+      <motion.div
+        id={styles.blackHill}
+        initial={{ opacity: 0 }}
+        animate={controls}
+        transition={{ duration: 0.2 }}
+      >
+        <Image
+          src="/images/blackHills.svg" // Replace with the path to your image
+          alt="black_hill"
+          height={609}
+          width={1920}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </motion.div>
+      <motion.div
+        id={styles.darkbg}
+        initial={{ opacity: 0 }}
+        animate={controls}
+        transition={{ duration: 0.2 }}
+      >
+        <Image
+          src="/images/dark_bg.svg" // Replace with the path to your image
+          alt="dark_bg"
+          height={609}
+          width={1920}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </motion.div>
 

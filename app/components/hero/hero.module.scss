@@ -9,6 +9,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+
+  #blackHill {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    top: 3rem;
+  }
+  #darkbg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    top: -1.2rem;
+  }
 
   #leftTree {
     width: 100%;
@@ -26,7 +42,7 @@
   #foreground {
     position: absolute;
     left: 0;
-    bottom: 72px;
+    bottom: 50px;
     height: auto;
     width: 100%;
     z-index: 99;
@@ -36,7 +52,7 @@
     position: absolute;
     // min-width: 600px;
     left: 0;
-    bottom: 10px;
+    bottom: 0;
     z-index: 9;
   }
   #hills {
