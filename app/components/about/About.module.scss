@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato&family=Neucha&display=swap");
+
+.body {
+  min-height: 100vh;
+  color: #fff;
+  padding: 10vh 5vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+
+.about_us {
+  position: relative;
+  left: 10vw;
+  width: 40vw;
+  font-size: min(24px, 5vw);
+  align-self: flex-start;
+}
+
+.about_nits {
+  position: relative;
+  right: 10vw;
+  width: 40vw;
+  font-size: min(24px, 5vw);
+  align-self: flex-end;
+}
+
+.heading {
+  font-family: allura;
+  font-size: min(40px, 8vw);
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  position: relative;
+  width: fit-content;
+}
+
+.heading:before,
+.heading:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #ffffc7;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.heading:before {
+  top: 2px;
+  transform: translateY(10px);
+}
+
+.heading:after {
+  bottom: 2px;
+  transform: translateY(-10px);
+}
+
+.heading:hover:before,
+.heading:hover:after {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.content {
+  line-height: 1.4;
+}
+
+.outterMandala {
+  position: absolute;
+  left: -15%;
+  bottom: calc(-45vw / 2.5);
+  width: 50vw;
+  height: calc(50vw);
+  background: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/i1kc0xoxctbrxxgrzxj9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: clockwise 60s linear infinite;
+}
+
+.innerMandala {
+  width: 60%;
+  height: 60%;
+  background: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/a3wmkkl3iqaqrb8shjc3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: anticlockwise 35s linear infinite;
+}
+
+.branch {
+  position: absolute;
+  top: 5vh;
+  right: -10vw;
+  width: 30vw;
+  height: calc(30vw / 2);
+  background-image: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/gui3farpwdrbjhrle7my);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotateZ(-30deg);
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1200px) {
+  .outterMandala {
+    bottom: 0;
+    width: 55vw;
+    height: calc(55vw);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .body {
+    gap: 10vh;
+  }
+  .about_us,
+  .about_nits {
+    width: 80%;
+    position: static;
+    align-self: center;
+    .content {
+      font-size: medium;
+    }
+  }
+  .outterMandala {
+    position: static;
+    width: 80vw;
+    height: calc(80vw);
+  }
+  .branch {
+    right: -5vw;
+    transform: rotateX(25deg);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anticlockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
