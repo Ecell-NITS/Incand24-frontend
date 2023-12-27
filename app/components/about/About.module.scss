@@ -74,7 +74,7 @@
 .outterMandala {
   position: absolute;
   left: -15%;
-  bottom: 0;
+  bottom: -15vh;
   width: 50vw;
   height: calc(50vw);
   background: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/i1kc0xoxctbrxxgrzxj9);
@@ -104,7 +104,8 @@
   background-image: url(https://res.cloudinary.com/dxiwtrjjl/image/upload/f_auto,q_auto/v1/incand24/gui3farpwdrbjhrle7my);
   background-size: cover;
   background-repeat: no-repeat;
-  transform: rotateZ(-30deg);
+  transform-origin: bottom right;
+  animation: branchOcsilate 10s linear infinite;
 }
 
 /* Responsive CSS */
@@ -134,10 +135,6 @@
     width: 60vw;
     height: calc(60vw);
   }
-  .branch {
-    right: -5vw;
-    transform: rotateX(25deg);
-  }
 }
 
 @keyframes clockwise {
@@ -155,5 +152,17 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes branchOcsilate {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateZ(-35deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
   }
 }
