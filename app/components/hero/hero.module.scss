@@ -1,156 +1,165 @@
 .wrapper {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
   perspective: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
 
-  #blackHill {
-    width: 100%;
-    height: auto;
+  .scrollElement {
     position: absolute;
-    z-index: 3;
-    top: 3rem;
-  }
-  #darkbg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    top: -1.2rem;
+    height: 6000px;
+    width: 100px;
+    top: 0;
+    z-index: -10;
   }
 
-  #leftTree {
+  .container {
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 199;
-  }
-  #rightTree {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 195;
-  }
-
-  #foreground {
-    position: absolute;
+    position: sticky;
     left: 0;
-    bottom: 50px;
-    height: auto;
-    width: 100%;
-    z-index: 99;
-  }
+    top: 0;
+    transform-style: preserve-3d;
+    perspective: 10px;
 
-  #background {
-    position: absolute;
-    // min-width: 600px;
-    left: 0;
-    bottom: 0;
-    z-index: 9;
-  }
-  #hills {
-    position: absolute;
-    left: 0;
-    top: -5px;
-    z-index: 0;
-  }
-
-  .textWrapper {
-    z-index: 98;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #09394a;
-
-    .heading {
-      font-size: 6vw;
-      letter-spacing: 2px;
-      margin-bottom: 3rem;
-      transform: translateY(60vh);
-      animation: animateTocentre 2s ease forwards;
-      animation-delay: 4s;
+    #blackHill {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: 3;
+      top: 3rem;
+    }
+    #darkbg {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: 2;
+      top: -1.2rem;
     }
 
-    .comingSoon {
-      transform: translateY(60vh);
-      animation: animateTocentre 2s ease forwards;
-      animation-delay: 4s;
-      font-weight: 900;
-      font-size: 2vw;
-      // font-family: poppins;
+    #leftTree {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1999;
+    }
+    #rightTree {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1959;
+    }
+
+    #foreground {
+      position: absolute;
+      left: 0;
+      bottom: 50px;
+      height: auto;
+      width: 100%;
+      z-index: 99;
+    }
+
+    #background {
+      position: absolute;
+      // min-width: 600px;
+      left: 0;
+      bottom: 0;
+      z-index: 9;
+    }
+    #hills {
+      position: absolute;
+      left: 0;
+      top: -5px;
+      z-index: 0;
+    }
+
+    .textWrapper {
+      z-index: 98;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #09394a;
+
+      .heading {
+        font-size: 6vw;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+        transform: translateY(60vh);
+        animation: animateTocentre 2s ease forwards;
+        animation-delay: 4s;
+      }
+
+      .comingSoon {
+        transform: translateY(60vh);
+        animation: animateTocentre 2s ease forwards;
+        animation-delay: 4s;
+        font-weight: 900;
+        font-size: 2vw;
+        // font-family: poppins;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .textWrapper {
+        .heading {
+          font-size: 10vw;
+        }
+        .comingSoon {
+          font-size: 5vw;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #foreground {
+        width: 953px;
+        height: 323px;
+        bottom: 60px;
+      }
+      #background {
+        min-height: 100%;
+        width: 867px;
+        height: 496px;
+        left: 0;
+        bottom: 0;
+      }
+
+      #hills {
+        height: 210px;
+        width: 639px;
+        top: 231px;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      #hills {
+        height: 122px !important;
+        width: 303px !important;
+        top: 288px !important;
+      }
     }
   }
+
+  @keyframes animateTocentre {
+    0% {
+      transform: translateY(60vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .textWrapper {
       .heading {
-        font-size: 10vw;
-      }
-      .comingSoon {
-        font-size: 5vw;
+        font-size: 20vw;
       }
     }
   }
-
-  @media screen and (max-width: 768px) {
-    #foreground {
-      width: 953px;
-      height: 323px;
-      bottom: 60px;
-    }
-    #background {
-      min-height: 100%;
-      width: 867px;
-      height: 496px;
-      left: 0;
-      bottom: 0;
-    }
-
-    #hills {
-      height: 210px;
-      width: 639px;
-      top: 231px;
-    }
-  }
-
-  @media screen and (max-width: 425px) {
-    #hills {
-      height: 122px !important;
-      width: 303px !important;
-      top: 288px !important;
-    }
-  }
-
-  // @media screen and (max-width: 1024px) {
-  // //   #hills{
-  //     top: 130px;
-  //   }
-  // }
-}
-
-@keyframes animateTocentre {
-  0% {
-    transform: translateY(60vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .textWrapper {
-    .heading {
-      font-size: 20vw;
-    }
-  }
-  // .heading {
-  //   font-size: 10vw;
-  // }
 }

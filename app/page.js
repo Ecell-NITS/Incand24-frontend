@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <main className={styles.home}>
       <Hero />
-      <div className={styles.slider}></div>
     </main>
   );
 };
