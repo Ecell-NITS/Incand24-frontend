@@ -2,7 +2,7 @@
 
 // eslint-disable-next-line camelcase
 import { Allura, Passion_One } from "next/font/google";
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import Image from "next/image";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { motion, useAnimation } from "framer-motion";
@@ -22,13 +22,14 @@ const poppins = Allura({
   variable: "--allura-font",
 });
 const Hero = () => {
+  // Scroll Animations
   const controls = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
       const { scrollY } = window;
-      const fadeInThreshold = 200;
-      const fadeOutThreshold = 400;
+      const fadeInThreshold = 0;
+      const fadeOutThreshold = 100;
 
       if (scrollY < fadeInThreshold) {
         controls.start({ opacity: 0 });
@@ -47,7 +48,30 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [controls]);
+  // Text animation controls
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const textColor = scrollY > 2 ? "#EAEAAC" : "#09394a";
+
+  useEffect(() => {
+    controls.start({
+      color: textColor,
+      transition: { duration: 0.2 },
+    });
+  }, [scrollY, controls, textColor]);
   return (
     <div className={styles.wrapper}>
       <motion.div
@@ -163,8 +187,18 @@ const Hero = () => {
 
       {/* coming Soon text */}
       <div className={styles.textWrapper}>
-        <h1 className={`${styles.heading} ${passion.className}`}>INCANDESCENCE‘24 </h1>
-        <h4 className={`${styles.comingSoon} ${poppins.className}`}>COMING SOON...</h4>
+        <h1
+          style={{ color: textColor }}
+          className={`${styles.heading} ${passion.className}`}
+        >
+          INCANDESCENCE‘24{" "}
+        </h1>
+        <h4
+          style={{ color: textColor }}
+          className={`${styles.comingSoon} ${poppins.className}`}
+        >
+          COMING SOON...
+        </h4>
       </div>
     </div>
   );

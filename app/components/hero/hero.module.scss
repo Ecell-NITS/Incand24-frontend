@@ -16,14 +16,14 @@
     height: auto;
     position: absolute;
     z-index: 3;
-    top: 3rem;
+    bottom: 12rem;
   }
   #darkbg {
     width: 100%;
     height: auto;
     position: absolute;
     z-index: 2;
-    top: -1.2rem;
+    bottom: 6rem;
   }
 
   #leftTree {
@@ -55,6 +55,7 @@
     bottom: 0;
     z-index: 9;
   }
+
   #hills {
     position: absolute;
     left: 0;
@@ -68,7 +69,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #09394a;
+    // color: #09394a;
 
     .heading {
       font-size: 6vw;
@@ -120,11 +121,25 @@
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 550px) {
     #hills {
       height: 122px !important;
       width: 303px !important;
       top: 288px !important;
+    }
+    #blackHill {
+      display: block;
+      width: 100% !important;
+      height: 180px !important;
+      z-index: 3;
+      top: 23.8rem !important;
+    }
+    #darkbg {
+      display: block;
+      width: 100% !important;
+      height: 996px !important;
+      z-index: 2;
+      top: 1rem !important;
     }
   }
 
