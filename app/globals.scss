@@ -7,6 +7,19 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0b67f4;
+  border-radius: 5vw;
+  // height: 30vh;
+}
+body::-webkit-scrollbar-track {
+  background-color: #031431;
+}
+
 /* :root{
   
 
