@@ -39,7 +39,7 @@ const Social = () => {
         </a>
       </div>
       <div className={styles.socialIcon}>
-        <a href="https://www.instagram.com/incandescence_nitsilchar/" target="_blank">
+        <a href="https://www.instagram.com/incandescence.nitsilchar" target="_blank">
           <Image width={40} height={40} src="/logos/instagram.svg" alt="instagram" />
         </a>
       </div>
