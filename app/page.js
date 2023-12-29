@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <main className={styles.home}>
       <About />
-
       <Sponsor />
+
       <Social />
     </main>
   );

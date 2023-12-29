@@ -11,3 +11,16 @@
   
 
 } */
+body::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ec5a4;
+  border-radius: 5vw;
+  // height: 30vh;
+}
+body::-webkit-scrollbar-track {
+  // background-color: #031431;
+  background: linear-gradient(180deg, #02161f 0%, #175f62 52.6%, #02161f 100%);
+}
