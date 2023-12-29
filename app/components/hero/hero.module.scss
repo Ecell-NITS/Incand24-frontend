@@ -2,29 +2,24 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  transform-style: preserve-3d;
-  perspective: 10px;
   overflow: hidden;
+  // perspective: 1px;
+  // z-index: -1;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-
-  #blackHill {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 3;
-    bottom: 12rem;
-  }
-  #darkbg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    bottom: 6rem;
-  }
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    0deg,
+    #ffffdb 36%,
+    #fbfedb 47%,
+    #edfcdd 60%,
+    #d8f7df 73%,
+    #b9f2e1 86%,
+    #92eae5 100%
+  );
 
   #leftTree {
     width: 100%;
@@ -42,25 +37,87 @@
   #foreground {
     position: absolute;
     left: 0;
-    bottom: 50px;
-    height: auto;
-    width: 100%;
+    bottom: 0;
+    height: 80vh;
+    width: 100vw;
     z-index: 99;
+    display: flex;
+    align-items: end;
+    transform: translateX(-100px);
+    // transform: ;
+    animation: foregroundMagnify 2s ease-in-out forwards;
+    animation-delay: 3s;
+    svg {
+      width: 110%;
+      height: 100%;
+      // transform: translateY(15%);
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+
+      @media screen and (max-width: 1980px) {
+        transform: translateY(10%);
+      }
+      @media screen and (max-width: 1400px) {
+        transform: translateY(20%) translateX(-100px);
+        width: 160%;
+        height: 120%;
+      }
+      @media screen and (max-width: 900px) {
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      height: 40vh;
+      width: 140vw;
+    }
   }
 
   #background {
     position: absolute;
     // min-width: 600px;
     left: 0;
-    bottom: 0;
+    // bottom: 0;
+    bottom: -10vh;
     z-index: 9;
+    height: 100vh;
+    width: 190vw;
+    animation: backgroundshrink 2s ease-in-out forwards;
+    animation-delay: 3s;
+
+    img {
+      width: 100%;
+      height: 100%;
+      transform: translateX(-30%);
+
+      @media screen and (max-width: 600px) {
+        transform: translateX(-30%) translateY(-5%);
+        width: 140% !important;
+      }
+    }
   }
 
   #hills {
-    position: absolute;
+    position: relative;
     left: 0;
     top: -5px;
     z-index: 0;
+    width: 120vw;
+    height: 50vh;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: hillsmagnify 2s ease-in-out forwards;
+    animation-delay: 3s;
+    svg {
+      width: 160%;
+      // height: 100%;
+      position: absolute;
+      background-size: cover;
+      transition: all 0.5s ease-in-out;
+    }
   }
 
   .textWrapper {
@@ -69,24 +126,27 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // color: #09394a;
+    color: #09394a;
 
     .heading {
       font-size: 6vw;
       letter-spacing: 2px;
       margin-bottom: 3rem;
       transform: translateY(60vh);
-      animation: animateTocentre 2s ease forwards;
-      animation-delay: 4s;
+      animation: animateTocentre 4s ease-in-out forwards;
+      animation-delay: 1.7s;
     }
 
     .comingSoon {
       transform: translateY(60vh);
-      animation: animateTocentre 2s ease forwards;
-      animation-delay: 4s;
+      animation: animateTocentre 4s ease-in-out forwards;
+      animation-delay: 1.7s;
       font-weight: 900;
       font-size: 2vw;
       // font-family: poppins;
+    }
+    .nightText {
+      color: #eaeaac;
     }
   }
   @media screen and (max-width: 600px) {
@@ -100,72 +160,94 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     #foreground {
-      width: 953px;
-      height: 323px;
-      bottom: 60px;
-    }
-    #background {
-      min-height: 100%;
-      width: 867px;
-      height: 496px;
-      left: 0;
-      bottom: 0;
-    }
+      width: 160vw;
+      height: 30vh;
+      // bottom: 60px;
+      object-fit: cover;
 
-    #hills {
-      height: 210px;
-      width: 639px;
-      top: 231px;
+      svg {
+        width: 120%;
+        height: 100%;
+        transform: translateX(-10%);
+      }
     }
   }
 
-  @media screen and (max-width: 550px) {
-    #hills {
-      height: 122px !important;
-      width: 303px !important;
-      top: 288px !important;
-    }
-    #blackHill {
-      display: block;
-      width: 100% !important;
-      height: 180px !important;
-      z-index: 3;
-      top: 23.8rem !important;
-    }
-    #darkbg {
-      display: block;
-      width: 100% !important;
-      height: 996px !important;
-      z-index: 2;
-      top: 1rem !important;
+  #sun {
+    display: flex;
+    width: 20vh;
+    height: 20vh;
+    background-image: url(../../../public/images/Sun.svg);
+    position: fixed;
+    left: 50vw;
+    top: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #moon {
+    display: none;
+    width: 20vh;
+    height: 20vh;
+    background-image: url(../../../public/images/moon.svg);
+    position: fixed;
+    left: 20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: 900px) {
+      transform: translateY(40%);
     }
   }
+}
 
-  // @media screen and (max-width: 1024px) {
-  // //   #hills{
-  //     top: 130px;
-  //   }
-  // }
+@keyframes hillsmagnify {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes backgroundshrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
 }
 
 @keyframes animateTocentre {
   0% {
-    transform: translateY(60vh);
+    transform: translateY(200vh);
   }
   100% {
     transform: translateY(0);
+    display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .textWrapper {
-    .heading {
-      font-size: 20vw;
-    }
+@keyframes foregroundMagnify {
+  0% {
+    transform: scale(1) translateX(-100px);
   }
-  // .heading {
-  //   font-size: 10vw;
-  // }
+  100% {
+    transform: scale(1.25) translateX(0);
+  }
+}
+
+.night {
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    0deg,
+    #ffffdb 36%,
+    #4c0067 47%,
+    #56016b 60%,
+    #3b0a53 69%,
+    #11023c 84.26%,
+    #01073e 100%
+  );
 }
