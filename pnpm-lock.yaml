@@ -38,6 +38,9 @@ dependencies:
   react-query:
     specifier: ^3.39.3
     version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
+  react-router-dom:
+    specifier: ^6.21.0
+    version: 6.21.0(react-dom@18.2.0)(react@18.2.0)
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -1479,6 +1482,11 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+
+  /@remix-run/router@1.14.0:
+    resolution: {integrity: sha512-WOHih+ClN7N8oHk9N4JUiMxQJmRVaOxcg8w7F/oHUXzJt920ekASLI/7cYX8XkntDWRhLZtsk6LbGrkgOAvi5A==}
+    engines: {node: '>=14.0.0'}
+    dev: false
 
   /@rollup/plugin-babel@5.3.1(@babel/core@7.23.2)(rollup@2.79.1):
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -4948,6 +4956,29 @@ packages:
       match-sorter: 6.3.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-router-dom@6.21.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1dUdVj3cwc1npzJaf23gulB562ESNvxf7E4x8upNJycqyUm5BRRZ6dd3LrlzhtLaMrwOCO8R0zoiYxdaJx4LlQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.14.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router: 6.21.0(react@18.2.0)
+    dev: false
+
+  /react-router@6.21.0(react@18.2.0):
+    resolution: {integrity: sha512-hGZ0HXbwz3zw52pLZV3j3+ec+m/PQ9cTpBvqjFQmy2XVUWGn5MD+31oXHb6dVTxYzmAeaiUBYjkoNz66n3RGCg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.14.0
+      react: 18.2.0
     dev: false
 
   /react@18.2.0:
