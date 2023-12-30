@@ -1,16 +1,17 @@
-import Link from "next/link";
-import Sponsor from "./components/Sponsor/Sponsor";
+"use client";
 
-import Social from "./components/SocialHandles/Social";
+import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
+import About from "./components/about/About";
+import Social from "./components/SocialHandles/Social";
+import Footer from "./components/Footer/Footer";
 
 const Home = () => {
   return (
     <main className={styles.home}>
-      <h1>This is home page</h1>
-      <Link href="/about">About</Link>
-
+      <About />
       <Sponsor />
+      <Footer />
       <Social />
     </main>
   );

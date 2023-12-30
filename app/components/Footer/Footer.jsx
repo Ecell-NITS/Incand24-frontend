@@ -38,7 +38,7 @@ const Footer = () => {
         <div className={styles.media_sec}>
           <div className={styles.text}>FOLLOW US</div>
           <div className={styles.icons}>
-            <a href="https://www.instagram.com/incandescence_nitsilchar/" target="_blank">
+            <a href="https://www.instagram.com/incandescence.nitsilchar" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="51"
