@@ -10,6 +10,7 @@
   position: fixed;
   z-index: 800000;
   top: 2vh;
+  // padding-top: 2.5vw;
   display: flex;
   flex-direction: row;
   width: 95vw;
@@ -46,8 +47,11 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
     }
   }
+
   .grp1 {
     display: flex;
     max-height: 7vh;
@@ -61,11 +65,14 @@
     font-weight: 400;
     line-height: 97.5%;
     .item1 {
+      cursor: pointer;
       display: inline-flex;
       padding: 20px 30px;
       justify-content: center;
       align-items: center;
       gap: 10px;
+      color: white;
+      text-decoration: none;
     }
   }
   .item1:hover {

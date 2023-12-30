@@ -10,7 +10,7 @@ const allura = Allura({
 
 const Sponsor = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="sponsor">
       <div className={styles.slider}>
         <div className={styles.slide1}>
           <Image

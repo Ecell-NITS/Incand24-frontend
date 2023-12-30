@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import Brochure from "../Button/Button";
 import styles from "./Navbar.module.scss";
@@ -13,21 +13,22 @@ import line from "../../../public/logos/line.svg";
 import dark from "../../../public/logos/dark.svg";
 import light from "../../../public/logos/light.svg";
 import close from "../../../public/logos/close.svg";
+
 const Navbar = () => {
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const navlink = [
     {
       name: "Home",
-      link: "/",
+      link: "hero",
     },
     {
       name: "About Us",
-      link: "/about",
+      link: "about",
     },
     {
       name: "Sponsors",
-      link: "/sponsors",
+      link: "sponsor",
     },
   ];
   const change = () => {
@@ -86,7 +87,12 @@ const Navbar = () => {
               <Link
                 className={navbar ? styles.item1 : styles.item}
                 key={name}
-                href={link}
+                to={link}
+                spy
+                smooth
+                hashSpy
+                offset={50}
+                duration={500}
               >
                 {name}
               </Link>

@@ -10,7 +10,7 @@ export const metadata = {
 
 const About = () => {
   return (
-    <div className={styles.body}>
+    <div className={styles.body} id="about">
       <div className={styles.branch}></div>
       <div className={styles.about_us}>
         <div className={styles.heading}>About Us</div>
