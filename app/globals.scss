@@ -20,6 +20,10 @@ body::-webkit-scrollbar-track {
   background-color: #031431;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* :root{
   
 

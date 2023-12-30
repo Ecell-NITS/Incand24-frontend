@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  transition: all 0.5s ease-in-out;
   background-image: linear-gradient(
     0deg,
     #ffffdb 36%,
@@ -43,16 +42,15 @@
     z-index: 99;
     display: flex;
     align-items: end;
-    transform: translateX(-100px);
-    // transform: ;
-    animation: foregroundMagnify 2s ease-in-out forwards;
-    animation-delay: 3s;
-    svg {
+    animation: foregroundMagnify 3s ease-in-out forwards;
+    animation-delay: 1.7s;
+
+    img {
       width: 110%;
       height: 100%;
       // transform: translateY(15%);
       position: absolute;
-      transition: all 0.5s ease-in-out;
+      transition: all 2s ease-in-out;
 
       @media screen and (max-width: 1980px) {
         transform: translateY(10%);
@@ -68,9 +66,18 @@
     }
 
     @media screen and (max-width: 900px) {
-      height: 40vh;
+      height: 50vh;
       width: 140vw;
     }
+
+    @media screen and (max-width: 600px) {
+      width: 200vw;
+      height: 30vh;
+    }
+  }
+  .nightForeground {
+    animation: nightForeground 1s ease-in-out forwards !important;
+    transform: scale(1.25) translateX(100px) translateY(5px);
   }
 
   #background {
@@ -82,8 +89,8 @@
     z-index: 9;
     height: 100vh;
     width: 190vw;
-    animation: backgroundshrink 2s ease-in-out forwards;
-    animation-delay: 3s;
+    animation: backgroundshrink 3s ease-in-out forwards;
+    animation-delay: 1.7s;
 
     img {
       width: 100%;
@@ -95,6 +102,10 @@
         width: 140% !important;
       }
     }
+  }
+  .nightBackground {
+    animation: nightBackground 1s ease-in-out forwards !important;
+    // filter: invert(0.7) hue-rotate(270deg) contrast(2);
   }
 
   #hills {
@@ -109,8 +120,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: hillsmagnify 2s ease-in-out forwards;
-    animation-delay: 3s;
+    animation: hillsmagnify 3s ease-in-out forwards;
+    animation-delay: 1.7s;
     svg {
       width: 160%;
       // height: 100%;
@@ -118,6 +129,10 @@
       background-size: cover;
       transition: all 0.5s ease-in-out;
     }
+  }
+  .nightHills {
+    animation: nightHills 1s ease-in-out forwards !important;
+    // filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
   }
 
   .textWrapper {
@@ -128,49 +143,43 @@
     transform: translate(-50%, -50%);
     color: #09394a;
 
-    .heading {
+    #heading {
       font-size: 6vw;
       letter-spacing: 2px;
       margin-bottom: 3rem;
       transform: translateY(60vh);
-      animation: animateTocentre 4s ease-in-out forwards;
+      animation: animateTocentre 5s ease-in-out forwards;
       animation-delay: 1.7s;
     }
 
-    .comingSoon {
+    #comingSoon {
       transform: translateY(60vh);
-      animation: animateTocentre 4s ease-in-out forwards;
+      animation: animateTocentre 5s ease-in-out forwards;
       animation-delay: 1.7s;
       font-weight: 900;
       font-size: 2vw;
       // font-family: poppins;
     }
+
+    @keyframes textColor {
+      0% {
+        color: #09394a;
+      }
+      100% {
+        color: #eaeaac;
+      }
+    }
     .nightText {
-      color: #eaeaac;
+      animation: textColor 1s ease-in forwards !important;
     }
   }
   @media screen and (max-width: 600px) {
     .textWrapper {
-      .heading {
+      #heading {
         font-size: 10vw;
       }
-      .comingSoon {
+      #comingSoon {
         font-size: 5vw;
-      }
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    #foreground {
-      width: 160vw;
-      height: 30vh;
-      // bottom: 60px;
-      object-fit: cover;
-
-      svg {
-        width: 120%;
-        height: 100%;
-        transform: translateX(-10%);
       }
     }
   }
@@ -180,7 +189,7 @@
     width: 20vh;
     height: 20vh;
     background-image: url(../../../public/images/Sun.svg);
-    position: fixed;
+    position: absolute;
     left: 50vw;
     top: 10vh;
     background-size: contain;
@@ -235,12 +244,36 @@
     transform: scale(1) translateX(-100px);
   }
   100% {
-    transform: scale(1.25) translateX(0);
+    transform: scale(1.25) translateX(0px);
   }
 }
 
+@keyframes nightForeground {
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
+  }
+}
+
+@keyframes nightHills {
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+  }
+}
+@keyframes nightBackground {
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: brightness(0.6) saturate(0.7) contrast(3) hue-rotate(90deg);
+  }
+}
 .night {
-  transition: all 0.5s ease-in-out;
   background-image: linear-gradient(
     0deg,
     #ffffdb 36%,
