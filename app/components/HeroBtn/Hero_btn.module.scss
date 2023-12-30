@@ -1,0 +1,35 @@
+.button_ctn {
+  position: relative;
+}
+.semi_circle {
+  width: 68px;
+  height: 68px;
+  z-index: 1200;
+  left: 98px;
+  position: absolute;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  border: 2px solid white;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 35% 60%, 0 70%);
+  animation: rotateAnimation 4s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+
+.arrow1 {
+  position: absolute;
+  margin-left: 116px;
+  margin-top: 19px;
+}
+.arrow2 {
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 117px;
+}

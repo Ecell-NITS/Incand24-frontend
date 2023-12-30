@@ -1,13 +1,6 @@
 import React from "react";
-import { Allura } from "next/font/google";
 import Image from "next/image";
 import styles from "./Sponsor.module.css";
-
-const allura = Allura({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 const Sponsor = () => {
   return (
     <div className={styles.wrapper}>
@@ -128,7 +121,7 @@ const Sponsor = () => {
           />
         </div>
       </div>
-      <div className={`${styles.text} ${allura.className}`}>
+      <div className={styles.text}>
         <h2>Previous Sponsors</h2>
       </div>
       <div className={styles.slider}>

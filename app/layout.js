@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import connectToDb from "@/lib/db";
 import QueryProvider from "./QueryProvider";
 import ContProvider from "./ContextProvider";
+import Social from "./components/SocialHandles/Social";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,7 +20,7 @@ const RootLayout = ({ children }) => {
       <body className={inter.className}>
         <ContProvider>
           <QueryProvider>
-            {/* <Social /> */}
+            <Social />
             {children}
           </QueryProvider>
         </ContProvider>

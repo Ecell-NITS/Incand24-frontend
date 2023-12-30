@@ -1,18 +1,11 @@
-"use client";
-
-import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
-import About from "./components/about/About";
-import Social from "./components/SocialHandles/Social";
-import Footer from "./components/Footer/Footer";
+import Hero from "./components/hero/hero";
 
 const Home = () => {
   return (
     <main className={styles.home}>
-      <About />
-      <Sponsor />
-      <Footer />
-      <Social />
+      <Hero />
+      <div className={styles.slider}></div>
     </main>
   );
 };

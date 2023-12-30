@@ -7,24 +7,10 @@
   height: 23rem;
   z-index: 98;
   justify-content: space-evenly;
-  top: 0;
-  left: -10vw;
-
-  transition: left 0.8s ease-in-out;
 
   .verticalLine {
     position: relative;
     height: 7rem;
     border-left: 1px solid white;
-  }
-}
-
-.visible {
-  left: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .socialHandle {
-    display: none;
   }
 }
