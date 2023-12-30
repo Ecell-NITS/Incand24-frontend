@@ -1,4 +1,4 @@
-import styles from "./brochure.module.scss";
+import styles from "./Brochure.module.scss";
 
 const Brochure = () => {
   return (

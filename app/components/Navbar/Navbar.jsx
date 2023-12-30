@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Brochure from "../Button/Button";
-import styles from "./navbar.module.scss";
+import styles from "./Navbar.module.scss";
 import menu from "../../../public/logos/menu.svg";
 import insta from "../../../public/logos/instagram.svg";
 import fb from "../../../public/logos/facebook.svg";
