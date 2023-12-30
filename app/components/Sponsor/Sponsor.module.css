@@ -1,10 +1,12 @@
 .wrapper {
   width: 100%;
-  height: 80vh;
+  /* height: 100vh; */
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  margin-block: 15vh;
 }
 .slider {
   height: 9rem;
@@ -44,12 +46,11 @@
 }
 .text h2 {
   font-size: 3rem;
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 @media screen and (max-width: 720px) {
   .text h2 {
-    font-size: 2.5rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
   .slide1 img {
     height: 6rem;
@@ -61,13 +62,10 @@
   }
   .wrapper {
     height: 60vh;
+    margin-block: 10vh;
   }
 }
 @media screen and (max-width: 460px) {
-  .text h2 {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-  }
   .slide1 img {
     height: 4.3rem;
     padding: 0 1rem;
@@ -78,6 +76,7 @@
   }
   .wrapper {
     height: 60vh;
+    margin-block: 5vh;
   }
   .slider {
     height: 6rem;
