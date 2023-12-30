@@ -23,10 +23,9 @@ const poppins = Allura({
   variable: "--allura-font",
 });
 const Hero = () => {
-  
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setScroll(window.scrollY);
@@ -38,15 +37,17 @@ const Hero = () => {
       setNight(scroll > 80);
     }
 
-    if (scroll>70) {
+    if (scroll > 70) {
       // console.log(scroll*window.innerWidth/500, window.innerWidth/2.5)
       setNight(true);
     } else {
       setNight(false);
     }
 
-    if(night){
-      document.getElementById(`${styles.moon}`).style.transform = `translateY(-${scroll/7 }vw)`;
+    if (night) {
+      document.getElementById(`${styles.moon}`).style.transform = `translateY(-${
+        scroll / 7
+      }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "none";
       document.getElementById(`${styles.moon}`).style.display = "flex";
       document.getElementById(`${styles.foreground}`).style.animation = "none";
@@ -58,30 +59,24 @@ const Hero = () => {
       document.getElementById(`${styles.comingSoon}`).style.animation = "none";
       document.getElementById(`${styles.comingSoon}`).style.display = "block";
       document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
-
-    }else{
-      document.getElementById(`${styles.sun}`).style.transform = `translateY(${scroll/10 }vw)`;
+    } else {
+      document.getElementById(`${styles.sun}`).style.transform = `translateY(${
+        scroll / 10
+      }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "flex";
       document.getElementById(`${styles.moon}`).style.display = "none";
-      document.getElementById(
-        `${styles.foreground}`
-      ).style.transform = `scale(1.25) `;
-      document.getElementById(
-        `${styles.hills}`
-      ).style.transform = `scale(1.5)`;
-      document.getElementById(
-        `${styles.background}`
-      ).style.transform = `scale(0.8)`;
-
+      document.getElementById(`${styles.foreground}`).style.transform = `scale(1.25) `;
+      document.getElementById(`${styles.hills}`).style.transform = `scale(1.5)`;
+      document.getElementById(`${styles.background}`).style.transform = `scale(0.8)`;
     }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scroll]);
+  }, [night, scroll]);
 
   return (
-    <div className={`${styles.wrapper} ${night ? styles.night: ""}`}>
+    <div className={`${styles.wrapper} ${night ? styles.night : ""}`}>
       <div id={styles.sun}></div>
       <div id={styles.moon}></div>
       <motion.div
@@ -114,10 +109,7 @@ const Hero = () => {
       >
         <Image alt="foreground" src={Foreground} layout="fill" />
       </motion.div>
-      <motion.div
-        id={styles.hills}
-        className={` ${night ? styles.nightHills: ""}`}
-      >
+      <motion.div id={styles.hills} className={` ${night ? styles.nightHills : ""}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1703"
@@ -203,9 +195,9 @@ const Hero = () => {
           </defs>
         </svg>
       </motion.div>
-      <motion.div 
-      id={styles.background}
-      className={` ${night ? styles.nightBackground : ""} `}
+      <motion.div
+        id={styles.background}
+        className={` ${night ? styles.nightBackground : ""} `}
       >
         <Image
           alt="hero-bg"
@@ -219,17 +211,13 @@ const Hero = () => {
       <div className={`${styles.textWrapper} `}>
         <h1
           id={styles.heading}
-          className={` ${passion.className} ${
-            night ? styles.nightText : ""
-          }`}
+          className={` ${passion.className} ${night ? styles.nightText : ""}`}
         >
           INCANDESCENCE‘24{" "}
         </h1>
         <h4
           id={styles.comingSoon}
-          className={` ${poppins.className} ${
-            night ? styles.nightText : ""
-          }`}
+          className={` ${poppins.className} ${night ? styles.nightText : ""}`}
         >
           COMING SOON...
         </h4>

@@ -49,8 +49,8 @@
     }
 
     @media screen and (max-width: 600px) {
-      width: 210vw;
-      height: 70vw;
+      width: 150vw;
+      height: 50vw;
     }
   }
   .nightForeground {
@@ -114,9 +114,9 @@
       bottom: 25vw;
     }
     @media screen and (max-width: 600px) {
-      // height: 20vw;
-      // width: 80vw;
-      bottom: 25vw;
+      height: 22vw;
+      width: 80vw;
+      bottom: 40vw;
     }
   }
   .nightHills {
@@ -149,6 +149,16 @@
       font-size: 2vw;
       // font-family: poppins;
     }
+    @media screen and (max-width: 600px) {
+      #heading {
+        font-size: 10vw;
+        margin-bottom: 1.5rem;
+      }
+      #comingSoon {
+        font-size: 5vw;
+      }
+      top: 50%;
+    }
 
     @keyframes textColor {
       0% {
@@ -160,16 +170,6 @@
     }
     .nightText {
       animation: textColor 1s ease-in forwards !important;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .textWrapper {
-      #heading {
-        font-size: 10vw;
-      }
-      #comingSoon {
-        font-size: 5vw;
-      }
     }
   }
 
@@ -195,8 +195,8 @@
       bottom: 50vw;
     }
     @media screen and (max-width: 600px) {
-      width: 25vw;
-      height: 25vw;
+      // width: 25vw;
+      // height: 25vw;
       bottom: 60vw;
     }
   }
@@ -223,8 +223,8 @@
       transform: translateY(40%);
     }
     @media screen and (max-width: 600px) {
-      width: 25vw;
-      height: 25vw;
+      // width: 25vw;
+      // height: 25vw;
       bottom: 25vw;
     }
   }
@@ -281,7 +281,7 @@
     filter: none;
   }
   100% {
-    filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+    filter: invert(0) saturate(1.8) brightness(0.3) contrast(2) hue-rotate(140deg);
   }
 }
 @keyframes nightBackground {
@@ -301,4 +301,15 @@
     #11023c 84.26%,
     #01073e 100%
   );
+
+  @media screen and (max-width: 900px) {
+    background-image: linear-gradient(
+      0deg,
+      #4c0067 10%,
+      #56016b 20%,
+      #3b0a53 30%,
+      #11023c 84.26%,
+      #01073e 100%
+    );
+  }
 }
