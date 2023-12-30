@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import Social from "./components/SocialHandles/Social";
+import Social from "./components/SocialHandles/Social";
 import styles from "./Home.module.scss";
 import Navbar from "./components/Navbar/Navbar";
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       <Navbar />
       <h1>This is home page</h1>
       <Link href="/about">About</Link>
-      {/* <Social /> */}
+      <Social />
     </main>
   );
 };
