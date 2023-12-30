@@ -1,7 +1,7 @@
 import React from "react";
 import { Allura } from "next/font/google";
 import Image from "next/image";
-import styles from "./Sponsor.module.css";
+import styles from "./Sponsor.module.scss";
 
 const allura = Allura({
   subsets: ["latin"],

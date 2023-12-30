@@ -105,6 +105,10 @@
     .lightText {
       font-family: Montserrat Alternates;
       font-size: min(18px, 3vw);
+      a {
+        text-decoration: none;
+        color: #1e1e1e;
+      }
     }
   }
 }
