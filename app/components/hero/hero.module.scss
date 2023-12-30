@@ -37,37 +37,29 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 80vh;
-    width: 100vw;
+    height: 50vh;
+    width: 120vw;
     z-index: 99;
     display: flex;
     align-items: end;
     animation: foregroundMagnify 3s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation-delay: 1.6s;
 
-    img {
-      width: 110%;
-      height: 100%;
-      // transform: translateY(15%);
-      position: absolute;
-      transition: all 2s ease-in-out;
-
-      @media screen and (max-width: 1980px) {
-        transform: translateY(10%);
-      }
-      @media screen and (max-width: 1400px) {
-        transform: translateY(20%) translateX(-100px);
-        width: 160%;
-        height: 120%;
-      }
-      @media screen and (max-width: 900px) {
-        transform: translateY(0);
-      }
+    @media screen and (max-width: 1980px) {
+      transform: translateY(10%);
+    }
+    @media screen and (max-width: 1400px) {
+      transform: translateY(20%) translateX(100px);
+      height: 40vh;
+      width: 120vw;
+    }
+    @media screen and (max-width: 900px) {
+      transform: translateY(0);
     }
 
     @media screen and (max-width: 900px) {
-      height: 50vh;
-      width: 140vw;
+      height: 30vh;
+      width: 160vw;
     }
 
     @media screen and (max-width: 600px) {
@@ -89,8 +81,8 @@
     z-index: 9;
     height: 100vh;
     width: 190vw;
-    animation: backgroundshrink 3s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation: backgroundshrink 3.2s ease-in-out forwards;
+    animation-delay: 1.4s;
 
     img {
       width: 100%;
@@ -121,7 +113,7 @@
     align-items: center;
     justify-content: space-evenly;
     animation: hillsmagnify 3s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation-delay: 1.6s;
     svg {
       width: 160%;
       // height: 100%;
