@@ -31,17 +31,22 @@ const Hero = () => {
     const handleScroll = () => {
       setScroll(window.scrollY);
       document.getElementById(`${styles.sun}`).style.position = "fixed";
-      document.getElementById(`${styles.sun}`).style.top = `${10 + scroll / 5}vh`;
-      document.getElementById(`${styles.moon}`).style.top = `${40 - scroll / 5}vh`;
     };
     window.addEventListener("scroll", handleScroll);
 
     if (window.innerWidth > 700) {
-      setNight(scroll > 130);
+      setNight(scroll > 80);
     }
 
-    if (scroll > 90) {
+    if (scroll>70) {
+      // console.log(scroll*window.innerWidth/500, window.innerWidth/2.5)
       setNight(true);
+    } else {
+      setNight(false);
+    }
+
+    if(night){
+      document.getElementById(`${styles.moon}`).style.transform = `translateY(-${scroll/7 }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "none";
       document.getElementById(`${styles.moon}`).style.display = "flex";
       document.getElementById(`${styles.foreground}`).style.animation = "none";
@@ -53,19 +58,21 @@ const Hero = () => {
       document.getElementById(`${styles.comingSoon}`).style.animation = "none";
       document.getElementById(`${styles.comingSoon}`).style.display = "block";
       document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
-    } else {
-      setNight(false);
+
+    }else{
+      document.getElementById(`${styles.sun}`).style.transform = `translateY(${scroll/10 }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "flex";
       document.getElementById(`${styles.moon}`).style.display = "none";
       document.getElementById(
         `${styles.foreground}`
-      ).style.transform = `scale(1.25)`;
+      ).style.transform = `scale(1.25) `;
       document.getElementById(
         `${styles.hills}`
       ).style.transform = `scale(1.5)`;
       document.getElementById(
         `${styles.background}`
       ).style.transform = `scale(0.8)`;
+
     }
 
     return () => {
