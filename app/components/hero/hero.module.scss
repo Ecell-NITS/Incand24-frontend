@@ -38,27 +38,21 @@
     left: 0;
     bottom: 0;
     height: 50vh;
-    width: 120vw;
+    width: 110vw;
     z-index: 99;
     display: flex;
-    align-items: end;
+    // align-items: end;
     animation: foregroundMagnify 3s ease-in-out forwards;
     animation-delay: 1.6s;
 
-    @media screen and (max-width: 1980px) {
-      transform: translateY(10%);
-    }
     @media screen and (max-width: 1400px) {
-      transform: translateY(20%) translateX(100px);
-      height: 40vh;
-      width: 120vw;
-    }
-    @media screen and (max-width: 900px) {
-      transform: translateY(0);
+      // transform: translateY(20%) translateX(-200px);
+      height: 50vh;
+      width: 160vw;
     }
 
     @media screen and (max-width: 900px) {
-      height: 30vh;
+      height: 40vh;
       width: 160vw;
     }
 
@@ -112,8 +106,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: hillsmagnify 3s ease-in-out forwards;
-    animation-delay: 1.6s;
+    animation: hillsmagnify 3.8s ease-in-out forwards;
+    animation-delay: 1s;
     svg {
       width: 160%;
       // height: 100%;
