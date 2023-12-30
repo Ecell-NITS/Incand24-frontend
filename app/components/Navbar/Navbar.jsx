@@ -59,7 +59,16 @@ const Navbar = () => {
           </button>
           <div className={styles.nav_menu}>
             {navlink.map(({ name, link }) => (
-              <Link className={styles.nav_items} key={name} href={link}>
+              <Link
+                className={styles.nav_items}
+                key={name}
+                to={link}
+                spy
+                smooth
+                hashSpy
+                offset={50}
+                duration={500}
+              >
                 {name}
                 <Image className={styles.line} src={line} alt="" />
               </Link>

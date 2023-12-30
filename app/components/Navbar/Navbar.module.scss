@@ -90,6 +90,7 @@
     display: flex;
     padding-top: 4vh;
     padding-left: 4vw;
+    background: transparent;
     .menu {
       display: block;
       width: 10vw;
@@ -141,6 +142,7 @@
       flex-direction: column;
       padding-left: 5vw;
       gap: 5vh;
+      cursor: pointer;
       font-family: "Montserrat", sans-serif;
       color: whitesmoke;
       font-size: clamp(5vw, 6vw, 7vw);
