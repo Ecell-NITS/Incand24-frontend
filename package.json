@@ -1,5 +1,5 @@
 {
-  "name": "sih-ui",
+  "name": "incand2024",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "autoprefixer": "10.4.15",
     "axios": "^1.6.0",
     "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.16.16",
     "json-server": "^0.17.3",
     "mongoose": "^7.5.2",
     "next": "13.4.19",

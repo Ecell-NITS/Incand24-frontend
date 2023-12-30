@@ -8,6 +8,7 @@
 }
 .menu_bar {
   position: fixed;
+  z-index: 800000;
   top: 2vh;
   display: flex;
   flex-direction: row;
