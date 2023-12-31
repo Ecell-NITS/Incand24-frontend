@@ -78,6 +78,13 @@ const Navbar = () => {
         <button className={styles.hamburger} onClick={change} label="menu">
           {/* <label></label> */}
           <Image src={navbar ? menuL : menuD} className={styles.menu} alt="" />
+          {/* <div id={styles.logo}>
+            <Image
+              style={{ cursor: "pointer" }}
+              src={navbar ? light : dark}
+              alt=""
+            />
+          </div> */}
         </button>
         <div
           className={
@@ -157,12 +164,9 @@ const Navbar = () => {
             duration={500}
             className={styles.wrapper}
           >
-            <Image
-              style={{ cursor: "pointer" }}
-              src={navbar ? light : dark}
-              className={styles.logo}
-              alt=""
-            />
+            <div className={styles.logo}>
+              <Image style={{ cursor: "pointer" }} src={navbar ? light : dark} alt="" />
+            </div>
             <div
               className={
                 navbar
@@ -170,7 +174,18 @@ const Navbar = () => {
                   : `${styles.light} ${styles.text} ${passion.className}`
               }
             >
-              <p>INCANDESCENCE</p>
+              <Link
+                to="hero"
+                spy
+                smooth
+                hashSpy
+                offset={50}
+                style={{ cursor: "pointer" }}
+                duration={500}
+              >
+                {" "}
+                <p>INCANDESCENCE</p>
+              </Link>
             </div>
           </Link>
 
