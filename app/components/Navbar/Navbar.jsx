@@ -115,14 +115,8 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
+              to="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
               className={styles.nav_items}
-              key="Brochure"
-              to="Brochure"
-              spy
-              smooth
-              hashSpy
-              offset={50}
-              duration={500}
             >
               Brochure
               <Image className={styles.line} src={navbar ? line : lineD} alt="" />
@@ -208,9 +202,14 @@ const Navbar = () => {
                 {name}
               </Link>
             ))}
-            <div className={styles.btn}>
+            <a
+              className={styles.btn}
+              aria-label="Brochure"
+              target="_blank"
+              href="https://drive.google.com/file/d/1j2kuLL4HiETl4qRyuQ4aGFNDaYGi8Al-/view?usp=drivesdk"
+            >
               <Brochure />
-            </div>
+            </a>
           </div>
         </div>
       </nav>
