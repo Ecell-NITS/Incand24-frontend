@@ -90,7 +90,15 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.menu_bar}>
-          <Image src={navbar ? light : dark} className={styles.logo} alt="" />
+          <Link to="hero" spy smooth hashSpy offset={50} duration={500}>
+            <Image
+              style={{ cursor: "pointer" }}
+              src={navbar ? light : dark}
+              className={styles.logo}
+              alt=""
+            />
+          </Link>
+
           <div className={navbar ? styles.grp1 : styles.grp2}>
             {navlink.map(({ name, link }) => (
               <Link

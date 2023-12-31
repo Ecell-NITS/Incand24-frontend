@@ -6,8 +6,8 @@ import ContProvider from "./ContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: " Home",
-  description: "Next JS Template",
+  title: "Incandescence 2024",
+  description: "Incandescence 2024 Official Website",
   manifest: "/manifest.webmanifest",
 };
 
