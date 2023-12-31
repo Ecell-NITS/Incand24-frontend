@@ -15,7 +15,7 @@ const Social = () => {
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
-    if (scrollY > window.innerHeight / 1.5) {
+    if (scrollY > window.innerHeight * 1.5) {
       setSocial(true);
     } else {
       setSocial(false);

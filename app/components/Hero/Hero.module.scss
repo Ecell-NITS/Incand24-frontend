@@ -1,7 +1,19 @@
+.outerWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 200vh;
+  // overflow: hidden;
+  // .scroller{
+  //   margin: -100vh;
+  //   height: 100vh;
+  // }
+}
+
 .wrapper {
   height: 100vh;
   width: 100%;
-  position: relative;
+  position: sticky;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -35,13 +47,13 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 40vw;
-    width: 120vw;
+    height: 33vw;
+    width: 100vw;
     z-index: 50;
     display: flex;
     // align-items: end;
-    animation: foregroundMagnify 3s ease-in-out forwards;
-    animation-delay: 1.6s;
+    animation: foregroundMagnify 4.5s ease-in-out forwards;
+    animation-delay: 0.3s;
 
     @media screen and (max-width: 900px) {
       height: 60vw;
@@ -55,7 +67,7 @@
   }
   .nightForeground {
     animation: nightForeground 1s ease-in-out forwards !important;
-    transform: scale(1.25) translateX(100px) translateY(5px);
+    transform: scale(1.25);
   }
 
   #background {
@@ -65,8 +77,8 @@
     z-index: 9;
     height: 70vw;
     width: 200vw;
-    animation: backgroundshrink 3.2s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: backgroundshrink 4.5s ease-in-out forwards;
+    animation-delay: 0.3s;
 
     @media screen and (max-width: 900px) {
       height: 140vw;
@@ -99,8 +111,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: hillsmagnify 3.8s ease-in-out forwards;
-    animation-delay: 1s;
+    animation: hillsmagnify 4.5s ease-in-out forwards;
+    animation-delay: 0.3s;
     svg {
       width: 100%;
       // height: 100%;
@@ -138,13 +150,13 @@
       margin-bottom: 3rem;
       transform: translateY(60vh);
       animation: animateTocentre 5s ease-in-out forwards;
-      animation-delay: 1.7s;
+      animation-delay: 1s;
     }
 
     #comingSoon {
       transform: translateY(60vh);
       animation: animateTocentre 5s ease-in-out forwards;
-      animation-delay: 1.7s;
+      animation-delay: 1s;
       font-weight: 900;
       font-size: 2vw;
       // font-family: poppins;
@@ -190,14 +202,14 @@
       bottom: 30vw;
     }
     @media screen and (max-width: 900px) {
-      width: 20vw;
-      height: 20vw;
+      width: 17vw;
+      height: 17vw;
       bottom: 50vw;
     }
     @media screen and (max-width: 600px) {
       // width: 25vw;
       // height: 25vw;
-      bottom: 60vw;
+      bottom: 55vw;
     }
   }
   #moon {
@@ -207,25 +219,25 @@
     background-image: url(../../../public/images/moon.svg);
     position: absolute;
     left: 20vw;
-    bottom: 10vw;
+    bottom: 18vw;
     background-repeat: no-repeat;
     background-size: contain;
 
     @media screen and (max-width: 1400px) {
       width: 15vw;
       height: 15vw;
-      bottom: 10vw;
+      bottom: 12vw;
     }
     @media screen and (max-width: 900px) {
-      width: 20vw;
-      height: 20vw;
-      bottom: 20vw;
-      transform: translateY(40%);
+      width: 17.5vw;
+      height: 17.5vw;
+      bottom: 30vw;
+      transform: translateY(30%);
     }
     @media screen and (max-width: 600px) {
-      // width: 25vw;
-      // height: 25vw;
-      bottom: 25vw;
+      width: 20vw;
+      height: 20vw;
+      bottom: 27vw;
     }
   }
 }
@@ -260,10 +272,10 @@
 
 @keyframes foregroundMagnify {
   0% {
-    transform: scale(1) translateX(-100px);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.25) translateX(0px);
+    transform: scale(1.25);
   }
 }
 
@@ -293,21 +305,41 @@
   }
 }
 .night {
-  background-image: linear-gradient(
-    0deg,
-    #4c0067 47%,
-    #56016b 60%,
-    #3b0a53 69%,
-    #11023c 84.26%,
-    #01073e 100%
-  );
-
-  @media screen and (max-width: 900px) {
+  animation: nightbg 1s ease-in-out forwards !important;
+  // backdrop-filter: brightness(0.5) contrast(1) invert(0.1);
+}
+@keyframes nightbg {
+  0% {
+    background-color: #92eae5;
+    background-image: none;
+  }
+  50% {
+    background-color: #11023c;
+  }
+  70% {
+    background-color: #01073e;
     background-image: linear-gradient(
       0deg,
-      #4c0067 10%,
-      #56016b 20%,
-      #3b0a53 30%,
+      #56016b 32%,
+      #3b0a53 40%,
+      #11023c 65.26%,
+      #01073e 100%
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      0deg,
+      #56016b 35%,
+      #3b0a53 50%,
+      #11023c 75.26%,
+      #01073e 100%
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      0deg,
+      #56016b 40%,
+      #380751 67%,
       #11023c 84.26%,
       #01073e 100%
     );
