@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import Brochure from "../Button/Button";
 import styles from "./Navbar.module.scss";
@@ -13,21 +13,22 @@ import line from "../../../public/logos/line.svg";
 import dark from "../../../public/logos/dark.svg";
 import light from "../../../public/logos/light.svg";
 import close from "../../../public/logos/close.svg";
+
 const Navbar = () => {
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const navlink = [
     {
       name: "Home",
-      link: "/",
+      link: "hero",
     },
     {
       name: "About Us",
-      link: "/about",
+      link: "about",
     },
     {
       name: "Sponsors",
-      link: "/sponsors",
+      link: "sponsor",
     },
   ];
   const change = () => {
@@ -58,7 +59,16 @@ const Navbar = () => {
           </button>
           <div className={styles.nav_menu}>
             {navlink.map(({ name, link }) => (
-              <Link className={styles.nav_items} key={name} href={link}>
+              <Link
+                className={styles.nav_items}
+                key={name}
+                to={link}
+                spy
+                smooth
+                hashSpy
+                offset={50}
+                duration={500}
+              >
                 {name}
                 <Image className={styles.line} src={line} alt="" />
               </Link>
@@ -80,13 +90,26 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.menu_bar}>
-          <Image src={navbar ? light : dark} className={styles.logo} alt="" />
+          <Link to="hero" spy smooth hashSpy offset={50} duration={500}>
+            <Image
+              style={{ cursor: "pointer" }}
+              src={navbar ? light : dark}
+              className={styles.logo}
+              alt=""
+            />
+          </Link>
+
           <div className={navbar ? styles.grp1 : styles.grp2}>
             {navlink.map(({ name, link }) => (
               <Link
                 className={navbar ? styles.item1 : styles.item}
                 key={name}
-                href={link}
+                to={link}
+                spy
+                smooth
+                hashSpy
+                offset={50}
+                duration={500}
               >
                 {name}
               </Link>
