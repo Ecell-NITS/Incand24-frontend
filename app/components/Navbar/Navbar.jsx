@@ -1,8 +1,12 @@
 "use client";
 
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Passion_One, Poppins, Montserrat_Alternates } from "next/font/google";
+import {
+  Passion_One as passionOne,
+  Poppins as poppins,
+  Montserrat_Alternates as montserratAlternates,
+} from "next/font/google";
 import Image from "next/image";
 import Brochure from "../Button/Button";
 import styles from "./Navbar.module.scss";
@@ -21,19 +25,19 @@ import light from "../../../public/logos/light.svg";
 import closeL from "../../../public/logos/closeL.svg";
 import closeD from "../../../public/logos/closeD.svg";
 
-const passion = Passion_One({
+const passion = passionOne({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--passion-font",
 });
-const poppins=Poppins({
+const Poppins = poppins({
   weight: ["400"],
   subsets: ["latin"],
 });
-const monteserrat=Montserrat_Alternates({
-  weight:["500"],
+const monteserrat = montserratAlternates({
+  weight: ["500"],
   subsets: ["latin"],
-})
+});
 const Navbar = () => {
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -58,7 +62,7 @@ const Navbar = () => {
       setSelect(!select);
     }
   };
-  useEffect(()=>{
+  useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 110) {
         setNavbar(true);
@@ -67,20 +71,34 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", changeColor);
-
-  },[]);
+  }, []);
   return (
     <div>
       <nav>
         <button className={styles.hamburger} onClick={change} label="menu">
           {/* <label></label> */}
-          <Image src={navbar? menuL:menuD} className={styles.menu} alt="" />
+          <Image src={navbar ? menuL : menuD} className={styles.menu} alt="" />
         </button>
-        <div className={select ? `${styles.show} ${styles.active} ${monteserrat.className}` : `${styles.show} ${monteserrat.className}`}>
+        <div
+          className={
+            select
+              ? `${styles.show} ${styles.active} ${monteserrat.className}`
+              : `${styles.show} ${monteserrat.className}`
+          }
+        >
           <button label="close" className={styles.close}>
-            <Image src={!navbar?closeD:closeL} alt="" className={styles.cross} onClick={change} />
+            <Image
+              src={!navbar ? closeD : closeL}
+              alt=""
+              className={styles.cross}
+              onClick={change}
+            />
           </button>
-          <div className={!navbar? `${styles.nav_menu} ${styles.nav_dark}`:`${styles.nav_menu}`}>
+          <div
+            className={
+              !navbar ? `${styles.nav_menu} ${styles.nav_dark}` : `${styles.nav_menu}`
+            }
+          >
             {navlink.map(({ name, link }) => (
               <Link
                 className={styles.nav_items}
@@ -93,38 +111,65 @@ const Navbar = () => {
                 duration={500}
               >
                 {name}
-                <Image className={styles.line} src={navbar?line:lineD} alt="" />
+                <Image className={styles.line} src={navbar ? line : lineD} alt="" />
               </Link>
             ))}
-            <Link className={styles.nav_items} key='Brochure' to ="Brochure" spy smooth hashSpy offset={50} duration={500}>
+            <Link
+              className={styles.nav_items}
+              key="Brochure"
+              to="Brochure"
+              spy
+              smooth
+              hashSpy
+              offset={50}
+              duration={500}
+            >
               Brochure
-              <Image className={styles.line} src={navbar?line:lineD} alt="" />
+              <Image className={styles.line} src={navbar ? line : lineD} alt="" />
             </Link>
           </div>
           <div className={`${styles.footer} ${monteserrat.className}`}>
-            <span className={!navbar?`${styles.follow} ${styles.followD}`:styles.follow}>Follow Us</span>
+            <span
+              className={!navbar ? `${styles.follow} ${styles.followD}` : styles.follow}
+            >
+              Follow Us
+            </span>
             <div className={styles.social}>
               <Link className={styles.link} href="/about">
-                <Image src={navbar? insta:instaD} alt=""></Image>
+                <Image src={navbar ? insta : instaD} alt=""></Image>
               </Link>
               <Link className={styles.link} href="/">
-                <Image src={navbar? fb:fbD} alt=""></Image>
+                <Image src={navbar ? fb : fbD} alt=""></Image>
               </Link>
               <Link className={styles.link} href="/">
-                <Image src={!navbar?linkD:linkedIn} alt="" />
+                <Image src={!navbar ? linkD : linkedIn} alt="" />
               </Link>
             </div>
           </div>
         </div>
         <div className={styles.menu_bar}>
-          <Link to="hero" spy smooth hashSpy offset={50} duration={500} className={styles.wrapper}>
+          <Link
+            to="hero"
+            spy
+            smooth
+            hashSpy
+            offset={50}
+            duration={500}
+            className={styles.wrapper}
+          >
             <Image
               style={{ cursor: "pointer" }}
               src={navbar ? light : dark}
               className={styles.logo}
               alt=""
             />
-            <div className={navbar?`${styles.dark} ${styles.text} ${passion.className}`: `${styles.light} ${styles.text} ${passion.className}`}>
+            <div
+              className={
+                navbar
+                  ? `${styles.dark} ${styles.text} ${passion.className}`
+                  : `${styles.light} ${styles.text} ${passion.className}`
+              }
+            >
               <p>INCANDESCENCE</p>
             </div>
           </Link>
@@ -132,7 +177,11 @@ const Navbar = () => {
           <div className={navbar ? styles.grp1 : styles.grp2}>
             {navlink.map(({ name, link }) => (
               <Link
-                className={navbar ? `${styles.item1} ${poppins.className}` : `${poppins.className} ${styles.item}`}
+                className={
+                  navbar
+                    ? `${styles.item1} ${Poppins.className}`
+                    : `${Poppins.className} ${styles.item}`
+                }
                 key={name}
                 to={link}
                 spy
