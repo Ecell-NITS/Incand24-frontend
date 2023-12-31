@@ -16,114 +16,153 @@ const Sponsor = () => {
           <Image
             src="/sponsors/Amul.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={140}
+            width={285}
+            className
+            alt=""
+          />
+          <Image
+            src="/sponsors/Bauli.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
-          <Image
-            src="/sponsors/Noticebar.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-          <Image
-            src="/sponsors/Gplus.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-          <Image
-            src="/sponsors/nai.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-
+        </div>
+        <div className={styles.slide1}>
           <Image
             src="/sponsors/Amul.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={140}
+            width={285}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Bauli.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
+            alt=""
+          />
+        </div>
+        <div className={styles.slide1}>
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={140}
+            width={285}
             alt=""
           />
           <Image
-            src="/sponsors/Noticebar.png"
+            src="/sponsors/Bauli.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
         </div>
@@ -136,114 +175,152 @@ const Sponsor = () => {
           <Image
             src="/sponsors/Amul.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={140}
+            width={285}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Bauli.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
-          <Image
-            src="/sponsors/Noticebar.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-          <Image
-            src="/sponsors/Gplus.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-          <Image
-            src="/sponsors/nai.png"
-            style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
-            alt=""
-          />
-
+        </div>
+        <div className={styles.slide2}>
           <Image
             src="/sponsors/Amul.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={140}
+            width={285}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Bauli.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
+            alt=""
+          />
+        </div>
+        <div className={styles.slide2}>
+          <Image
+            src="/sponsors/Amul.png"
+            style={{ padding: "0 1.5rem" }}
+            height={140}
+            width={285}
             alt=""
           />
           <Image
-            src="/sponsors/Noticebar.png"
+            src="/sponsors/Bauli.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/Clovia.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/coca-cola.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
+            alt=""
+          />
+          <Image
+            src="/sponsors/cry.png"
+            style={{ padding: "0 1.5rem" }}
+            height={150}
+            width={250}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
+            height={150}
+            width={250}
             alt=""
-            layout="responsive"
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={50}
-            width={150}
-            layout="responsive"
+            height={150}
+            width={250}
             alt=""
           />
         </div>
