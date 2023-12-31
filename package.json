@@ -12,6 +12,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@next/font": "^14.0.4",
     "autoprefixer": "10.4.15",
     "axios": "^1.6.0",
     "eslint-config-next": "13.4.19",
