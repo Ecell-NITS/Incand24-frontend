@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./About.module.scss";
 
 export const metadata = {
-  title: " About",
+  title: "About",
   description: "About",
 };
 

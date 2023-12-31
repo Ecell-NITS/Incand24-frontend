@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato&family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Merienda&display=swap");
 
 .body {
   min-height: 100vh;
@@ -30,7 +30,8 @@
 }
 
 .heading {
-  font-family: allura;
+  font-family: "Allura", cursive;
+  // font-family: "Merienda", cursive;
   font-size: min(40px, 8vw);
   letter-spacing: 2px;
   font-weight: bold;
@@ -164,5 +165,17 @@
   }
   100% {
     transform: rotateZ(-5deg);
+  }
+}
+
+@media (max-width: 660px) {
+  .heading {
+    margin-bottom: 5vw;
+    font-size: 10vw !important;
+  }
+
+  .content {
+    line-height: 1.6 !important;
+    font-size: 4vw !important;
   }
 }
