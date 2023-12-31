@@ -135,15 +135,30 @@ const Navbar = () => {
               Follow Us
             </span>
             <div className={styles.social}>
-              <Link className={styles.link} href="/about">
+              <a
+                className={styles.link}
+                aria-label="Insta"
+                target="_blank"
+                href="https://www.instagram.com/incandescence.nitsilchar"
+              >
                 <Image src={navbar ? insta : instaD} alt=""></Image>
-              </Link>
-              <Link className={styles.link} href="/">
+              </a>
+              <a
+                className={styles.link}
+                aria-label="Facebook"
+                target="_blank"
+                href="https://www.facebook.com/incandescence.nits/"
+              >
                 <Image src={navbar ? fb : fbD} alt=""></Image>
-              </Link>
-              <Link className={styles.link} href="/">
+              </a>
+              <a
+                className={styles.link}
+                aria-label="LinkedIn"
+                target="_blank"
+                href="https://www.linkedin.com/company/incandescence23/"
+              >
                 <Image src={!navbar ? linkD : linkedIn} alt="" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
