@@ -83,7 +83,7 @@ const Hero = () => {
 
   return (
     <div className={styles.outerWrapper}>
-      <div className={`${styles.wrapper} ${night ? styles.night : ""}`}>
+      <div id="hero" className={`${styles.wrapper} ${night ? styles.night : ""}`}>
         <div id={styles.sun}></div>
         <div id={styles.moon}></div>
         <motion.div
