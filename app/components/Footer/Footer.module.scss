@@ -14,9 +14,8 @@
   position: relative;
 }
 
-.bglogo {
+.bglogo img {
   position: absolute;
-  z-index: 1;
   left: 43vw;
 
   svg {
@@ -192,13 +191,16 @@
       }
     }
   }
+  .media_sec .text {
+    padding-top: 2rem;
+  }
 
-  .bglogo {
+  .dark_logo {
     position: static;
-
-    svg {
-      width: min(30vw, 80px);
-      height: fit-content;
-    }
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  .follow_txt {
+    padding-top: 4rem;
   }
 }
