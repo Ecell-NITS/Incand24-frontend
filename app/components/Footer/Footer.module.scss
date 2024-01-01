@@ -32,17 +32,9 @@
   .brochure {
     width: 30%;
     text-align: center;
-
-    button {
-      background: none;
-      border: none;
-      outline: none;
-      // font-family: Montserrat;
-      font-family: Montserrat Alternates;
-      font-size: 30px;
-      font-weight: 600;
-      cursor: pointer;
-    }
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 8rem;
   }
 
   .contact {
@@ -138,14 +130,6 @@
       padding: 10px;
       box-sizing: border-box;
 
-      $border: 5px;
-      background: #3ec5a4;
-      background-clip: padding-box;
-      /* !important */
-      border: solid $border transparent;
-      /* !important */
-      border-radius: 55px;
-
       &:before {
         content: "";
         position: absolute;
@@ -154,11 +138,6 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        margin: -$border;
-        /* !important */
-        border-radius: inherit;
-        /* !important */
-        background: linear-gradient(to right, #073548, rgb(239, 249, 192));
       }
     }
 

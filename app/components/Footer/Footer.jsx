@@ -1,10 +1,9 @@
-// Footer Sec by Suraj Verma
-
 import React from "react";
 // import Link from "next/link";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import styles from "./Footer.module.scss";
+import Brochure from "../Button/Button";
 
 export const metadata = {
   title: "Footer",
@@ -22,7 +21,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
         >
-          <button>BROCHURE</button>
+          <Brochure />
         </a>
         <div className={styles.contact}>
           <div className={styles.text}>CONTACT US</div>
