@@ -121,13 +121,20 @@ const Navbar = () => {
                 <Image className={styles.line} src={navbar ? line : lineD} alt="" />
               </Link>
             ))}
-            <Link
-              to="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
-              className={styles.nav_items}
+            <a
+              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+              className={
+                !navbar
+                  ? `${styles.nav_items} ${styles.nav_dark}`
+                  : `${styles.nav_items_a}`
+              }
+              target="_blank"
+              aria-label="Brochure"
+              rel="noopener noreferrer"
             >
-              Brochure
+              <div>Brochure</div>
               <Image className={styles.line} src={navbar ? line : lineD} alt="" />
-            </Link>
+            </a>
           </div>
           <div className={`${styles.footer} ${monteserrat.className}`}>
             <span
@@ -140,6 +147,7 @@ const Navbar = () => {
                 className={styles.link}
                 aria-label="Insta"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/incandescence.nitsilchar"
               >
                 <Image src={navbar ? insta : instaD} alt=""></Image>
@@ -148,6 +156,7 @@ const Navbar = () => {
                 className={styles.link}
                 aria-label="Facebook"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.facebook.com/incandescence.nits/"
               >
                 <Image src={navbar ? fb : fbD} alt=""></Image>
@@ -156,6 +165,7 @@ const Navbar = () => {
                 className={styles.link}
                 aria-label="LinkedIn"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/company/incandescence23/"
               >
                 <Image src={!navbar ? linkD : linkedIn} alt="" />
@@ -221,6 +231,7 @@ const Navbar = () => {
               className={styles.btn}
               aria-label="Brochure"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1j2kuLL4HiETl4qRyuQ4aGFNDaYGi8Al-/view?usp=drivesdk"
             >
               <Brochure />

@@ -226,6 +226,13 @@
     .nav_dark {
       color: #083649;
     }
+    .nav_items_a {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      text-decoration: none;
+      color: whitesmoke;
+    }
   }
   .show.active {
     left: 0;

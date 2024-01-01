@@ -17,6 +17,7 @@ const Footer = () => {
           className={styles.brochure}
           aria-label="Brochure"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
         >
           <button>BROCHURE</button>
