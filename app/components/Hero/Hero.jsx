@@ -66,6 +66,9 @@ const Hero = () => {
       document.getElementById(`${styles.comingSoon}`).style.animation = "none";
       document.getElementById(`${styles.comingSoon}`).style.display = "block";
       document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
+      document.getElementsByClassName(styles.dark)[0].style.transform = "translateY(0)";
+      document.getElementsByClassName(styles.light)[0].style.transform =
+        "translateY(-100%)";
     } else {
       document.getElementById(`${styles.sun}`).style.transform = `translateY(${
         scroll / 10
@@ -75,6 +78,9 @@ const Hero = () => {
       document.getElementById(`${styles.foreground}`).style.transform = `scale(1.25) `;
       document.getElementById(`${styles.hills}`).style.transform = `scale(1.5)`;
       document.getElementById(`${styles.background}`).style.transform = `scale(0.8)`;
+      document.getElementsByClassName(styles.light)[0].style.transform = "translateY(0)";
+      document.getElementsByClassName(styles.dark)[0].style.transform =
+        "translateY(100%)";
     }
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -219,15 +225,30 @@ const Hero = () => {
         <div className={`${styles.textWrapper} `}>
           <h1
             id={styles.heading}
-            className={` ${passion.className} ${night ? styles.nightText : ""}`}
+            className={` ${passion.className} ${night ? styles.nightLogo : ""}`}
           >
-            INCANDESCENCE‘24{" "}
+            <Image
+              className={styles.light}
+              src="/images/Logo.png"
+              alt="logo"
+              fill
+              sizes="!00%"
+            />
+            <Image
+              className={styles.dark}
+              src="/images/LogoDark.png"
+              alt="logo"
+              fill
+              sizes="auto"
+            />
           </h1>
           <h4
             id={styles.comingSoon}
             className={` ${poppins.className} ${night ? styles.nightText : ""}`}
           >
-            COMING SOON...
+            coming soon<span className={styles.dot1}>.</span>
+            <span className={styles.dot2}>.</span>
+            <span className={styles.dot3}>.</span>
           </h4>
         </div>
       </div>
