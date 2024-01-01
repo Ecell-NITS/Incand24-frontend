@@ -228,7 +228,6 @@ const Hero = () => {
             className={` ${passion.className} ${night ? styles.nightLogo : ""}`}
           >
             <Image
-            style={{zIndex: 4}}
               className={styles.light}
               src="/images/Logo.png"
               alt="logo"
@@ -236,7 +235,6 @@ const Hero = () => {
               sizes="!00%"
             />
             <Image
-      
               className={styles.dark}
               src="/images/LogoDark.png"
               alt="logo"
