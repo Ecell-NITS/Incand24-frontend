@@ -48,7 +48,7 @@
   }
 }
 .text h2 {
-  font-size: 3rem;
+  font-size: 3.5vw;
   padding: 3.5rem 0;
 }
 @media screen and (max-width: 720px) {
@@ -127,5 +127,11 @@
   }
   .slide2 {
     height: 4rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .text h2 {
+    font-size: 11vw;
   }
 }
