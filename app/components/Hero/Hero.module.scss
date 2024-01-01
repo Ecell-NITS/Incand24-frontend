@@ -145,29 +145,78 @@
     color: #09394a;
 
     #heading {
-      font-size: 6vw;
-      letter-spacing: 2px;
-      margin-bottom: 3rem;
+      width: 30vw;
+      height: 15vw;
+      position: relative;
       transform: translateY(60vh);
       animation: animateTocentre 5s ease-in-out forwards;
       animation-delay: 1s;
+      overflow: hidden;
+      object-fit: contain;
+      @media screen and (max-width: 900px) {
+        width: 40vw;
+        height: 20vw;
+      }
+      @media screen and (max-width: 600px) {
+        width: 60vw;
+        height: 30vw;
+      }
+      .dark {
+        transform: translateY(100%);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: all 1s ease-in-out;
+      }
+
+      &:hover {
+        .light {
+          transform: translateY(-100%);
+        }
+        .dark {
+          transform: translateY(0%);
+        }
+      }
     }
 
     #comingSoon {
       transform: translateY(60vh);
       animation: animateTocentre 5s ease-in-out forwards;
       animation-delay: 1s;
-      font-weight: 900;
-      font-size: 2vw;
+      font-weight: 400;
+      font-size: 4vw;
+      bottom: 20%;
       // font-family: poppins;
+
+      span {
+        display: inline-block;
+        animation: dotAnimation 2s ease-in-out infinite;
+        // animation-delay: 5s;
+      }
+      .dot2 {
+        animation-delay: 0.5s;
+      }
+      .dot3 {
+        animation-delay: 1s;
+      }
+      @keyframes dotAnimation {
+        0% {
+          transform: translateY(0%);
+        }
+        50% {
+          transform: translateY(-15%);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }
     }
     @media screen and (max-width: 600px) {
-      #heading {
-        font-size: 10vw;
-        margin-bottom: 1.5rem;
-      }
       #comingSoon {
-        font-size: 5vw;
+        font-size: 8vw;
       }
       top: 50%;
     }
