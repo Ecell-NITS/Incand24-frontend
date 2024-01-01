@@ -212,7 +212,7 @@ const Navbar = () => {
               aria-label="Brochure"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1j2kuLL4HiETl4qRyuQ4aGFNDaYGi8Al-/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
             >
               <Brochure />
             </a>

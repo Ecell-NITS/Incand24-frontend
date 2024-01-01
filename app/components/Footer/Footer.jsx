@@ -3,6 +3,7 @@
 import React from "react";
 // import Link from "next/link";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import styles from "./Footer.module.scss";
 
 export const metadata = {
@@ -29,13 +30,15 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bglogo}>
-        <Image
-          className={styles.dark_logo}
-          src="/images/dark_svglogo.svg"
-          alt="foot_logo"
-          fill
-          sizes="auto"
-        />
+        <Link to="hero" spy smooth hashSpy offset={10} duration={500}>
+          <Image
+            className={styles.dark_logo}
+            src="/images/dark_svglogo.svg"
+            alt="foot_logo"
+            fill
+            sizes="auto"
+          />
+        </Link>
       </div>
       <div className={styles.bottom}>
         <div className={styles.media_sec}>
