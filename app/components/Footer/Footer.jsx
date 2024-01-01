@@ -13,9 +13,14 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.top}>
-        <div className={styles.brochure}>
+        <a
+          className={styles.brochure}
+          aria-label="Brochure"
+          target="_blank"
+          href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+        >
           <button>BROCHURE</button>
-        </div>
+        </a>
         <div className={styles.contact}>
           <div className={styles.text}>CONTACT US</div>
           <a href="mailto:incandescence@nits.ac.in">incandescence@nits.ac.in</a>
