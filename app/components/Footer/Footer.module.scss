@@ -17,10 +17,7 @@
 .bglogo img {
   position: absolute;
   left: 43vw;
-
-  svg {
-    width: 10vw;
-  }
+  cursor: pointer;
 }
 
 .top {
@@ -178,6 +175,7 @@
     position: static;
     padding-top: 3rem;
     padding-bottom: 4rem;
+    cursor: pointer;
   }
   .follow_txt {
     padding-top: 4rem;
