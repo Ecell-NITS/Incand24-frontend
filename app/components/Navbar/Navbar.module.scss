@@ -4,6 +4,13 @@
 .show {
   display: none;
 }
+.grp1 a {
+  text-decoration: none;
+}
+.grp2 a {
+  text-decoration: none;
+}
+
 .menu_bar {
   position: fixed;
   z-index: 800000;
@@ -61,7 +68,7 @@
     }
     .item {
       display: inline-flex;
-      padding: 20px 30px;
+      padding: 0.87vw 30px;
       justify-content: center;
       align-items: center;
       gap: 10px;
@@ -72,7 +79,7 @@
       border: 3px solid transparent;
       border-radius: 3rem;
       transition: all 0.25s ease-in-out;
-      font-weight: 400;
+      font-weight: 500;
     }
   }
 
@@ -88,7 +95,7 @@
     .item1 {
       cursor: pointer;
       display: inline-flex;
-      padding: 20px 30px;
+      padding: 0.87vw 30px;
       justify-content: center;
       align-items: center;
       margin-left: 0.25vw;
@@ -97,7 +104,7 @@
       color: white;
       text-decoration: none;
       border: 3px solid transparent;
-      font-weight: 400;
+      font-weight: 500;
       border-radius: 3rem;
       transition: all 0.25s ease-in-out;
     }
@@ -213,6 +220,7 @@
         display: flex;
         flex-direction: column;
         gap: 2vh;
+        text-decoration: none;
       }
     }
     .nav_dark {
