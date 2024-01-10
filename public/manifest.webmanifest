@@ -1,12 +1,12 @@
 {
-  "theme_color": "#f69435",
-  "background_color": "#f69435",
+  "theme_color": "#062f46",
+  "background_color": "#062f46",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "SIH-UI",
-  "short_name": "SIH-UI",
-  "description": "SIH-UI",
+  "name": "Incandescence 2024",
+  "short_name": "Incandescence 2024",
+  "description": "Incandescence, the cultural fest of NIT Silchar, is one of the most hyped and happening fest in the entire North East. The land of NITS witnesses some of the most famous artists of the nation, while the air of the place is filled with excitement, exhilaration and enthusiasm.",
   "icons": [
     {
       "src": "/icon-192x192.png",
