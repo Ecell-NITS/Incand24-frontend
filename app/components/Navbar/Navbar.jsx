@@ -33,7 +33,7 @@ const poppins=Poppins({
 const monteserrat=Montserrat_Alternates({
   weight:["500"],
   subsets: ["latin"],
-})
+});
 const Navbar = () => {
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
