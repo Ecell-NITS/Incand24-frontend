@@ -108,6 +108,7 @@ const Navbar = () => {
           >
             {navlink.map(({ name, link }) => (
               <Link
+                onClick={change}
                 className={styles.nav_items}
                 key={name}
                 to={link}
@@ -212,7 +213,7 @@ const Navbar = () => {
               aria-label="Brochure"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
             >
               <Brochure />
             </a>

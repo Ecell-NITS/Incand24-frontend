@@ -26,12 +26,13 @@ const About = () => {
       <div className={styles.about_us}>
         <div className={`${styles.heading} ${Allura.className}`}>About Us</div>
         <div className={`${styles.content} ${Poppins.className}`}>
-          Incandescence, the cultural fest of NIT Silchar, is one of the most hyped and
-          happening fest in the entire North East. The land of NITS witnesses some of the
-          most famous artists of the nation, while the air of the place is filled with
-          excitement, exhilaration and enthusiasm. This year, Incandescence promises to
-          &apos;Break Free&apos; and take you quite a journey so stay tuned for
-          what&apos;s coming!
+          Indulge in the electrifying extravaganza of Incandescence, the cultural
+          spectacle that transforms NIT Silchar into a pulsating hub of creativity. Across
+          three unforgettable days, the vibrant energy of this fest radiates as renowned
+          national artists grace the NITS stage, infusing the atmosphere with an unmatched
+          blend of excitement, exhilaration, and boundless enthusiasm. Join the
+          celebration that transcends boundaries and ignites the spirit of cultural
+          brilliance!
         </div>
       </div>
       <div className={styles.outterMandala}>

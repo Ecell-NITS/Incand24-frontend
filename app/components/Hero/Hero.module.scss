@@ -162,7 +162,11 @@
         height: 30vw;
       }
       .dark {
-        transform: translateY(100%);
+        // transform: translateY(100%);
+        opacity: 0;
+      }
+      .light {
+        // filter: invert(1);
       }
 
       img {
