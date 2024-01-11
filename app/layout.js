@@ -20,6 +20,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   const [loading, setLoading] = useState(true);
   
+
   useEffect(() => {
     const handleLoad = () => {
       setLoading(false);
@@ -39,21 +40,19 @@ const RootLayout = ({ children }) => {
       document.removeEventListener('readystatechange', handleLoad);
     };
   }, []);
+
   
 
   return (
+    
     <html lang="en">
       <body className={inter.className}>
-        {
-        loading? (<Loading/>):(
         <ContProvider>
           <QueryProvider>
             {/* <Social /> */}
-            {children}
+            {loading? <Loading/>:children}
           </QueryProvider>
         </ContProvider>
-          )
-        }
       </body>
     </html>
   );

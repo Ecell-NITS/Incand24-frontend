@@ -4,7 +4,7 @@
 
 import Lottie from 'lottie-react';
 import styles from './Loader.module.scss'
-import animationData from '../../../public/loader.lottie.json';
+import animationData from '../../../public/loader.lottie';
 
 const LottieAnimation = () => {
   return (
