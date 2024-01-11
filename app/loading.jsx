@@ -1,7 +1,11 @@
 import React from "react";
-
-const loading = () => {
-  return <div>loading...</div>;
+import LottieAnimation from "./components/Loader/Loader";
+const Loading = () => {
+  return (
+    <div>
+      <LottieAnimation/>  
+    </div>
+  )
 };
 
-export default loading;
+export default Loading;
