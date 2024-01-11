@@ -21,7 +21,7 @@ import linkD from "../../../public/logos/linkedinD.svg";
 import line from "../../../public/logos/line.svg";
 import lineD from "../../../public/logos/lineD.svg";
 import dark from "../../../public/images/light_nav.svg";
-import light from "../../../public/images/dark_nav.svg";
+import light from "../../../public/images/light_nav_ss.svg";
 import closeL from "../../../public/logos/closeL.svg";
 import closeD from "../../../public/logos/closeD.svg";
 
