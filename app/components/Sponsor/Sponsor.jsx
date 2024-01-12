@@ -23,43 +23,43 @@ const Sponsor = () => {
           <Image
             src="/sponsors/Bauli.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
-            src="/sponsors/Clovia.png"
+            src="/sponsors/cloviaaa.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/coca-cola.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
@@ -70,24 +70,24 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/quick.jpg"
+            src="/sponsors/quickheal.png"
             style={{ padding: "0 1.5rem" }}
-            height={62}
-            width={171}
+            height={140}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/unstop.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={132}
-            width={200}
+            height={125}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/cubelelo.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={126}
+            width={198}
             alt=""
           />
           <Image
@@ -100,8 +100,8 @@ const Sponsor = () => {
           <Image
             src="/sponsors/elm.png"
             style={{ padding: "0 1.5rem" }}
-            height={113}
-            width={179}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
@@ -114,15 +114,15 @@ const Sponsor = () => {
           <Image
             src="/sponsors/janta.png"
             style={{ padding: "0 1.5rem" }}
-            height={127}
-            width={175}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/learnwt.avif"
             style={{ padding: "0 1.5rem" }}
-            height={116}
-            width={177}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
@@ -154,10 +154,10 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/grabon.png"
+            src="/sponsors/grabonn.png"
             style={{ padding: "0 1.5rem" }}
-            height={55}
-            width={196}
+            height={120}
+            width={180}
             alt=""
           />
           <Image
@@ -186,43 +186,43 @@ const Sponsor = () => {
           <Image
             src="/sponsors/Bauli.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
-            src="/sponsors/Clovia.png"
+            src="/sponsors/cloviaaa.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/coca-cola.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/cry.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/Gplus.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
             src="/sponsors/nai.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={120}
+            width={212}
             alt=""
           />
           <Image
@@ -233,24 +233,24 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/quick.jpg"
+            src="/sponsors/quickheal.png"
             style={{ padding: "0 1.5rem" }}
-            height={62}
-            width={171}
+            height={140}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/unstop.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={132}
-            width={200}
+            height={125}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/cubelelo.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={126}
+            width={198}
             alt=""
           />
           <Image
@@ -263,8 +263,8 @@ const Sponsor = () => {
           <Image
             src="/sponsors/elm.png"
             style={{ padding: "0 1.5rem" }}
-            height={113}
-            width={179}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
@@ -277,15 +277,15 @@ const Sponsor = () => {
           <Image
             src="/sponsors/janta.png"
             style={{ padding: "0 1.5rem" }}
-            height={127}
-            width={175}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
             src="/sponsors/learnwt.avif"
             style={{ padding: "0 1.5rem" }}
-            height={116}
-            width={177}
+            height={120}
+            width={191}
             alt=""
           />
           <Image
@@ -317,10 +317,10 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/grabon.png"
+            src="/sponsors/grabonn.png"
             style={{ padding: "0 1.5rem" }}
-            height={55}
-            width={196}
+            height={120}
+            width={180}
             alt=""
           />
           <Image
@@ -396,15 +396,16 @@ const Sponsor = () => {
           <Image
             src="/sponsors/red.png"
             style={{ padding: "0 1.5rem" }}
-            height={129}
-            width={140}
+            height={128}
+            width={151}
             alt=""
+            className="red"
           />
           <Image
-            src="/sponsors/festo.png"
+            src="/sponsors/festoo.png"
             style={{ padding: "0 1.5rem" }}
-            height={130}
-            width={220}
+            height={121}
+            width={193}
             alt=""
           />
           <Image
@@ -415,38 +416,38 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/tribe.png"
+            src="/sponsors/tvibe.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={64}
-            width={180}
+            height={122}
+            width={186}
             alt=""
           />
           <Image
             src="/sponsors/north.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={122}
+            width={186}
             alt=""
           />
           <Image
             src="/sponsors/du.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
             src="/sponsors/zebronics.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
             src="/sponsors/wiley.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
@@ -532,15 +533,16 @@ const Sponsor = () => {
           <Image
             src="/sponsors/red.png"
             style={{ padding: "0 1.5rem" }}
-            height={129}
-            width={140}
+            height={128}
+            width={151}
             alt=""
+            className="red"
           />
           <Image
-            src="/sponsors/festo.png"
+            src="/sponsors/festoo.png"
             style={{ padding: "0 1.5rem" }}
-            height={130}
-            width={220}
+            height={121}
+            width={193}
             alt=""
           />
           <Image
@@ -551,38 +553,39 @@ const Sponsor = () => {
             alt=""
           />
           <Image
-            src="/sponsors/tribe.png"
+            src="/sponsors/tvibe.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={64}
-            width={180}
+            height={122}
+            width={186}
             alt=""
+            className="tvibe"
           />
           <Image
             src="/sponsors/north.jpg"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={250}
+            height={122}
+            width={186}
             alt=""
           />
           <Image
             src="/sponsors/du.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
             src="/sponsors/zebronics.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
             src="/sponsors/wiley.png"
             style={{ padding: "0 1.5rem" }}
-            height={150}
-            width={230}
+            height={127}
+            width={201}
             alt=""
           />
           <Image
