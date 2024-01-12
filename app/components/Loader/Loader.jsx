@@ -1,19 +1,14 @@
-// import React from 'react';
+"use client";
 
-"use client"
-
-import Lottie from 'lottie-react';
-import styles from './Loader.module.scss'
-import animationData from '../../../public/loader.lottie';
+import React from "react";
+import Lottie from "lottie-react";
+import styles from "./Loader.module.scss";
+import animationData from "../../../public/loader.lottie";
 
 const LottieAnimation = () => {
   return (
     <div className={styles.container}>
-      <Lottie
-        animationData={animationData}
-        loop
-        autoplay
-      />
+      <Lottie animationData={animationData} loop autoplay />
     </div>
   );
 };
