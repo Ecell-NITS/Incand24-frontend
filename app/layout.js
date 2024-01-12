@@ -18,10 +18,7 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body className={inter.className}>
         <ContProvider>
-          <QueryProvider>
-            {/* <Social /> */}
-            {children}
-          </QueryProvider>
+          <QueryProvider>{children}</QueryProvider>
         </ContProvider>
       </body>
     </html>
