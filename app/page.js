@@ -45,7 +45,7 @@ const Home = () => {
     <div style={loaderStyle}>
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
         <Lottie animationData={animationData} loop autoplay />
-        <p>loading...</p>
+        {/* <p>loading...</p> */}
       </div>
       <main className={styles.home}>
         <Navbar />
