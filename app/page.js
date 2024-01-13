@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
 import About from "./components/about/About";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 // import LoaderAnimation from "./components/Loader/Loader";
-import animationData from "../public/loader.lottie";
+// import animationData from "../public/loader.lottie";
 
 // import LottieAnimation from "./components/Loader/Loader";
 
@@ -44,12 +44,12 @@ const Home = () => {
   return (
     <div style={loaderStyle}>
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
-        <Lottie animationData={animationData} loop autoplay />
-        {/* <p>loading...</p> */}
+        {/* <Lottie animationData={animationData} loop autoplay /> */}
+        <p>Diving into the dreams... Are you Ready?</p>
       </div>
       <main className={styles.home}>
         <Navbar />
-        <Hero />
+        <Hero loading={loading} />
         <About />
         <Sponsor />
         <Footer />

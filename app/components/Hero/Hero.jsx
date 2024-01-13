@@ -22,7 +22,7 @@ const poppins = Allura({
   subsets: ["latin"],
   variable: "--allura-font",
 });
-const Hero = () => {
+const Hero = ({ loading }) => {
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
 
@@ -51,33 +51,50 @@ const Hero = () => {
       setNight(scroll > 110);
     }
 
-    if (night) {
+    if (night && !loading) {
       document.getElementById(`${styles.moon}`).style.transform = `translateY(-${
         scroll / 15
       }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "none";
       document.getElementById(`${styles.moon}`).style.display = "flex";
-      document.getElementById(`${styles.foreground}`).style.animation = "none";
-      document.getElementById(`${styles.background}`).style.animation = "none";
-      document.getElementById(`${styles.hills}`).style.animation = "none";
-      document.getElementById(`${styles.heading}`).style.animation = "none";
-      document.getElementById(`${styles.heading}`).style.display = "block";
-      document.getElementById(`${styles.heading}`).style.transform = "translateY(0)";
-      document.getElementById(`${styles.comingSoon}`).style.animation = "none";
-      document.getElementById(`${styles.comingSoon}`).style.display = "block";
-      document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
+      if (document.getElementById(`${styles.foreground}`)) {
+        document.getElementById(`${styles.foreground}`).style.animation = "none";
+      }
+      if (document.getElementById(`${styles.background}`)) {
+        document.getElementById(`${styles.background}`).style.animation = "none";
+      }
+      if (document.getElementById(`${styles.hills}`)) {
+        document.getElementById(`${styles.hills}`).style.animation = "none";
+      }
+      if (document.getElementById(`${styles.heading}`)) {
+        document.getElementById(`${styles.heading}`).style.animation = "none";
+        document.getElementById(`${styles.heading}`).style.display = "block";
+        document.getElementById(`${styles.heading}`).style.transform = "translateY(0)";
+      }
+      if (document.getElementById(`${styles.comingSoon}`)) {
+        document.getElementById(`${styles.comingSoon}`).style.animation = "none";
+        document.getElementById(`${styles.comingSoon}`).style.display = "block";
+        document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
+      }
+
       document.getElementsByClassName(styles.dark)[0].style.transform = "translateY(0)";
       document.getElementsByClassName(styles.dark)[0].style.opacity = "1";
       document.getElementsByClassName(styles.light)[0].style.opacity = "0";
-    } else {
+    } else if (!loading) {
       document.getElementById(`${styles.sun}`).style.transform = `translateY(${
         scroll / 10
       }vw)`;
       document.getElementById(`${styles.sun}`).style.display = "flex";
       document.getElementById(`${styles.moon}`).style.display = "none";
-      document.getElementById(`${styles.foreground}`).style.transform = `scale(1.25) `;
-      document.getElementById(`${styles.hills}`).style.transform = `scale(1.5)`;
-      document.getElementById(`${styles.background}`).style.transform = `scale(0.8)`;
+      if (document.getElementById(`${styles.foreground}`)) {
+        document.getElementById(`${styles.foreground}`).style.transform = `scale(1.25) `;
+      }
+      if (document.getElementById(`${styles.hills}`)) {
+        document.getElementById(`${styles.hills}`).style.transform = `scale(1.5)`;
+      }
+      if (document.getElementById(`${styles.background}`)) {
+        document.getElementById(`${styles.background}`).style.transform = `scale(0.8)`;
+      }
       document.getElementsByClassName(styles.light)[0].style.transform = "translateY(0)";
       document.getElementsByClassName(styles.dark)[0].style.opacity = "0";
       document.getElementsByClassName(styles.light)[0].style.opacity = "1";
@@ -85,7 +102,7 @@ const Hero = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [night, scroll]);
+  }, [night, scroll, loading]);
 
   return (
     <div className={styles.outerWrapper}>
@@ -104,6 +121,7 @@ const Hero = () => {
         >
           <Image alt="left_Tree" src="/images/left_tree.png" priority fill />
         </motion.div>
+
         <motion.div
           id={styles.rightTree}
           initial={{
@@ -116,13 +134,18 @@ const Hero = () => {
         >
           <Image alt="left_Tree" src="/images/right_tree.png" fill priority />
         </motion.div>
+
         <motion.div
           className={`${night ? styles.nightForeground : ""}`}
-          id={styles.foreground}
+          id={`${!loading ? styles.foreground : ""}`}
         >
           <Image alt="foreground" src={Foreground} priority fill />
         </motion.div>
-        <motion.div id={styles.hills} className={` ${night ? styles.nightHills : ""}`}>
+
+        <motion.div
+          id={`${!loading ? styles.hills : ""}`}
+          className={` ${night ? styles.nightHills : ""}`}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1703"
@@ -208,8 +231,9 @@ const Hero = () => {
             </defs>
           </svg>
         </motion.div>
+
         <motion.div
-          id={styles.background}
+          id={`${!loading ? styles.background : ""}`}
           className={` ${night ? styles.nightBackground : ""} `}
         >
           <Image
@@ -222,9 +246,9 @@ const Hero = () => {
         </motion.div>
 
         {/* coming Soon text */}
-        <div className={`${styles.textWrapper} `}>
+        <div className={`${!loading ? styles.textWrapper : ""} `}>
           <h1
-            id={styles.heading}
+            id={`${!loading ? styles.heading : ""}`}
             className={` ${passion.className} ${night ? styles.nightLogo : ""}`}
           >
             <Image
@@ -243,7 +267,7 @@ const Hero = () => {
             />
           </h1>
           <h4
-            id={styles.comingSoon}
+            id={`${!loading ? styles.comingSoon : ""}`}
             className={` ${poppins.className} ${night ? styles.nightText : ""}`}
           >
             coming soon<span className={styles.dot1}>.</span>
