@@ -69,7 +69,7 @@ const Hero = ({ loading }) => {
       document.getElementsByClassName(styles.dark)[0].style.transform = "translateY(0)";
       document.getElementsByClassName(styles.dark)[0].style.opacity = "1";
       document.getElementsByClassName(styles.light)[0].style.opacity = "0";
-    } else if (!loading && !night) {
+    } else if (!loading) {
       document.getElementById(`${styles.sun}`).style.transform = `translateY(${
         scroll / 10
       }vw)`;
@@ -85,7 +85,7 @@ const Hero = ({ loading }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [night, scroll]);
+  }, [night, scroll, loading]);
 
   return (
     <div className={styles.outerWrapper}>
