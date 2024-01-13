@@ -22,7 +22,7 @@ const poppins = Allura({
   subsets: ["latin"],
   variable: "--allura-font",
 });
-const Hero = () => {
+const Hero = ({ loading }) => {
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
 
@@ -51,7 +51,7 @@ const Hero = () => {
       setNight(scroll > 110);
     }
 
-    if (night) {
+    if (night && !loading) {
       document.getElementById(`${styles.moon}`).style.transform = `translateY(-${
         scroll / 15
       }vw)`;
@@ -69,7 +69,7 @@ const Hero = () => {
       document.getElementsByClassName(styles.dark)[0].style.transform = "translateY(0)";
       document.getElementsByClassName(styles.dark)[0].style.opacity = "1";
       document.getElementsByClassName(styles.light)[0].style.opacity = "0";
-    } else {
+    } else if (!loading && !night) {
       document.getElementById(`${styles.sun}`).style.transform = `translateY(${
         scroll / 10
       }vw)`;
