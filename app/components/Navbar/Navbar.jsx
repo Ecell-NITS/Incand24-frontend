@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import {
-  Passion_One as passionOne,
+  // Passion_One as passionOne,
   Poppins as poppins,
   Montserrat_Alternates as montserratAlternates,
 } from "next/font/google";
@@ -20,16 +20,16 @@ import linkedIn from "../../../public/logos/linkedin.svg";
 import linkD from "../../../public/logos/linkedinD.svg";
 import line from "../../../public/logos/line.svg";
 import lineD from "../../../public/logos/lineD.svg";
-import dark from "../../../public/logos/dark.svg";
-import light from "../../../public/logos/light.svg";
+import dark from "../../../public/images/light_nav.svg";
+import light from "../../../public/images/light_nav_ss.svg";
 import closeL from "../../../public/logos/closeL.svg";
 import closeD from "../../../public/logos/closeD.svg";
 
-const passion = passionOne({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--passion-font",
-});
+// const passion = passionOne({
+//   weight: ["400"],
+//   subsets: ["latin"],
+//   variable: "--passion-font",
+// });
 const Poppins = poppins({
   weight: ["400"],
   subsets: ["latin"],
@@ -186,26 +186,6 @@ const Navbar = () => {
           >
             <div className={styles.logo}>
               <Image style={{ cursor: "pointer" }} src={navbar ? light : dark} alt="" />
-            </div>
-            <div
-              className={
-                navbar
-                  ? `${styles.dark} ${styles.text} ${passion.className}`
-                  : `${styles.light} ${styles.text} ${passion.className}`
-              }
-            >
-              <Link
-                to="hero"
-                spy
-                smooth
-                hashSpy
-                offset={50}
-                style={{ cursor: "pointer" }}
-                duration={500}
-              >
-                {" "}
-                <p>INCANDESCENCE</p>
-              </Link>
             </div>
           </Link>
 

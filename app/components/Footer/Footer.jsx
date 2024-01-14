@@ -1,8 +1,9 @@
-// Footer Sec by Suraj Verma
-
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
+import Image from "next/image";
+import { Link } from "react-scroll";
 import styles from "./Footer.module.scss";
+import Brochure from "../Button/Button";
 
 export const metadata = {
   title: "Footer",
@@ -20,7 +21,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
         >
-          <button>BROCHURE</button>
+          <Brochure />
         </a>
         <div className={styles.contact}>
           <div className={styles.text}>CONTACT US</div>
@@ -28,24 +29,21 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bglogo}>
-        <Link href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="205"
-            height="205"
-            viewBox="0 0 205 205"
-            fill="none"
-          >
-            <path
-              d="M101.624 5.7937C48.5578 5.7937 5.45532 48.8958 5.45532 101.962C5.45532 155.029 48.5574 198.118 101.624 198.118C154.691 198.119 197.793 155.028 197.793 101.962C197.793 48.8958 154.691 5.7937 101.624 5.7937H101.624ZM101.624 13.2754C150.647 13.2754 190.311 52.9397 190.311 101.962C190.311 109.153 189.457 116.141 187.846 122.832L169.866 119.354L161.646 90.6889L161.095 88.7494L159.155 88.1488L135.907 80.967L109.119 29.4664L107.217 25.8004L103.752 28.0522L67.2784 51.7754L66.1029 52.5389L65.7145 53.8898L46.5214 120.906L18.406 132.692C14.8745 123.119 12.9382 112.771 12.9382 101.962C12.9382 52.9397 52.6025 13.2754 101.625 13.2754H101.624ZM101.949 38.1497L80.9169 80.0285L87.4105 133.856L123.496 109.057V134.269L114.061 136.772L122.407 188.196C115.743 189.792 108.782 190.636 101.624 190.636C66.064 190.636 35.4274 169.769 21.2832 139.598L51.0746 127.099L52.7266 126.411L53.2271 124.684L72.5208 57.3064L101.949 38.1497Z"
-              fill="#073548"
-            />
-          </svg>
+        <Link to="hero" spy smooth hashSpy offset={10} duration={500}>
+          <Image
+            className={styles.dark_logo}
+            src="/images/dark_svglogo.svg"
+            alt="foot_logo"
+            fill
+            sizes="auto"
+          />
         </Link>
       </div>
       <div className={styles.bottom}>
         <div className={styles.media_sec}>
-          <div className={styles.text}>FOLLOW US</div>
+          <div className={styles.text}>
+            <div className={styles.follow_txt}>FOLLOW US</div>
+          </div>
           <div className={styles.icons}>
             <a href="https://www.instagram.com/incandescence.nitsilchar" target="_blank">
               <svg

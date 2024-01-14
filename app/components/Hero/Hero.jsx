@@ -67,8 +67,8 @@ const Hero = () => {
       document.getElementById(`${styles.comingSoon}`).style.display = "block";
       document.getElementById(`${styles.comingSoon}`).style.transform = "translateY(0)";
       document.getElementsByClassName(styles.dark)[0].style.transform = "translateY(0)";
-      document.getElementsByClassName(styles.light)[0].style.transform =
-        "translateY(-100%)";
+      document.getElementsByClassName(styles.dark)[0].style.opacity = "1";
+      document.getElementsByClassName(styles.light)[0].style.opacity = "0";
     } else {
       document.getElementById(`${styles.sun}`).style.transform = `translateY(${
         scroll / 10
@@ -79,8 +79,8 @@ const Hero = () => {
       document.getElementById(`${styles.hills}`).style.transform = `scale(1.5)`;
       document.getElementById(`${styles.background}`).style.transform = `scale(0.8)`;
       document.getElementsByClassName(styles.light)[0].style.transform = "translateY(0)";
-      document.getElementsByClassName(styles.dark)[0].style.transform =
-        "translateY(100%)";
+      document.getElementsByClassName(styles.dark)[0].style.opacity = "0";
+      document.getElementsByClassName(styles.light)[0].style.opacity = "1";
     }
     return () => {
       window.removeEventListener("scroll", handleScroll);
