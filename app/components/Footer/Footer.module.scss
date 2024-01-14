@@ -17,8 +17,8 @@
   .hills {
     position: relative;
     display: flex;
-    height: 40vw;
-    width: 120vw !important;
+    height: 30vw;
+    width: 100vw;
     object-fit: cover;
   }
   .container {
@@ -60,6 +60,8 @@
         gap: 1rem;
         span {
           font-size: 1.5rem;
+          display: flex;
+          align-items: center;
         }
       }
 

@@ -24,9 +24,12 @@ const Footer = () => {
           </Link>
           <div className={styles.contact}>
             <div> Contact us</div>
-            <span>
-              <Link href="mailto:incandescene@nits.ac.in">incandescene@nits.ac.in</Link>{" "}
-            </span>
+            <Link href="mailto:incandescene@nits.ac.in">
+              <span>
+                <Icon icon="iconoir:mail" color="#acebbd" width="25" />
+                incandescene@nits.ac.in{" "}
+              </span>
+            </Link>
           </div>
         </div>
         <div className={styles.logo}>
@@ -36,9 +39,21 @@ const Footer = () => {
           <div className={styles.follow}>
             Follow us
             <div className={styles.social}>
-              <Icon icon="mdi:instagram" color="#acebbd" width="30" />
-              <Icon icon="pajamas:linkedin" color="#acebbd" width="30" />
-              <Icon icon="fe:facebook" color="#acebbd" width="30" />
+              <Link
+                href="https://www.instagram.com/incandescence.nitsilchar"
+                target="_blank"
+              >
+                <Icon icon="mdi:instagram" color="#acebbd" width="30" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/incandescence23/"
+                target="_blank"
+              >
+                <Icon icon="pajamas:linkedin" color="#acebbd" width="30" />
+              </Link>
+              <Link href="https://www.facebook.com/incandescence.nits/" target="_blank">
+                <Icon icon="fe:facebook" color="#acebbd" width="30" />
+              </Link>
             </div>
           </div>
           <div className={styles.contact}>
@@ -46,7 +61,10 @@ const Footer = () => {
             <span>
               <Link target="_blank" href="https://maps.app.goo.gl/5vA3bZoxBSHCu38H6">
                 {" "}
-                <div>NIT Road, Fakirtilla,</div>
+                <div>
+                  <Icon icon="system-uicons:location" color="#acebbd" width="25" />
+                  NIT Road, Fakirtilla,
+                </div>
                 <div>Silchar, Assam 788010</div>
               </Link>
             </span>
