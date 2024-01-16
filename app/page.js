@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+// import Lottie from "lottie-react";
 import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
 import About from "./components/about/About";
@@ -8,7 +9,10 @@ import Social from "./components/SocialHandles/Social";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import LottieAnimation from "./components/Loader/Loader";
+// import LoaderAnimation from "./components/Loader/Loader";
+// import animationData from "../public/loader.lottie";
+
+// import LottieAnimation from "./components/Loader/Loader";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -16,9 +20,7 @@ const Home = () => {
   useEffect(() => {
     const isFinishedLoading = () => {
       if (document.readyState === "complete") {
-        setTimeout(() => {
-          setLoading(false);
-        }, 5000);
+        setLoading(false);
       }
     };
     isFinishedLoading();
@@ -28,21 +30,32 @@ const Home = () => {
     };
   }, []);
 
+  const loaderStyle = loading
+    ? {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        overflow: "hidden",
+        zIndex: 9999,
+      }
+    : {};
   return (
-    <main>
-      {loading ? (
-        <LottieAnimation />
-      ) : (
-        <main className={styles.home}>
-          <Navbar />
-          <Hero />
-          <About />
-          <Sponsor />
-          <Footer />
-          <Social />
-        </main>
-      )}
-    </main>
+    <div style={loaderStyle}>
+      <div className={`${styles.container} ${loading ? styles.active : ""}`}>
+        {/* <Lottie animationData={animationData} loop autoplay /> */}
+        <p>Diving into the dreams... Are you Ready?</p>
+      </div>
+      <main className={styles.home}>
+        <Navbar />
+        <Hero loading={loading} />
+        <About />
+        <Sponsor />
+        <Footer />
+        <Social />
+      </main>
+    </div>
   );
 };
 

@@ -21,6 +21,12 @@
     0 0.05em 0 0 #044662 inset, 0 -0.05em 0 0 #066892 inset;
   transition: box-shadow 0.25s, scale 0.25s, background 0.25s;
   scale: calc(1 + (var(--active) * 0.1));
+
+  @media screen and (max-width: 600px) {
+    width: 30vw;
+    height: 10vw;
+    font-size: 1rem;
+  }
 }
 
 .brochure_btn:active {
