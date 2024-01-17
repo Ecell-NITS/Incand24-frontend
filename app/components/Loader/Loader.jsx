@@ -1,45 +1,21 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Lottie from "lottie-react";
+import React from "react";
 import styles from "./Loader.module.scss";
-import animationData from "../../../public/loader.lottie";
 
-const LoaderAnimation = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const isFinishedLoading = () => {
-      if (document.readyState === "complete") {
-        setLoading(false);
-      }
-    };
-    isFinishedLoading();
-    document.addEventListener("readystatechange", isFinishedLoading);
-    return () => {
-      document.removeEventListener("readystatechange", isFinishedLoading);
-    };
-  }, []);
-
-  const loaderStyle = loading
-    ? {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-        zIndex: 9999,
-      }
-    : {};
-
+const LottieAnimation = () => {
   return (
-    <div style={loaderStyle}>
-      <div className={`${styles.container} ${loading ? styles.active : ""}`}>
-        <Lottie animationData={animationData} loop autoplay />
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <div className={styles.load}>Diving into the dreams</div>
+        {/* <div className={styles.dot_wrapper}> */}
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
+        <div className={styles.dot}></div>
+        {/* </div> */}
       </div>
     </div>
   );
 };
 
-export default LoaderAnimation;
+export default LottieAnimation;
