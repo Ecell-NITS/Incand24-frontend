@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 // import Lottie from "lottie-react";
+import { Allura as allura } from "next/font/google";
 import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
 import About from "./components/about/About";
@@ -13,6 +14,11 @@ import Navbar from "./components/Navbar/Navbar";
 // import animationData from "../public/loader.lottie";
 
 // import LottieAnimation from "./components/Loader/Loader";
+
+const Allura = allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -41,11 +47,20 @@ const Home = () => {
         zIndex: 9999,
       }
     : {};
+
   return (
     <div style={loaderStyle}>
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
-        {/* <Lottie animationData={animationData} loop autoplay /> */}
-        <p>Diving into the dreams... Are you Ready?</p>
+        <div className={styles.wrapper}>
+          <div className={`${styles.load} ${Allura.className}`}>
+            <h1>Diving into the dreams</h1>
+          </div>
+          {/* <div className={styles.dot_wrapper}> */}
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          {/* </div> */}
+        </div>
       </div>
       <main className={styles.home}>
         <Navbar />
