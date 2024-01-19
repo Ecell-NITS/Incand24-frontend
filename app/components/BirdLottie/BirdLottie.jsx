@@ -31,7 +31,7 @@ const BirdLottie = () => {
         autoplay
         loop
         src={birds}
-        style={{ height: "50vh", width: "100vw" }}
+        style={{ height: "100vh", width: "100vw" }}
       ></Player>
     </div>
   );

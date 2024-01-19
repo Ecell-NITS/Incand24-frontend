@@ -257,24 +257,22 @@ const Hero = ({ loading }) => {
             <div className={styles.flame}>
               <Image fill sizes="auto" alt="flame" src="/images/firegif.gif" />
             </div>
-            <div className={styles.logo}>
-              <Image
-                className={styles.light}
-                src="/images/withoutFlameLight.png"
-                alt="logo"
-                fill
-                sizes="!00%"
-              />
-            </div>
-            <div className={styles.logo}>
-              <Image
-                className={styles.dark}
-                src="/images/WithoutFlameDark1.png"
-                alt="logo"
-                fill
-                sizes="auto"
-              />
-            </div>
+
+            <Image
+              className={styles.light}
+              src="/images/DayLogo_noFire.png"
+              alt="logo"
+              fill
+              sizes="!00%"
+            />
+
+            <Image
+              className={styles.dark}
+              src="/images/NightLogo_noFire-removebg-preview.png"
+              alt="logo"
+              fill
+              sizes="auto"
+            />
           </h1>
           <h4
             id={`${!loading ? styles.comingSoon : ""}`}
