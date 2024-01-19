@@ -254,20 +254,27 @@ const Hero = ({ loading }) => {
             id={`${!loading ? styles.heading : ""}`}
             className={` ${passion.className} ${night ? styles.nightLogo : ""}`}
           >
-            <Image
-              className={styles.light}
-              src="/images/Logo.png"
-              alt="logo"
-              fill
-              sizes="!00%"
-            />
-            <Image
-              className={styles.dark}
-              src="/images/LogoDark.png"
-              alt="logo"
-              fill
-              sizes="auto"
-            />
+            <div className={styles.flame}>
+              <Image fill sizes="auto" alt="flame" src="/images/firegif.gif" />
+            </div>
+            <div className={styles.logo}>
+              <Image
+                className={styles.light}
+                src="/images/withoutFlameLight.png"
+                alt="logo"
+                fill
+                sizes="!00%"
+              />
+            </div>
+            <div className={styles.logo}>
+              <Image
+                className={styles.dark}
+                src="/images/WithoutFlameDark1.png"
+                alt="logo"
+                fill
+                sizes="auto"
+              />
+            </div>
           </h1>
           <h4
             id={`${!loading ? styles.comingSoon : ""}`}

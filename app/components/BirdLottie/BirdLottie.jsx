@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Player } from "@lottiefiles/react-lottie-player";
 import styles from "./BirdLottie.module.scss";
 import birds from "./Birds";
@@ -26,9 +27,12 @@ const BirdLottie = () => {
   }, [scroll]);
   return (
     <div className={styles.birds}>
-      <Player autoplay loop src={birds} style={{ height: "100vh", width: "100vw" }}>
-        {/* <Controls visible={true} buttons={["play", "repeat", "frame", "debug"]} /> */}
-      </Player>
+      <Player
+        autoplay
+        loop
+        src={birds}
+        style={{ height: "50vh", width: "100vw" }}
+      ></Player>
     </div>
   );
 };

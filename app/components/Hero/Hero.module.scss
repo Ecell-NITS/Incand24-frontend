@@ -148,6 +148,22 @@
       animation-delay: 1s;
       overflow: hidden;
       object-fit: contain;
+      z-index: 90;
+      .flame {
+        height: 40%;
+        width: 20%;
+        left: 1%;
+        top: -3%;
+        position: absolute;
+        z-index: 100;
+        transform: rotate(20deg);
+      }
+      .logo {
+        position: absolute;
+        bottom: 0;
+        width: 30vw;
+        height: 12vw;
+      }
       @media screen and (max-width: 900px) {
         width: 40vw;
         height: 20vw;
