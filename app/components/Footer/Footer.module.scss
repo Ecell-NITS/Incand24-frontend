@@ -3,13 +3,10 @@
 .Footer {
   display: flex;
   width: 100%;
-  // height: fit-content;
   position: relative;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   font-family: Montserrat Alternates;
-  // padding-bottom:0 ;
   a {
     text-decoration: none;
     color: #acebbd;
@@ -36,14 +33,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     .info {
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
       color: #acebbd;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
 
       .follow {
@@ -77,8 +74,8 @@
       }
     }
     .logo {
-      width: 40vw;
-      height: 20vw;
+      width: 30vw;
+      height: 15vw;
       position: relative;
     }
   }

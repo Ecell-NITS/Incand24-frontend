@@ -3,17 +3,12 @@
   flex-direction: column;
   position: relative;
   height: 200vh;
-  // overflow: hidden;
-  // .scroller{
-  //   margin: -100vh;
-  //   height: 100vh;
-  // }
 }
 
 .wrapper {
   height: 100vh;
   width: 100%;
-  position: sticky;
+  // position: sticky;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -165,9 +160,9 @@
         // transform: translateY(100%);
         opacity: 0;
       }
-      .light {
-        // filter: invert(1);
-      }
+      // .light {
+      //   // filter: invert(1);
+      // }
 
       img {
         width: 100%;
