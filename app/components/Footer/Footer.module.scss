@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .Footer {
   display: flex;
@@ -80,6 +81,53 @@
       width: 40vw;
       height: 20vw;
       position: relative;
+    }
+  }
+
+  .ecell_copyright {
+    background: #011e1c;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 7vh 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+
+    .ecell {
+      color: #fff;
+      img {
+        background: #ffff;
+        border-radius: 50%;
+        height: 4vh;
+        width: 1.8vw;
+        margin: 0 0.3vw;
+        transform: translateY(1vh);
+      }
+    }
+    .copyright {
+      color: #acebbd;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .ecell_copyright {
+      .ecell img {
+        margin: 0 0.8vw;
+        height: 3.5vh;
+        width: 7vw;
+      }
+      .copyright {
+        width: 70%;
+        text-align: center;
+      }
     }
   }
 }
