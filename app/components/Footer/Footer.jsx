@@ -4,10 +4,21 @@ import { Link } from "react-scroll";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { Poppins, Montserrat } from "next/font/google";
 import styles from "./Footer.module.scss";
 import hills from "../../../public/images/footerHills.png";
 import logo from "../../../public/images/LogoDark.png";
 import Brochure from "../Button/Button";
+
+const poppins = Poppins({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Footer",
@@ -16,7 +27,7 @@ export const metadata = {
 
 const Footer = () => {
   return (
-    <div className={styles.Footer}>
+    <div className={`${styles.Footer} ${montserrat.className}`}>
       <div className={styles.hills}>
         <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
       </div>
@@ -33,7 +44,12 @@ const Footer = () => {
             <div> Contact us</div>
             <a href="mailto:incandescene@nits.ac.in">
               <span>
-                <Icon icon="iconoir:mail" color="#acebbd" width="25" />
+                <Icon
+                  icon="iconoir:mail"
+                  color="#acebbd"
+                  width="25"
+                  className={styles.mailicon}
+                />
                 incandescene@nits.ac.in{" "}
               </span>
             </a>
@@ -76,20 +92,20 @@ const Footer = () => {
             </span>
           </div>
         </div>
-      </div>
-      <div className={styles.ecell_copyright}>
-        <div className={styles.ecell}>
-          MADE BY{" "}
-          <a href="http://ecellnits.org" target="_blank">
-            <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
-          </a>{" "}
-          <a href="https://ecellnits.org" target="_blank">
-            {" "}
-            E-CELL
-          </a>
-        </div>
-        <div className={styles.copyright}>
-          ©Copyright 2024, National Institute Of Technology, Silchar
+        <div className={`${styles.ecell_copyright} ${poppins.className}`}>
+          <div className={styles.ecell}>
+            MADE BY{" "}
+            <a href="http://ecellnits.org" target="_blank">
+              <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
+            </a>{" "}
+            <a href="https://ecellnits.org" target="_blank">
+              {" "}
+              E-CELL
+            </a>
+          </div>
+          <div className={styles.copyright}>
+            ©Copyright 2024, National Institute Of Technology, Silchar
+          </div>
         </div>
       </div>
     </div>
