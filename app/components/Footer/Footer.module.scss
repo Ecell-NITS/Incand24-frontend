@@ -45,7 +45,7 @@
         .social {
           display: flex;
           justify-content: center;
-          gap: 5px;
+          gap: 10px;
         }
       }
 
@@ -84,8 +84,9 @@
         left: 57.5vw;
       }
       .info {
-        .mailicon {
-          margin-right: 0.6vw;
+        .mailicon,
+        .locnlogo {
+          margin-right: 1.2vw;
         }
         .follow {
           margin-top: 3vh;

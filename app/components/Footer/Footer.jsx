@@ -84,7 +84,12 @@ const Footer = () => {
               <a target="_blank" href="https://maps.app.goo.gl/5vA3bZoxBSHCu38H6">
                 {" "}
                 <div>
-                  <Icon icon="system-uicons:location" color="#acebbd" width="25" />
+                  <Icon
+                    icon="system-uicons:location"
+                    color="#acebbd"
+                    width="25"
+                    className={styles.locnlogo}
+                  />
                   NIT Road, Fakirtilla,
                 </div>
                 <div>Silchar, Assam 788010</div>
