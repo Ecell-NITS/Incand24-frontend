@@ -113,7 +113,7 @@ const Hero = ({ loading }) => {
         <div id={styles.sun}></div>
         <div id={styles.moon}></div>
         <motion.div
-          id={styles.leftTree}
+          id={`${!loading ? styles.leftTree : ""}`}
           initial={{
             x: 0,
           }}
@@ -126,7 +126,7 @@ const Hero = ({ loading }) => {
         </motion.div>
 
         <motion.div
-          id={styles.rightTree}
+          id={`${!loading ? styles.rightTree : ""}`}
           initial={{
             x: 0,
           }}
