@@ -20,8 +20,8 @@ import linkedIn from "../../../public/logos/linkedin.svg";
 import linkD from "../../../public/logos/linkedinD.svg";
 import line from "../../../public/logos/line.svg";
 import lineD from "../../../public/logos/lineD.svg";
-import dark from "../../../public/images/light_nav.svg";
-import light from "../../../public/images/light_nav_ss.svg";
+import dark from "../../../public/images/DarkLogoNav.svg";
+import light from "../../../public/images/LightLogoNav.svg";
 import closeL from "../../../public/logos/closeL.svg";
 import closeD from "../../../public/logos/closeD.svg";
 
@@ -185,7 +185,12 @@ const Navbar = () => {
             className={styles.wrapper}
           >
             <div className={styles.logo}>
-              <Image style={{ cursor: "pointer" }} src={navbar ? light : dark} alt="" />
+              <Image
+                fill
+                style={{ cursor: "pointer" }}
+                src={navbar ? light : dark}
+                alt=""
+              />
             </div>
           </Link>
 

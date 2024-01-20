@@ -3,17 +3,12 @@
   flex-direction: column;
   position: relative;
   height: 200vh;
-  // overflow: hidden;
-  // .scroller{
-  //   margin: -100vh;
-  //   height: 100vh;
-  // }
 }
 
 .wrapper {
   height: 100vh;
   width: 100%;
-  position: sticky;
+  // position: sticky;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -153,6 +148,16 @@
       animation-delay: 1s;
       overflow: hidden;
       object-fit: contain;
+      z-index: 90;
+      .flame {
+        height: 40%;
+        width: 20%;
+        left: 1%;
+        // top: -1%;
+        position: absolute;
+        z-index: 100;
+        transform: rotate(20deg);
+      }
       @media screen and (max-width: 900px) {
         width: 40vw;
         height: 20vw;
@@ -165,9 +170,9 @@
         // transform: translateY(100%);
         opacity: 0;
       }
-      .light {
-        // filter: invert(1);
-      }
+      // .light {
+      //   // filter: invert(1);
+      // }
 
       img {
         width: 100%;

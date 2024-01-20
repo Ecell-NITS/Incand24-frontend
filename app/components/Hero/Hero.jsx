@@ -8,6 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.scss";
 import Foreground from "../../../public/images/Foreground.svg";
+import BirdLottie from "../BirdLottie/BirdLottie";
 
 const passion = Passion_One({
   weight: ["400"],
@@ -25,8 +26,10 @@ const poppins = Allura({
 const Hero = ({ loading }) => {
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
+  const [birds, setBirds] = useState(false);
 
   useEffect(() => {
+    setBirds(true);
     // scroll prevention
     if (scroll < window.innerHeight * 1.1) {
       document.getElementsByClassName(styles.wrapper)[0].style.position = `fixed`;
@@ -238,7 +241,7 @@ const Hero = ({ loading }) => {
         >
           <Image
             alt="hero-bg"
-            src="/images/Background.svg"
+            src="/images/New_HeroBg.svg"
             fill
             priority
             style={{ height: "100%" }}
@@ -251,16 +254,21 @@ const Hero = ({ loading }) => {
             id={`${!loading ? styles.heading : ""}`}
             className={` ${passion.className} ${night ? styles.nightLogo : ""}`}
           >
+            <div className={styles.flame}>
+              <Image fill sizes="auto" alt="flame" src="/images/firegif.gif" />
+            </div>
+
             <Image
               className={styles.light}
-              src="/images/Logo.png"
+              src="/images/DayLogo_noFire.png"
               alt="logo"
               fill
               sizes="!00%"
             />
+
             <Image
               className={styles.dark}
-              src="/images/LogoDark.png"
+              src="/images/NightLogo_noFire-removebg-preview.png"
               alt="logo"
               fill
               sizes="auto"
@@ -276,6 +284,7 @@ const Hero = ({ loading }) => {
           </h4>
         </div>
       </div>
+      {birds && <BirdLottie />}
       <div className={styles.scroller}></div>
     </div>
   );
