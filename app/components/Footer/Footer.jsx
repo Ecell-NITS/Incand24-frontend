@@ -77,6 +77,21 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={styles.ecell_copyright}>
+        <div className={styles.ecell}>
+          MADE BY{" "}
+          <a href="http://ecellnits.org" target="_blank">
+            <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
+          </a>{" "}
+          <a href="https://ecellnits.org" target="_blank">
+            {" "}
+            E-CELL
+          </a>
+        </div>
+        <div className={styles.copyright}>
+          ©Copyright 2024, National Institute Of Technology, Silchar
+        </div>
+      </div>
     </div>
   );
 };
