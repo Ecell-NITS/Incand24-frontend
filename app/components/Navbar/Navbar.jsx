@@ -207,7 +207,7 @@ const Navbar = () => {
                 spy
                 smooth
                 hashSpy
-                offset={20}
+                offset={-40}
                 duration={500}
               >
                 {name}
