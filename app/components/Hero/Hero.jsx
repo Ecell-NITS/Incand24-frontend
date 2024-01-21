@@ -8,7 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.scss";
 import Foreground from "../../../public/images/Foreground.svg";
-import BirdLottie from "../BirdLottie/BirdLottie";
+// import BirdLottie from "../BirdLottie/BirdLottie";
 
 const passion = Passion_One({
   weight: ["400"],
@@ -26,10 +26,10 @@ const poppins = Allura({
 const Hero = ({ loading }) => {
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
-  const [birds, setBirds] = useState(false);
+  // const [birds, setBirds] = useState(false);
 
   useEffect(() => {
-    setBirds(true);
+    // setBirds(true);
     // scroll prevention
     if (scroll < window.innerHeight * 1.1) {
       document.getElementsByClassName(styles.wrapper)[0].style.position = `fixed`;
@@ -113,7 +113,7 @@ const Hero = ({ loading }) => {
         <div id={styles.sun}></div>
         <div id={styles.moon}></div>
         <motion.div
-          id={styles.leftTree}
+          id={`${!loading ? styles.leftTree : ""}`}
           initial={{
             x: 0,
           }}
@@ -126,7 +126,7 @@ const Hero = ({ loading }) => {
         </motion.div>
 
         <motion.div
-          id={styles.rightTree}
+          id={`${!loading ? styles.rightTree : ""}`}
           initial={{
             x: 0,
           }}
@@ -284,7 +284,7 @@ const Hero = ({ loading }) => {
           </h4>
         </div>
       </div>
-      {birds && <BirdLottie />}
+      {/* {birds && <BirdLottie />} */}
       <div className={styles.scroller}></div>
     </div>
   );
