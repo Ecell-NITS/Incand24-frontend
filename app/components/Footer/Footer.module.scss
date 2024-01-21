@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 .Footer {
   display: flex;
   width: 100%;
   position: relative;
   flex-direction: column;
   align-items: center;
-  font-family: Montserrat Alternates;
+  // font-family: Montserrat Alternates;
   a {
     text-decoration: none;
     color: #acebbd;
@@ -21,8 +18,8 @@
   }
   .container {
     width: 100%;
-    padding: 10%;
-    padding-block: 5%;
+    padding: 10% 10% 1% 10%;
+    // padding-block: 5%;
     height: fit-content;
     background: linear-gradient(
       90deg,
@@ -48,7 +45,7 @@
         .social {
           display: flex;
           justify-content: center;
-          gap: 5px;
+          gap: 10px;
         }
       }
 
@@ -79,51 +76,84 @@
       height: 15vw;
       position: relative;
     }
-  }
 
-  .ecell_copyright {
-    background: #011e1c;
-    font-family: Poppins;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 7vh 0;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5vh;
-
-    .ecell {
-      color: #fff;
-      img {
-        background: #ffff;
-        border-radius: 50%;
-        height: 4vh;
-        width: 1.8vw;
-        margin: 0 0.3vw;
-        transform: translateY(1vh);
+    @media screen and (max-width: 500px) {
+      .logo {
+        position: absolute;
+        top: 39.5vh;
+        left: 57.5vw;
+      }
+      .info {
+        .mailicon,
+        .locnlogo {
+          margin-right: 1.2vw;
+        }
+        .follow {
+          margin-top: 3vh;
+          margin-left: 1vw;
+          align-self: flex-start;
+          position: relative;
+        }
       }
     }
-    .copyright {
-      color: #acebbd;
-    }
-  }
 
-  @media screen and (max-width: 900px) {
+    @media screen and (max-width: 391px) {
+      .logo {
+        position: absolute;
+        top: 41.5vh;
+      }
+    }
+
+    @media screen and (max-width: 380px) {
+      .logo {
+        position: absolute;
+        top: 50.5vh;
+      }
+    }
+
     .ecell_copyright {
-      .ecell img {
-        margin: 0 0.8vw;
-        height: 3.5vh;
-        width: 7vw;
+      // font-family: Poppins;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      width: 100%;
+      // padding: 7vh 0;
+      // height: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5vh;
+
+      .ecell {
+        color: #fff;
+        img {
+          background: #ffff;
+          border-radius: 50%;
+          height: 4vh;
+          width: 1.8vw;
+          margin: 0 0.3vw;
+          transform: translateY(1vh);
+        }
       }
       .copyright {
-        width: 70%;
-        text-align: center;
+        color: #acebbd;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      .ecell_copyright {
+        .ecell img {
+          margin: 0 0.8vw;
+          height: 3.5vh;
+          width: 7vw;
+        }
+        .copyright {
+          width: 70%;
+          text-align: center;
+        }
       }
     }
   }
