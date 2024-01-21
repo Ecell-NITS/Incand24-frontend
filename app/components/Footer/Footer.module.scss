@@ -80,8 +80,8 @@
     @media screen and (max-width: 500px) {
       .logo {
         position: absolute;
-        top: 39.5vh;
-        left: 57.5vw;
+        top: 54%;
+        left: 61%;
       }
       .info {
         .mailicon,
@@ -97,17 +97,22 @@
       }
     }
 
-    @media screen and (max-width: 391px) {
+    @media screen and (max-width: 432px) {
       .logo {
         position: absolute;
-        top: 41.5vh;
+        top: 53%;
       }
     }
-
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 400px) {
       .logo {
         position: absolute;
-        top: 50.5vh;
+        top: 52%;
+      }
+    }
+    @media screen and (max-width: 354px) {
+      .logo {
+        position: absolute;
+        top: 50%;
       }
     }
 
