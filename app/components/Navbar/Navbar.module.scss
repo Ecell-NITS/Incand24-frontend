@@ -60,9 +60,10 @@
     max-height: 7vh;
     padding-right: 2vw;
     justify-content: center;
-    color: #083649;
+    color: #000000;
     align-items: center;
-    font-size: 1.8vw;
+    font-size: 2vw;
+    font-weight: 500;
     line-height: 97.5%; /* 31.2px */
     .btn {
       display: flex;
@@ -91,13 +92,15 @@
     justify-content: center;
     color: white;
     align-items: center;
-    font-size: 1.8vw;
+    font-size: 2vw;
+    font-weight: 500;
     line-height: 97.5%;
     .item1 {
       cursor: pointer;
       display: inline-flex;
       padding: 0.87vw 30px;
       justify-content: center;
+      font-weight: 500;
       align-items: center;
       margin-left: 0.25vw;
       margin-right: 0.25vw;
@@ -105,7 +108,6 @@
       color: white;
       text-decoration: none;
       border: 3px solid transparent;
-      font-weight: 500;
       border-radius: 3rem;
       transition: all 0.25s ease-in-out;
     }
@@ -160,6 +162,7 @@
     flex-direction: column;
     position: fixed;
     top: 0;
+
     left: -100%;
     width: 85vw;
     transition: 850ms;
@@ -198,7 +201,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 5vw;
+        font-size: 6vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -214,7 +217,7 @@
       gap: 5vh;
       cursor: pointer;
       color: whitesmoke;
-      font-size: clamp(5vw, 6vw, 7vw);
+      font-size: clamp(6vw, 7vw, 8vw);
       // font-weight: 500;
       line-height: 138%;
       .nav_items {

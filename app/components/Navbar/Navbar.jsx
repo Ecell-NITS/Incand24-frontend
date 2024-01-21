@@ -4,8 +4,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import {
   // Passion_One as passionOne,
-  Poppins as poppins,
-  Montserrat_Alternates as montserratAlternates,
+  Allura as allura,
+  // Poppins as poppins,
+  // Montserrat_Alternates as montserratAlternates,
 } from "next/font/google";
 import Image from "next/image";
 import Brochure from "../Button/Button";
@@ -30,14 +31,19 @@ import closeD from "../../../public/logos/closeD.svg";
 //   subsets: ["latin"],
 //   variable: "--passion-font",
 // });
-const Poppins = poppins({
+
+const Allura = allura({
   weight: ["400"],
   subsets: ["latin"],
 });
-const monteserrat = montserratAlternates({
-  weight: ["500"],
-  subsets: ["latin"],
-});
+// const Poppins = poppins({
+//   weight: ["400"],
+//   subsets: ["latin"],
+// });
+// const monteserrat = montserratAlternates({
+//   weight: ["500"],
+//   subsets: ["latin"],
+// });
 const Navbar = () => {
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -89,8 +95,8 @@ const Navbar = () => {
         <div
           className={
             select
-              ? `${styles.show} ${styles.active} ${monteserrat.className}`
-              : `${styles.show} ${monteserrat.className}`
+              ? `${styles.show} ${styles.active} ${Allura.className}`
+              : `${styles.show} ${Allura.className}`
           }
         >
           <button label="close" className={styles.close}>
@@ -137,7 +143,7 @@ const Navbar = () => {
               <Image className={styles.line} src={navbar ? line : lineD} alt="" />
             </a>
           </div>
-          <div className={`${styles.footer} ${monteserrat.className}`}>
+          <div className={`${styles.footer} ${Allura.className}`}>
             <span
               className={!navbar ? `${styles.follow} ${styles.followD}` : styles.follow}
             >
@@ -199,22 +205,22 @@ const Navbar = () => {
               <Link
                 className={
                   navbar
-                    ? `${styles.item1} ${Poppins.className}`
-                    : `${Poppins.className} ${styles.item}`
+                    ? `${styles.item1} ${Allura.className}`
+                    : `${Allura.className} ${styles.item}`
                 }
                 key={name}
                 to={link}
                 spy
                 smooth
                 hashSpy
-                offset={20}
+                offset={-40}
                 duration={500}
               >
                 {name}
               </Link>
             ))}
             <a
-              className={styles.btn}
+              className={`styles.btn ${Allura.className}`}
               aria-label="Brochure"
               target="_blank"
               rel="noopener noreferrer"
