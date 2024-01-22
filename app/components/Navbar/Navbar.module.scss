@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Anita";
+  src: url("../../../public/fonts/RoundHand_Free.ttf") format("truetype");
+  /* Add additional font files if needed (e.g., bold, italic) */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hamburger {
   display: none;
 }
@@ -64,7 +72,7 @@
     align-items: center;
     font-size: 2vw;
     font-weight: 500;
-    line-height: 97.5%; /* 31.2px */
+    line-height: 97.5%;
     .btn {
       display: flex;
     }
@@ -81,6 +89,7 @@
       border: 3px solid transparent;
       border-radius: 3rem;
       transition: all 0.25s ease-in-out;
+      font-family: "Anita", sans-serif;
       font-weight: 500;
     }
   }
@@ -100,6 +109,7 @@
       display: inline-flex;
       padding: 0.87vw 30px;
       justify-content: center;
+      font-family: "Anita", sans-serif;
       font-weight: 500;
       align-items: center;
       margin-left: 0.25vw;
@@ -162,7 +172,6 @@
     flex-direction: column;
     position: fixed;
     top: 0;
-
     left: -100%;
     width: 85vw;
     transition: 850ms;
@@ -204,6 +213,7 @@
         font-size: 6vw;
         font-style: normal;
         font-weight: 500;
+        font-family: "Anita", sans-serif;
         line-height: normal;
       }
       .followD {
@@ -217,8 +227,9 @@
       gap: 5vh;
       cursor: pointer;
       color: whitesmoke;
+      font-family: "Anita", sans-serif;
       font-size: clamp(6vw, 7vw, 8vw);
-      // font-weight: 500;
+      font-weight: 500;
       line-height: 138%;
       .nav_items {
         display: flex;
