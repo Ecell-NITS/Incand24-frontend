@@ -43,7 +43,7 @@ const Footer = () => {
           <div className={styles.contact}>
             <div> Contact us</div>
             <a href="mailto:incandescene@nits.ac.in">
-              <span>
+              <span className={styles.fold_fs}>
                 <Icon
                   icon="iconoir:mail"
                   color="#acebbd"
@@ -68,20 +68,39 @@ const Footer = () => {
                 href="https://www.instagram.com/incandescence.nitsilchar"
                 target="_blank"
               >
-                <Icon icon="mdi:instagram" color="#acebbd" width="30" />
+                <Icon
+                  icon="mdi:instagram"
+                  color="#acebbd"
+                  width="30"
+                  className={styles.icon}
+                />
               </a>
               <a href="https://www.linkedin.com/company/incandescence23/" target="_blank">
-                <Icon icon="pajamas:linkedin" color="#acebbd" width="30" />
+                <Icon
+                  icon="pajamas:linkedin"
+                  color="#acebbd"
+                  width="30"
+                  className={styles.icon}
+                />
               </a>
               <a href="https://www.facebook.com/incandescence.nits/" target="_blank">
-                <Icon icon="fe:facebook" color="#acebbd" width="30" />
+                <Icon
+                  icon="fe:facebook"
+                  color="#acebbd"
+                  width="30"
+                  className={styles.icon}
+                />
               </a>
             </div>
           </div>
           <div className={styles.contact}>
             <div>NIT SILCHAR</div>
             <span>
-              <a target="_blank" href="https://maps.app.goo.gl/5vA3bZoxBSHCu38H6">
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/5vA3bZoxBSHCu38H6"
+                className={styles.fold_fs}
+              >
                 {" "}
                 <div>
                   <Icon

@@ -84,8 +84,8 @@
     @media screen and (max-width: 500px) {
       .logo {
         position: absolute;
-        top: 39.5vh;
-        left: 57.5vw;
+        top: 88vw;
+        left: 58vw;
       }
       .info {
         .mailicon,
@@ -96,22 +96,76 @@
           margin-top: 3vh;
           margin-left: 1vw;
           align-self: flex-start;
-          position: relative;
         }
       }
     }
 
-    @media screen and (max-width: 391px) {
+    @media screen and (max-width: 420px) {
       .logo {
         position: absolute;
-        top: 41.5vh;
+        top: 89vw;
+        left: 58.5vw;
+      }
+    }
+
+    @media screen and (max-width: 395px) {
+      .logo {
+        top: 91vw;
+        left: 58.5vw;
       }
     }
 
     @media screen and (max-width: 380px) {
       .logo {
-        position: absolute;
-        top: 50.5vh;
+        top: 89vw;
+        left: 58.5vw;
+      }
+
+      .info {
+        .contact {
+          font-size: 1.2rem;
+          .fold_fs {
+            font-size: 0.8rem;
+          }
+          .mailicon,
+          .locnlogo {
+            width: 20px;
+          }
+        }
+        .follow {
+          font-size: 1.2rem;
+          margin-left: 0;
+          .social {
+            gap: 10px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .logo {
+        top: 103vw;
+        left: 58vw;
+      }
+
+      .info {
+        .contact {
+          font-size: 1rem;
+          .fold_fs {
+            font-size: 0.6rem;
+          }
+        }
+
+        .follow {
+          font-size: 1rem;
+          margin-left: 0;
+          .social {
+            gap: 8px;
+            .icon {
+              width: 20px;
+            }
+          }
+        }
       }
     }
 
@@ -147,7 +201,17 @@
       }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1100px) {
+      .ecell_copyright {
+        .ecell img {
+          margin: 0 0.8vw;
+          height: 55px;
+          width: 55px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
       .ecell_copyright {
         .ecell img {
           margin: 0 0.8vw;
@@ -157,6 +221,28 @@
         .copyright {
           width: 70%;
           text-align: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: 380px) {
+      .ecell_copyright {
+        font-size: 0.55rem;
+        .ecell img {
+          margin: 0 0.8vw;
+          height: 3.3vh;
+          width: 6vw;
+        }
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .ecell_copyright {
+        font-size: 0.45rem;
+        .ecell img {
+          margin: 0 0.8vw;
+          height: 3.3vh;
+          width: 7vw;
         }
       }
     }
