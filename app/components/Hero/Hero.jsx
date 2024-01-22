@@ -29,9 +29,12 @@ const Hero = ({ loading }) => {
   const [birds, setBirds] = useState(false);
 
   useEffect(() => {
-    setTimeout(()=>{
-      setBirds(true);
-    },5000)
+    if (loading === false) {
+      setTimeout(() => {
+        setBirds(true);
+      }, 6000);
+    }
+
     // scroll prevention
     if (scroll < window.innerHeight * 1.1) {
       document.getElementsByClassName(styles.wrapper)[0].style.position = `fixed`;
@@ -286,7 +289,7 @@ const Hero = ({ loading }) => {
           </h4>
         </div>
       </div>
-       {birds && !night && <BirdLottie />} 
+      {birds && !night && <BirdLottie />}
       <div className={styles.scroller}></div>
     </div>
   );
