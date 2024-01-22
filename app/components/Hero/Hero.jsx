@@ -8,7 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.scss";
 import Foreground from "../../../public/images/Foreground.svg";
-// import BirdLottie from "../BirdLottie/BirdLottie";
+import BirdLottie from "../BirdLottie/BirdLottie";
 
 const passion = Passion_One({
   weight: ["400"],
@@ -26,10 +26,15 @@ const poppins = Allura({
 const Hero = ({ loading }) => {
   const [scroll, setScroll] = useState(0);
   const [night, setNight] = useState(false);
-  // const [birds, setBirds] = useState(false);
+  const [birds, setBirds] = useState(false);
 
   useEffect(() => {
-    // setBirds(true);
+    if (loading === false) {
+      setTimeout(() => {
+        setBirds(true);
+      }, 6000);
+    }
+
     // scroll prevention
     if (scroll < window.innerHeight * 1.1) {
       document.getElementsByClassName(styles.wrapper)[0].style.position = `fixed`;
@@ -241,7 +246,7 @@ const Hero = ({ loading }) => {
         >
           <Image
             alt="hero-bg"
-            src="/images/New_HeroBg.svg"
+            src="/images/newHero_bg.svg"
             fill
             priority
             style={{ height: "100%" }}
@@ -284,7 +289,7 @@ const Hero = ({ loading }) => {
           </h4>
         </div>
       </div>
-      {/* {birds && <BirdLottie />} */}
+      {birds && !night && <BirdLottie />}
       <div className={styles.scroller}></div>
     </div>
   );
