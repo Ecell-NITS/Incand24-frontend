@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Anita";
+  src: url("../../../public/fonts/RoundHand_Free.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .brochure_btn {
   --cut: 0.1em;
   --active: 0;
@@ -5,7 +12,8 @@
     radial-gradient(80% 100% at center 120%, #0e5b7c, transparent), #1484b4;
   background: var(--bg);
   font-size: 1.5vw;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Anita", sans-serif;
   border: 0;
   min-width: 10vw;
   max-height: 7vh;
