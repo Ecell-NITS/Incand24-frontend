@@ -22,6 +22,7 @@ const Allura = allura({
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+  const [heightFixed, setHeightFixed] = useState(true);
 
   useEffect(() => {
     const isFinishedLoading = () => {
@@ -48,6 +49,22 @@ const Home = () => {
       }
     : {};
 
+  const heightFixedStyle = heightFixed
+    ? {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        overflow: "hidden",
+        zIndex: 9999,
+      }
+    : {};
+
+  setTimeout(() => {
+    setHeightFixed(false);
+  }, 6700);
+
   return (
     <div style={loaderStyle}>
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
@@ -62,7 +79,7 @@ const Home = () => {
           {/* </div> */}
         </div>
       </div>
-      <main className={styles.home}>
+      <main style={heightFixedStyle} className={styles.home}>
         <Navbar />
         <Hero loading={loading} />
         <About />
