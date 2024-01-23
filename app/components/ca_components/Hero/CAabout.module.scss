@@ -1,0 +1,40 @@
+.container{
+    padding: 0 5% 0 5%;
+    width: 100%;
+
+    .headingParent{
+        color: #fff;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .heading{
+            font-size: 6vw ;
+            font-weight: 400;
+        }
+
+        .details{
+            font-size: 1.4vw;
+            font-weight: 300;
+        }
+    }
+
+    .parentCard{
+        margin: 5vw 0 5vw 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:4.75rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .parentCard{
+        justify-content: center !important;
+    }
+}
+
