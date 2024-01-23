@@ -67,7 +67,7 @@ const BirdLottie = () => {
         loop
         // keepLastFrame
         src={birds}
-        style={{ height: "100vh", width: "100vw" ,}}
+        style={{ height: "100vh", width: "100vw" }}
       ></Player>
     </div>
   );
