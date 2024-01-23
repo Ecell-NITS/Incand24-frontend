@@ -289,7 +289,7 @@ const Hero = ({ loading }) => {
           </h4>
         </div>
       </div>
-      {birds && !night && <BirdLottie />}
+      {birds && !night && !loading && <BirdLottie />}
       <div className={styles.scroller}></div>
     </div>
   );
