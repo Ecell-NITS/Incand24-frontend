@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../Hero/CAabout.module.scss";
 import { Allura } from "next/font/google";
+import styles from "./CAabout.module.scss";
 import CAcard from "./CAcard";
 
 const allura = Allura({
@@ -11,7 +11,7 @@ const allura = Allura({
 });
 
 const CAabout = () => {
-  const [cards, setCards] = useState([
+  const [cards] = useState([
     {
       id: 1,
       image: "/images/Card/img6.png",
@@ -54,8 +54,9 @@ const CAabout = () => {
         </div>
         <div className={styles.details}>
           Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to becoming
-          the face and voice of our vibrant academic community. It's not just a role, it's
-          an opportunity to share the dynamic spirit of our campus with the world!
+          the face and voice of our vibrant academic community. It&apos;s not just a role,
+          it&apos;s an opportunity to share the dynamic spirit of our campus with the
+          world!
         </div>
       </div>
       <div className={styles.parentCard}>

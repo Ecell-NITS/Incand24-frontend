@@ -5,7 +5,7 @@ import { Allura, Montserrat } from "next/font/google";
 import dreamCatcher from "./dreamCatcher";
 import styles from "./CAhero.module.scss";
 import Button from "../../Shared/Button/Button";
-import bg from "public/images/Card/bg.gif"
+// import bg from "public/images/Card/bg.gif"
 
 const allura = Allura({
   weight: ["400"],
@@ -35,7 +35,13 @@ const CAhero = () => {
           </p>
           {/* <button className={styles.Btn}>Join us</button> */}
           <Link to="contact" spy smooth hashSpy offset={10} duration={500}>
-            <Button text="Join Now" bgColor="gray" className={allura.className} />
+            <Button
+              text="Join Now"
+              bgColor="linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%),linear-gradient(270deg, #3FC6A5 3.63%, #9BE1A1 98.63%)"
+              textColor=" rgba(23, 95, 98, 1)"
+              border="2.5px solid linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%"
+              className={allura.className}
+            />
           </Link>
         </div>
       </div>
