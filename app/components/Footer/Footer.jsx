@@ -25,13 +25,15 @@ export const metadata = {
   description: "Footer",
 };
 
-const Footer = () => {
+const Footer = ({ isHills=true }) => {
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
-      <div className={styles.hills}>
-        <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
-      </div>
-      <div className={styles.container}>
+      {isHills && (
+        <div className={styles.hills}>
+          <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
+        </div>
+      )}
+      <div className={`${styles.container} ${isHills ? styles.yesHills : styles.noHills}`}>
         <div className={styles.info}>
           <a
             href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"

@@ -65,6 +65,22 @@ const Home = () => {
     setHeightFixed(false);
   }, 6700);
 
+
+  const navlink = [
+    {
+      name: "Home",
+      link: "hero",
+    },
+    {
+      name: "About Us",
+      link: "about",
+    },
+    {
+      name: "Sponsors",
+      link: "sponsor",
+    },
+  ];
+
   return (
     <div style={loaderStyle}>
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
@@ -80,7 +96,7 @@ const Home = () => {
         </div>
       </div>
       <main style={heightFixedStyle} className={styles.home}>
-        <Navbar />
+        <Navbar navlink={navlink}/>
         <Hero loading={loading} />
         <About />
         <Sponsor />

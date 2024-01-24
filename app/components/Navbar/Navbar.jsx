@@ -44,23 +44,24 @@ const Allura = allura({
 //   weight: ["500"],
 //   subsets: ["latin"],
 // });
-const Navbar = () => {
+const Navbar = ({navlink}) => {
+  console.log(navlink)
   const [select, setSelect] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const navlink = [
-    {
-      name: "Home",
-      link: "hero",
-    },
-    {
-      name: "About Us",
-      link: "about",
-    },
-    {
-      name: "Sponsors",
-      link: "sponsor",
-    },
-  ];
+  // const navlink = [
+  //   {
+  //     name: "Home",
+  //     link: "hero",
+  //   },
+  //   {
+  //     name: "About Us",
+  //     link: "about",
+  //   },
+  //   {
+  //     name: "Sponsors",
+  //     link: "sponsor",
+  //   },
+  // ];
   const change = () => {
     if (select === false) {
       setSelect(!select);

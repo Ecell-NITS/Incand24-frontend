@@ -22,7 +22,7 @@ const montserratFont = Montserrat({
 
 const CAhero = () => {
   return (
-    <div className={`${styles.CAhero} ${montserratFont.className}`}>
+    <div id="hero" className={`${styles.CAhero} ${montserratFont.className}`}>
       <div className={styles.heroInfo}>
         <div className={styles.logo}>
           <Image src="/images/LogoDark.png" fill alt="" />

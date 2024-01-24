@@ -11,6 +11,17 @@ import CAabout from "@/app/components/ca_components/Hero/CAabout";
 const CA = () => {
   const [loading, setLoading] = useState(true);
 
+  const navlink = [
+    {
+      name: "About",
+      link: "about",
+    },
+    {
+      name: "Register",
+      link: "register",
+    },
+  ];
+
   useEffect(() => {
     const isFinishedLoading = () => {
       if (document.readyState === "complete") {
@@ -51,10 +62,10 @@ const CA = () => {
         </div>
       </div>
       <main className={styles.home}>
-        <Navbar/>
+        <Navbar navlink={navlink}/>
         <CAhero />
-        <CAabout/>
-        <Footer />
+        <CAabout />
+        <Footer isHills={false}/>
       </main>
     </div>
   );
