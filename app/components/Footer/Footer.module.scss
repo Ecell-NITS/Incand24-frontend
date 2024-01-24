@@ -84,8 +84,8 @@
     @media screen and (max-width: 500px) {
       .logo {
         position: absolute;
-        top: 88vw;
-        left: 58vw;
+        top: 51.5%;
+        left: 56.5%;
       }
       .info {
         .mailicon,
@@ -100,26 +100,15 @@
       }
     }
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 400px) {
       .logo {
         position: absolute;
-        top: 89vw;
-        left: 58.5vw;
+        top: 52.5%;
+        left: 56.5%;
       }
     }
 
-    @media screen and (max-width: 395px) {
-      .logo {
-        top: 91vw;
-        left: 58.5vw;
-      }
-    }
     @media screen and (max-width: 354px) {
-      .logo {
-        top: 89vw;
-        left: 58.5vw;
-      }
-
       .info {
         .contact {
           font-size: 1.2rem;
@@ -214,6 +203,8 @@
       .ecell_copyright {
         .ecell img {
           margin: 0 0.8vw;
+          height: 3.5vh;
+          width: 7vw;
         }
         .copyright {
           width: 70%;
