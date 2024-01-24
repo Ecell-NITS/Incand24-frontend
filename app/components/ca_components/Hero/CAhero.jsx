@@ -5,7 +5,6 @@ import { Allura, Montserrat } from "next/font/google";
 import dreamCatcher from "./dreamCatcher";
 import styles from "./CAhero.module.scss";
 import Button from "../../Shared/Button/Button";
-import bg from "public/images/Card/bg.gif"
 
 const allura = Allura({
   weight: ["400"],
@@ -40,6 +39,7 @@ const CAhero = () => {
         </div>
       </div>
       <div className={styles.dreamCatcher}>
+        <div className={styles.bg}></div>
         <Player
           autoplay
           loop

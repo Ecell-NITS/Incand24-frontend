@@ -50,4 +50,18 @@
     }
   }
 
+  .dreamCatcher{
+    position: relative;
+  }
+
+  .bg{
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background: url(../../../../public/images/Card/Figma.gif)  no-repeat;
+    object-fit: cover;
+    filter: blur(30px) opacity(75%);
+    overflow: hidden;
+    object-position: center;
+  }
 }
