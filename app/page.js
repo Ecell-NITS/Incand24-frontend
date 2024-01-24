@@ -10,6 +10,7 @@ import Social from "./components/SocialHandles/Social";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import ContactUs from "./components/ContactUs/ContactUs";
 // import LoaderAnimation from "./components/Loader/Loader";
 // import animationData from "../public/loader.lottie";
 
@@ -67,6 +68,7 @@ const Home = () => {
         <Hero loading={loading} />
         <About />
         <Sponsor />
+        <ContactUs />
         <Footer />
         <Social />
       </main>
