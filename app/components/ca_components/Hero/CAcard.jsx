@@ -9,7 +9,7 @@ const Poppins = poppins({
 });
 
 
-const CAcard = ({image , text}) => {
+const CAcard = ({ image, text }) => {
   return (
     <div className={styles.wrapper}>
         <div className={styles.image}>
@@ -20,7 +20,7 @@ const CAcard = ({image , text}) => {
           <p>{text}</p>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default CAcard
+export default CAcard;

@@ -8,11 +8,20 @@ const montserratFont = Montserrat({
   subsets: ["latin"],
   variable: "--montserrat-font",
 });
-const Button = ({ bgColor = "white", text = "Default text" }) => {
+const Button = ({
+  bgColor = "white",
+  text = "Default text",
+  textColor = "black",
+  border = "none",
+}) => {
   return (
     <button
       style={{
-        backgroundColor: bgColor,
+        background: bgColor,
+        color: textColor,
+        cursor: "pointer",
+        border,
+        fontWeight: "500",
       }}
       className={`${styles.Btn} ${montserratFont.className}`}
     >
