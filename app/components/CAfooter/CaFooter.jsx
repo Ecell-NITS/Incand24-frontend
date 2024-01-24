@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { Poppins, Montserrat } from "next/font/google";
 import styles from "./CaFooter.module.scss";
-import hills from "../../../public/images/footerHills.png";
+// import hills from "../../../public/images/footerHills.png";
 import logo from "../../../public/images/LogoDark.png";
 import Brochure from "../Button/Button";
 
@@ -28,9 +28,9 @@ export const metadata = {
 const CaFooter = () => {
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
-      <div className={styles.hills}>
+      {/* <div className={styles.hills}>
         <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
-      </div>
+      </div> */}
       <div className={styles.container}>
         <div className={styles.info}>
           <a

@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 // import Navbar from "@/app/components/Navbar/Navbar";
 import styles from "./CA.module.scss";
 import CAhero from "@/app/components/ca_components/Hero/CAhero";
-import Footer from "@/app/components/Footer/Footer";
+import CaFooter from "@/app/components/CAfooter/CaFooter";
+// import CaFooter from "@/app/components/CAfooter/CaFooter";
+import CaNavbar from "@/app/components/CAnavbar/CaNavbar";
 
 const CA = () => {
   const [loading, setLoading] = useState(true);
@@ -49,8 +51,10 @@ const CA = () => {
         </div>
       </div>
       <main className={styles.home}>
+        {/* <CaNavbar/> */}
+        <CaNavbar />
         <CAhero />
-        <Footer />
+        <CaFooter />
       </main>
     </div>
   );
