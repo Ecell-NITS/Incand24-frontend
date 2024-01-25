@@ -70,19 +70,22 @@ const Navbar = ({ navlink, defaultDark = true }) => {
       setSelect(!select);
     }
   };
-  {
-    defaultDark &&
-      useEffect(() => {
-        const changeColor = () => {
-          if (window.scrollY >= 110) {
-            setNavbar(true);
-          } else {
-            setNavbar(false);
-          }
-        };
-        window.addEventListener("scroll", changeColor);
-      }, []);
-  }
+
+
+  useEffect(() => {
+    const changeColor = () => {
+      if(defaultDark){
+        if (window.scrollY >= 110) {
+          setNavbar(true);
+        } else {
+          setNavbar(false);
+        } 
+      }
+    };
+  
+    window.addEventListener("scroll", changeColor);
+  }, [defaultDark]);
+
   return (
     <div>
       <nav>
@@ -186,9 +189,19 @@ const Navbar = ({ navlink, defaultDark = true }) => {
           </div>
         </div>
         <div className={styles.menu_bar}>
-  
           <div className={styles.wrapper}>
-          <div className={styles.logo} onClick={()=>{router.push("/")}}>
+            <div
+              role="button"
+              aria-label="home button"
+              tabIndex={0}
+              className={styles.logo}
+              onClick={() => {
+                router.push("/");
+              }}
+              onKeyDown={() => {
+                router.push("/");
+              }}
+            >
               <Image
                 fill
                 style={{ cursor: "pointer" }}
@@ -196,7 +209,6 @@ const Navbar = ({ navlink, defaultDark = true }) => {
                 alt=""
               />
             </div>
-          
           </div>
 
           <div className={navbar ? styles.grp1 : styles.grp2}>
