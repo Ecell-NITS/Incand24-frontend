@@ -13,7 +13,7 @@ const CAcard = ({ image, text }) => {
   return (
     <div className={styles.wrapper}>
         <div className={styles.image}>
-            <Image src={image} alt='pngwing'  height={250} width={250} layout='contain'/>
+            <Image src={image} alt='pngwing'  height={250} width={250}/>
         </div>
 
         <div className={`${Poppins.className} ${styles.text}`}>

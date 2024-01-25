@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Link } from "react-scroll";
 import {
   // Passion_One as passionOne,
@@ -44,10 +45,10 @@ const Allura = allura({
 //   weight: ["500"],
 //   subsets: ["latin"],
 // });
-const Navbar = ({navlink}) => {
-  console.log(navlink)
+const Navbar = ({ navlink, defaultDark = true }) => {
   const [select, setSelect] = useState(false);
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(!defaultDark);
+  const router = useRouter();
   // const navlink = [
   //   {
   //     name: "Home",
@@ -69,16 +70,19 @@ const Navbar = ({navlink}) => {
       setSelect(!select);
     }
   };
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 110) {
-        setNavbar(true);
-      } else {
-        setNavbar(false);
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
+  {
+    defaultDark &&
+      useEffect(() => {
+        const changeColor = () => {
+          if (window.scrollY >= 110) {
+            setNavbar(true);
+          } else {
+            setNavbar(false);
+          }
+        };
+        window.addEventListener("scroll", changeColor);
+      }, []);
+  }
   return (
     <div>
       <nav>
@@ -182,16 +186,9 @@ const Navbar = ({navlink}) => {
           </div>
         </div>
         <div className={styles.menu_bar}>
-          <Link
-            to="hero"
-            spy
-            smooth
-            hashSpy
-            offset={50}
-            duration={500}
-            className={styles.wrapper}
-          >
-            <div className={styles.logo}>
+  
+          <div className={styles.wrapper}>
+          <div className={styles.logo} onClick={()=>{router.push("/")}}>
               <Image
                 fill
                 style={{ cursor: "pointer" }}
@@ -199,7 +196,8 @@ const Navbar = ({navlink}) => {
                 alt=""
               />
             </div>
-          </Link>
+          
+          </div>
 
           <div className={navbar ? styles.grp1 : styles.grp2}>
             {navlink.map(({ name, link }) => (
