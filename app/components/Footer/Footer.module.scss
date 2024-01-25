@@ -85,7 +85,7 @@
       .logo {
         position: absolute;
         top: 51.5%;
-        left: 56.5%;
+        left: 58%;
       }
       .info {
         .mailicon,
@@ -103,8 +103,16 @@
     @media screen and (max-width: 400px) {
       .logo {
         position: absolute;
+        top: 51%;
+        left: 58%;
+      }
+    }
+
+    @media screen and (max-width: 380px) {
+      .logo {
+        position: absolute;
         top: 52.5%;
-        left: 56.5%;
+        left: 58%;
       }
     }
 
