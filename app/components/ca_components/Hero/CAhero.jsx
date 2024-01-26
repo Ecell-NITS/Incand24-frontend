@@ -5,6 +5,7 @@ import { Allura, Montserrat } from "next/font/google";
 import dreamCatcher from "./dreamCatcher";
 import styles from "./CAhero.module.scss";
 import Button from "../../Shared/Button/Button";
+import { useRouter } from "next/navigation";
 
 const allura = Allura({
   weight: ["400"],
@@ -21,10 +22,22 @@ const montserratFont = Montserrat({
 });
 
 const CAhero = () => {
+  const router = useRouter();
   return (
     <div id="hero" className={`${styles.CAhero} ${montserratFont.className}`}>
       <div className={styles.heroInfo}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => {
+            router.push("/");
+          }}
+          role="button"
+          aria-label="home button"
+          tabIndex={0}
+          onKeyDown={() => {
+            router.push("/");
+          }}
+        >
           <Image src="/images/LogoDark.png" fill alt="" />
         </div>
         <div className={`${styles.content} ${montserratFont.className}`}>

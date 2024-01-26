@@ -150,17 +150,20 @@
       }
     }
     .logo {
-      width: 30vw;
-      height: 15vw;
+       width: 36vw;
+      height: 23vw;
       position: relative;
+
+      @media screen and (max-width: 463px) {
+          height: 38vw;
+          width: 60vw;
+        
+      }
+      
     }
 
     @media screen and (max-width: 500px) {
-      .logo {
-        position: absolute;
-        top: 69.5%;
-        left: 58%;
-      }
+
       .info {
         .mailicon,
         .locnlogo {
@@ -169,23 +172,12 @@
         .follow {
           margin-top: 3vh;
           margin-left: 1vw;
-          align-self: flex-start;
         }
       }
     }
 
-    @media screen and (max-width: 400px) {
-      .logo {
-        top: 69.8%;
-        left: 58%;
-      }
-    }
 
     @media screen and (max-width: 380px) {
-      .logo {
-        top: 71.5%;
-        left: 58%;
-      }
       .info {
         .contact {
           font-size: 1.2rem;
@@ -213,7 +205,6 @@
         }
         .follow {
           font-size: 1.2rem;
-          margin-left: 0;
           .social {
             gap: 10px;
           }
@@ -223,11 +214,6 @@
 
     @media screen and (max-width: 300px) {
       gap: 0.8rem;
-      .logo {
-        top: 69%;
-        left: 58%;
-      }
-
       .info {
         .contact {
           font-size: 1rem;
@@ -239,7 +225,6 @@
 
         .follow {
           font-size: 1rem;
-          margin-left: 0;
           .social {
             gap: 8px;
             .icon {
@@ -329,3 +314,4 @@
     }
   }
 }
+
