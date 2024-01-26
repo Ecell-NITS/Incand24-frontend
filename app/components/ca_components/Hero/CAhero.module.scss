@@ -1,0 +1,102 @@
+.CAhero {
+  padding: 10% 5%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  @media screen and (max-width: 760px) {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .heroInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .content{
+      @media screen and (max-width : 760px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // text-align: center;
+      }
+
+      button{
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+
+        @media screen and (max-width: 610px) {
+          margin-top: 7vw;
+        }
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 80%;
+    }
+    h1 {
+      font-size: 2.7vw;
+      font-weight: 400;
+      @media screen and (max-width: 760px) {
+        font-size: 4vw;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 5vw;
+      }
+    }
+    p {
+      font-size: 1.5vw;
+      font-weight: 300;
+      display: flex;
+      // width: 60%;
+      margin: 1rem 0;
+      @media screen and (max-width: 760px) {
+        font-size: 2.5vw;
+        // width: 80%;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 3vw;
+        // width: 90%;
+      }
+    }
+    .logo {
+      position: relative;
+      width: 20vw;
+      height: 10vw;
+
+      @media screen and (max-width: 760px) {
+        width: 65vw;
+        height: 30vw;
+        margin-left: -40px;
+      }
+    }
+  }
+
+  .dreamCatcher{
+    position: relative;
+    margin-top: -2.2vw;
+
+    @media screen and (max-width: 760px) {
+      margin-top: 2vw;
+      padding-bottom: 5vw;
+      width: 100%;
+    }
+  }
+
+  .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 120%;
+    background: url(../../../../public/images/Card/Figma.gif)  no-repeat;
+    object-fit: cover;
+    filter: blur(30px) ;
+    overflow: hidden;
+    object-position: center;
+  }
+}

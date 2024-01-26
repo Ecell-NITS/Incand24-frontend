@@ -61,9 +61,27 @@ const Home = () => {
       }
     : {};
 
-  setTimeout(() => {
-    setHeightFixed(false);
-  }, 6700);
+  useEffect(() => {
+    if (!loading)
+      setTimeout(() => {
+        setHeightFixed(false);
+      }, 6700);
+  });
+
+  const navlink = [
+    {
+      name: "Home",
+      link: "hero",
+    },
+    {
+      name: "About Us",
+      link: "about",
+    },
+    {
+      name: "Sponsors",
+      link: "sponsor",
+    },
+  ];
 
   return (
     <div style={loaderStyle}>
@@ -80,11 +98,11 @@ const Home = () => {
         </div>
       </div>
       <main style={heightFixedStyle} className={styles.home}>
-        <Navbar />
+        <Navbar navlink={navlink} />
         <Hero loading={loading} />
         <About />
         <Sponsor />
-        <Footer />
+        <Footer homePage />
         <Social />
       </main>
     </div>

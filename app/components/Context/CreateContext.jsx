@@ -1,37 +1,60 @@
 "use client";
 
-import { createContext, useEffect, useState, useMemo } from "react";
+import React, { createContext, useState, useEffect, useMemo } from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
+
 const UserContext = createContext();
 
 const ContextProvider = ({ children }) => {
-  const [events, setEvents] = useState([]);
   const [profile, setProfile] = useState([]);
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [eventsRes, profileRes] = await Promise.all([
-          axios.get(`${process.env.API}/dashboard`),
-          axios.get(`${process.env.API}/events`),
-        ]);
-        setEvents(eventsRes.data);
-        setProfile(profileRes.data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    fetchData();
-  }, []);
+  const [role, setRole] = useState("client");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [fetching, setFetching] = useState(true);
 
   useEffect(() => {
-    setValue(3);
-  }, []);
+    const token = Cookies.get("authToken");
+    setFetching(false);
+    if (fetching === true && token) {
+      setIsLoggedIn(true);
+    }
+  }, [fetching]);
+
+  useEffect(() => {
+    const token = Cookies.get("authToken");
+    const tokenConfig = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    if (isLoggedIn === true) {
+      const fetchData = async () => {
+        try {
+          const [profileRes] = await Promise.all([
+            axios.get(`${process.env.NEXT_PUBLIC_API_MAIN}/dashboard`, tokenConfig),
+          ]);
+          setProfile(profileRes.data);
+          setRole(profileRes.data.user.role);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+      fetchData();
+    }
+  }, [isLoggedIn]);
+
   const contextValue = useMemo(
-    () => ({ profile, events, value }),
-    [profile, events, value]
+    () => ({
+      profile,
+      isLoggedIn,
+      role,
+    }),
+    [profile, isLoggedIn, role]
   );
 
+  if (fetching) {
+    return null;
+  }
   return <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>;
 };
 

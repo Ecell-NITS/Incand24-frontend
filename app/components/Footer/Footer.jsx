@@ -1,13 +1,12 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-
-import { Link } from "react-scroll";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import { Poppins, Montserrat } from "next/font/google";
+import { Poppins, Montserrat, Allura } from "next/font/google";
+import { useRouter } from "next/navigation";
 import styles from "./Footer.module.scss";
+import logo from "../../../public/images/glowingLogo.svg";
 import hills from "../../../public/images/footerHills.png";
-import logo from "../../../public/images/LogoDark.png";
 import Brochure from "../Button/Button";
 
 const poppins = Poppins({
@@ -20,25 +19,64 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const allura = Allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 export const metadata = {
   title: "Footer",
   description: "Footer",
 };
 
-const Footer = () => {
+const Footer = ({ isHills = true, homePage = false }) => {
+  const router = useRouter();
+
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
-      <div className={styles.hills}>
-        <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
-      </div>
-      <div className={styles.container}>
+      {isHills && (
+        <div className={styles.hills}>
+          <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
+        </div>
+      )}
+      <div
+        className={`${styles.container} ${isHills ? styles.yesHills : styles.noHills}`}
+      >
+        {homePage && (
+          <div className={styles.ca}>
+            <h1 className={`${styles.title} ${allura.className}`}>
+              Become Campus Ambassador
+            </h1>
+            <p className={`${styles.content} ${montserrat.className}`}>
+              Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to
+              becoming the face and voice of our vibrant academic community. It&apos;s not
+              just a role, it&apos;s an opportunity to share the dynamic spirit of our
+              campus with the world!
+            </p>
+            <div
+              id={styles.topBrchBtn}
+              onClick={() => {
+                router.push("/ca");
+              }}
+              role="button"
+              aria-label="home button"
+              tabIndex={0}
+              onKeyDown={() => {
+                router.push("/");
+              }}
+            >
+              <Brochure text="Join Us" />
+            </div>
+          </div>
+        )}
+
         <div className={styles.info}>
           <a
             href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
             target="_blank"
             className={styles.brochure}
           >
-            <Brochure />
+            <Brochure text="Brochure" />
           </a>
           <div className={styles.contact}>
             <div> Contact us</div>
@@ -56,9 +94,19 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.logo}>
-          <Link to="hero" spy smooth hashSpy offset={50} duration={500}>
+          <div
+            role="button"
+            aria-label="home button"
+            tabIndex={0}
+            onClick={() => {
+              router.push("/");
+            }}
+            onKeyDown={() => {
+              router.push("/");
+            }}
+          >
             <Image style={{ cursor: "pointer" }} alt=" " src={logo} fill />
-          </Link>
+          </div>
         </div>
         <div className={styles.info}>
           <div className={styles.follow}>
