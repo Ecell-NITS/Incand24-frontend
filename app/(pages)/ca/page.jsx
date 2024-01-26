@@ -7,6 +7,7 @@ import CAhero from "@/app/components/ca_components/Hero/CAhero";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 import CAabout from "@/app/components/ca_components/Hero/CAabout";
+import ContactUs from "@/app/components/ContactUs/ContactUs";
 
 const CA = () => {
   const [loading, setLoading] = useState(true);
@@ -65,6 +66,7 @@ const CA = () => {
         <Navbar navlink={navlink} defaultDark={false}/>
         <CAhero />
         <CAabout />
+        <ContactUs/>
         <Footer isHills={false}/>
       </main>
     </div>

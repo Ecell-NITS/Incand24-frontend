@@ -2,6 +2,21 @@ import React, { useState } from "react";
 
 import { Toaster, toast } from "sonner";
 import styles from "./ContactUs.module.scss";
+import { Allura , Expletus_Sans} from "next/font/google";
+
+const allura = Allura({
+  weight: ["400"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--allura-font",
+});
+
+const sans = Expletus_Sans({
+  weight: ["400"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--sans-font",
+});
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -55,23 +70,27 @@ const ContactUs = () => {
     return Object.keys(err).length < 1;
   };
   return (
-    <div className={styles.bro}>
-      <div className={styles.container}>
+    <div className={styles.bro} id="join">
+      <div className={`${allura.className} ${styles.heading}`}>
+          <h1>What are you waiting for? </h1>
+        </div>
+
+      <div className={`${allura.className} ${styles.container}`}>
         <div className={styles.heading}>
           <h2>Register Yourself</h2>
         </div>
         <form onSubmit={onSubmitHandler}>
-          <div className={styles.box}>
+          <div className={`${sans.className} ${styles.box}`}>
             <label htmlFor="name">Name</label>
             <input name="name" autoComplete="off" onChange={OnChangeHandler} />
             <span>{formError.name}</span>
           </div>
-          <div className={styles.box}>
+          <div className={`${sans.className} ${styles.box}`}>
             <label htmlFor="instituteName">Institute Name</label>
             <input name="instituteName" autoComplete="off" onChange={OnChangeHandler} />
             <span>{formError.instituteName}</span>
           </div>
-          <div className={styles.box}>
+          <div className={`${sans.className} ${styles.box}`}>
             <label htmlFor="contact">Contact Number</label>
             <input
               name="contact"

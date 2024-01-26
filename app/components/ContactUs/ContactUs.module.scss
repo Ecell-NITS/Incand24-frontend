@@ -1,9 +1,34 @@
 .bro {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 5rem;
+  color: #fff;
+  margin-top: 9.375rem;
+
+  
+.heading {
+  h1 {
+    font-size: 6vw;
+    font-weight: 400;
+    @media screen and (max-width: 760px) {
+      font-size: 7vw;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 8vw;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 11vw;
+      text-align: start;
+    }
+  }
+
+  margin-bottom: 3.125rem;
 }
+
+}
+
 
 .container {
   display: flex;
