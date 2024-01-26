@@ -98,6 +98,9 @@
 
 .sub {
   padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box span {
@@ -130,8 +133,8 @@
 
 @media screen and (max-width: 500px) {
   .heading h2 {
-    padding: 3.5rem 3rem;
-    font-size: 1.4rem;
+    padding: 3rem 2.5rem;
+    font-size: 1.6rem;
     letter-spacing: 0.1rem;
   }
 
@@ -168,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .heading h2 {
     font-size: 1.1rem;
   }

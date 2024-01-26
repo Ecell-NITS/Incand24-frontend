@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
-import { ToastContainer, toast } from "react-toastify";
+import { Toaster, toast } from "sonner";
 import styles from "./ContactUs.module.scss";
-import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -26,22 +25,10 @@ const ContactUs = () => {
     if (isValid) {
       toast.success("Submittted", {
         position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
       });
     } else {
       toast.error("Invalid form", {
         position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
       });
     }
   };
@@ -110,7 +97,7 @@ const ContactUs = () => {
           </div>
         </form>
       </div>
-      <ToastContainer />
+      <Toaster richColors />
     </div>
   );
 };
