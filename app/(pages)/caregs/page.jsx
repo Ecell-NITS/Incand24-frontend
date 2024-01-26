@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext, useMemo } from "react";
 import { useQuery } from "react-query";
 import { UserContext } from "@/app/components/Context/CreateContext";
