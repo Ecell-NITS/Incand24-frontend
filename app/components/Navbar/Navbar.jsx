@@ -71,18 +71,17 @@ const Navbar = ({ navlink, defaultDark = true }) => {
     }
   };
 
-
   useEffect(() => {
     const changeColor = () => {
-      if(defaultDark){
+      if (defaultDark) {
         if (window.scrollY >= 110) {
           setNavbar(true);
         } else {
           setNavbar(false);
-        } 
+        }
       }
     };
-  
+
     window.addEventListener("scroll", changeColor);
   }, [defaultDark]);
 
@@ -237,7 +236,7 @@ const Navbar = ({ navlink, defaultDark = true }) => {
               rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
             >
-              <Brochure />
+              <Brochure text="Brochure" />
             </a>
           </div>
         </div>
