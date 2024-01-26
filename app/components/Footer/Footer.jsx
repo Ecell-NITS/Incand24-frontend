@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-
-import { Link } from "react-scroll";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
 import Image from "next/image";

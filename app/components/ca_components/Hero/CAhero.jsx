@@ -2,10 +2,10 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { Allura, Montserrat } from "next/font/google";
+import { useRouter } from "next/navigation";
 import dreamCatcher from "./dreamCatcher";
 import styles from "./CAhero.module.scss";
 import Button from "../../Shared/Button/Button";
-import { useRouter } from "next/navigation";
 
 const allura = Allura({
   weight: ["400"],
