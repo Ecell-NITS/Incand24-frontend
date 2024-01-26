@@ -224,7 +224,7 @@
     @media screen and (max-width: 300px) {
       gap: 0.8rem;
       .logo {
-        top: 69.%;
+        top: 69.5%;
         left: 58%;
       }
 
