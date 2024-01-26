@@ -24,6 +24,7 @@ const CA = () => {
   ];
 
   useEffect(() => {
+    document.title = "Campus Ambassador | Incandescence 2024";
     const isFinishedLoading = () => {
       if (document.readyState === "complete") {
         setLoading(false);
@@ -63,11 +64,11 @@ const CA = () => {
         </div>
       </div>
       <main className={styles.home}>
-        <Navbar navlink={navlink} defaultDark={false}/>
+        <Navbar navlink={navlink} defaultDark={false} />
         <CAhero />
         <CAabout />
-        <ContactUs/>
-        <Footer isHills={false}/>
+        <ContactUs />
+        <Footer isHills={false} />
       </main>
     </div>
   );

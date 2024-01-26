@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useMemo } from "react";
 import { Toaster, toast } from "sonner";
 import axios from "axios";
@@ -28,57 +29,81 @@ const ContactUs = () => {
       [event.target.name]: event.target.value,
     }));
   };
-  const onSubmitHandler = (event) => {
-    event.preventDefault();
-    const isValid = validateForm();
-    if (isValid) {
-      toast.success("Submittted", {
-        position: "bottom-right",
-      });
-    } else {
-      toast.error("Invalid form", {
-        position: "bottom-right",
-      });
-    }
-  };
+  // const onSubmitHandler = (event) => {
+  //   event.preventDefault();
+  //   const isValid = validateForm();
+  //   if (isValid) {
+  //     toast.success("Submittted", {
+  //       position: "bottom-right",
+  //     });
+  //   } else {
+  //     toast.error("Invalid form", {
+  //       position: "bottom-right",
+  //     });
+  //   }
+  // };
 
-  const validateForm = () => {
-    const err = {};
+  // const validateForm = () => {
+  //   const err = {};
 
-    if (formData.name === "") {
-      err.name = "Name required!";
-    }
-    if (formData.name?.length > 50) {
-      err.name = "Name too long";
-    }
-    if (formData.email === "") {
-      err.email = "Email required!";
-    }
-    if (formData.email.includes("@") === false) {
-      err.email = "Invalid Email";
-    }
-    if (formData.email?.length > 50) {
-      err.name = "Email too long";
-    }
-    if (formData.contact.length < 10) {
-      err.contact = "Invalid Contact Number!";
-    }
-    if (formData.contact === "") {
-      err.contact = "Contact Number required!";
-    }
-    if (formData.instituteName === "") {
-      err.instituteName = "Institute Name required!";
-    }
-    if (formData.instituteName?.length > 100) {
-      err.name = "Institute Name too long";
-    }
+  //   if (formData.name === "") {
+  //     err.name = "Name required!";
+  //   }
+  //   if (formData.name?.length > 50) {
+  //     err.name = "Name too long";
+  //   }
+  //   if (formData.email === "") {
+  //     err.email = "Email required!";
+  //   }
+  //   if (formData.email.includes("@") === false) {
+  //     err.email = "Invalid Email";
+  //   }
+  //   if (formData.email?.length > 50) {
+  //     err.name = "Email too long";
+  //   }
+  //   if (formData.contact.length < 10) {
+  //     err.contact = "Invalid Contact Number!";
+  //   }
+  //   if (formData.contact === "") {
+  //     err.contact = "Contact Number required!";
+  //   }
+  //   if (formData.instituteName === "") {
+  //     err.instituteName = "Institute Name required!";
+  //   }
+  //   if (formData.instituteName?.length > 100) {
+  //     err.name = "Institute Name too long";
+  //   }
 
-    setFormError({ ...err });
-    return Object.keys(err).length < 1;
-  };
+  //   setFormError({ ...err });
+  //   return Object.keys(err).length < 1;
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formData.name?.length > 50) {
+      toast.error("Name too long", {
+        position: "bottom-right",
+      });
+      return;
+    }
+    if (formData.email?.length > 50) {
+      toast.error("Email too long", {
+        position: "bottom-right",
+      });
+      return;
+    }
+    if (formData.instituteName?.length > 100) {
+      toast.error("Institute Name too long", {
+        position: "bottom-right",
+      });
+      return;
+    }
+    if (formData.contact?.length < 10) {
+      toast.error("Invalid Contact Number!", {
+        position: "bottom-right",
+      });
+      return;
+    }
     setSubmitting(true);
     try {
       await axios
@@ -92,12 +117,6 @@ const ContactUs = () => {
           if (res.data.message === "Registration successful") {
             toast.success("Registration successful", {
               position: "bottom-right",
-            });
-            setFormData({
-              name: "",
-              instituteName: "",
-              contact: "",
-              email: "",
             });
           }
         });
@@ -140,7 +159,7 @@ const ContactUs = () => {
   }, [formData]);
 
   return (
-    <div className={styles.bro} id="join">
+    <div className={styles.bro} id="register">
       <div className={`${allura.className} ${styles.heading}`}>
         <h1>What are you waiting for? </h1>
       </div>
@@ -149,7 +168,7 @@ const ContactUs = () => {
         <div className={styles.heading}>
           <h2 className={`${allura.className}`}>Register Yourself</h2>
         </div>
-        <form onSubmit={onSubmitHandler}>
+        <form>
           <div className={styles.box}>
             <label htmlFor="name">Name</label>
             <input name="name" autoComplete="off" onChange={OnChangeHandler} />

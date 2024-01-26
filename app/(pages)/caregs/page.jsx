@@ -33,6 +33,7 @@ const Caregs = () => {
                   <li>contact: {item?.phone}</li>
                   <li>email: {item?.email}</li>
                   <li>email: {item?.registeredAt}</li>
+                  <hr />
                 </ul>
               </div>
             );
