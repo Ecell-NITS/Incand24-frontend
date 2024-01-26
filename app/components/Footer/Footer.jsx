@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-
-import { Link } from "react-scroll";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
 import Image from "next/image";
@@ -8,7 +6,7 @@ import { Poppins, Montserrat, Allura } from "next/font/google";
 import { useRouter } from "next/navigation";
 import styles from "./Footer.module.scss";
 import hills from "../../../public/images/footerHills.png";
-import logo from "../../../public/images/LogoDark.png";
+import logo from "../../../public/images/glowingLogo.svg";
 import Brochure from "../Button/Button";
 
 const poppins = Poppins({
@@ -57,7 +55,9 @@ const Footer = ({ isHills = true, homePage = false }) => {
             </p>
             <div
               id={styles.topBrchBtn}
-              onClick={()=>{router.push("/ca")}}
+              onClick={() => {
+                router.push("/ca");
+              }}
               role="button"
               aria-label="home button"
               tabIndex={0}
@@ -65,7 +65,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
                 router.push("/");
               }}
             >
-              <Brochure text="Join Us"/>
+              <Brochure text="Join Us" />
             </div>
           </div>
         )}
@@ -94,9 +94,19 @@ const Footer = ({ isHills = true, homePage = false }) => {
           </div>
         </div>
         <div className={styles.logo}>
-          <Link to="hero" spy smooth hashSpy offset={50} duration={500}>
+          <div
+            role="button"
+            aria-label="home button"
+            tabIndex={0}
+            onClick={() => {
+              router.push("/");
+            }}
+            onKeyDown={() => {
+              router.push("/");
+            }}
+          >
             <Image style={{ cursor: "pointer" }} alt=" " src={logo} fill />
-          </Link>
+          </div>
         </div>
         <div className={styles.info}>
           <div className={styles.follow}>

@@ -2,6 +2,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { Allura, Montserrat } from "next/font/google";
+import { useRouter } from "next/navigation";
 import dreamCatcher from "./dreamCatcher";
 import styles from "./CAhero.module.scss";
 import Button from "../../Shared/Button/Button";
@@ -21,10 +22,22 @@ const montserratFont = Montserrat({
 });
 
 const CAhero = () => {
+  const router = useRouter();
   return (
     <div id="hero" className={`${styles.CAhero} ${montserratFont.className}`}>
       <div className={styles.heroInfo}>
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={() => {
+            router.push("/");
+          }}
+          role="button"
+          aria-label="home button"
+          tabIndex={0}
+          onKeyDown={() => {
+            router.push("/");
+          }}
+        >
           <Image src="/images/LogoDark.png" fill alt="" />
         </div>
         <div className={`${styles.content} ${montserratFont.className}`}>
