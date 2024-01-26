@@ -99,7 +99,7 @@ const Home = () => {
         <Hero loading={loading} />
         <About />
         <Sponsor />
-        <Footer />
+        <Footer homePage/>
         <Social />
       </main>
     </div>

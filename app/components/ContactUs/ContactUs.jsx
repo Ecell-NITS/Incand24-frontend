@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import { Toaster, toast } from "sonner";
+import { Allura } from "next/font/google";
 import styles from "./ContactUs.module.scss";
-import { Allura , Expletus_Sans} from "next/font/google";
 
 const allura = Allura({
   weight: ["400"],
@@ -11,12 +11,6 @@ const allura = Allura({
   variable: "--allura-font",
 });
 
-const sans = Expletus_Sans({
-  weight: ["400"],
-  display: "swap",
-  subsets: ["latin"],
-  variable: "--sans-font",
-});
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -80,17 +74,17 @@ const ContactUs = () => {
           <h2>Register Yourself</h2>
         </div>
         <form onSubmit={onSubmitHandler}>
-          <div className={`${sans.className} ${styles.box}`}>
+          <div className={styles.box}>
             <label htmlFor="name">Name</label>
             <input name="name" autoComplete="off" onChange={OnChangeHandler} />
             <span>{formError.name}</span>
           </div>
-          <div className={`${sans.className} ${styles.box}`}>
+          <div className={styles.box}>
             <label htmlFor="instituteName">Institute Name</label>
             <input name="instituteName" autoComplete="off" onChange={OnChangeHandler} />
             <span>{formError.instituteName}</span>
           </div>
-          <div className={`${sans.className} ${styles.box}`}>
+          <div className={styles.box}>
             <label htmlFor="contact">Contact Number</label>
             <input
               name="contact"

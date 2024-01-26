@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { Poppins, Montserrat, Allura } from "next/font/google";
+import { useRouter } from "next/navigation";
 import styles from "./Footer.module.scss";
 import hills from "../../../public/images/footerHills.png";
 import logo from "../../../public/images/LogoDark.png";
@@ -30,7 +31,9 @@ export const metadata = {
   description: "Footer",
 };
 
-const Footer = ({ isHills = true }) => {
+const Footer = ({ isHills = true, homePage = false }) => {
+  const router = useRouter();
+
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
       {isHills && (
@@ -41,24 +44,31 @@ const Footer = ({ isHills = true }) => {
       <div
         className={`${styles.container} ${isHills ? styles.yesHills : styles.noHills}`}
       >
-        <div className={styles.ca}>
-          <h1 className={`${styles.title} ${allura.className}`}>
-            Become Campus Ambassador
-          </h1>
-          <p className={`${styles.content} ${montserrat.className}`}>
-            Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to becoming
-            the face and voice of our vibrant academic community. It&apos;s not just a
-            role, it&apos;s an opportunity to share the dynamic spirit of our campus with
-            the world!
-          </p>
-          <a
-            href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
-            target="_blank"
-            id={styles.topBrchBtn}
-          >
-            <Brochure text="Join Us" />
-          </a>
-        </div>
+        {homePage && (
+          <div className={styles.ca}>
+            <h1 className={`${styles.title} ${allura.className}`}>
+              Become Campus Ambassador
+            </h1>
+            <p className={`${styles.content} ${montserrat.className}`}>
+              Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to
+              becoming the face and voice of our vibrant academic community. It&apos;s not
+              just a role, it&apos;s an opportunity to share the dynamic spirit of our
+              campus with the world!
+            </p>
+            <div
+              id={styles.topBrchBtn}
+              onClick={()=>{router.push("/ca")}}
+              role="button"
+              aria-label="home button"
+              tabIndex={0}
+              onKeyDown={() => {
+                router.push("/");
+              }}
+            >
+              <Brochure text="Join Us"/>
+            </div>
+          </div>
+        )}
 
         <div className={styles.info}>
           <a
