@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import { Poppins, Montserrat } from "next/font/google";
+import { Poppins, Montserrat, Allura } from "next/font/google";
 import styles from "./Footer.module.scss";
 import hills from "../../../public/images/footerHills.png";
 import logo from "../../../public/images/LogoDark.png";
@@ -20,12 +20,17 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const allura = Allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 export const metadata = {
   title: "Footer",
   description: "Footer",
 };
 
-const Footer = ({ isHills=true }) => {
+const Footer = ({ isHills = true }) => {
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
       {isHills && (
@@ -33,14 +38,35 @@ const Footer = ({ isHills=true }) => {
           <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
         </div>
       )}
-      <div className={`${styles.container} ${isHills ? styles.yesHills : styles.noHills}`}>
+      <div
+        className={`${styles.container} ${isHills ? styles.yesHills : styles.noHills}`}
+      >
+        <div className={styles.ca}>
+          <h1 className={`${styles.title} ${allura.className}`}>
+            Become Campus Ambassador
+          </h1>
+          <p className={`${styles.content} ${montserrat.className}`}>
+            Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to becoming
+            the face and voice of our vibrant academic community. It&apos;s not just a
+            role, it&apos;s an opportunity to share the dynamic spirit of our campus with
+            the world!
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+            target="_blank"
+            id={styles.topBrchBtn}
+          >
+            <Brochure text="Join Us" />
+          </a>
+        </div>
+
         <div className={styles.info}>
           <a
             href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
             target="_blank"
             className={styles.brochure}
           >
-            <Brochure />
+            <Brochure text="Brochure" />
           </a>
           <div className={styles.contact}>
             <div> Contact us</div>

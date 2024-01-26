@@ -1,6 +1,6 @@
 import styles from "./Brochure.module.scss";
 
-const Brochure = () => {
+const Brochure = ({ text = "" }) => {
   return (
     <div className={styles.sparkle_button}>
       <button className={styles.brochure_btn}>
@@ -34,7 +34,7 @@ const Brochure = () => {
             stroke-linejoin="round"
           />
         </svg>
-        <span className={styles.label}>Brochure</span>
+        <span className={styles.label}>{text}</span>
       </button>
     </div>
   );
