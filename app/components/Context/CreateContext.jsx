@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable no-console */
 import { createContext, useState, useEffect, useMemo } from "react";
 import axios from "axios";

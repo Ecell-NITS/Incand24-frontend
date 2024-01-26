@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Poppins, Montserrat, Allura } from "next/font/google";
 import { useRouter } from "next/navigation";
 import styles from "./Footer.module.scss";
-import hills from "../../../public/images/footerHills.png";
 import logo from "../../../public/images/glowingLogo.svg";
+import hills from "../../../public/images/footerHills.png";
 import Brochure from "../Button/Button";
 
 const poppins = Poppins({
