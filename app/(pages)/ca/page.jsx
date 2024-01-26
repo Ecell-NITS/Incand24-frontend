@@ -62,7 +62,7 @@ const CA = () => {
         </div>
       </div>
       <main className={styles.home}>
-        <Navbar navlink={navlink}/>
+        <Navbar navlink={navlink} defaultDark={false}/>
         <CAhero />
         <CAabout />
         <Footer isHills={false}/>
