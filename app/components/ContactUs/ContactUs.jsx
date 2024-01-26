@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState, useMemo } from "react";
 import { Toaster, toast } from "sonner";
+import axios from "axios";
 import { Allura } from "next/font/google";
 import styles from "./ContactUs.module.scss";
 
@@ -11,7 +11,6 @@ const allura = Allura({
   variable: "--allura-font",
 });
 
-
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -21,6 +20,7 @@ const ContactUs = () => {
   });
 
   const [formError, setFormError] = useState({});
+  const [submitting, setSubmitting] = useState(false);
 
   const OnChangeHandler = (event) => {
     setFormData(() => ({
@@ -41,14 +41,24 @@ const ContactUs = () => {
       });
     }
   };
+
   const validateForm = () => {
     const err = {};
 
     if (formData.name === "") {
       err.name = "Name required!";
     }
+    if (formData.name?.length > 50) {
+      err.name = "Name too long";
+    }
     if (formData.email === "") {
       err.email = "Email required!";
+    }
+    if (formData.email.includes("@") === false) {
+      err.email = "Invalid Email";
+    }
+    if (formData.email?.length > 50) {
+      err.name = "Email too long";
     }
     if (formData.contact.length < 10) {
       err.contact = "Invalid Contact Number!";
@@ -59,19 +69,85 @@ const ContactUs = () => {
     if (formData.instituteName === "") {
       err.instituteName = "Institute Name required!";
     }
+    if (formData.instituteName?.length > 100) {
+      err.name = "Institute Name too long";
+    }
 
     setFormError({ ...err });
     return Object.keys(err).length < 1;
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      await axios
+        .post(`${process.env.NEXT_PUBLIC_API_MAIN}/CAregister`, {
+          name: formData.name,
+          college: formData.instituteName,
+          email: formData.email,
+          phone: formData.contact,
+        })
+        .then((res) => {
+          if (res.data.message === "Registration successful") {
+            toast.success("Registration successful", {
+              position: "bottom-right",
+            });
+            setFormData({
+              name: "",
+              instituteName: "",
+              contact: "",
+              email: "",
+            });
+          }
+        });
+    } catch (err) {
+      if (err.response) {
+        switch (err.response.data.error) {
+          case "details missing":
+            toast.error("Please fill all the details");
+            break;
+          case "details too long":
+            toast.error("Details too long");
+            break;
+          case "Existing registartion with this email id":
+            toast.error("Existing registartion with this email id");
+            break;
+          case "Invalid email":
+            toast.error("Invalid email");
+            break;
+          case "Register went wrong":
+            toast.error("Register went wrong, please try again later");
+            break;
+          default:
+            toast.error("Something went wrong");
+            console.error(err);
+            break;
+        }
+      }
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const isButtonEnabled = useMemo(() => {
+    return (
+      formData.name.length > 0 &&
+      formData.instituteName.length > 0 &&
+      formData.contact.length > 0 &&
+      formData.email.length > 0
+    );
+  }, [formData]);
+
   return (
     <div className={styles.bro} id="join">
       <div className={`${allura.className} ${styles.heading}`}>
-          <h1>What are you waiting for? </h1>
-        </div>
+        <h1>What are you waiting for? </h1>
+      </div>
 
-      <div className={`${allura.className} ${styles.container}`}>
+      <div className={` ${allura.className} ${styles.container}`}>
         <div className={styles.heading}>
-          <h2>Register Yourself</h2>
+          <h2 className={`${allura.className}`}>Register Yourself</h2>
         </div>
         <form onSubmit={onSubmitHandler}>
           <div className={styles.box}>
@@ -106,7 +182,17 @@ const ContactUs = () => {
             <span>{formError.email}</span>
           </div>
           <div className={styles.sub}>
-            <button type="submit">Send</button>
+            <button
+              disabled={submitting || !isButtonEnabled}
+              style={{
+                cursor: submitting || !isButtonEnabled ? "not-allowed" : "pointer",
+                opacity: submitting || !isButtonEnabled ? "0.5" : "1",
+              }}
+              onClick={handleSubmit}
+              type="submit"
+            >
+              {submitting ? "Submitting..." : "Register"}
+            </button>
           </div>
         </form>
       </div>

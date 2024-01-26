@@ -18,6 +18,7 @@
     "axios": "^1.6.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.16",
+    "js-cookie": "^3.0.5",
     "json-server": "^0.17.3",
     "lottie-react": "^2.4.0",
     "mongoose": "^7.5.2",

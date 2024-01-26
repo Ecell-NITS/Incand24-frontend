@@ -61,9 +61,12 @@ const Home = () => {
       }
     : {};
 
-  setTimeout(() => {
-    setHeightFixed(false);
-  }, 6700);
+  useEffect(() => {
+    if (!loading)
+      setTimeout(() => {
+        setHeightFixed(false);
+      }, 6700);
+  });
 
   const navlink = [
     {
@@ -99,7 +102,7 @@ const Home = () => {
         <Hero loading={loading} />
         <About />
         <Sponsor />
-        <Footer homePage/>
+        <Footer homePage />
         <Social />
       </main>
     </div>
