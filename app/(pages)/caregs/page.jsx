@@ -7,13 +7,13 @@ import { fetchCARegistrations } from "@/app/components/ReactQuery/Fetchers/CaReg
 
 const Caregs = () => {
   const { isLoggedIn, role } = useContext(UserContext);
-  const isEnabled = useMemo(() => {
+  const isEnabledT = useMemo(() => {
     return Boolean(isLoggedIn && role === "admin");
   }, [isLoggedIn, role]);
 
   const queryKey = useMemo(() => ["caregs"], []);
   const { data, error, isError, isLoading } = useQuery(queryKey, fetchCARegistrations, {
-    isEnabled,
+    isEnabled: isEnabledT,
   });
 
   if (isLoading) return <div>Loading...</div>;
@@ -21,12 +21,13 @@ const Caregs = () => {
 
   return (
     <main>
-      {isEnabled ? "All Campus Ambassdor registrations" : "You are not authorized"}
-      {data?.allregs && (
+      {isEnabledT ? "All Campus Ambassdor registrations" : "You are not authorized"}
+      <hr />
+      {data && (
         <div>
-          {data?.allregs?.map((item) => {
+          {data?.map((item) => {
             return (
-              <div key={item.id}>
+              <div key={item.email}>
                 <ul>
                   <li>name: {item?.name}</li>
                   <li>institute name: {item?.college}</li>

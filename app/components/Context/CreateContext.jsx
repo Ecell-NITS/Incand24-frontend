@@ -34,7 +34,7 @@ const ContextProvider = ({ children }) => {
             axios.get(`${process.env.NEXT_PUBLIC_API_MAIN}/dashboard`, tokenConfig),
           ]);
           setProfile(profileRes.data);
-          setRole(profileRes.data.user.role);
+          setRole(profileRes.data.role);
         } catch (err) {
           console.error(err);
         }

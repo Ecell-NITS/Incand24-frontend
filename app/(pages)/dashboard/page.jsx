@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable no-underscore-dangle */
+
 import React, { useMemo, useContext } from "react";
 import { useQuery } from "react-query";
 import { useRouter } from "next/navigation";
@@ -15,35 +17,30 @@ const Dashboard = () => {
   const router = useRouter();
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>An error has occurred: {error.message}</div>;
-  console.log(data);
+  const { name, email, role, isVerified, is2faEnabled } = data;
 
   return (
     <main>
       {isLoggedIn ? <h1>Dashboard</h1> : <h1>Not Logged In</h1>}
-      {data?.map((item) => {
-        return (
-          <>
-            <div key={item.id}>
-              <ul>
-                <li>name: {item?.name}</li>
-                <li>email: {item?.email}</li>
-                <li>role: {item?.role}</li>
-                <li>verified: {item?.isVerified}</li>
-                <li>2fa enabled: {item?.is2faEnabled}</li>
-              </ul>
-            </div>
-            <div>
-              <button
-                onClick={() => {
-                  router.push("/caregs");
-                }}
-              >
-                CA registrations
-              </button>
-            </div>
-          </>
-        );
-      })}
+
+      <div>
+        <ul>
+          <li>name: {name}</li>
+          <li>email: {email}</li>
+          <li>role: {role}</li>
+          <li>verified: {isVerified ? "true" : "false"}</li>
+          <li>2fa enabled: {is2faEnabled ? "true" : "false"}</li>
+        </ul>
+      </div>
+      <div>
+        <button
+          onClick={() => {
+            router.push("/caregs");
+          }}
+        >
+          CA registrations
+        </button>
+      </div>
     </main>
   );
 };
