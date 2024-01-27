@@ -71,6 +71,10 @@ const Home = () => {
 
   const navlink = [
     {
+      name: "Home",
+      link: "hero",
+    },
+    {
       name: "About Us",
       link: "about",
     },

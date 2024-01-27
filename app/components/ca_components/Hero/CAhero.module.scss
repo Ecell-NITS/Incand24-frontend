@@ -21,8 +21,8 @@
     flex-direction: column;
     gap: 3rem;
 
-    .content{
-      @media screen and (max-width : 760px) {
+    .content {
+      @media screen and (max-width: 760px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,7 +30,7 @@
         // text-align: center;
       }
 
-      button{
+      button {
         margin-top: 3vw;
         margin-bottom: 4vw;
 
@@ -85,7 +85,7 @@
     }
   }
 
-  .dreamCatcher{
+  .dreamCatcher {
     position: relative;
     margin-top: -2.2vw;
 
@@ -93,13 +93,13 @@
       margin-top: 2vw;
       padding-bottom: 5vw;
       width: 100%;
-      #lottie{
-        width: 60vw !important;
+      #lottie {
+        margin-top: 7vw !important;
+        width: 95vw !important;
       }
     }
 
-
-    #lottie{
+    #lottie {
       margin: 48px auto;
       @media screen and (max-width: 322px) {
         width: 70vw !important;
@@ -113,13 +113,13 @@
       }
     }
 
-    .bg{
+    .bg {
       position: absolute;
       height: 100%;
-      width: 100%;
-      background: url(../../../../public/images/Card/Figma.gif)  no-repeat;
+      width: 100% !important;
+      background: url(../../../../public/images/Card/Figma.gif) no-repeat;
       object-fit: cover;
-      filter: blur(30px) ;
+      filter: blur(30px);
       background-position: center;
 
       // @media screen and (max-width: 330px) {
@@ -127,9 +127,5 @@
       //   left: -50px !important;
       // }
     }
-
-
   }
-
-
 }

@@ -24,7 +24,7 @@ const montserratFont = Montserrat({
 const CAhero = () => {
   const router = useRouter();
   return (
-    <div className={`${styles.CAhero} ${montserratFont.className}`}>
+    <div id="hero" className={`${styles.CAhero} ${montserratFont.className}`}>
       <div className={styles.heroInfo}>
         <div
           className={styles.logo}

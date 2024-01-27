@@ -52,9 +52,6 @@ const ContextProvider = ({ children }) => {
     [profile, isLoggedIn, role]
   );
 
-  if (fetching) {
-    return null;
-  }
   return <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>;
 };
 
