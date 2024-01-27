@@ -65,7 +65,7 @@ const CAabout = () => {
         </div>
         <div className={`${roboto.className} ${styles.details}`}>
           <p>{` Becoming a NIT Silchar Campus Ambassador is your exclusive ticket to becoming
-          the face and voice of our vibrant academic community. It&aposs not just a role, it&aposs
+          the face and voice of our vibrant academic community. It's not just a role, it's
           an opportunity to share the dynamic spirit of our campus with the world!`}</p>
         </div>
       </div>

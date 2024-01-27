@@ -28,6 +28,7 @@ const CAhero = () => {
       <div className={styles.heroInfo}>
         <div
           className={styles.logo}
+          style={{ cursor: "pointer" }}
           onClick={() => {
             router.push("/");
           }}

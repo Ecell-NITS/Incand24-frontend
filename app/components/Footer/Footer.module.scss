@@ -81,6 +81,7 @@
         font-size: 1rem;
         font-style: normal;
         font-weight: 300;
+        line-height: 1.6;
       }
 
       @media screen and (max-width: 900px) {
@@ -150,20 +151,17 @@
       }
     }
     .logo {
-       width: 36vw;
+      width: 36vw;
       height: 23vw;
       position: relative;
 
       @media screen and (max-width: 463px) {
-          height: 38vw;
-          width: 60vw;
-        
+        height: 38vw;
+        width: 60vw;
       }
-      
     }
 
     @media screen and (max-width: 500px) {
-
       .info {
         .mailicon,
         .locnlogo {
@@ -175,7 +173,6 @@
         }
       }
     }
-
 
     @media screen and (max-width: 380px) {
       .info {
@@ -314,4 +311,3 @@
     }
   }
 }
-
