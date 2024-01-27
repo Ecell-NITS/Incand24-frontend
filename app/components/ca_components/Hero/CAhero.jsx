@@ -24,7 +24,7 @@ const montserratFont = Montserrat({
 const CAhero = () => {
   const router = useRouter();
   return (
-    <div id="hero" className={`${styles.CAhero} ${montserratFont.className}`}>
+    <div className={`${styles.CAhero} ${montserratFont.className}`}>
       <div className={styles.heroInfo}>
         <div
           className={styles.logo}
@@ -64,6 +64,7 @@ const CAhero = () => {
           loop
           // keepLastFrame
           src={dreamCatcher}
+          id={styles.lottie}
           style={{ height: "auto", width: "40vw" }}
         ></Player>
       </div>

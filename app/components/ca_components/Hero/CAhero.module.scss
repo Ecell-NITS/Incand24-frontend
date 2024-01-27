@@ -1,11 +1,20 @@
 .CAhero {
   padding: 10% 5%;
+  padding-right: 0%;
   color: white;
   display: flex;
   justify-content: space-evenly;
   @media screen and (max-width: 760px) {
     flex-wrap: wrap;
     margin-top: 20px;
+  }
+  @media screen and (max-width: 524px) {
+    padding: 20% 5%;
+    padding-right: 0%;
+  }
+
+  @media screen and (max-width: 375px) {
+    min-height: 100vh;
   }
   .heroInfo {
     display: flex;
@@ -84,19 +93,43 @@
       margin-top: 2vw;
       padding-bottom: 5vw;
       width: 100%;
+      #lottie{
+        width: 60vw !important;
+      }
     }
+
+
+    #lottie{
+      margin: 48px auto;
+      @media screen and (max-width: 322px) {
+        width: 70vw !important;
+      }
+      @media screen and (max-width: 414px) {
+        width: 90vw !important;
+        margin: 68px auto;
+      }
+      @media screen and (max-width: 365px) {
+        width: 73vw !important;
+      }
+    }
+
+    .bg{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: url(../../../../public/images/Card/Figma.gif)  no-repeat;
+      object-fit: cover;
+      filter: blur(30px) ;
+      background-position: center;
+
+      // @media screen and (max-width: 330px) {
+      //   top: -120px !important;
+      //   left: -50px !important;
+      // }
+    }
+
+
   }
 
-  .bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 120%;
-    width: 120%;
-    background: url(../../../../public/images/Card/Figma.gif)  no-repeat;
-    object-fit: cover;
-    filter: blur(30px) ;
-    overflow: hidden;
-    object-position: center;
-  }
+
 }
