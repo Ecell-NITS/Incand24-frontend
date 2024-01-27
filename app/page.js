@@ -25,6 +25,7 @@ const Home = () => {
   const [heightFixed, setHeightFixed] = useState(true);
 
   useEffect(() => {
+    document.title = "Incandescence 2024";
     const isFinishedLoading = () => {
       if (document.readyState === "complete") {
         setLoading(false);
@@ -69,10 +70,6 @@ const Home = () => {
   });
 
   const navlink = [
-    {
-      name: "Home",
-      link: "hero",
-    },
     {
       name: "About Us",
       link: "about",
