@@ -32,6 +32,8 @@ export const metadata = {
 const Footer = ({ isHills = true, homePage = false }) => {
   const router = useRouter();
 
+  // ecell
+
   return (
     <div className={`${styles.Footer} ${montserrat.className}`}>
       {isHills && (
