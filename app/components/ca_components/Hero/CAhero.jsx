@@ -47,15 +47,17 @@ const CAhero = () => {
             Come join us to experience this spectacular cultural festival of NIT Silchar
           </p>
           {/* <button className={styles.Btn}>Join us</button> */}
-          <Link to="register" spy smooth hashSpy offset={10} duration={500}>
-            <Button
-              text="Join Now"
-              bgColor="linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%),linear-gradient(270deg, #3FC6A5 3.63%, #9BE1A1 98.63%)"
-              textColor=" rgba(23, 95, 98, 1)"
-              border="2.5px solid linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%"
-              className={allura.className}
-            />
-          </Link>
+          <div id={styles.zindexup}>
+            <Link to="register" spy smooth hashSpy offset={10} duration={500}>
+              <Button
+                text="Join Now"
+                bgColor="linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%),linear-gradient(270deg, #3FC6A5 3.63%, #9BE1A1 98.63%)"
+                textColor=" rgba(23, 95, 98, 1)"
+                border="2.5px solid linear-gradient(96.92deg, #3EC5A4 2.74%, rgba(0, 255, 193, 0) 55.41%"
+                className={allura.className}
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div className={styles.dreamCatcher}>
