@@ -2,12 +2,18 @@
 
 import { useState, useEffect } from "react";
 // import Navbar from "@/app/components/Navbar/Navbar";
+import { Allura as allura } from "next/font/google";
 import styles from "./CA.module.scss";
 import CAhero from "@/app/components/ca_components/Hero/CAhero";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 import CAabout from "@/app/components/ca_components/Hero/CAabout";
 import ContactUs from "@/app/components/ContactUs/ContactUs";
+
+const Allura = allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 const CA = () => {
   const [loading, setLoading] = useState(true);
@@ -54,7 +60,7 @@ const CA = () => {
       <div className={`${styles.container} ${loading ? styles.active : ""}`}>
         <div className={styles.wrapper}>
           <div className={`${styles.load}`}>
-            <h1>Diving into the dreams</h1>
+            <h1 className={` ${Allura.className}`}>Diving into the dreams</h1>
           </div>
           {/* <div className={styles.dot_wrapper}> */}
           <div className={styles.dot}></div>

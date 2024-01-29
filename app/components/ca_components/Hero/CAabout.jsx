@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Allura, Roboto } from "next/font/google";
 import styles from "./CAabout.module.scss";
 import CAcard from "./CAcard";
@@ -18,44 +18,46 @@ const roboto = Roboto({
 });
 
 const CAabout = () => {
-  const [cards, setCards] = useState([]);
+  const cards = [
+    {
+      id: 1,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506713/img1_empmhj.svg",
+      text: "Organize and Conduct Events",
+    },
+    {
+      id: 2,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506712/img2_n3kd9v.svg",
+      text: "Networking and Mentorship",
+    },
+    {
+      id: 3,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506712/img3_oo7xvw.svg",
+      text: "Skill Development",
+    },
+    {
+      id: 4,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506712/img4_lq4jln.svg",
+      text: "Recognition and Rewards",
+    },
 
-  useEffect(() => {
-    setCards([
-      {
-        id: 1,
-        image: "/images/Card/img1.svg",
-        text: "Organize and Conduct Events",
-      },
-      {
-        id: 2,
-        image: "/images/Card/img2.svg",
-        text: "Networking and Mentorship",
-      },
-      {
-        id: 3,
-        image: "/images/Card/img3.svg",
-        text: "Skill Development",
-      },
-      {
-        id: 4,
-        image: "/images/Card/img4.svg",
-        text: "Recognition and Rewards",
-      },
+    {
+      id: 5,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506712/img5_xiarhc.svg",
+      text: "Professional Growth",
+    },
 
-      {
-        id: 5,
-        image: "/images/Card/img5.svg",
-        text: "Professional Growth",
-      },
-
-      {
-        id: 6,
-        image: "/images/Card/img6.svg",
-        text: "Exclusive Access",
-      },
-    ]);
-  }, []);
+    {
+      id: 6,
+      image:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506713/img6_vdhzho.svg",
+      text: "Exclusive Access",
+    },
+  ];
 
   return (
     <div id="about" className={styles.container}>
