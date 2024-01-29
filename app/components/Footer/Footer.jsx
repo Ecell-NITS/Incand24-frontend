@@ -168,7 +168,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
         </div>
         <div className={`${styles.ecell_copyright} ${poppins.className}`}>
           <div className={styles.ecell}>
-            MADE BY{" "}
+            Designed and Developed by{" "}
             <a href="http://ecellnits.org" target="_blank">
               <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
             </a>{" "}
