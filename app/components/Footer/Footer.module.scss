@@ -311,3 +311,13 @@
     }
   }
 }
+
+.copyright {
+  padding: 1vw 0;
+}
+
+@media (max-width: 660px) {
+  .copyright {
+    padding: 2.5vw 0;
+  }
+}

@@ -167,7 +167,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
           </div>
         </div>
         <div className={`${styles.ecell_copyright} ${poppins.className}`}>
-          <div className={styles.ecell}>
+          {/* <div className={styles.ecell}>
             Designed and Developed by{" "}
             <a href="http://ecellnits.org" target="_blank">
               <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
@@ -176,7 +176,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
               {" "}
               E-CELL
             </a>
-          </div>
+          </div> */}
           <div className={styles.copyright}>
             ©Copyright 2024, National Institute Of Technology, Silchar
           </div>
