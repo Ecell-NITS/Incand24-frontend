@@ -1,0 +1,54 @@
+.body {
+  margin-top: 15vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  color: #fff;
+
+  .text {
+    font-family: allura;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 0;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    #col2,
+    #col4 {
+      transform: translateY(12vh);
+    }
+
+    #leafs1 {
+      position: absolute;
+      z-index: -1;
+      width: 30vw;
+      height: 50vh;
+      top: -10%;
+      right: -40%;
+
+      transform: rotate(90deg);
+    }
+    #leafs2 {
+      position: absolute;
+      z-index: -1;
+      width: 30vw;
+      height: 50vh;
+      bottom: 18%;
+      left: -40%;
+
+      transform: rotate(270deg);
+    }
+  }
+}

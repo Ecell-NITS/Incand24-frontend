@@ -1,0 +1,25 @@
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+/* :root{
+
+
+} */
+body::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ec5a4;
+  border-radius: 5vw;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #02161f 0%, #175f62 52.6%, #02161f 100%);
+} /*# sourceMappingURL=globals.css.map */

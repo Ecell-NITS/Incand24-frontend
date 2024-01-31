@@ -1,0 +1,7 @@
+.body {
+  font-family: allura;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+} /*# sourceMappingURL=PrevSponsors.module.css.map */

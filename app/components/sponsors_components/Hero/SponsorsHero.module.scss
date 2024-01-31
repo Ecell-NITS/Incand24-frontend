@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap"); // to be removed
+
+.hero {
+  font-family: allura;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  background: #01262b;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    font-size: 130px;
+    position: relative;
+    color: transparent;
+
+    &:hover span:nth-child(1) {
+      transform: translateY(-1rem);
+
+      @media only screen and (max-width: 1100px) {
+        transform: translateY(-0.7rem);
+      }
+
+      @media only screen and (max-width: 900px) {
+        transform: translateY(-0.55rem);
+      }
+
+      @media only screen and (max-width: 700px) {
+        transform: translateY(-0.47rem);
+      }
+
+      @media only screen and (max-width: 480px) {
+        transform: translateY(-0.4rem);
+      }
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translateY(1rem);
+
+      @media only screen and (max-width: 1100px) {
+        transform: translateY(0.7rem);
+      }
+
+      @media only screen and (max-width: 900px) {
+        transform: translateY(0.55rem);
+      }
+
+      @media only screen and (max-width: 700px) {
+        transform: translateY(0.47rem);
+      }
+
+      @media only screen and (max-width: 480px) {
+        transform: translateY(0.4rem);
+      }
+    }
+
+    &:hover span:nth-child(3) {
+      opacity: 1;
+      transition: opacity 700ms ease;
+    }
+
+    & span:nth-child(1),
+    & span:nth-child(2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #040e3f;
+      transition: 0.5s;
+      overflow: hidden;
+    }
+
+    & span:nth-child(1) {
+      clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+    }
+
+    & span:nth-child(2) {
+      clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    }
+
+    & span:nth-child(3) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 350ms ease;
+      font-size: 1.8rem;
+      color: #fff;
+      background: #66e3be;
+      width: 97.5%;
+      padding-left: 5px;
+      text-align: center;
+      letter-spacing: 0.5rem;
+      word-spacing: 1rem;
+      line-height: 100%;
+
+      @media only screen and (max-width: 1100px) {
+        font-size: 1.2rem;
+      }
+
+      @media only screen and (max-width: 900px) {
+        font-size: 1rem;
+        width: 97%;
+        letter-spacing: 4px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 0.85rem;
+        width: 96%;
+        letter-spacing: 3px;
+        word-spacing: 0.5rem;
+      }
+
+      @media only screen and (max-width: 480px) {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+        word-spacing: 0.2rem;
+      }
+    }
+  }
+
+  // .bg {
+  //     position: absolute;
+  //     transform: translateY(2.5vh);
+  //     height: 100%;
+  //     width: 100% !important;
+  //     background: url(/images/Card/Figma.gif) no-repeat;
+  //     object-fit: cover;
+  //     filter: blur(30px);
+  //     background-position: center;
+  // }
+
+  .absolute {
+    position: absolute;
+    inset: 0; // top: 0; right: 0; bottom: 0; left: 0;
+    justify-content: center;
+    display: inline flex;
+    flex-direction: row;
+    // overflow: hidden;
+  }
+
+  .justifycenter {
+    justify-content: center;
+  }
+
+  .bgshape1 {
+    width: 70vw;
+    height: 50vw;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 8s infinite;
+  }
+  .bgshape2 {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 8s infinite;
+  }
+  .bgshape3 {
+    width: 70vw;
+    height: 50vw;
+    border-radius: 9999px;
+    position: relative;
+    animation: three 8s infinite;
+  }
+
+  @keyframes one {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: -100px;
+      top: 70px;
+    }
+    50% {
+      left: 20px;
+      top: 150px;
+    }
+    75% {
+      left: 50px;
+      top: 100px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+  @keyframes two {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: -50px;
+      top: 10px;
+    }
+    50% {
+      left: 100px;
+      top: 50px;
+    }
+    75% {
+      left: 50px;
+      top: 100px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+  @keyframes three {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      left: -50px;
+      top: 10px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .opacity50 {
+    opacity: 0.5;
+  }
+  .bgblur {
+    filter: blur(120px);
+  }
+  .bg1 {
+    background: rgb(225, 255, 0);
+  }
+  .bg2 {
+    background: rgb(255, 72, 173);
+  }
+  .bg3 {
+    background: rgb(131, 5, 242);
+  }
+}

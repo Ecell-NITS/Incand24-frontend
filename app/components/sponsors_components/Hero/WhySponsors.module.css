@@ -1,0 +1,26 @@
+.body {
+  min-height: 50vh;
+  background: #01262b;
+  font-family: allura;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+.body .qsn {
+  font-size: 70px;
+}
+.body .banner {
+  font-family: serif;
+  width: 90%;
+  height: 45vh;
+  background: url(../../../../public/images/Texture.png) no-repeat;
+  background-color: black;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+  background-size: 100% 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} /*# sourceMappingURL=WhySponsors.module.css.map */
