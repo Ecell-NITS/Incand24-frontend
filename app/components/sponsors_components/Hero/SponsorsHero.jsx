@@ -1,25 +1,34 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { Allura } from "next/font/google";
 import styles from "./SponsorsHero.module.scss";
+
+const allura = Allura({
+  weight: ["400"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--allura-font",
+});
 
 const SponsorsHero = () => {
   return (
-    <div className={styles.hero}>
-      <div className={`${styles.absolute} ${styles.inset0} ${styles.justifycenter}`}>
-        <div
-          className={`${styles.bgshape1} ${styles.bg1} ${styles.opacity50} ${styles.bgblur}`}
-        ></div>
-        <div
-          className={`${styles.bgshape2} ${styles.bg2} ${styles.opacity50} ${styles.bgblur}`}
-        ></div>
-        <div
-          className={`${styles.bgshape3} ${styles.bg3} ${styles.opacity50} ${styles.bgblur}`}
-        ></div>
-      </div>
-      <div className={styles.text}>
+    <div className={`${styles.hero} ${allura.className}`}>
+      <div className={styles.title}>
         Sponsors
         <span>Sponsors</span>
         <span>Sponsors</span>
         <span>Incand&apos;24</span>
+      </div>
+
+      <motion.div id={styles.cursor} animate="default"></motion.div>
+      <div className={styles.container}>
+        <div className={`${styles.blob1} ${styles.blobs} `}></div>
+        <div className={`${styles.blob2} ${styles.blobs}`}>
+          <div className={styles.innerBlob}></div>
+          <div className={styles.innerBlob2}></div>
+        </div>
+        {/* <div className={`${styles.blob3} ${styles.blobs}`}></div> */}
+        <div className={`${styles.blob4} ${styles.blobs}`}></div>
       </div>
     </div>
   );

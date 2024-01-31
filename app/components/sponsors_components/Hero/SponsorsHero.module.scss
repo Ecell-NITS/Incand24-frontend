@@ -1,21 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap"); // to be removed
 
 .hero {
-  font-family: allura;
-  color: #fff;
-  min-height: 100vh;
-  width: 100%;
-  background: #01262b;
-  overflow: hidden;
+  width: 100vw;
+  height: 120vh;
+  //   padding: auto;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  #cursor {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    // background: radial-gradient(#fff, #000);
+    // background-color: rgba(255, 255, 0, 0.514);
+    background-image: url(/effects/butterfly.gif);
+    z-index: 100;
+    background-size: cover;
 
-  .text {
-    font-size: 130px;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+  }
+  .container {
+    height: 100%;
+    filter: blur(40px);
+    @media screen and (max-width: 600px) {
+      filter: blur(10px);
+    }
+  }
+
+  .title {
+    width: fit-content;
     position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 7vw;
+    // color: #030743;
     color: transparent;
+    text-align: center;
+    font-family: allura;
+    font-weight: 400;
+    // mix-blend-mode: hard-light;
 
     &:hover span:nth-child(1) {
       transform: translateY(-1rem);
@@ -66,8 +98,10 @@
     & span:nth-child(2) {
       position: absolute;
       top: 0;
+      bottom: 0;
       left: 0;
-      color: #040e3f;
+      right: 0;
+      color: #030743;
       transition: 0.5s;
       overflow: hidden;
     }
@@ -96,6 +130,7 @@
       letter-spacing: 0.5rem;
       word-spacing: 1rem;
       line-height: 100%;
+      width: fit-content;
 
       @media only screen and (max-width: 1100px) {
         font-size: 1.2rem;
@@ -122,124 +157,141 @@
     }
   }
 
-  // .bg {
-  //     position: absolute;
-  //     transform: translateY(2.5vh);
-  //     height: 100%;
-  //     width: 100% !important;
-  //     background: url(/images/Card/Figma.gif) no-repeat;
-  //     object-fit: cover;
-  //     filter: blur(30px);
-  //     background-position: center;
-  // }
-
-  .absolute {
+  .blobs {
+    border-radius: 50%;
     position: absolute;
-    inset: 0; // top: 0; right: 0; bottom: 0; left: 0;
-    justify-content: center;
-    display: inline flex;
-    flex-direction: row;
-    // overflow: hidden;
+    filter: blur(40px);
   }
-
-  .justifycenter {
-    justify-content: center;
+  .blob1 {
+    width: 110vw;
+    height: 90vw;
+    top: -20%;
+    background-image: radial-gradient(
+      rgba(196, 200, 210, 0) 0%,
+      rgb(240, 128, 212) 50%,
+      transparent 70%
+    );
+    // z-index: 11;
+    // transform-origin: 40%;
+    animation: revolve 20s infinite ease-in-out;
+    @media screen and (max-width: 700px) {
+      height: 150vh;
+      width: 120vh;
+      // top:10%;
+    }
   }
-
-  .bgshape1 {
-    width: 70vw;
-    height: 50vw;
-    border-radius: 9999px;
+  .blob2 {
     position: relative;
-    animation: one 8s infinite;
+    width: 80vw;
+    height: 70vw;
+    background-image: radial-gradient(
+      rgba(255, 230, 0, 1) 5%,
+      rgb(0, 119, 223) 100%,
+      transparent 50%
+    );
+    left: 45%;
+    top: 20%;
+    transform: translate(-50%, -25%);
+    transform-origin: center;
+    animation: blobChange 5s infinite ease-in-out;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+      // top: 32%;
+      width: 70vh;
+      height: 90vh;
+    }
+    .innerBlob2 {
+      width: 50%;
+      height: 50%;
+      left: -100%;
+      background-image: radial-gradient(
+        rgb(243, 240, 232),
+        rgba(248, 219, 117, 0.948) 70%,
+        transparent 50%
+      );
+      // animation: blobTranslate 20s infinite ease-in-out;
+    }
+    .innerBlob {
+      width: 50%;
+      height: 50%;
+      background-image: radial-gradient(
+        rgba(255, 208, 87, 1),
+        rgba(255, 216, 75, 0.733) 50%,
+        transparent 50%
+      );
+      animation: blobTranslate 10s infinite ease-in-out;
+    }
+    @keyframes blobTranslate {
+      0% {
+        transform: translate(0, -10%) scale(0);
+      }
+      50% {
+        transform: translate(100%, 10%) scale(1.3);
+      }
+      100% {
+        transform: translate(0, -10%) scale(0);
+      }
+    }
   }
-  .bgshape2 {
+  .blob3 {
+    width: 80vw;
+    height: 70vw;
+    background-image: radial-gradient(
+      rgba(245, 241, 185, 0.98),
+      rgba(245, 241, 185, 0.7) 50%,
+      transparent 50%
+    );
+    transform-origin: 80%;
+    animation: revolve 25s infinite ease-in-out;
+  }
+  .blob4 {
     width: 50vw;
-    height: 50vw;
-    border-radius: 9999px;
-    position: relative;
-    animation: one 8s infinite;
-  }
-  .bgshape3 {
-    width: 70vw;
-    height: 50vw;
-    border-radius: 9999px;
-    position: relative;
-    animation: three 8s infinite;
-  }
-
-  @keyframes one {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    25% {
-      left: -100px;
-      top: 70px;
-    }
-    50% {
-      left: 20px;
-      top: 150px;
-    }
-    75% {
-      left: 50px;
-      top: 100px;
-    }
-    100% {
-      left: 0px;
-      top: 0px;
-    }
-  }
-  @keyframes two {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    25% {
-      left: -50px;
-      top: 10px;
-    }
-    50% {
-      left: 100px;
-      top: 50px;
-    }
-    75% {
-      left: 50px;
-      top: 100px;
-    }
-    100% {
-      left: 0px;
-      top: 0px;
-    }
-  }
-  @keyframes three {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    25% {
-      left: -50px;
-      top: 10px;
-    }
-    100% {
-      left: 0px;
-      top: 0px;
+    height: 60vw;
+    // z-index: 10;
+    background-image: radial-gradient(
+      rgba(32, 205, 236, 0.697),
+      rgba(87, 255, 90, 0.578) 90%,
+      transparent 50%
+    );
+    transform-origin: 45%;
+    animation: revolve 10s infinite ease-in-out;
+    animation-delay: 0;
+    right: -10%;
+    bottom: 20%;
+    @media screen and (max-width: 600px) {
+      // top: 32%;
+      width: 60vh;
+      height: 80vh;
+      bottom: 0;
+      right: 0;
+      transform-origin: 70%;
+      display: none;
     }
   }
 
-  .opacity50 {
-    opacity: 0.5;
+  @keyframes revolve {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    50% {
+      transform: rotate(180deg) translate(40%, 20%);
+    }
+    100% {
+      transform: rotate(360deg) translate(0, 0);
+    }
   }
-  .bgblur {
-    filter: blur(120px);
-  }
-  .bg1 {
-    background: rgb(225, 255, 0);
-  }
-  .bg2 {
-    background: rgb(255, 72, 173);
-  }
-  .bg3 {
-    background: rgb(131, 5, 242);
+  @keyframes blobChange {
+    0% {
+      transform: translate(-50%, -25%) scale(1) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -25%) scale(1.2) rotate(35deg);
+    }
+    100% {
+      transform: translate(-50%, -25%) scale(1) rotate(0deg);
+    }
   }
 }
