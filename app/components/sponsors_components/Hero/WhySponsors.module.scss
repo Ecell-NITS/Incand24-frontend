@@ -1,15 +1,19 @@
 .body {
   margin-top: 10vh;
-  min-height: 50vh;
+  // min-height: 50vh;
   // background: #01262b;
   font-family: allura;
-  color: white;
+  color: #ffffff;
   // display: flex;
   // flex-direction: column;
   // gap: 5vh;
   // align-items: center;
   text-align: center;
   overflow: hidden;
+
+  @media only screen and (max-width: 480px) {
+    margin-top: 0;
+  }
 
   #swiper {
     display: flex;
@@ -18,7 +22,7 @@
   }
 
   .qsn {
-    font-size: 70px;
+    font-size: max(6vw, 2rem);
     margin-bottom: 8vh;
   }
 
@@ -26,6 +30,7 @@
     font-family: serif;
     width: 90%;
     height: 45vh;
+    padding: 0 2%;
 
     transform: translateX(5%);
 
@@ -39,9 +44,28 @@
     align-items: center;
     justify-content: space-around;
 
+    @media only screen and (max-width: 480px) {
+      width: 80%;
+      transform: translateX(12%);
+      height: 13vh;
+      border-radius: 14px;
+    }
+
     .lottie {
       width: 40%;
       height: 100%;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 480px) {
+        width: 60%;
+      }
+    }
+
+    .text {
+      font-size: 1rem;
+      @media only screen and (max-width: 480px) {
+        font-size: 0.4rem;
+      }
     }
   }
 }

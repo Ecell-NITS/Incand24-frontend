@@ -13,6 +13,11 @@
   background-color: rgba(255, 255, 255, 0);
   transition: border 0.2s ease-in-out 0s;
 
+  @media only screen and (max-width: 480px) {
+    width: max(40%, 9rem);
+    height: max(18vh, 10rem);
+  }
+
   // border: 5px solid transparent;
   // background: linear-gradient(#01262B , #01262B ) padding-box,
   //             linear-gradient(to top, #0ca0da, #04B877) border-box;
@@ -32,19 +37,27 @@
     justify-content: center;
     padding: 5rem;
 
+    @media only screen and (max-width: 480px) {
+      padding: 2rem;
+    }
+
     #img {
-      padding: 0 0 5px 0;
+      padding: 5px 0;
       margin: 0;
       img {
-        width: 140px;
-        height: 120px;
+        // width: 140px;
+        // height: 120px;
       }
     }
 
     #title {
-      font-size: 30px;
+      font-size: 1.5rem;
       font-weight: bold;
       font-family: allura;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 1.3rem;
+      }
     }
   }
 }

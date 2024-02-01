@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Lottie from "lottie-react";
 import AOS from "aos";
 import styles from "./PrevSponsors.module.scss";
@@ -12,6 +11,25 @@ const PrevSponsors = () => {
     AOS.init({ duration: 500 });
   }, []);
 
+  const data = [
+    {
+      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
+      title: `Zomato`,
+    },
+    {
+      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
+      title: `Zomato`,
+    },
+    {
+      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
+      title: `Zomato`,
+    },
+    {
+      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
+      title: `Zomato`,
+    },
+  ];
+
   return (
     <div className={styles.body}>
       <p className={styles.text} data-aos="zoom-in">
@@ -19,82 +37,38 @@ const PrevSponsors = () => {
       </p>
       <div className={styles.content}>
         <div id={styles.col1} className={styles.col} data-aos="fade-right">
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
+          {
+            // important : we can not use 'for each' beacsue it does not return any value
+            data.map(
+              (
+                ele // if we use {} then we have to use return keyword
+              ) => (
+                <Card key={ele.title} link={ele.link} title={ele.title} />
+              )
+            )
+          }
           <div id={styles.leafs2}>
             <Lottie loop animationData={Greenleafs} />
           </div>
         </div>
         <div id={styles.col2} className={styles.col}>
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
+          {data.map((ele) => {
+            // without arrow function
+            return <Card key={ele.title} link={ele.link} title={ele.title} />;
+          })}
         </div>
         <div id={styles.col3} className={styles.col} data-aos="fade-up">
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
+          {data.map((ele) => (
+            <Card key={ele.title} link={ele.link} title={ele.title} />
+          ))}
         </div>
         <div id={styles.col4} className={styles.col}>
           <div id={styles.leafs1}>
             <Lottie loop animationData={Greenleafs} />
           </div>
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
-          <Card
-            link="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
-            title="Zomato"
-          />
+          {data.map((ele) => (
+            <Card key={ele.title} link={ele.link} title={ele.title} />
+          ))}
         </div>
       </div>
     </div>

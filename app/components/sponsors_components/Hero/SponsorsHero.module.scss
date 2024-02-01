@@ -41,7 +41,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    font-size: 7vw;
+    font-size: max(7vw, 3rem);
     // color: #030743;
     color: transparent;
     text-align: center;
@@ -150,7 +150,7 @@
       }
 
       @media only screen and (max-width: 480px) {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         letter-spacing: 2px;
         word-spacing: 0.2rem;
       }

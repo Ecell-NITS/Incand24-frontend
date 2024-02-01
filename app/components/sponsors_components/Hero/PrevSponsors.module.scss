@@ -1,33 +1,59 @@
 .body {
-  margin-top: 15vh;
+  margin-top: 25vh;
   padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
   gap: 5vh;
   color: #fff;
 
+  @media only screen and (max-width: 480px) {
+    margin-top: 10vh;
+  }
+
   .text {
     font-family: allura;
     text-align: center;
-    font-size: 70px;
+    font-size: max(6vw, 2rem);
   }
 
   .content {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 10vh 0;
+
+    @media only screen and (max-width: 480px) {
+      padding: 0 0 10vh 0;
+    }
+
+    @media only screen and (max-width: 365px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: baseline;
+      align-items: center;
+    }
 
     .col {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 10vh;
       position: relative;
       z-index: 1;
+
+      @media only screen and (max-width: 480px) {
+        gap: 5vh;
+        margin-top: 5vh;
+      }
     }
 
     #col2,
     #col4 {
       transform: translateY(12vh);
+
+      @media only screen and (max-width: 365px) {
+        transform: translateY(0);
+      }
     }
 
     #leafs1 {
@@ -39,6 +65,20 @@
       right: -40%;
 
       transform: rotate(90deg);
+
+      @media only screen and (max-width: 480px) {
+        width: 35vw;
+        height: 60vh;
+        right: 44vw;
+      }
+
+      @media only screen and (max-width: 380px) {
+        right: 35vw;
+      }
+
+      @media only screen and (max-width: 365px) and (min-width: 300px) {
+        right: 20vw;
+      }
     }
     #leafs2 {
       position: absolute;
@@ -46,9 +86,23 @@
       width: 30vw;
       height: 50vh;
       bottom: 18%;
-      left: -40%;
+      left: -40.5%;
 
       transform: rotate(270deg);
+
+      @media only screen and (max-width: 480px) {
+        width: 35vw;
+        height: 60vh;
+        left: 44vw;
+      }
+
+      @media only screen and (max-width: 380px) {
+        left: 35vw;
+      }
+
+      @media only screen and (max-width: 365px) and (min-width: 300px) {
+        left: 20vw;
+      }
     }
   }
 }
