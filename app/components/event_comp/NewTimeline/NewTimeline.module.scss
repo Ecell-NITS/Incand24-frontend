@@ -25,18 +25,21 @@
       gap: 2rem;
       .desc {
         width: 45%;
-        text-align: center;
+        text-align: left;
         padding: 1rem;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         justify-content: space-evenly;
-
         opacity: 0;
         transition: all 0.5s ease-in-out;
         font-size: 1.5rem;
         height: 50vh;
         overflow-y: auto;
+        @media screen and (max-width: 1080px) {
+          height: 30vh;
+          font-size: 1rem;
+        }
       }
 
       &:hover {
@@ -46,7 +49,7 @@
       }
 
       .Card {
-        width: 50vw;
+        width: 60vw;
         position: relative;
         height: 50vh;
         padding: 1rem 2rem;
@@ -78,7 +81,14 @@
           position: absolute;
           bottom: 1rem;
           z-index: 5;
-          font-size: 2.5rem;
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: 1080px) {
+          height: 30vh;
+          .title {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -175,14 +185,15 @@
       .cardWrapper {
         width: 80vw;
         position: relative;
+        margin-block: 1rem;
 
         &:hover {
           .Card {
-            transform: rotateY(180deg);
-            opacity: 0;
+            transform: translateY(-50%);
+            // opacity: 0;
           }
           .desc {
-            transform: rotateY(0);
+            transform: translateY(50%);
             opacity: 1;
           }
         }
@@ -191,25 +202,26 @@
           width: 80%;
           transition: 0.5s all ease-in-out;
           border: 2px solid transparent;
+          border-radius: 1rem;
           border-bottom-right-radius: 0;
 
           @media screen and (max-width: 600px) {
             height: 25vh;
           }
           .title {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
           }
         }
         .desc {
           width: 80%;
-          transform: rotateY(180deg);
-          background: linear-gradient(215deg, gray, black) padding-box,
-            linear-gradient(135deg, rgb(25, 5, 245), rgb(214, 4, 158)) border-box;
           border: 2px solid transparent;
-          border-radius: 2rem;
+          border-radius: 1rem;
           transition: 0.5s all ease-in-out;
-          font-size: 1.2rem;
+          font-size: 0.8rem;
           border-bottom-left-radius: 0;
+          padding-block: 0.2rem;
+          justify-content: flex-start;
+          gap: 0.5rem;
           @media screen and (max-width: 600px) {
             height: 25vh;
           }
@@ -218,6 +230,10 @@
       .timelineMilestone {
         left: 0;
         transform: translateX(-50%) translateY(-50%);
+      }
+
+      &:first-child {
+        display: none;
       }
     }
 

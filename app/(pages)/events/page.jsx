@@ -16,7 +16,7 @@ const Event = () => {
     <div className={`${styles.Event} ${allura.className}`}>
       <GradientBg />
       <EventBody />
-      <div className={styles.scroller}></div>
+      {/* <div className={styles.scroller}></div> */}
     </div>
   );
 };
