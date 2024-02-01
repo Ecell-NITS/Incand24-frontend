@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   // font-family: Montserrat Alternates;
+
   a {
     text-decoration: none;
     color: #acebbd;
@@ -16,11 +17,21 @@
     width: 100vw;
     object-fit: cover;
   }
-  .container {
-    width: 100%;
-    padding: 10% 10% 1% 10%;
-    // padding-block: 5%;
-    height: fit-content;
+
+  .noHills {
+    background-color: linear-gradient(
+      90deg,
+      #001e1b 2.06%,
+      #001e1b 60.27%,
+      #001e27 76.54%,
+      #003238 92.2%
+    );
+
+    background: url(../../../public/images/footerEllipse.svg) no-repeat;
+    background-size: cover;
+  }
+
+  .yesHills {
     background: linear-gradient(
       90deg,
       #001e1b 2.06%,
@@ -28,10 +39,74 @@
       #001e27 76.54%,
       #003238 92.2%
     );
+  }
+
+  .container {
+    width: 100%;
+    padding: 5% 10% 1% 10%;
+    // padding-block: 5%;
+    height: fit-content;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    .ca {
+      padding: 0 0 1.5vh 0;
+      margin-bottom: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 65%;
+      gap: 3vh;
+
+      .title {
+        overflow: hidden;
+        color: #fff;
+        margin-bottom: 0;
+
+        // font-family: Allura;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .content {
+        color: #fff;
+
+        text-align: center;
+        // font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.6;
+      }
+
+      @media screen and (max-width: 900px) {
+        padding: 2vh 0 0 0;
+        margin-bottom: 5vh;
+        width: 100%;
+
+        .title {
+          font-size: 2.5rem;
+        }
+        .content {
+          font-size: 1rem;
+        }
+      }
+
+      @media screen and (max-width: 354px) {
+        .title {
+          font-size: 1.5rem;
+        }
+        .content {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
     .info {
       display: flex;
       width: 100%;
@@ -76,17 +151,17 @@
       }
     }
     .logo {
-      width: 30vw;
-      height: 15vw;
+      width: 36vw;
+      height: 23vw;
       position: relative;
+
+      @media screen and (max-width: 463px) {
+        height: 38vw;
+        width: 60vw;
+      }
     }
 
     @media screen and (max-width: 500px) {
-      .logo {
-        position: absolute;
-        top: 88vw;
-        left: 58vw;
-      }
       .info {
         .mailicon,
         .locnlogo {
@@ -95,31 +170,25 @@
         .follow {
           margin-top: 3vh;
           margin-left: 1vw;
-          align-self: flex-start;
         }
       }
     }
 
-    @media screen and (max-width: 420px) {
-      .logo {
-        position: absolute;
-        top: 89vw;
-        left: 58.5vw;
+    @media screen and (max-width: 380px) {
+      .info {
+        .contact {
+          font-size: 1.2rem;
+          .fold_fs {
+            font-size: 0.8rem;
+          }
+        }
+        .follow {
+          font-size: 1.2rem;
+        }
       }
     }
 
-    @media screen and (max-width: 395px) {
-      .logo {
-        top: 91vw;
-        left: 58.5vw;
-      }
-    }
     @media screen and (max-width: 354px) {
-      .logo {
-        top: 89vw;
-        left: 58.5vw;
-      }
-
       .info {
         .contact {
           font-size: 1.2rem;
@@ -133,7 +202,6 @@
         }
         .follow {
           font-size: 1.2rem;
-          margin-left: 0;
           .social {
             gap: 10px;
           }
@@ -142,14 +210,11 @@
     }
 
     @media screen and (max-width: 300px) {
-      .logo {
-        top: 103vw;
-        left: 58vw;
-      }
-
+      gap: 0.8rem;
       .info {
         .contact {
           font-size: 1rem;
+          gap: 0.5rem;
           .fold_fs {
             font-size: 0.6rem;
           }
@@ -157,7 +222,6 @@
 
         .follow {
           font-size: 1rem;
-          margin-left: 0;
           .social {
             gap: 8px;
             .icon {
@@ -214,6 +278,8 @@
       .ecell_copyright {
         .ecell img {
           margin: 0 0.8vw;
+          height: 3.5vh;
+          width: 7vw;
         }
         .copyright {
           width: 70%;
@@ -243,5 +309,15 @@
         }
       }
     }
+  }
+}
+
+.copyright {
+  padding: 1vw 0;
+}
+
+@media (max-width: 660px) {
+  .copyright {
+    padding: 2.5vw 0;
   }
 }

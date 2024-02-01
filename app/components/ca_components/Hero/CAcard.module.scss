@@ -1,0 +1,145 @@
+.wrapper {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  border: 8px solid #272727;
+  backdrop-filter: blur(15px);
+  padding: 5% 5%;
+
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.1s ease-in;
+
+
+  &:hover {
+    cursor: pointer;
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.75) 100%);
+    border: 4px solid transparent;
+    box-shadow: -2px -1px 2px 1px #ffffff;
+    scale: 0.999;
+
+  }
+
+  .image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    padding: 2px 2px;
+    object-fit: contain;
+    object-position: center;
+    img {
+      vertical-align: middle;
+      object-fit: contain;
+    }
+  }
+
+  .text {
+    p {
+      color: #fff;
+      font-size: 1.4rem;
+      font-style: normal;
+      text-align: center;
+      font-weight: 400;
+      line-height: normal;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .wrapper {
+    width: 272px;
+    height: 325px;
+  }
+  .image {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .text {
+    p {
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .wrapper {
+    width: 235px;
+    height: 293px;
+  }
+  .image {
+    img {
+      width: 176px;
+      height: 166px;
+    }
+  }
+  .text {
+    p {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 70vw;
+    height: 378px;
+  }
+  .image {
+    img {
+      width: 230px;
+      height: 230px;
+    }
+  }
+  .text {
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    height: 310px;
+  }
+  .image {
+    img {
+      width: 185px !important;
+      height: 185px !important;
+    }
+  }
+  .text {
+    p {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    width: 115vw !important;
+    height: 273px;
+  }
+  .image {
+    img {
+      width: 160px !important;
+      height: 160px !important;
+    }
+  }
+  .text {
+    p {
+      font-size: 1rem !important;
+    }
+  }
+}
