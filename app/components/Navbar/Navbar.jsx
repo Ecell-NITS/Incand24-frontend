@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Link } from "react-scroll";
 import {
   // Passion_One as passionOne,
@@ -44,23 +45,24 @@ const Allura = allura({
 //   weight: ["500"],
 //   subsets: ["latin"],
 // });
-const Navbar = () => {
+const Navbar = ({ navlink, defaultDark = true }) => {
   const [select, setSelect] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-  const navlink = [
-    {
-      name: "Home",
-      link: "hero",
-    },
-    {
-      name: "About Us",
-      link: "about",
-    },
-    {
-      name: "Sponsors",
-      link: "sponsor",
-    },
-  ];
+  const [navbar, setNavbar] = useState(!defaultDark);
+  const router = useRouter();
+  // const navlink = [
+  //   {
+  //     name: "Home",
+  //     link: "hero",
+  //   },
+  //   {
+  //     name: "About Us",
+  //     link: "about",
+  //   },
+  //   {
+  //     name: "Sponsors",
+  //     link: "sponsor",
+  //   },
+  // ];
   const change = () => {
     if (select === false) {
       setSelect(!select);
@@ -68,16 +70,21 @@ const Navbar = () => {
       setSelect(!select);
     }
   };
+
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 110) {
-        setNavbar(true);
-      } else {
-        setNavbar(false);
+      if (defaultDark) {
+        if (window.scrollY >= 110) {
+          setNavbar(true);
+        } else {
+          setNavbar(false);
+        }
       }
     };
+
     window.addEventListener("scroll", changeColor);
-  }, []);
+  }, [defaultDark]);
+
   return (
     <div>
       <nav>
@@ -181,16 +188,19 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.menu_bar}>
-          <Link
-            to="hero"
-            spy
-            smooth
-            hashSpy
-            offset={50}
-            duration={500}
-            className={styles.wrapper}
-          >
-            <div className={styles.logo}>
+          <div className={styles.wrapper}>
+            <div
+              role="button"
+              aria-label="home button"
+              tabIndex={0}
+              className={styles.logo}
+              onClick={() => {
+                router.push("/");
+              }}
+              onKeyDown={() => {
+                router.push("/");
+              }}
+            >
               <Image
                 fill
                 style={{ cursor: "pointer" }}
@@ -198,7 +208,7 @@ const Navbar = () => {
                 alt=""
               />
             </div>
-          </Link>
+          </div>
 
           <div className={navbar ? styles.grp1 : styles.grp2}>
             {navlink.map(({ name, link }) => (
@@ -226,7 +236,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
             >
-              <Brochure />
+              <Brochure text="Brochure" />
             </a>
           </div>
         </div>

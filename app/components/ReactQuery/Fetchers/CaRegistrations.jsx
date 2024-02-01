@@ -2,7 +2,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-export const fetchProfile = async () => {
+export const fetchCARegistrations = async () => {
   try {
     const token = Cookies.get("authToken");
     const tokenConfig = {
@@ -11,11 +11,11 @@ export const fetchProfile = async () => {
       },
     };
     const res = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_MAIN}/dashboard`,
+      `${process.env.NEXT_PUBLIC_API_MAIN}/fetchcaregs`,
       tokenConfig
     );
-    const dashboard = res.data;
-    return dashboard;
+    const caregs = res.data;
+    return caregs;
   } catch (err) {
     console.error(err);
     return null;
