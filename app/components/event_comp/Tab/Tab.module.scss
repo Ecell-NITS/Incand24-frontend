@@ -1,0 +1,26 @@
+.Tab {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  z-index: 11;
+  .TabItem {
+    width: fit-content;
+    height: 6rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #2b2837;
+    color: white;
+    font-size: 3rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgb(33, 31, 31);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .TabItemActive {
+    transform: scale(1.2);
+    background-color: #333041;
+    transition: all 0.3s ease-in-out;
+  }
+}

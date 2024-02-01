@@ -1,0 +1,228 @@
+.timeline {
+  margin: auto;
+  padding: 0.01em 16px;
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  .timelineItem {
+    position: relative;
+    border-bottom: 6px solid #eeeefa;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .cardWrapper {
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2rem;
+      .desc {
+        width: 45%;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        font-size: 1.5rem;
+        height: 50vh;
+        overflow-y: auto;
+      }
+
+      &:hover {
+        .desc {
+          opacity: 1;
+        }
+      }
+
+      .Card {
+        width: 50vw;
+        position: relative;
+        height: 50vh;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        font-weight: 600;
+
+        .index {
+          position: absolute;
+          top: 0;
+          font-size: 2.5rem;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: white;
+          color: transparent;
+          z-index: 5;
+        }
+
+        background: linear-gradient(215deg, gray, black) padding-box,
+          linear-gradient(135deg, rgb(25, 5, 245), rgb(214, 4, 158)) border-box;
+        border: 2px solid transparent;
+
+        .image {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          z-index: 0;
+        }
+        .title {
+          position: absolute;
+          bottom: 1rem;
+          z-index: 5;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .timelineMilestone {
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+      border: 6px solid #eeeefa;
+      height: 1.6rem;
+      width: 1.6rem;
+      background: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:nth-child(2n) {
+        border-left: 6px solid #eeeefa;
+        border-bottom-left-radius: 2rem;
+        .timelineMilestone {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+        .cardWrapper {
+          flex-direction: row;
+
+          .desc {
+            text-align: left;
+          }
+
+          .Card {
+            left: -25%;
+            transition: 0.3s all ease-in-out;
+            border-bottom-right-radius: 0;
+          }
+          &:hover {
+            .Card {
+              left: 0;
+              border-bottom-left-radius: 0;
+              border-bottom-right-radius: 2rem;
+            }
+          }
+        }
+      }
+      &:nth-child(2n + 1) {
+        border-right: 6px solid #eeeefa;
+        align-items: end;
+        border-bottom-right-radius: 2rem;
+
+        .timelineMilestone {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+
+        .cardWrapper {
+          flex-direction: row-reverse;
+          .desc {
+            text-align: left;
+          }
+
+          .Card {
+            left: 25%;
+            transition: 0.3s all ease-in-out;
+            border-bottom-left-radius: 0;
+          }
+          &:hover {
+            .Card {
+              left: 0;
+              border-bottom-left-radius: 2rem;
+              border-bottom-right-radius: 0;
+            }
+          }
+        }
+      }
+      &:nth-child(1) {
+        width: 50%;
+        .timelineMilestone {
+          // left: 0;
+          transform: translate(50%, -200%);
+        }
+      }
+      &:last-child {
+        //   width: 50%;
+        align-self: flex-end;
+        border-bottom: none;
+        border-radius: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      border-left: 3px solid white;
+      border-bottom: none;
+
+      .cardWrapper {
+        width: 80vw;
+        position: relative;
+
+        &:hover {
+          .Card {
+            transform: rotateY(180deg);
+            opacity: 0;
+          }
+          .desc {
+            transform: rotateY(0);
+            opacity: 1;
+          }
+        }
+        .Card {
+          position: absolute;
+          width: 80%;
+          transition: 0.5s all ease-in-out;
+          border: 2px solid transparent;
+          border-bottom-right-radius: 0;
+
+          @media screen and (max-width: 600px) {
+            height: 25vh;
+          }
+          .title {
+            font-size: 1.5rem;
+          }
+        }
+        .desc {
+          width: 80%;
+          transform: rotateY(180deg);
+          background: linear-gradient(215deg, gray, black) padding-box,
+            linear-gradient(135deg, rgb(25, 5, 245), rgb(214, 4, 158)) border-box;
+          border: 2px solid transparent;
+          border-radius: 2rem;
+          transition: 0.5s all ease-in-out;
+          font-size: 1.2rem;
+          border-bottom-left-radius: 0;
+          @media screen and (max-width: 600px) {
+            height: 25vh;
+          }
+        }
+      }
+      .timelineMilestone {
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-left: 1rem;
+    }
+  }
+}
