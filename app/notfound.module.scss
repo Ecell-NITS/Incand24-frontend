@@ -18,50 +18,70 @@
     text-align: center;
     .grp1 {
       font-size: 7vh;
-    }
-    .dotgrp {
       display: flex;
-      width: 10vw;
-      background-color: white;
-      border-radius: 50%;
+      align-items: flex-end;
+    }
+    .group1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // bottom:0;
+      gap: 1rem;
+      // flex-direction: ;
+      .dotgrp {
+        display: flex;
+        gap: 0.8rem;
+        // align-items: flex-end;
+        .dots {
+          width: 1rem;
+          height: 1rem;
+          background-color: white; /* Set your desired background color */
+          border-radius: 50%;
+        }
+      }
     }
   }
   .numbers {
     display: flex;
     position: relative;
     margin-top: 5vh;
+    width: 25%;
 
-    justify-content: center;
+    margin: auto;
+
+    // justify-content: space-around;
     align-items: center;
     gap: 5vw;
     .zero {
-      position: absolute;
+      // position: absolute;
+      // width:200%;
       // top:10rem;
       // margin:auto;
       // bottom: 0;
-      right: 0;
-      left: 0;
+      // right: 0;
+      // left: 0;
       margin: auto;
       // width:200%;
       animation: zeroanim linear 3s infinite ease-in-out;
     }
     .four {
-      position: absolute;
+      // position: absolute;
       // top:10rem;
       // margin:auto;
       // bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
+      // right: 0;
+      // left: 0;
+      // margin: auto;
       // width:200%;
       animation: zeroanim linear 3s infinite ease-in-out;
     }
+
     @keyframes zeroanim {
       0% {
-        transform: translateY(0);
+        transform: translateX(0);
       }
       100% {
-        transform: translateY(-30%);
+        transform: translateX(-30%);
       }
     }
   }
@@ -145,13 +165,14 @@
 
     .wave {
       width: 100%;
-      height: 20%;
+      height: 10%;
 
       .waveDB {
         width: 200%;
         position: absolute;
         bottom: 0;
-        animation: wave linear 5s infinite;
+        // inset:0 0 -16% 0;
+        animation: wave3 linear 5s infinite alternate-reverse;
         z-index: 999;
       }
       .waveB {
@@ -159,20 +180,35 @@
         z-index: 500;
         position: absolute;
         bottom: 0;
-        animation: wave linear 5s reverse infinite;
+        animation: wave2 linear 5s infinite alternate-reverse;
       }
       .waveLB {
         width: 200%;
-
         position: absolute;
         bottom: 0;
-        animation: wave linear 5s infinite;
+        animation: wave1 linear 5s infinite alternate-reverse;
       }
     }
 
-    @keyframes wave {
+    @keyframes wave1 {
       0% {
-        transform: translateX(-30%);
+        transform: translateX(-40%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes wave2 {
+      0% {
+        transform: translateX(-25%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes wave3 {
+      0% {
+        transform: translateX(-16%);
       }
       100% {
         transform: translateX(0);
