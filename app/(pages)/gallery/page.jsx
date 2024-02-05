@@ -1,4 +1,5 @@
 "use client"
+
 import React from "react";
 import styles from "./gallery.module.scss";
 import Navbar from "@/app/components/Navbar/Navbar";
@@ -26,7 +27,7 @@ const page = () => {
       <Navbar navlink={navlink} defaultDark={false} />
       <Hero/>
       <Gallery/>
-      <Footer galleryPage={true}/>
+      <Footer galleryPage/>
     </div>
   );
 };

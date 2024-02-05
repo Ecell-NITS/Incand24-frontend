@@ -41,7 +41,7 @@ const GradientBg = ({
     },
   };
   return (
-    <div className={`${styles.hero} ${allura.className}`} style={{position : position}}>
+    <div className={`${styles.hero} ${allura.className}`} style={{position}}>
       <span className={styles.title}>{title}</span>
 
       <motion.div id={styles.cursor} variants={varients} animate="default"></motion.div>

@@ -1,12 +1,12 @@
 "use client";
+
 import React from "react";
-import styles from "./Hero.module.scss";
 import { Allura } from "next/font/google";
-import treeBg from "/public/images/tree.png";
 import Image from "next/image";
 import { Player } from "@lottiefiles/react-lottie-player";
-import leaf from "../../gallery/leafAnimation.json"
-import { motion } from "framer-motion"
+import treeBg from "../../../../public/images/tree.png";
+import leaf from "../leafAnimation"
+import styles from "./Hero.module.scss";
 import GradientBg from "../../Shared/GradientBg/GradientBg";
 
 const allura = Allura({

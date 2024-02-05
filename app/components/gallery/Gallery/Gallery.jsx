@@ -1,10 +1,10 @@
 "use client";
 
-import styles from "./Gallery.module.scss";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import ImageCard from "../ImageCard/ImageCard";
 import { motion } from "framer-motion";
+import ImageCard from "../ImageCard/ImageCard";
+import styles from "./Gallery.module.scss";
 import Modal from "../modal/Modal";
 
 const Gallery = () => {
@@ -35,11 +35,11 @@ const Gallery = () => {
     return () => {
       window.removeEventListener("resize", sizeHandler);
     };
-  }, [isGalleryVissible, sizeHandler]);
+  }, [isGalleryVissible]);
 
-  const clickHandler = (id) => {
+  const clickHandler = (imageId) => {
     setIsModalVissible(!isModalVissible);
-    setId(id);
+    setId(imageId);
   };
 
   const gallery = [
@@ -670,8 +670,14 @@ const Gallery = () => {
           >
             {gallery[0].images.map((image) => (
               <div
+              role="button"
+            aria-label="home button"
+            tabIndex={0}
                 key={image.id}
                 onClick={() => {
+                  clickHandler(image.id);
+                }}
+                onKeyDown={()=>{
                   clickHandler(image.id);
                 }}
               >
@@ -685,10 +691,16 @@ const Gallery = () => {
             transition={{ duration: 3 }}
             className={styles.col}
           >
-            {gallery[1].images.map((image, id) => (
+            {gallery[1].images.map((image) => (
               <div
+              role="button"
+            aria-label="home button"
+            tabIndex={0}
                 key={image.id}
                 onClick={() => {
+                  clickHandler(image.id);
+                }}
+                onKeyDown={()=>{
                   clickHandler(image.id);
                 }}
               >
@@ -703,10 +715,16 @@ const Gallery = () => {
               transition={{ duration: 3 }}
               className={styles.col}
             >
-              {gallery[2].images.map((image, id) => (
+              {gallery[2].images.map((image) => (
                 <div
+                role="button"
+            aria-label="home button"
+            tabIndex={0}
                   key={image.id}
                   onClick={() => {
+                    clickHandler(image.id);
+                  }}
+                  onKeyDown={()=>{
                     clickHandler(image.id);
                   }}
                 >
