@@ -17,6 +17,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     message: "",
+    contact: "",
   });
 
   const [formError, setFormError] = useState({});
@@ -28,54 +29,6 @@ const ContactForm = () => {
       [event.target.name]: event.target.value,
     }));
   };
-  // const onSubmitHandler = (event) => {
-  //   event.preventDefault();
-  //   const isValid = validateForm();
-  //   if (isValid) {
-  //     toast.success("Submittted", {
-  //       position: "bottom-right",
-  //     });
-  //   } else {
-  //     toast.error("Invalid form", {
-  //       position: "bottom-right",
-  //     });
-  //   }
-  // };
-
-  // const validateForm = () => {
-  //   const err = {};
-
-  //   if (formData.name === "") {
-  //     err.name = "Name required!";
-  //   }
-  //   if (formData.name?.length > 50) {
-  //     err.name = "Name too long";
-  //   }
-  //   if (formData.email === "") {
-  //     err.email = "Email required!";
-  //   }
-  //   if (formData.email.includes("@") === false) {
-  //     err.email = "Invalid Email";
-  //   }
-  //   if (formData.email?.length > 50) {
-  //     err.name = "Email too long";
-  //   }
-  //   if (formData.contact.length < 10) {
-  //     err.contact = "Invalid Contact Number!";
-  //   }
-  //   if (formData.contact === "") {
-  //     err.contact = "Contact Number required!";
-  //   }
-  //   if (formData.instituteName === "") {
-  //     err.instituteName = "Institute Name required!";
-  //   }
-  //   if (formData.instituteName?.length > 100) {
-  //     err.name = "Institute Name too long";
-  //   }
-
-  //   setFormError({ ...err });
-  //   return Object.keys(err).length < 1;
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -91,6 +44,10 @@ const ContactForm = () => {
       });
       return;
     }
+    if (formData?.contact && formData.contact.length < 10) {
+      toast.error("Invalid phone number");
+    }
+
     setSubmitting(true);
     try {
       await axios
@@ -163,6 +120,16 @@ const ContactForm = () => {
               onChange={OnChangeHandler}
             />
             <span>{formError.email}</span>
+          </div>
+          <div className={styles.box}>
+            <label htmlFor="contact">Phone (Optional)</label>
+            <input
+              name="contact"
+              autoComplete="off"
+              type="text"
+              onChange={OnChangeHandler}
+            />
+            <span>{formError.conatact}</span>
           </div>
           <div className={styles.box}>
             <label htmlFor="message">Your Message</label>
