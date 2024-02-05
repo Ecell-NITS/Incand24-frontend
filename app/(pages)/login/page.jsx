@@ -1,21 +1,31 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useContext } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 import { toast, Toaster } from "sonner";
+import { UserContext } from "@/app/components/Context/CreateContext";
+
 const Login = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
   const [submitting, setSubmitting] = useState(false);
+  const { isLoggedIn } = useContext(UserContext);
   const OnChangeHandler = (event) => {
     setFormData(() => ({
       ...formData,
       [event.target.name]: event.target.value,
     }));
   };
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.push("/dashboard");
+    }
+  }, [isLoggedIn, router]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
