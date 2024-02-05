@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./NewTimeline.module.scss";
-import data from "@/_db/events";
+import events from "@/_db/events";
 
 const poppins = Poppins({
   weight: ["400", "600"],
@@ -18,14 +18,14 @@ const poppins = Poppins({
 
 AOS.init();
 
-const NewTimeline = () => {
+const NewTimeline = ({ data = events }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       setWidth(window?.innerWidth);
       window?.addEventListener("resize", () => {
-        setWidth(window.innerWidth);
+        setWidth(window?.innerWidth);
       });
     }
     // console.log(width>768)
@@ -60,7 +60,7 @@ const NewTimeline = () => {
                   {event.id < 10 ? `0${event.id}` : event.id}
                 </div>
                 <div className={styles.image}>
-                  <Image src="/images/Logo.png" alt="" fill sizes="auto" priority />
+                  <Image src={event.imgUrls[0]} alt="" fill sizes="auto" priority />
                 </div>
                 <span className={styles.title}>{event.header}</span>
               </div>

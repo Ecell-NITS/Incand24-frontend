@@ -1,7 +1,5 @@
 import { Allura } from "next/font/google";
 import styles from "./Event.module.scss";
-// import Timeline from "@/app/components/event_comp/Timeline/Timeline";
-// import Tab from "@/app/components/event_comp/Tab/Tab";
 import GradientBg from "@/app/components/Shared/GradientBg/GradientBg";
 import EventBody from "@/app/components/event_comp/main/EventBody";
 

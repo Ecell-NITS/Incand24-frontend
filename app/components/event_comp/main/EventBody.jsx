@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import events from "@/_db/events";
+import concerts from "@/_db/concerts";
 import styles from "./EventBody.module.scss";
 import NewTimeline from "../NewTimeline/NewTimeline";
 
@@ -9,6 +10,7 @@ const EventBody = () => {
   // Tab component code
   const [tag, setTag] = useState();
   const [prevTag, setPrevTag] = useState();
+  const [data, setData] = useState(events);
 
   const handleClick = (e) => {
     setPrevTag(tag);
@@ -23,9 +25,11 @@ const EventBody = () => {
 
   const handleEvent = (e) => {
     handleClick(e);
+    setData(events);
   };
   const handleConcert = (e) => {
     handleClick(e);
+    setData(concerts);
   };
 
   useEffect(() => {
@@ -60,7 +64,7 @@ const EventBody = () => {
           Concerts
         </div>
       </div>
-      <NewTimeline />
+      <NewTimeline data={data} />
     </div>
   );
 };
