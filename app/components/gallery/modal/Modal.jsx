@@ -1,7 +1,25 @@
 import Image from "next/image";
 import styles from "./Modal.module.scss";
-const Modal = ({ id, setIsModalVissible, isModalVissible }) => {
-  const src = `/images/card/img${id}.svg`;
+import { gallery } from "../Gallery/GalleryData";
+const Modal = ({ id, column, setIsModalVissible, isModalVissible }) => {
+  const thatColumnAllImages = [];
+  for (let i = 0; i < gallery.length; i += 1) {
+    if (gallery[i].name === column) {
+      thatColumnAllImages.push(gallery[i].images);
+      break;
+    }
+  }
+
+  let src = "";
+  for (let i = 0; i < thatColumnAllImages.length; i += 1) {
+    for (let j = 0; j < thatColumnAllImages[i].length; j += 1) {
+      if (thatColumnAllImages[i][j].id === id) {
+        src = thatColumnAllImages[i][j].image;
+        break;
+      }
+    }
+  }
+
   return (
     <div
       role="button"

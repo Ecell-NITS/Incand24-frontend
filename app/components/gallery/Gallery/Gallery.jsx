@@ -6,12 +6,14 @@ import { motion } from "framer-motion";
 import ImageCard from "../ImageCard/ImageCard";
 import styles from "./Gallery.module.scss";
 import Modal from "../modal/Modal";
+import { gallery } from "./GalleryData";
 
 const Gallery = () => {
   const { ref: myRef, inView: isGalleryVissible } = useInView();
 
   const [isModalVissible, setIsModalVissible] = useState(false);
   const [id, setId] = useState(0);
+  const [column, setColumn] = useState("");
 
   const [IssmallScreen, setIsSmallScreen] = useState(false);
 
@@ -37,137 +39,45 @@ const Gallery = () => {
     };
   }, [isGalleryVissible]);
 
-  const clickHandler = (imageId) => {
+  const clickHandler = (imageId, columnNo) => {
     setIsModalVissible(!isModalVissible);
     setId(imageId);
+    setColumn(columnNo);
   };
 
-  const gallery = [
-    {
-      name: "col1",
-      images: [
-        {
-          id: 1,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 2,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 3,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 4,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 5,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 6,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 7,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-      ],
-    },
-    {
-      name: "col2",
-      images: [
-        {
-          id: 8,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 9,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 10,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 11,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 12,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 13,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 14,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-      ],
-    },
-    {
-      name: "col3",
-      images: [
-        {
-          id: 15,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 16,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 17,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 18,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 19,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 20,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-        {
-          id: 21,
-          image: "/images/card/img1.svg",
-          alt: "image-gallery",
-        },
-      ],
-    },
-  ];
+  useEffect(() => {
+    if (isModalVissible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isModalVissible]);
 
+  const thirdColumnLength = gallery[2].images.length;
+  const thirdColumnLengthImagesInMobileViewPart1 = [];
+  for (let i = 0; i < thirdColumnLength / 2; i += 1) {
+    thirdColumnLengthImagesInMobileViewPart1.push(gallery[2].images[i]);
+  }
+
+  const thirdColumnLengthImagesInMobileViewPart2 = [];
+  for (let i = thirdColumnLength / 2; i < thirdColumnLength; i += 1) {
+    thirdColumnLengthImagesInMobileViewPart2.push(gallery[2].images[i]);
+  }
+
+  const firstColumnImagesInMobileView = gallery[0].images.concat(
+    thirdColumnLengthImagesInMobileViewPart1
+  );
+  const secondColumnImagesInMobileView = gallery[1].images.concat(
+    thirdColumnLengthImagesInMobileViewPart2
+  );
+
+  // const firstColumnImagesId = []
+  // for (let i = 0; i < gallery[0].images.length; i += 1) {
+  //   firstColumnImagesId.push(gallery[0].images[i].id)
+  // }
+  // console.log(firstColumnImagesId)
   return (
     <div className={styles.container}>
-      
       <div className={styles.wave}>
         <div className={`${styles.waveFront} ${styles.absolute}`}>
           <svg
@@ -668,22 +578,41 @@ const Gallery = () => {
             transition={{ duration: 3 }}
             className={styles.col}
           >
-            {gallery[0].images.map((image) => (
-              <div
-              role="button"
-            aria-label="home button"
-            tabIndex={0}
-                key={image.id}
-                onClick={() => {
-                  clickHandler(image.id);
-                }}
-                onKeyDown={()=>{
-                  clickHandler(image.id);
-                }}
-              >
-                <ImageCard image={image.image} />
-              </div>
-            ))}
+            {IssmallScreen
+              ? gallery[0].images.map((image) => (
+                  <div
+                    role="button"
+                    aria-label="home button"
+                    tabIndex={0}
+                    key={image.id}
+                    onClick={() => {
+                      clickHandler(image.id, gallery[0].name);
+                    }}
+                    onKeyDown={() => {
+                      clickHandler(image.id, gallery[0].name);
+                    }}
+                  >
+                    <ImageCard image={image.image} />
+                  </div>
+                ))
+              : firstColumnImagesInMobileView?.map((image) => (
+                  <div
+                    role="button"
+                    aria-label="home button"
+                    tabIndex={0}
+                    key={image.id}
+                    onClick={() => {
+                      const galleryIndex = image.name === "col3" ? 2 : 0;
+                      clickHandler(image.id, gallery[galleryIndex].name);
+                    }}
+                    onKeyDown={() => {
+                      const galleryIndex = image.name === "col3" ? 2 : 0;
+                      clickHandler(image.id, gallery[galleryIndex].name);
+                    }}
+                  >
+                    <ImageCard image={image.image} />
+                  </div>
+                ))}
           </motion.div>
           <motion.div
             initial={{ y: 3000 }}
@@ -691,22 +620,41 @@ const Gallery = () => {
             transition={{ duration: 3 }}
             className={styles.col}
           >
-            {gallery[1].images.map((image) => (
-              <div
-              role="button"
-            aria-label="home button"
-            tabIndex={0}
-                key={image.id}
-                onClick={() => {
-                  clickHandler(image.id);
-                }}
-                onKeyDown={()=>{
-                  clickHandler(image.id);
-                }}
-              >
-                <ImageCard image={image.image} />
-              </div>
-            ))}
+            {IssmallScreen
+              ? gallery[1].images.map((image) => (
+                  <div
+                    role="button"
+                    aria-label="home button"
+                    tabIndex={0}
+                    key={image.id}
+                    onClick={() => {
+                      clickHandler(image.id, gallery[1].name);
+                    }}
+                    onKeyDown={() => {
+                      clickHandler(image.id, gallery[1].name);
+                    }}
+                  >
+                    <ImageCard image={image.image} />
+                  </div>
+                ))
+              : secondColumnImagesInMobileView?.map((image) => (
+                  <div
+                    role="button"
+                    aria-label="home button"
+                    tabIndex={0}
+                    key={image.id}
+                    onClick={() => {
+                      const galleryIndex = image.name === "col3" ? 2 : 1;
+                      clickHandler(image.id, gallery[galleryIndex].name);
+                    }}
+                    onKeyDown={() => {
+                      const galleryIndex = image.name === "col3" ? 2 : 1;
+                      clickHandler(image.id, gallery[galleryIndex].name);
+                    }}
+                  >
+                    <ImageCard image={image.image} />
+                  </div>
+                ))}
           </motion.div>
           {IssmallScreen && (
             <motion.div
@@ -714,18 +662,19 @@ const Gallery = () => {
               animate={isGalleryVissible ? { y: 0 } : { y: -3000 }}
               transition={{ duration: 3 }}
               className={styles.col}
+              id={styles.divimp}
             >
               {gallery[2].images.map((image) => (
                 <div
-                role="button"
-            aria-label="home button"
-            tabIndex={0}
+                  role="button"
+                  aria-label="home button"
+                  tabIndex={0}
                   key={image.id}
                   onClick={() => {
-                    clickHandler(image.id);
+                    clickHandler(image.id, gallery[2].name);
                   }}
-                  onKeyDown={()=>{
-                    clickHandler(image.id);
+                  onKeyDown={() => {
+                    clickHandler(image.id, gallery[2].name);
                   }}
                 >
                   <ImageCard image={image.image} />
@@ -737,6 +686,7 @@ const Gallery = () => {
 
         <Modal
           id={id}
+          column={column}
           setIsModalVissible={setIsModalVissible}
           isModalVissible={isModalVissible}
         />

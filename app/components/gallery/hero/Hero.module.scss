@@ -9,7 +9,6 @@
   justify-content: center;
   perspective: 20px;
 
-    
   .tree {
     width: 100%;
     min-height: 100vh;
@@ -25,12 +24,10 @@
     }
 
     @keyframes intro {
-      100%{
+      100% {
         transform: translateZ(5px);
       }
     }
-
-
   }
 
   .contents {
@@ -48,11 +45,16 @@
       padding: 25% 0;
       padding-bottom: 60vw;
     }
-    
 
     h1 {
-      color: #000;
+      color: white;
       font-size: 6vw;
+      @media (max-width: 660px) {
+        font-size: 10vw;
+        font-weight: 600;
+        // margin-bottom: 5vw;
+        // text-align: center;
+      }
     }
 
     .glimpse {
@@ -82,11 +84,10 @@
       color: #fff;
       text-align: center;
       font-size: 6vw;
-      margin-bottom: -5vw;
+      margin-bottom: -2.5vw;
+      @media (max-width: 660px) {
+        font-size: 10vw;
+      }
     }
-
-    
   }
-
-
 }
