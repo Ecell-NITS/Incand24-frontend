@@ -14,6 +14,7 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@next/font": "^14.1.0",
+    "aos": "3.0.0-beta.6",
     "autoprefixer": "10.4.15",
     "axios": "^1.6.0",
     "eslint-config-next": "13.4.19",
@@ -28,6 +29,7 @@
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.6.0",
     "react-lottie": "^1.2.4",
     "react-query": "^3.39.3",
     "react-scroll": "^1.9.0",
