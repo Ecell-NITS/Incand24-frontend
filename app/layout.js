@@ -1,4 +1,4 @@
-import NextTopLoader from "nextjs-toploader";
+// import NextTopLoader from "nextjs-toploader";
 import "./globals.scss";
 import { Inter } from "next/font/google";
 // import connectToDb from "@/lib/db";
@@ -18,7 +18,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextTopLoader />
+        {/* <NextTopLoader /> */}
         <ContProvider>
           <QueryProvider>{children}</QueryProvider>
         </ContProvider>

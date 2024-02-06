@@ -80,19 +80,19 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name?.length > 50) {
+    if (formData.name?.length > 49) {
       toast.error("Name too long", {
         position: "bottom-right",
       });
       return;
     }
-    if (formData.email?.length > 50) {
+    if (formData.email?.length > 49) {
       toast.error("Email too long", {
         position: "bottom-right",
       });
       return;
     }
-    if (formData.instituteName?.length > 100) {
+    if (formData.instituteName?.length > 99) {
       toast.error("Institute Name too long", {
         position: "bottom-right",
       });
