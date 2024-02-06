@@ -45,8 +45,13 @@
       padding: 5px 0;
       margin: 0;
       img {
-        // width: 140px;
-        // height: 120px;
+        width: 10rem;
+        height: 6rem;
+
+        @media only screen and (max-width: 480px) {
+          width: 5rem;
+          height: 3rem;
+        }
       }
     }
 
@@ -54,6 +59,9 @@
       font-size: 1.5rem;
       font-weight: bold;
       font-family: allura;
+      // background-color: red;
+      width: 6rem;
+      text-align: center;
 
       @media only screen and (max-width: 480px) {
         font-size: 1.3rem;
