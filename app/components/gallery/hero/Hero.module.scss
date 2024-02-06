@@ -61,7 +61,13 @@
       height: 30vw;
       width: 55vw;
       border-radius: 20px;
-      background-color: black;
+
+      iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        border: none;
+      }
 
       @media screen and (max-width: 568px) {
         height: 35vw;
