@@ -51,7 +51,7 @@
     #col4 {
       transform: translateY(12vh);
 
-      @media only screen and (max-width: 365px) {
+      @media only screen and (max-width: 380px) {
         transform: translateY(0);
       }
     }
@@ -73,11 +73,15 @@
       }
 
       @media only screen and (max-width: 380px) {
-        right: 35vw;
+        right: 12vw;
       }
 
       @media only screen and (max-width: 365px) and (min-width: 300px) {
         right: 20vw;
+      }
+
+      @media only screen and (max-width: 300px) {
+        right: 37vw;
       }
     }
     #leafs2 {
@@ -85,7 +89,7 @@
       z-index: -1;
       width: 30vw;
       height: 50vh;
-      bottom: 18%;
+      bottom: 28%;
       left: -40.5%;
 
       transform: rotate(270deg);
@@ -93,15 +97,19 @@
       @media only screen and (max-width: 480px) {
         width: 35vw;
         height: 60vh;
-        left: 44vw;
+        left: 42.5vw;
       }
 
       @media only screen and (max-width: 380px) {
-        left: 35vw;
+        left: 12vw;
       }
 
       @media only screen and (max-width: 365px) and (min-width: 300px) {
         left: 20vw;
+      }
+
+      @media only screen and (max-width: 300px) {
+        left: 37vw;
       }
     }
   }

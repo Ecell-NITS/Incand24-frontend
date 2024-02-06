@@ -11,22 +11,107 @@ const PrevSponsors = () => {
     AOS.init({ duration: 500 });
   }, []);
 
-  const data = [
+  const data1 = [
     {
-      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
-      title: `Zomato`,
+      link: `/sponsors/Amul.png`,
+      title: `Amul`,
     },
     {
-      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
-      title: `Zomato`,
+      link: `/sponsors/Bauli.png`,
+      title: `Bauli`,
     },
     {
-      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
-      title: `Zomato`,
+      link: `/sponsors/cloviaaa.jpg`,
+      title: `Cloviaaa`,
     },
     {
-      link: `https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png`,
-      title: `Zomato`,
+      link: `/sponsors/jiff.png`,
+      title: `Jiff`,
+    },
+    {
+      link: `/sponsors/boookd.avif`,
+      title: `Bookd`,
+    },
+    {
+      link: `/sponsors/coca-cola.png`,
+      title: `CocaCola`,
+    },
+  ];
+
+  const data2 = [
+    {
+      link: `/sponsors/cry.png`,
+      title: `Cry`,
+    },
+    {
+      link: `/sponsors/Gplus.png`,
+      title: `Gplus`,
+    },
+    {
+      link: `/sponsors/nai.png`,
+      title: `Nai`,
+    },
+    {
+      link: `/sponsors/citystyle.avif`,
+      title: `CityStyle`,
+    },
+    {
+      link: `/sponsors/college.png`,
+      title: `College`,
+    },
+    {
+      link: `/sponsors/dare.png`,
+      title: `Dare 2 Complete`,
+    },
+  ];
+
+  const data3 = [
+    {
+      link: `/sponsors/quickheal.png`,
+      title: `Quickheal`,
+    },
+    {
+      link: `/sponsors/unstop.jpg`,
+      title: `Unstop`,
+    },
+    {
+      link: `/sponsors/cubelelo.png`,
+      title: `Nai`,
+    },
+    {
+      link: `/sponsors/interviewbuddy.avif`,
+      title: `Cubelelo`,
+    },
+    {
+      link: `/sponsors/grabonn.png`,
+      title: `Grabonn`,
+    },
+    {
+      link: `/sponsors/campusblog.png`,
+      title: `Campusblog`,
+    },
+  ];
+
+  const data4 = [
+    {
+      link: `/sponsors/elm.png`,
+      title: `Elm`,
+    },
+    {
+      link: `/sponsors/thesavagehumans.avif`,
+      title: `The Savage Humans`,
+    },
+    {
+      link: `/sponsors/janta.png`,
+      title: `Janta`,
+    },
+    {
+      link: `/sponsors/learnwt.avif`,
+      title: `Learnwt`,
+    },
+    {
+      link: `/sponsors/london.png`,
+      title: `London Shakes`,
     },
   ];
 
@@ -39,7 +124,7 @@ const PrevSponsors = () => {
         <div id={styles.col1} className={styles.col} data-aos="fade-right">
           {
             // important : we can not use 'for each' beacsue it does not return any value
-            data.map(
+            data1.map(
               (
                 ele // if we use {} then we have to use return keyword
               ) => (
@@ -52,13 +137,13 @@ const PrevSponsors = () => {
           </div>
         </div>
         <div id={styles.col2} className={styles.col}>
-          {data.map((ele) => {
+          {data2.map((ele) => {
             // without arrow function
             return <Card key={ele.title} link={ele.link} title={ele.title} />;
           })}
         </div>
         <div id={styles.col3} className={styles.col} data-aos="fade-up">
-          {data.map((ele) => (
+          {data3.map((ele) => (
             <Card key={ele.title} link={ele.link} title={ele.title} />
           ))}
         </div>
@@ -66,7 +151,7 @@ const PrevSponsors = () => {
           <div id={styles.leafs1}>
             <Lottie loop animationData={Greenleafs} />
           </div>
-          {data.map((ele) => (
+          {data4.map((ele) => (
             <Card key={ele.title} link={ele.link} title={ele.title} />
           ))}
         </div>
