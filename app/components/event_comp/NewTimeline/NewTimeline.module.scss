@@ -78,12 +78,18 @@
 
         .image {
           height: 100%;
+          width: 100%;
           // width: fit-content;
           display: flex;
           position: relative;
           z-index: 0;
           object-fit: contain;
           border-radius: inherit;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
         .title {
           position: absolute;
