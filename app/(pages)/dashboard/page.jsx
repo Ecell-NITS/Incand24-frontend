@@ -41,6 +41,16 @@ const Dashboard = () => {
           CA registrations
         </button>
       </div>
+
+      <div>
+        <button
+          onClick={() => {
+            router.push("/contactres");
+          }}
+        >
+          Contact Us Responses
+        </button>
+      </div>
     </main>
   );
 };

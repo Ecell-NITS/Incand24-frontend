@@ -3,16 +3,16 @@
 import React, { useContext, useMemo } from "react";
 import { useQuery } from "react-query";
 import { UserContext } from "@/app/components/Context/CreateContext";
-import { fetchCARegistrations } from "@/app/components/ReactQuery/Fetchers/CaRegistrations";
+import { fetchContactUsRes } from "@/app/components/ReactQuery/Fetchers/ContactRes";
 
-const Caregs = () => {
+const ContactUsResponsesPage = () => {
   const { isLoggedIn, role } = useContext(UserContext);
   const isEnabledT = useMemo(() => {
     return Boolean(isLoggedIn && role === "admin");
   }, [isLoggedIn, role]);
 
-  const queryKey = useMemo(() => ["caregs"], []);
-  const { data, error, isError, isLoading } = useQuery(queryKey, fetchCARegistrations, {
+  const queryKey = useMemo(() => ["contactRes"], []);
+  const { data, error, isError, isLoading } = useQuery(queryKey, fetchContactUsRes, {
     isEnabled: isEnabledT,
   });
 
@@ -21,8 +21,9 @@ const Caregs = () => {
 
   return (
     <main>
-      {isEnabledT ? "All Campus Ambassdor registrations" : "You are not authorized"}
+      <h1> {isEnabledT ? "All Contact Us Responses" : "You are not authorized"}</h1>
       <hr />
+      {data?.length === 0 && <p style={{ color: "red" }}>No responses yet</p>}
       {data && (
         <div>
           {data?.map((item) => {
@@ -30,14 +31,17 @@ const Caregs = () => {
               <div key={item.email}>
                 <ul>
                   <li>name: {item?.name}</li>
-                  <li>Institute name: {item?.college}</li>
+                  {item?.contact && (
+                    <li>
+                      contact: <a href={`tel:${item?.contact}`}>{item?.contact}</a>
+                    </li>
+                  )}
+                  {item?.contact === "" && <li>contact: Not provided</li>}
                   <li>
-                    Contact: <a href={`tel:${item?.phone}`}>{item?.phone}</a>
+                    email: <a href={`mailto:${item?.email}`}>{item?.email}</a>
                   </li>
-                  <li>
-                    Email: <a href={`mailto:${item?.email}`}> {item?.email}</a>
-                  </li>
-                  <li>Registered at: {item?.registeredAt}</li>
+                  <li>Message: {item?.message}</li>
+                  <li>Sent at: {item?.SentAt}</li>
                   <hr />
                 </ul>
               </div>
@@ -49,4 +53,4 @@ const Caregs = () => {
   );
 };
 
-export default Caregs;
+export default ContactUsResponsesPage;
