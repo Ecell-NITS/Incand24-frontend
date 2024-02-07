@@ -1,12 +1,12 @@
 import React from "react";
-// import { Poppins as poppins } from 'next/font/google';
+import { Allura } from "next/font/google";
 import Image from "next/image";
 import styles from "./Card.module.scss";
 
-// const Poppins = poppins({
-//     weight: ["400"],
-//     subsets: ["latin"],
-// });
+const allura = Allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 const Card = ({ link, title }) => {
   return (
@@ -16,7 +16,9 @@ const Card = ({ link, title }) => {
           <Image src={link} alt="logo" width={100} height={100} />{" "}
           {/* to be replaced with <Image /> */}
         </div>
-        <p id={styles.title}>{title}</p>
+        <p id={styles.title} className={allura.className}>
+          {title}
+        </p>
       </div>
     </div>
   );

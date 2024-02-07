@@ -13,9 +13,14 @@
   background-color: rgba(255, 255, 255, 0);
   transition: border 0.2s ease-in-out 0s;
 
+  @media only screen and (max-width: 1100px) {
+    width: max(40%, 12rem);
+    height: max(18vh, 10rem);
+  }
+
   @media only screen and (max-width: 480px) {
     width: max(40%, 9rem);
-    height: max(18vh, 10rem);
+    height: max(18vh, 9.5rem);
   }
 
   // border: 5px solid transparent;
@@ -35,18 +40,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    // padding: 5rem;
 
     @media only screen and (max-width: 480px) {
-      padding: 2rem;
+      // padding: 2rem;
     }
 
     #img {
       padding: 5px 0;
       margin: 0;
       img {
-        width: 10rem;
-        height: 6rem;
+        width: 8vw;
+        height: 5vw;
 
         @media only screen and (max-width: 480px) {
           width: 5rem;
@@ -58,7 +63,7 @@
     #title {
       font-size: 1.5rem;
       font-weight: bold;
-      font-family: allura;
+      // font-family: allura;
       // background-color: red;
       width: 6rem;
       text-align: center;

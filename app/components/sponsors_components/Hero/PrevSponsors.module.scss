@@ -8,29 +8,89 @@
 
   @media only screen and (max-width: 480px) {
     margin-top: 10vh;
+    gap: 0;
   }
 
   .text {
-    font-family: allura;
+    // font-family: allura;
     text-align: center;
     font-size: max(6vw, 2rem);
   }
 
   .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10vh 0;
+    // background-color: green;
 
-    @media only screen and (max-width: 480px) {
-      padding: 0 0 10vh 0;
+    @media only screen and (max-width: 1100px) {
+      flex-direction: column;
+      gap: 5vh;
     }
 
-    @media only screen and (max-width: 365px) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: baseline;
-      align-items: center;
+    @media only screen and (max-width: 480px) {
+      gap: 0;
+    }
+
+    // @media only screen and (max-width: 365px) {
+    //   flex-direction: column;
+    //   flex-wrap: nowrap;
+    //   justify-content: baseline;
+    //   align-items: center;
+    // }
+
+    .sub1,
+    .sub2 {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 5vw;
+      position: relative;
+      // background-color: red;
+
+      @media only screen and (max-width: 300px) {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    #leafs2 {
+      position: absolute;
+      width: 30vw;
+      height: 50vh;
+      left: -30%;
+      top: 50%;
+
+      transform: rotate(270deg);
+
+      @media only screen and (max-width: 1100px) {
+        height: fit-content;
+        width: 50%;
+        top: 55%;
+        left: -3%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        top: 15%;
+      }
+    }
+
+    #leafs1 {
+      position: absolute;
+      width: 30vw;
+      height: 50vh;
+      top: 0%;
+      right: -30%;
+      // background-color: blue;
+
+      transform: rotate(90deg);
+
+      @media only screen and (max-width: 1100px) {
+        top: 6%;
+        right: -3%;
+        height: fit-content;
+        width: 50%;
+      }
     }
 
     .col {
@@ -53,63 +113,6 @@
 
       @media only screen and (max-width: 380px) {
         transform: translateY(0);
-      }
-    }
-
-    #leafs1 {
-      position: absolute;
-      z-index: -1;
-      width: 30vw;
-      height: 50vh;
-      top: -10%;
-      right: -40%;
-
-      transform: rotate(90deg);
-
-      @media only screen and (max-width: 480px) {
-        width: 35vw;
-        height: 60vh;
-        right: 44vw;
-      }
-
-      @media only screen and (max-width: 380px) {
-        right: 12vw;
-      }
-
-      @media only screen and (max-width: 365px) and (min-width: 300px) {
-        right: 20vw;
-      }
-
-      @media only screen and (max-width: 300px) {
-        right: 37vw;
-      }
-    }
-    #leafs2 {
-      position: absolute;
-      z-index: -1;
-      width: 30vw;
-      height: 50vh;
-      bottom: 28%;
-      left: -40.5%;
-
-      transform: rotate(270deg);
-
-      @media only screen and (max-width: 480px) {
-        width: 35vw;
-        height: 60vh;
-        left: 42.5vw;
-      }
-
-      @media only screen and (max-width: 380px) {
-        left: 12vw;
-      }
-
-      @media only screen and (max-width: 365px) and (min-width: 300px) {
-        left: 20vw;
-      }
-
-      @media only screen and (max-width: 300px) {
-        left: 37vw;
       }
     }
   }

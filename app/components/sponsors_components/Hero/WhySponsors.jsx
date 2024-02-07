@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 // import Image from 'next/image'
+import { Allura } from "next/font/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +13,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import styles from "./WhySponsors.module.scss";
 
+const allura = Allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 const WhySponsors = () => {
   useEffect(() => {
     AOS.init({ duration: 500 });
@@ -19,7 +25,7 @@ const WhySponsors = () => {
 
   return (
     <div className={styles.body}>
-      <p className={styles.qsn} data-aos="fade-up">
+      <p className={`${styles.qsn} ${allura.className}`} data-aos="fade-up">
         Why sponsor us?
       </p>
 
