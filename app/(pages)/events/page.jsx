@@ -1,3 +1,5 @@
+"use client";
+
 import { Allura } from "next/font/google";
 import styles from "./Event.module.scss";
 // import Timeline from "@/app/components/event_comp/Timeline/Timeline";

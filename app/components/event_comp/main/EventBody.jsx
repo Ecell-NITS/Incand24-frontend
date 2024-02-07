@@ -29,8 +29,14 @@ const EventBody = () => {
   };
 
   useEffect(() => {
-    setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-    setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+    if (typeof document !== "undefined") {
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
+    }
   }, []);
 
   useEffect(() => {
