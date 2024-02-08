@@ -24,18 +24,31 @@
     #b9f2e1 86%,
     #92eae5 100%
   );
+  #background_stars {
+    z-index: 100;
+    height: 10vh !important;
+    width: 10vw !important;
+  }
 
   #leftTree {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     position: absolute;
     z-index: 199;
   }
   #rightTree {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     position: absolute;
     z-index: 195;
+  }
+  #hill_movetree {
+    width: 60%;
+    height: 60%;
+    z-index: 50;
+    margin-top: -30vw;
+    position: absolute;
+    margin-right: -73vw;
   }
 
   #foreground {
@@ -68,12 +81,12 @@
   #background {
     position: absolute;
     // margin-bottom: 30%;
-    bottom: -10vw;
+    bottom: -40vh;
     z-index: 40;
     height: 70vw;
-    width: 200vw;
-    animation: backgroundshrink 4.5s ease-in-out forwards;
-    animation-delay: 0.3s;
+    width: 130vw;
+    // animation: backgroundshrink 4.5s ease-in-out forwards;
+    // animation-delay: 0.3s;
 
     @media screen and (max-width: 900px) {
       height: 140vw;
@@ -97,28 +110,28 @@
     // left: 0;
     // top: -5px;
     // margin-left: 50%;
-    bottom: 15vw;
+    bottom: -30vh;
     z-index: 35;
-    width: 100vw;
-    height: 24vw;
+    width: 70vw !important;
+    height: 12vh;
     overflow: hidden;
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: hillsmagnify 4.5s ease-in-out forwards;
-    animation-delay: 0.3s;
+    // animation: hillsmagnify 4.5s ease-in-out forwards;
+    // animation-delay: 0.3s;
     svg {
-      width: 100%;
+      width: 200%;
       // height: 100%;
       position: absolute;
       background-size: cover;
       transition: all 0.5s ease-in-out;
     }
-    @media screen and (max-width: 900px) {
-      height: 40vw;
-      width: 160vw;
-      bottom: 25vw;
+    @media screen and (min-width: 900px) {
+      height: 95vh;
+      width: 100vw;
+      bottom: 5vh;
     }
     @media screen and (max-width: 600px) {
       height: 22vw;
@@ -127,9 +140,16 @@
     }
   }
   .nightHills {
-    animation: nightHills 1s ease-in-out forwards !important;
-    // filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+    background-color: #101629;
   }
+
+  .nightHills img {
+    display: none;
+  }
+  // .nightHills {
+  //   animation: nightHills 1s ease-in-out forwards !important;
+  //   // filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+  // }
 
   .textWrapper {
     z-index: 98;
@@ -247,10 +267,11 @@
     display: flex;
     width: 10vw;
     height: 10vw;
-    background-image: url(../../../public/images/Sun.svg);
+    background-image: url(../../../public/images/hero_assets/Sun.svg);
     position: absolute;
-    left: 50vw;
+    left: 42vw;
     bottom: 30vw;
+    z-index: 36;
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -272,12 +293,13 @@
   }
   #moon {
     display: none;
-    width: 10vw;
-    height: 10vw;
-    background-image: url(../../../public/images/newMoon.svg);
+    width: 14vw;
+    height: 14vw;
+    z-index: 36;
+    background-image: url(../../../public/images/hero_assets/Moon.svg);
     position: absolute;
-    left: 20vw;
-    bottom: 18vw;
+    left: 38vw;
+    bottom: 1vw;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -346,22 +368,22 @@
   }
 }
 
-@keyframes nightHills {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: invert(0) saturate(1.8) brightness(0.3) contrast(2) hue-rotate(140deg);
-  }
-}
-@keyframes nightBackground {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: brightness(0.6) saturate(0.7) contrast(3) hue-rotate(90deg);
-  }
-}
+// @keyframes nightHills {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+
+//   }
+// }
+// @keyframes nightBackground {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+//     filter: brightness(0.6) saturate(0.7) contrast(3) hue-rotate(90deg);
+//   }
+// }
 .night {
   animation: nightbg 1s ease-in-out forwards !important;
   // backdrop-filter: brightness(0.5) contrast(1) invert(0.1);
@@ -401,5 +423,21 @@
       #11023c 84.26%,
       #01073e 100%
     );
+  }
+}
+
+.movingtree {
+  transform-origin: bottom right;
+  animation: branchOcsilate 10s ease-in-out infinite;
+}
+@keyframes branchOcsilate {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  50% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(2deg);
   }
 }
