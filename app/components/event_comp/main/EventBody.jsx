@@ -26,6 +26,7 @@ const EventBody = () => {
   const handleEvent = (e) => {
     handleClick(e);
     setData(events);
+    // console.log(tag)
   };
   const handleConcert = (e) => {
     handleClick(e);
@@ -33,13 +34,16 @@ const EventBody = () => {
   };
 
   useEffect(() => {
-    setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-    setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+    if (typeof document !== "undefined") {
+      setTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      setPrevTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+    }
   }, []);
 
   useEffect(() => {
     prevTag?.classList.remove(`${styles.TabItemActive}`);
     tag?.classList.add(`${styles.TabItemActive}`);
+    // console.log(tag?.id)
   }, [tag, prevTag]);
 
   return (
@@ -51,6 +55,8 @@ const EventBody = () => {
           role="button"
           tabIndex={0}
           className={`${styles.TabItem} ${styles.TabItemActive}`}
+          name="events"
+          id="events"
         >
           Events
         </div>
@@ -60,11 +66,13 @@ const EventBody = () => {
           role="button"
           tabIndex={0}
           className={`${styles.TabItem}`}
+          name="concerts"
+          id="concerts"
         >
           Concerts
         </div>
       </div>
-      <NewTimeline data={data} />
+      <NewTimeline data={data} route={tag?.id} />
     </div>
   );
 };

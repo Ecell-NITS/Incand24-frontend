@@ -4,6 +4,7 @@
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 // import EventCard from "../Card/EventCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -18,7 +19,7 @@ const poppins = Poppins({
 
 AOS.init();
 
-const NewTimeline = ({ data = events }) => {
+const NewTimeline = ({ data = events, route = "events" }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -28,8 +29,8 @@ const NewTimeline = ({ data = events }) => {
         setWidth(window?.innerWidth);
       });
     }
-    // console.log(width>768)
-  }, [width]);
+    return window.removeEventListener("resize", () => {});
+  }, []);
 
   return (
     <div className={styles.timeline}>
@@ -53,7 +54,9 @@ const NewTimeline = ({ data = events }) => {
             >
               <div className={styles.desc}>
                 {`${event.text.slice(0, 100)}...`}
-                <button>know more</button>
+                <Link href={`/${route}/${event.id}`}>
+                  <button>know more</button>
+                </Link>
               </div>
               <div className={`${styles.Card}`}>
                 <div className={styles.index}>

@@ -1,0 +1,21 @@
+.modal {
+  width: 90vw;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.45);
+  //   min-height: 50vh;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    background: linear-gradient(90deg, red, blue);
+  }
+}

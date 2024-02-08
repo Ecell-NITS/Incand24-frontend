@@ -82,8 +82,10 @@
           display: flex;
           position: relative;
           z-index: 0;
-          object-fit: contain;
           border-radius: inherit;
+          img {
+            object-fit: cover;
+          }
         }
         .title {
           position: absolute;
