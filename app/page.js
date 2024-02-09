@@ -9,6 +9,11 @@ import Social from "./components/SocialHandles/Social";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+
+import ContactForm from "./components/ContactForm/ContactForm";
+// import LoaderAnimation from "./components/Loader/Loader";
+// import animationData from "../public/loader.lottie";
+
 // import LottieAnimation from "./components/Loader/Loader";
 const Allura = allura({
   weight: ["400"],
@@ -98,6 +103,7 @@ const Home = () => {
         <Hero loading={loading} />
         <About />
         <Sponsor />
+        <ContactForm />
         <Footer homePage />
         <Social />
       </main>

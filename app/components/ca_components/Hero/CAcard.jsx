@@ -8,17 +8,16 @@ const Poppins = poppins({
   subsets: ["latin"],
 });
 
-
 const CAcard = ({ image, text }) => {
   return (
     <div className={styles.wrapper}>
-        <div className={styles.image}>
-            <Image src={image} alt='pngwing'  height={250} width={250}/>
-        </div>
+      <div className={styles.image}>
+        <Image src={image} alt="pngwing" height={250} width={250} />
+      </div>
 
-        <div className={`${Poppins.className} ${styles.text}`}>
-          <p>{text}</p>
-        </div>
+      <div className={`${Poppins.className} ${styles.text}`}>
+        <p>{text}</p>
+      </div>
     </div>
   );
 };
