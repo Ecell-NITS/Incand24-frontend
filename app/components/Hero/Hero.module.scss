@@ -265,8 +265,8 @@
 
   #sun {
     display: flex;
-    width: 10vw;
-    height: 10vw;
+    width: 13.5vw;
+    height: 13.5vw;
     background-image: url(../../../public/images/hero_assets/Sun.svg);
     position: absolute;
     left: 42vw;
@@ -293,10 +293,10 @@
   }
   #moon {
     display: none;
-    width: 14vw;
-    height: 14vw;
+    width: 13vw;
+    height: 13vw;
     z-index: 36;
-    background-image: url(../../../public/images/hero_assets/Moon.svg);
+    background-image: url(../../../public/images/hero_assets/umoon.svg);
     position: absolute;
     left: 38vw;
     bottom: 1vw;

@@ -125,7 +125,7 @@ const Hero = ({ loading }) => {
           animate={{
             x: "-100%",
           }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 7 }}
         >
           <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
         </motion.div>
@@ -138,7 +138,7 @@ const Hero = ({ loading }) => {
           animate={{
             x: "100%",
           }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 7 }}
         >
           <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
         </motion.div>
