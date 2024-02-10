@@ -1,21 +1,24 @@
-// import concerts from "@/_db/concerts";
+import events from "@/_db/concerts";
 import EventHero from "@/app/components/event_comp/hero/EventHero";
-import styles from "./Concerts.module.scss";
+import styles from "./Events.module.scss";
+import EventModal from "@/app/components/event_comp/individual/EventModal";
 
-const ConcertPage = () => {
-  // console.log(concerts[0])
-  // const item = concerts.find((concert) => {
-  //   return concert.id === params.concertsId;
-  // });
+const EventPage = ({ params }) => {
+  const item = events.find((event) => {
+    return event.id === params.concertsId;
+  });
+  console.log(item);
   return (
-    <div className={styles.main}>
+    <div className={styles.EventPage}>
       <div className={styles.bg}>
         <EventHero title="" />
       </div>
-
-      <div className={styles.scroller}></div>
+      <div className={styles.main}>
+        <EventModal data={item} />
+      </div>
+      {/* <div className={styles.scroller}></div> */}
     </div>
   );
 };
 
-export default ConcertPage;
+export default EventPage;

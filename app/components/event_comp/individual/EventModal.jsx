@@ -1,15 +1,72 @@
-import Image from "next/image";
-import styles from "./EventModal.module.scss";
+"use client";
 
-const EventModal = () => {
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
+import Link from "next/link";
+import { Allura, Poppins } from "next/font/google";
+import events from "@/_db/concerts";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import styles from "./EventModal.module.scss";
+import "./SwiperButton.scss";
+import NewButton from "../../Shared/NewButton/NewButton";
+
+const allura = Allura({
+  weight: ["400"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--allura-font",
+});
+
+const poppins = Poppins({
+  weight: ["400", "600", "900"],
+  subsets: ["latin"],
+});
+
+const EventModal = ({ data = events[0] }) => {
   return (
-    <div className={styles.modal}>
+    <div className={`${styles.modal} ${allura.className}`}>
       <div className={styles.card}>
-        <Image alt="event image" src="/sponsors/Amul.png" fill layout="" />
+        <Image alt="event image" src="/events/eventsPlaceholder.png" fill layout="" />
+        <div className={styles.info}>
+          <div className={styles.desc}>
+            <h1>{data.header}</h1>
+            <p className={`${poppins.className}`}>{data.text}</p>
+            {data.registrationLink?.link && (
+              <Link href={data.registrationLink?.link} alt="" target="_blank">
+                <NewButton text="Register To Participate" />
+              </Link>
+            )}
+          </div>
+        </div>
       </div>
 
       <div className={styles.memories}>
-        <h2>Memories</h2>
+        <h2 className={`${allura.className}`}>Memories</h2>
+        <Swiper
+          loop
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: true,
+          }}
+          className={styles.carousel}
+          navigation
+          modules={[Navigation, Autoplay]}
+        >
+          {data.imgUrls.map((item) => {
+            return (
+              <SwiperSlide key={item} className={styles.slides}>
+                <div className={styles.slideImage}>
+                  <Image src={item} alt="" fill layout="" sizes="auto" />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
   );

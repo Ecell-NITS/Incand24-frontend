@@ -1,6 +1,7 @@
 .EventPage {
   overflow: hidden;
   background: linear-gradient(180deg, #120325 29.5%, #00143b 96.5%);
+  min-height: 100vh;
   .scroller {
     height: 200vh;
   }

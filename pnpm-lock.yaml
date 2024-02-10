@@ -12,8 +12,8 @@ dependencies:
     specifier: ^14.1.0
     version: 14.1.0(next@13.5.6)
   aos:
-    specifier: ^2.3.4
-    version: 2.3.4
+    specifier: 3.0.0-beta.6
+    version: 3.0.0-beta.6
   autoprefixer:
     specifier: 10.4.15
     version: 10.4.15(postcss@8.4.29)
@@ -2081,8 +2081,8 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /aos@2.3.4:
-    resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
+  /aos@3.0.0-beta.6:
+    resolution: {integrity: sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==}
     dependencies:
       classlist-polyfill: 1.2.0
       lodash.debounce: 4.0.8

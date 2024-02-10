@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./NewTimeline.module.scss";
 import events from "@/_db/events";
+import NewButton from "../../Shared/NewButton/NewButton";
 
 const poppins = Poppins({
   weight: ["400", "600"],
@@ -55,7 +56,7 @@ const NewTimeline = ({ data = events, route = "events" }) => {
               <div className={styles.desc}>
                 {`${event.text.slice(0, 100)}...`}
                 <Link href={`/${route}/${event.id}`}>
-                  <button>know more</button>
+                  <NewButton text="Know More" />
                 </Link>
               </div>
               <div className={`${styles.Card}`}>
