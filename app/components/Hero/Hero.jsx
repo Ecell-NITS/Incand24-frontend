@@ -154,7 +154,13 @@ const Hero = ({ loading }) => {
           id={`${!loading ? styles.hills : ""}`}
           className={` ${night ? styles.nightHills : ""}`}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/sun_setcol.svg" fill priority />
+          <Image
+            alt="left_Tree"
+            class={styles.stretchimage}
+            src="/images/hero_assets/sun_setcol.svg"
+            fill
+            priority
+          />
         </motion.div>
         <motion.div
           id={`${!loading ? styles.hill_movetree : ""}`}

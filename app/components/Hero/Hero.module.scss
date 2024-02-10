@@ -96,7 +96,7 @@
     }
     @media screen and (max-width: 600px) {
       // height: 75vw;
-      // width: 300vw;
+      width: 300vw;
       margin-left: 0;
     }
   }
@@ -134,13 +134,13 @@
       bottom: 5vh;
     }
     @media screen and (max-width: 600px) {
-      height: 22vw;
-      width: 80vw;
-      bottom: 40vw;
+      height: 130vh;
+      width: 10vw;
+      bottom: 100vw;
     }
   }
   .nightHills {
-    transition-delay: 2s;
+    transition: 1s;
     background-color: #101629;
   }
 
@@ -440,5 +440,11 @@
   }
   100% {
     transform: rotateZ(2deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movingtree img {
+    margin-top: -25vh;
   }
 }
