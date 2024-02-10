@@ -288,9 +288,11 @@
       bottom: 50vw;
     }
     @media screen and (max-width: 600px) {
-      // width: 25vw;
-      // height: 25vw;
-      bottom: 55vw;
+      width: 25vw;
+      height: 25vw;
+      margin-left: -5vw;
+      z-index: 50;
+      bottom: 95vw;
     }
   }
   #moon {
@@ -396,10 +398,10 @@
     background-image: none;
   }
   50% {
-    background-color: #11023c;
+    background-color: #101629;
   }
   70% {
-    background-color: #01073e;
+    background-color: #101629;
     background-image: linear-gradient(
       0deg,
       #101629 32%,
