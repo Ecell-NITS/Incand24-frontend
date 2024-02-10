@@ -17,12 +17,12 @@
   margin: 0;
   background-image: linear-gradient(
     0deg,
-    #ffffdb 36%,
-    #fbfedb 47%,
-    #edfcdd 60%,
-    #d8f7df 73%,
-    #b9f2e1 86%,
-    #92eae5 100%
+    #ff7c5b 36%,
+    #ff7c5b 47%,
+    #ff7c5b 60%,
+    #ff7c5b 73%,
+    #003544 89%,
+    #003544 100%
   );
   #background_stars {
     z-index: 100;
@@ -123,7 +123,7 @@
     // animation-delay: 0.3s;
     svg {
       width: 200%;
-      // height: 100%;
+      // height: 200%;
       position: absolute;
       background-size: cover;
       transition: all 0.5s ease-in-out;
@@ -134,9 +134,10 @@
       bottom: 5vh;
     }
     @media screen and (max-width: 600px) {
+      display: none;
       height: 130vh;
       width: 10vw;
-      bottom: 100vw;
+      bottom: 10vw;
     }
   }
   .nightHills {
