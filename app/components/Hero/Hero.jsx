@@ -182,7 +182,13 @@ const Hero = ({ loading }) => {
           />
         </motion.div>
         <motion.div id={`${!loading ? styles.background_stars : ""}`}>
-          <Image alt="hero-bg" src="/images/hero_assets/Stars.svg" fill priority />
+          <Image
+            className={styles.starss}
+            alt="hero-bg"
+            src="/images/hero_assets/Stars.svg"
+            fill
+            priority
+          />
         </motion.div>
 
         {/* coming Soon text */}
