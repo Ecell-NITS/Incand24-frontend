@@ -35,8 +35,12 @@ const EventBody = () => {
 
   useEffect(() => {
     if (typeof document !== "undefined") {
-      setTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-      setPrevTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
     }
   }, []);
 
