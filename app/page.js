@@ -73,15 +73,23 @@ const Home = () => {
   const navlink = [
     {
       name: "Home",
-      link: "hero",
+      href: "/",
     },
     {
-      name: "About Us",
-      link: "about",
+      name: "Gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Events",
+      href: "/events",
     },
     {
       name: "Sponsors",
-      link: "sponsor",
+      href: "/sponsor",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
 
