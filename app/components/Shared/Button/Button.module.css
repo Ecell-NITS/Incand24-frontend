@@ -1,0 +1,36 @@
+.Btn {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.75vw 1.95vw;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media screen and (max-width: 760px) {
+  .Btn {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Btn {
+    font-size: 4.25vw;
+    padding: 3.25vw 6vw;
+    font-weight: 600 !important;
+  }
+}
+.Btn:hover {
+  transform: translate(10%, -10%);
+  box-shadow: -5px 5px lightblue;
+}
+.Btn:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+} /*# sourceMappingURL=Button.module.css.map */
