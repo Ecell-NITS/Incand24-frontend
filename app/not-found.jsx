@@ -1,7 +1,7 @@
 import React from "react";
 // import Image from "next/image";
 import { Allura as allura, Poppins as poppins } from "next/font/google";
-import styles from "./Notfound.module.scss";
+import styles from "./notfound.module.scss";
 // import waveDB from "../public/logos/waveDB.svg"
 // import waveLB from "../public/logos/waveLB.svg"
 // import waveB from "../public/logos/waveB.svg"

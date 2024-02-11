@@ -1,25 +1,25 @@
-.wrapper{
-    overflow: hidden;
-    height: 20vw;
-    margin-bottom: 20%;
-    border-radius: 20px;
+.wrapper {
+  overflow: hidden;
+  height: 20vw;
+  margin-bottom: 20%;
+  border-radius: 20px;
 
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    .img{
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
-        vertical-align: center;
-    }
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    vertical-align: center;
+  }
 }

@@ -1,12 +1,12 @@
-import Image from "next/image"
-import styles from "./card.module.scss"
+import Image from "next/image";
+import styles from "./card.module.scss";
 
-const ImageCard = ({image}) => {
+const ImageCard = ({ image }) => {
   return (
     <div className={styles.wrapper}>
-        <Image src={image} alt="images" priority fill/>
+      <Image src={image} alt="images" priority fill />
     </div>
-  )
-}
+  );
+};
 
-export default ImageCard
+export default ImageCard;
