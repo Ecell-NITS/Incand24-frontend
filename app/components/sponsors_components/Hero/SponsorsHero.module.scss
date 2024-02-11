@@ -121,7 +121,7 @@
       transition: opacity 350ms ease;
       font-size: 1.8rem;
       color: #fff;
-      background: #66e3be;
+      // background: #66e3be;
       width: 97.5%;
       padding-left: 5px;
       text-align: center;
@@ -129,6 +129,10 @@
       word-spacing: 1rem;
       line-height: 100%;
       width: fit-content;
+
+      #logo {
+        width: max(10vw, 60px);
+      }
 
       @media only screen and (max-width: 1100px) {
         font-size: 1.2rem;
