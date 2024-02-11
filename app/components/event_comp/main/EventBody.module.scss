@@ -1,0 +1,42 @@
+.EventBody {
+  width: 100%;
+  margin-block: 1rem;
+  .Tab {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    z-index: 11;
+    .TabItem {
+      width: fit-content;
+      height: 6rem;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+      border-radius: 2rem;
+      box-shadow: 5px 5px 10px rgb(33, 31, 31);
+      text-align: center;
+      background-color: #2b2837;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      @media screen and (max-width: 700px) {
+        height: 4rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+      }
+      @media screen and (max-width: 480px) {
+        height: 3rem;
+        padding: 0.6rem 1.5rem;
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+      }
+    }
+    .TabItemActive {
+      transform: scale(1.2);
+      background-color: #333041;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

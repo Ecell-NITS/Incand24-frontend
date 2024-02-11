@@ -1,16 +1,9 @@
 "use client";
 
-import { Allura } from "next/font/google";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./EventHero.module.scss";
 
-const allura = Allura({
-  weight: ["400"],
-  display: "swap",
-  subsets: ["latin"],
-  variable: "--allura-font",
-});
 const EventHero = ({ title = "Events & Concerts" }) => {
   const [cursor, setCursor] = useState({ x: -100, y: -100 });
 
@@ -32,7 +25,7 @@ const EventHero = ({ title = "Events & Concerts" }) => {
     },
   };
   return (
-    <div className={`${styles.hero} ${allura.className}`}>
+    <div className={`${styles.hero}`}>
       <span className={styles.title}>{title}</span>
 
       <motion.div id={styles.cursor} variants={varients} animate="default"></motion.div>
