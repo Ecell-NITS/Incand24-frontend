@@ -19,7 +19,7 @@ const GradientBg = ({
   innerBlob2Bg = "radial-gradient(rgba(255, 208, 87, 1) ,rgba(248, 219, 117, 0.948) 70%,transparent 50%)",
   backwardBlobBg = "radial-gradient(rgba(24, 75, 255, 0) 0%,rgb(23.37, 74.33, 255) 50%,transparent 70%)",
   rightBlobBg = "radial-gradient(rgba(87, 255, 90, 0.697),rgba(87, 255, 90, 0.578) 90%,transparent 50%)",
-  position = "relative"
+  position = "relative",
 }) => {
   const [cursor, setCursor] = useState({ x: -100, y: -100 });
 
@@ -41,7 +41,7 @@ const GradientBg = ({
     },
   };
   return (
-    <div className={`${styles.hero} ${allura.className}`} style={{position}}>
+    <div className={`${styles.hero} ${allura.className}`} style={{ position }}>
       <span className={styles.title}>{title}</span>
 
       <motion.div id={styles.cursor} variants={varients} animate="default"></motion.div>
