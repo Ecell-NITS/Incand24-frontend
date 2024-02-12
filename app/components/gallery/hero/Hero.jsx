@@ -40,7 +40,6 @@ const Hero = () => {
               frameborder="0"
               allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               loop
-
             ></iframe>
           </div>
         </div>

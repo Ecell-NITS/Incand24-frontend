@@ -11,15 +11,19 @@ const Page = () => {
   const navlink = [
     {
       name: "Home",
-      link: "hero",
+      href: "/",
     },
     {
-      name: "About Us",
-      link: "about",
+      name: "Events",
+      href: "/events",
     },
     {
       name: "Sponsors",
-      link: "sponsor",
+      href: "/sponsors",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
 
