@@ -85,7 +85,7 @@ const Home = () => {
     },
     {
       name: "Sponsors",
-      href: "/sponsor",
+      href: "/sponsors",
     },
     {
       name: "Team",

@@ -38,8 +38,9 @@ const Allura = allura({
 //   subsets: ["latin"],
 // });
 const Navbar = ({ navlink }) => {
-  const [select, setSelect] = useState(false);
+  // const [select, setSelect] = useState(false);
   const [close, setClose] = useState(false);
+  const [visibleNav, setVisibleNav] = useState(false);
   // const [navbar, setNavbar] = useState(!defaultDark);
   const router = useRouter();
   const change = () => {
@@ -52,10 +53,10 @@ const Navbar = ({ navlink }) => {
 
   useEffect(() => {
     const SetNavbar = () => {
-      if (window.scrollY >= 90) {
-        setSelect(true);
+      if (window.scrollY >= 700) {
+        setVisibleNav(true);
       } else {
-        setSelect(false);
+        setVisibleNav(false);
       }
     };
 
@@ -65,7 +66,12 @@ const Navbar = ({ navlink }) => {
   return (
     <div>
       <nav>
-        <button className={select ? styles.hamburger : " "} onClick={change} label="menu">
+        <button
+          className={styles.hamburger}
+          style={{ top: visibleNav ? 0 : "" }}
+          onClick={change}
+          label="menu"
+        >
           {/* <label></label> */}
           <Image src={menuL} className={styles.menu} alt="" />
           {/* <div id={styles.logo}>
@@ -137,7 +143,7 @@ const Navbar = ({ navlink }) => {
             </div>
           </div>
         </div>
-        <div className={select ? styles.menu_bar : " "}>
+        <div className={styles.menu_bar} style={{ top: visibleNav ? "2vh" : "" }}>
           <div className={styles.wrapper}>
             <div
               role="button"
