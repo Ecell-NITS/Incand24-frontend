@@ -1,0 +1,38 @@
+.swiper-button-prev {
+  background-color: #0a0118;
+  color: white;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  left: 0;
+  // margin-inline: 0;
+  position: absolute;
+
+  @media screen and (max-width: 900px) {
+    transform: scale(0.7);
+    left: -10px;
+  }
+  @media screen and (max-width: 600px) {
+    transform: scale(0.4);
+    left: -10px;
+  }
+}
+.swiper-button-next {
+  background-color: #0a0118;
+  color: white;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+
+  @media screen and (max-width: 900px) {
+    transform: scale(0.7);
+    right: -10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    transform: scale(0.4);
+    right: -10px;
+  }
+}

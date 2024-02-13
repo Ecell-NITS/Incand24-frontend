@@ -1,35 +1,43 @@
-"use client"
+"use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./gallery.module.scss";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Hero from "@/app/components/gallery/hero/Hero";
 import Gallery from "@/app/components/gallery/Gallery/Gallery";
 import Footer from "@/app/components/Footer/Footer";
 
-const page = () => {
+const Page = () => {
   const navlink = [
     {
       name: "Home",
-      link: "hero",
+      href: "/",
     },
     {
-      name: "About Us",
-      link: "about",
+      name: "Events",
+      href: "/events",
     },
     {
       name: "Sponsors",
-      link: "sponsor",
+      href: "/sponsors",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Gallery | Incandescence";
+  }, []);
   return (
     <div className={styles.wrapper}>
       <Navbar navlink={navlink} defaultDark={false} />
-      <Hero/>
-      <Gallery/>
-      <Footer galleryPage/>
+      <Hero />
+      <Gallery />
+      <Footer galleryPage />
     </div>
   );
 };
 
-export default page;
+export default Page;

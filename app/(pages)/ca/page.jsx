@@ -20,12 +20,24 @@ const CA = () => {
 
   const navlink = [
     {
-      name: "About",
-      link: "about",
+      name: "Home",
+      href: "/",
     },
     {
-      name: "Register",
-      link: "register",
+      name: "Gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Sponsors",
+      href: "/sponsors",
+    },
+    {
+      name: "Events",
+      href: "/events",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
 

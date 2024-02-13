@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import events from "@/_db/events";
+import concerts from "@/_db/concerts";
 import styles from "./EventBody.module.scss";
 import NewTimeline from "../NewTimeline/NewTimeline";
 
@@ -9,6 +10,7 @@ const EventBody = () => {
   // Tab component code
   const [tag, setTag] = useState();
   const [prevTag, setPrevTag] = useState();
+  const [data, setData] = useState(events);
 
   const handleClick = (e) => {
     setPrevTag(tag);
@@ -23,19 +25,29 @@ const EventBody = () => {
 
   const handleEvent = (e) => {
     handleClick(e);
+    setData(events);
+    // console.log(tag)
   };
   const handleConcert = (e) => {
     handleClick(e);
+    setData(concerts);
   };
 
   useEffect(() => {
-    setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-    setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+    if (typeof document !== "undefined") {
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
+      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
+        setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
+      }
+    }
   }, []);
 
   useEffect(() => {
     prevTag?.classList.remove(`${styles.TabItemActive}`);
     tag?.classList.add(`${styles.TabItemActive}`);
+    // console.log(tag?.id)
   }, [tag, prevTag]);
 
   return (
@@ -47,6 +59,8 @@ const EventBody = () => {
           role="button"
           tabIndex={0}
           className={`${styles.TabItem} ${styles.TabItemActive}`}
+          name="events"
+          id="events"
         >
           Events
         </div>
@@ -56,11 +70,13 @@ const EventBody = () => {
           role="button"
           tabIndex={0}
           className={`${styles.TabItem}`}
+          name="concerts"
+          id="concerts"
         >
           Concerts
         </div>
       </div>
-      <NewTimeline />
+      <NewTimeline data={data} route={tag?.id} />
     </div>
   );
 };
