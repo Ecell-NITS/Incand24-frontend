@@ -1,10 +1,11 @@
 "use client"
+
 import React from 'react';
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import styles from "./TeamCard.module.scss";
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
+import styles from "./TeamCard.module.scss";
 
 const poppins = Poppins({
   weight: ["800"],

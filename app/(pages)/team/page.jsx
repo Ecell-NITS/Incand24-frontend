@@ -1,16 +1,19 @@
 "use client"
 
+import React, { useState } from 'react'
 import TeamCard from '@/app/components/TeamCard/TeamCard'
-import React from 'react'
 import styles from "./Team.module.scss"
-import { useState } from 'react'
+
 import Navbar from '@/app/components/Navbar/Navbar'
 import Footer from '@/app/components/Footer/Footer'
 
 
 const page = () => {
-  const [isCore, setIsCore] = useState(true);
-  const [isTech, setIsTech] = useState(false);
+  // const [isCore, setIsCore] = useState(true);
+  // const [isTech, setIsTech] = useState(false);
+
+  const [isCore, setIsCore] = useState(true)
+  const [isTech, setIsTech] = useState(false)
 
   const handleClick1 = () => {
     setIsCore(true);
@@ -648,7 +651,7 @@ const page = () => {
       </div>
       {/* <div className={styles.bbtn}><h2>Core</h2></div> */}
       {isCore && teamData2.map((teamGroup, index) => (
-        <div className={styles.card}>
+        <div key={index} className={styles.card}>
           {teamGroup.map((member) => (
             <TeamCard
               key={member.id}
@@ -664,7 +667,7 @@ const page = () => {
         
       ))}
       {isTech && teamData1.map((teamGroup, index) => (
-        <div className={styles.card}>
+        <div key={index} className={styles.card}>
           {teamGroup.map((member) => (
             <TeamCard
               key={member.id}
