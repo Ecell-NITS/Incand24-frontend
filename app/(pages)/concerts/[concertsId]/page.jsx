@@ -15,19 +15,23 @@ const EventPage = ({ params }) => {
   const navlink = [
     {
       name: "Home",
-      link: "/",
+      href: "/",
     },
     {
       name: "Events",
-      link: "events",
-    },
-    {
-      name: "Sponsors",
-      link: "sponsors",
+      href: "/events",
     },
     {
       name: "Gallery",
-      link: "gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Sponsors",
+      href: "/sponsors",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
 
@@ -44,7 +48,7 @@ const EventPage = ({ params }) => {
       <div className={styles.main}>
         <EventModal data={item} />
       </div>
-      <Footer isHills={false} />
+      <Footer isHills />
 
       {/* <div className={styles.scroller}></div> */}
     </div>

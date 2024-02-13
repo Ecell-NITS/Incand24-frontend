@@ -13,5 +13,12 @@
   .main {
     position: relative;
     z-index: 10;
+    margin-bottom: 10vw;
+  }
+}
+
+@media (max-width: 660px) {
+  .main {
+    margin-bottom: 20vw !important;
   }
 }
