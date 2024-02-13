@@ -32,35 +32,43 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name?.length > 50) {
+    if (formData.name?.length > 49) {
       toast.error("Name too long", {
         position: "bottom-right",
       });
       return;
     }
-    if (formData.email?.length > 50) {
+    if (formData.email?.length > 49) {
       toast.error("Email too long", {
         position: "bottom-right",
       });
       return;
     }
-    if (formData?.contact && formData.contact.length < 10) {
+    if (formData?.contact && formData?.contact.length < 10) {
       toast.error("Invalid phone number");
+      return;
     }
 
     setSubmitting(true);
     try {
       await axios
-        .post(`${process.env.NEXT_PUBLIC_API_MAIN}/CAregister`, {
+        .post(`${process.env.NEXT_PUBLIC_API_MAIN}/contact`, {
           name: formData.name,
-          college: formData.instituteName,
+          message: formData.message,
           email: formData.email,
-          phone: formData.contact,
+          contact: formData.contact,
         })
         .then((res) => {
-          if (res.data.message === "Registration successful") {
-            toast.success("Registration successful", {
+          if (res.data.message === "Message Sent Successfully") {
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+              contact: "",
+            });
+            toast.success("Message received. We will contact you as soon as possible", {
               position: "bottom-right",
+              duration: 7500,
             });
           }
         });
@@ -73,14 +81,11 @@ const ContactForm = () => {
           case "details too long":
             toast.error("Details too long");
             break;
-          case "Existing registartion with this email id":
-            toast.error("Existing registartion with this email id");
-            break;
           case "Invalid email":
             toast.error("Invalid email");
             break;
-          case "Register went wrong":
-            toast.error("Register went wrong, please try again later");
+          case "Something went wrong":
+            toast.error("Something went wrong, please try again later");
             break;
           default:
             toast.error("Something went wrong");
