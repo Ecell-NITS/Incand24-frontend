@@ -29,7 +29,7 @@ export const metadata = {
   description: "Footer",
 };
 
-const Footer = ({ isHills = true, homePage = false }) => {
+const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
   const router = useRouter();
 
   // ecell
@@ -38,7 +38,12 @@ const Footer = ({ isHills = true, homePage = false }) => {
     <div className={`${styles.Footer} ${montserrat.className}`}>
       {isHills && (
         <div className={styles.hills}>
-          <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
+          <Image
+            className={galleryPage ? styles.galleryBg : ""}
+            alt=""
+            src={hills}
+            fill
+          />
         </div>
       )}
       <div

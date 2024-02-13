@@ -1,0 +1,154 @@
+.hero {
+  width: 100vw;
+  height: 120vh;
+  //   padding: auto;
+
+  #cursor {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    // background: radial-gradient(#fff, #000);
+    // background-color: rgba(255, 255, 0, 0.514);
+    background-image: url(/effects/butterfly.gif);
+    z-index: 100;
+    background-size: cover;
+
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+  }
+  .container {
+    height: 100%;
+    filter: blur(40px);
+    @media screen and (max-width: 600px) {
+      filter: blur(10px);
+    }
+  }
+
+  .title {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 7vw;
+    color: black;
+    text-align: center;
+    // mix-blend-mode: hard-light;
+  }
+
+  .blobs {
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(40px);
+  }
+  .blob1 {
+    width: 110vw;
+    height: 90vw;
+    top: -20%;
+    animation: revolve 20s infinite ease-in-out;
+    @media screen and (max-width: 700px) {
+      height: 150vh;
+      width: 120vh;
+      // top:10%;
+    }
+  }
+  .blob2 {
+    position: relative;
+    width: 80vw;
+    height: 70vw;
+    left: 45%;
+    top: 20%;
+    transform: translate(-50%, -25%);
+    transform-origin: center;
+    animation: blobChange 5s infinite ease-in-out;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+      // top: 32%;
+      width: 70vh;
+      height: 90vh;
+    }
+    .innerBlob2 {
+      width: 50%;
+      height: 50%;
+      left: -100%;
+      // animation: blobTranslate 20s infinite ease-in-out;
+    }
+    .innerBlob {
+      width: 50%;
+      height: 50%;
+      animation: blobTranslate 10s infinite ease-in-out;
+    }
+    @keyframes blobTranslate {
+      0% {
+        transform: translate(0, -10%) scale(0);
+      }
+      50% {
+        transform: translate(100%, 10%) scale(1.3);
+      }
+      100% {
+        transform: translate(0, -10%) scale(0);
+      }
+    }
+  }
+  .blob3 {
+    width: 80vw;
+    height: 70vw;
+    transform-origin: 80%;
+    animation: revolve 25s infinite ease-in-out;
+  }
+  .blob4 {
+    width: 50vw;
+    height: 60vw;
+    transform-origin: 45%;
+    animation: revolve 10s infinite ease-in-out;
+    animation-delay: 0;
+    right: -10%;
+    bottom: 20%;
+    @media screen and (max-width: 600px) {
+      // top: 32%;
+      width: 60vh;
+      height: 80vh;
+      bottom: 0;
+      right: 0;
+      transform-origin: 70%;
+      display: none;
+    }
+  }
+
+  @keyframes revolve {
+    0% {
+      transform: rotate(0deg) translate(0, 0);
+    }
+    50% {
+      transform: rotate(180deg) translate(40%, 20%);
+    }
+    100% {
+      transform: rotate(360deg) translate(0, 0);
+    }
+  }
+  @keyframes blobChange {
+    0% {
+      transform: translate(-50%, -25%) scale(1) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -25%) scale(1.2) rotate(35deg);
+    }
+    100% {
+      transform: translate(-50%, -25%) scale(1) rotate(0deg);
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .title {
+    font-size: 12vw !important;
+  }
+}

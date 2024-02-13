@@ -30,10 +30,14 @@ const Caregs = () => {
               <div key={item.email}>
                 <ul>
                   <li>name: {item?.name}</li>
-                  <li>institute name: {item?.college}</li>
-                  <li>contact: {item?.phone}</li>
-                  <li>email: {item?.email}</li>
-                  <li>email: {item?.registeredAt}</li>
+                  <li>Institute name: {item?.college}</li>
+                  <li>
+                    Contact: <a href={`tel:${item?.phone}`}>{item?.phone}</a>
+                  </li>
+                  <li>
+                    Email: <a href={`mailto:${item?.email}`}> {item?.email}</a>
+                  </li>
+                  <li>Registered at: {item?.registeredAt}</li>
                   <hr />
                 </ul>
               </div>

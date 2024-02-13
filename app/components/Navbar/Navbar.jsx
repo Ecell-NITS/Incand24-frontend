@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import {
   // Passion_One as passionOne,
   Allura as allura,
@@ -10,22 +10,14 @@ import {
   // Montserrat_Alternates as montserratAlternates,
 } from "next/font/google";
 import Image from "next/image";
-import Brochure from "../Button/Button";
 import styles from "./Navbar.module.scss";
 import menuL from "../../../public/logos/menuL.svg";
-import menuD from "../../../public/logos/menuD.svg";
 import insta from "../../../public/logos/instagram.svg";
-import instaD from "../../../public/logos/instaD.svg";
 import fb from "../../../public/logos/facebook.svg";
-import fbD from "../../../public/logos/facebookD.svg";
 import linkedIn from "../../../public/logos/linkedin.svg";
-import linkD from "../../../public/logos/linkedinD.svg";
 import line from "../../../public/logos/line.svg";
-import lineD from "../../../public/logos/lineD.svg";
-import dark from "../../../public/images/DarkLogoNav.svg";
 import light from "../../../public/images/LightLogoNav.svg";
 import closeL from "../../../public/logos/closeL.svg";
-import closeD from "../../../public/logos/closeD.svg";
 
 // const passion = passionOne({
 //   weight: ["400"],
@@ -45,52 +37,43 @@ const Allura = allura({
 //   weight: ["500"],
 //   subsets: ["latin"],
 // });
-const Navbar = ({ navlink, defaultDark = true }) => {
-  const [select, setSelect] = useState(false);
-  const [navbar, setNavbar] = useState(!defaultDark);
+const Navbar = ({ navlink }) => {
+  // const [select, setSelect] = useState(false);
+  const [close, setClose] = useState(false);
+  const [visibleNav, setVisibleNav] = useState(false);
+  // const [navbar, setNavbar] = useState(!defaultDark);
   const router = useRouter();
-  // const navlink = [
-  //   {
-  //     name: "Home",
-  //     link: "hero",
-  //   },
-  //   {
-  //     name: "About Us",
-  //     link: "about",
-  //   },
-  //   {
-  //     name: "Sponsors",
-  //     link: "sponsor",
-  //   },
-  // ];
   const change = () => {
-    if (select === false) {
-      setSelect(!select);
+    if (close === false) {
+      setClose(!close);
     } else {
-      setSelect(!select);
+      setClose(!close);
     }
   };
 
   useEffect(() => {
-    const changeColor = () => {
-      if (defaultDark) {
-        if (window.scrollY >= 110) {
-          setNavbar(true);
-        } else {
-          setNavbar(false);
-        }
+    const SetNavbar = () => {
+      if (window.scrollY >= 700) {
+        setVisibleNav(true);
+      } else {
+        setVisibleNav(false);
       }
     };
 
-    window.addEventListener("scroll", changeColor);
-  }, [defaultDark]);
+    window.addEventListener("scroll", SetNavbar);
+  });
 
   return (
     <div>
       <nav>
-        <button className={styles.hamburger} onClick={change} label="menu">
+        <button
+          className={styles.hamburger}
+          style={{ top: visibleNav ? 0 : "" }}
+          onClick={change}
+          label="menu"
+        >
           {/* <label></label> */}
-          <Image src={navbar ? menuL : menuD} className={styles.menu} alt="" />
+          <Image src={menuL} className={styles.menu} alt="" />
           {/* <div id={styles.logo}>
             <Image
               style={{ cursor: "pointer" }}
@@ -101,61 +84,34 @@ const Navbar = ({ navlink, defaultDark = true }) => {
         </button>
         <div
           className={
-            select
+            close
               ? `${styles.show} ${styles.active} ${Allura.className}`
               : `${styles.show} ${Allura.className}`
           }
         >
           <button label="close" className={styles.close}>
-            <Image
-              src={!navbar ? closeD : closeL}
-              alt=""
-              className={styles.cross}
-              onClick={change}
-            />
+            <Image src={closeL} alt="" className={styles.cross} onClick={change} />
           </button>
-          <div
-            className={
-              !navbar ? `${styles.nav_menu} ${styles.nav_dark}` : `${styles.nav_menu}`
-            }
-          >
-            {navlink.map(({ name, link }) => (
+          <div className={`${styles.nav_menu}`}>
+            {navlink.map((link) => (
               <Link
                 onClick={change}
-                className={styles.nav_items}
-                key={name}
-                to={link}
-                spy
-                smooth
-                hashSpy
-                offset={10}
-                duration={500}
+                className={styles.nav_items_a}
+                key={link.name}
+                href={link.href}
+                // spy
+                // smooth
+                // hashSpy
+                // offset={10}
+                // duration={500}
               >
-                {name}
-                <Image className={styles.line} src={navbar ? line : lineD} alt="" />
+                {link.name}
+                <Image className={styles.line} src={line} alt="" />
               </Link>
             ))}
-            <a
-              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
-              className={
-                !navbar
-                  ? `${styles.nav_items} ${styles.nav_dark}`
-                  : `${styles.nav_items_a}`
-              }
-              target="_blank"
-              aria-label="Brochure"
-              rel="noopener noreferrer"
-            >
-              <div>Brochure</div>
-              <Image className={styles.line} src={navbar ? line : lineD} alt="" />
-            </a>
           </div>
           <div className={`${styles.footer} ${Allura.className}`}>
-            <span
-              className={!navbar ? `${styles.follow} ${styles.followD}` : styles.follow}
-            >
-              Follow Us
-            </span>
+            <span className={styles.follow}>Follow Us</span>
             <div className={styles.social}>
               <a
                 className={styles.link}
@@ -164,7 +120,7 @@ const Navbar = ({ navlink, defaultDark = true }) => {
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/incandescence.nitsilchar"
               >
-                <Image src={navbar ? insta : instaD} alt=""></Image>
+                <Image src={insta} alt=""></Image>
               </a>
               <a
                 className={styles.link}
@@ -173,7 +129,7 @@ const Navbar = ({ navlink, defaultDark = true }) => {
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/incandescence.nits/"
               >
-                <Image src={navbar ? fb : fbD} alt=""></Image>
+                <Image src={fb} alt=""></Image>
               </a>
               <a
                 className={styles.link}
@@ -182,12 +138,12 @@ const Navbar = ({ navlink, defaultDark = true }) => {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/company/incandescence23/"
               >
-                <Image src={!navbar ? linkD : linkedIn} alt="" />
+                <Image src={linkedIn} alt="" />
               </a>
             </div>
           </div>
         </div>
-        <div className={styles.menu_bar}>
+        <div className={styles.menu_bar} style={{ top: visibleNav ? "2vh" : "" }}>
           <div className={styles.wrapper}>
             <div
               role="button"
@@ -201,43 +157,20 @@ const Navbar = ({ navlink, defaultDark = true }) => {
                 router.push("/");
               }}
             >
-              <Image
-                fill
-                style={{ cursor: "pointer" }}
-                src={navbar ? light : dark}
-                alt=""
-              />
+              <Image fill style={{ cursor: "pointer" }} src={light} alt="" />
             </div>
           </div>
 
-          <div className={navbar ? styles.grp1 : styles.grp2}>
-            {navlink.map(({ name, link }) => (
+          <div className={styles.grp1}>
+            {navlink.map((link) => (
               <Link
-                className={
-                  navbar
-                    ? `${styles.item1} ${Allura.className}`
-                    : `${Allura.className} ${styles.item}`
-                }
-                key={name}
-                to={link}
-                spy
-                smooth
-                hashSpy
-                offset={-40}
-                duration={500}
+                className={`${styles.item1} ${Allura.className}`}
+                key={link.name}
+                href={link.href}
               >
-                {name}
+                {link.name}
               </Link>
             ))}
-            <a
-              className={`styles.btn ${Allura.className}`}
-              aria-label="Brochure"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
-            >
-              <Brochure text="Brochure" />
-            </a>
           </div>
         </div>
       </nav>

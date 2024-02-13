@@ -1,0 +1,98 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 10%;
+  background: #013133;
+  .wave {
+    height: 30vh;
+
+    .absolute {
+      position: absolute;
+      top: -3%;
+      display: flex;
+    }
+
+    .waveFront {
+      left: 0;
+      z-index: 999;
+      animation: wave 10s linear infinite;
+
+      @media screen and (max-width: 320px) {
+        top: -7%;
+      }
+    }
+    .waveMid {
+      top: -4%;
+      left: -70%;
+      animation: wave 10s linear reverse 1s infinite;
+      z-index: 99;
+
+      @media screen and (max-width: 320px) {
+        top: -8%;
+      }
+    }
+    .waveBack {
+      top: -5%;
+      left: -70%;
+      animation: wave 10s linear 2s infinite;
+      z-index: 9;
+
+      @media screen and (max-width: 320px) {
+        top: -9%;
+      }
+    }
+
+    @keyframes wave {
+      from {
+        translate: 0 0;
+      }
+      to {
+        translate: -15% 0;
+      }
+    }
+  }
+
+  .gallerySection {
+    padding: 20% 5%;
+    // padding-top: 30%;
+    position: relative;
+    background: #021921;
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 100vh;
+      z-index: 99999;
+      overflow: hidden;
+      padding: 5% 5%;
+      transition: all 0.3s ease-in-out;
+
+      @media screen and (max-width: 426px) {
+        padding: 9% 5% !important;
+      }
+      .col {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 600px) {
+          width: 45% !important;
+        }
+      }
+
+      // #divimp {
+      //   width: 100% !important;
+      //   display: flex !important;
+      //   flex-direction: row !important;
+      //   flex-wrap: wrap !important;
+      // }
+    }
+
+    .blur {
+      filter: blur(20px);
+    }
+  }
+}

@@ -17,6 +17,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     message: "",
+    contact: "",
   });
 
   const [formError, setFormError] = useState({});
@@ -28,82 +29,46 @@ const ContactForm = () => {
       [event.target.name]: event.target.value,
     }));
   };
-  // const onSubmitHandler = (event) => {
-  //   event.preventDefault();
-  //   const isValid = validateForm();
-  //   if (isValid) {
-  //     toast.success("Submittted", {
-  //       position: "bottom-right",
-  //     });
-  //   } else {
-  //     toast.error("Invalid form", {
-  //       position: "bottom-right",
-  //     });
-  //   }
-  // };
-
-  // const validateForm = () => {
-  //   const err = {};
-
-  //   if (formData.name === "") {
-  //     err.name = "Name required!";
-  //   }
-  //   if (formData.name?.length > 50) {
-  //     err.name = "Name too long";
-  //   }
-  //   if (formData.email === "") {
-  //     err.email = "Email required!";
-  //   }
-  //   if (formData.email.includes("@") === false) {
-  //     err.email = "Invalid Email";
-  //   }
-  //   if (formData.email?.length > 50) {
-  //     err.name = "Email too long";
-  //   }
-  //   if (formData.contact.length < 10) {
-  //     err.contact = "Invalid Contact Number!";
-  //   }
-  //   if (formData.contact === "") {
-  //     err.contact = "Contact Number required!";
-  //   }
-  //   if (formData.instituteName === "") {
-  //     err.instituteName = "Institute Name required!";
-  //   }
-  //   if (formData.instituteName?.length > 100) {
-  //     err.name = "Institute Name too long";
-  //   }
-
-  //   setFormError({ ...err });
-  //   return Object.keys(err).length < 1;
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name?.length > 50) {
+    if (formData.name?.length > 49) {
       toast.error("Name too long", {
         position: "bottom-right",
       });
       return;
     }
-    if (formData.email?.length > 50) {
+    if (formData.email?.length > 49) {
       toast.error("Email too long", {
         position: "bottom-right",
       });
       return;
     }
+    if (formData?.contact && formData?.contact.length < 10) {
+      toast.error("Invalid phone number");
+      return;
+    }
+
     setSubmitting(true);
     try {
       await axios
-        .post(`${process.env.NEXT_PUBLIC_API_MAIN}/CAregister`, {
+        .post(`${process.env.NEXT_PUBLIC_API_MAIN}/contact`, {
           name: formData.name,
-          college: formData.instituteName,
+          message: formData.message,
           email: formData.email,
-          phone: formData.contact,
+          contact: formData.contact,
         })
         .then((res) => {
-          if (res.data.message === "Registration successful") {
-            toast.success("Registration successful", {
+          if (res.data.message === "Message Sent Successfully") {
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+              contact: "",
+            });
+            toast.success("Message received. We will contact you as soon as possible", {
               position: "bottom-right",
+              duration: 7500,
             });
           }
         });
@@ -116,14 +81,11 @@ const ContactForm = () => {
           case "details too long":
             toast.error("Details too long");
             break;
-          case "Existing registartion with this email id":
-            toast.error("Existing registartion with this email id");
-            break;
           case "Invalid email":
             toast.error("Invalid email");
             break;
-          case "Register went wrong":
-            toast.error("Register went wrong, please try again later");
+          case "Something went wrong":
+            toast.error("Something went wrong, please try again later");
             break;
           default:
             toast.error("Something went wrong");
@@ -163,6 +125,16 @@ const ContactForm = () => {
               onChange={OnChangeHandler}
             />
             <span>{formError.email}</span>
+          </div>
+          <div className={styles.box}>
+            <label htmlFor="contact">Phone (Optional)</label>
+            <input
+              name="contact"
+              autoComplete="off"
+              type="text"
+              onChange={OnChangeHandler}
+            />
+            <span>{formError.conatact}</span>
           </div>
           <div className={styles.box}>
             <label htmlFor="message">Your Message</label>
