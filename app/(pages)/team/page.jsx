@@ -4,10 +4,11 @@ import TeamCard from '@/app/components/TeamCard/TeamCard'
 import React from 'react'
 import styles from "./Team.module.scss"
 import { useState } from 'react'
-import { set } from 'mongoose'
+import Navbar from '@/app/components/Navbar/Navbar'
+import Footer from '@/app/components/Footer/Footer'
+
 
 const page = () => {
-  // const [teams, setTeams] = useState([])
   const [isCore, setIsCore] = useState(true);
   const [isTech, setIsTech] = useState(false);
 
@@ -618,7 +619,28 @@ const page = () => {
       ]
     ]
   ;
+  const navlink = [
+    {
+      name: "Home",
+      link: "home",
+    },
+    {
+      name: "Events",
+      link: "events",
+    },
+    {
+      name: "Sponsor",
+      link: "sponsor",
+    },
+    {
+      name: "Team",
+      link: "team",
+    },
+  ];
+
   return (
+    <>
+      <Navbar navlink={navlink} defaultDark={false}/>
     <div className={styles.container}>
       <div className={styles.toggle}>
         <div className={styles.t1} onClick={handleClick1}><h2>Core</h2></div>
@@ -626,7 +648,7 @@ const page = () => {
       </div>
       {/* <div className={styles.bbtn}><h2>Core</h2></div> */}
       {isCore && teamData2.map((teamGroup, index) => (
-        <div key={index} className={styles.card}>
+        <div className={styles.card}>
           {teamGroup.map((member) => (
             <TeamCard
               key={member.id}
@@ -642,7 +664,7 @@ const page = () => {
         
       ))}
       {isTech && teamData1.map((teamGroup, index) => (
-        <div key={index} className={styles.card}>
+        <div className={styles.card}>
           {teamGroup.map((member) => (
             <TeamCard
               key={member.id}
@@ -657,7 +679,9 @@ const page = () => {
         </div>
         
       ))}
+    <Footer />
     </div>
+    </>
   )
 }
 
