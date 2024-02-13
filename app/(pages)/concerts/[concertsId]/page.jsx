@@ -1,21 +1,55 @@
+"use client";
+
+import { useEffect } from "react";
 import events from "@/_db/concerts";
 import EventHero from "@/app/components/event_comp/hero/EventHero";
 import styles from "./Events.module.scss";
 import EventModal from "@/app/components/event_comp/individual/EventModal";
+import Navbar from "@/app/components/Navbar/Navbar";
+import Footer from "@/app/components/Footer/Footer";
 
 const EventPage = ({ params }) => {
   const item = events.find((event) => {
     return event.id === params.concertsId;
   });
-  console.log(item);
+  const navlink = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Events",
+      href: "/events",
+    },
+    {
+      name: "Gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Sponsors",
+      href: "/sponsors",
+    },
+    {
+      name: "Team",
+      href: "/team",
+    },
+  ];
+
+  useEffect(() => {
+    document.title = `${item.header} | Incandescence 2024`;
+  }, [item.header]);
+  // console.log(item);
   return (
     <div className={styles.EventPage}>
+      <Navbar navlink={navlink} defaultDark />
       <div className={styles.bg}>
         <EventHero title="" />
       </div>
       <div className={styles.main}>
         <EventModal data={item} />
       </div>
+      <Footer isHills />
+
       {/* <div className={styles.scroller}></div> */}
     </div>
   );
