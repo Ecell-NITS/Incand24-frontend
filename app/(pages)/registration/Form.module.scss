@@ -1,0 +1,94 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+
+  img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: -99;
+  }
+
+  .main {
+    width: 100%;
+    margin-top: 7%;
+    z-index: 99;
+    padding-right: 50px;
+
+    display: flex;
+    justify-content: end;
+
+    .form {
+      width: 30%;
+      padding: 1% 1%;
+      background-color: #0a0118a6;
+      border: 0.85px solid;
+      border-color: #ffffff1a;
+      border-radius: 50px;
+
+      .formdata {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        border-radius: 30px;
+        padding: 5% 5%;
+        h1 {
+          color: white;
+          text-align: center;
+          font-size: 50px;
+        }
+
+        .fields {
+          display: flex;
+          flex-direction: column;
+          gap: 1.2rem;
+
+          .inputBox {
+            margin: 30px 0;
+            border-bottom: 2px solid #3b3b3b;
+            position: relative;
+
+            .field {
+              height: 50px;
+              background: transparent;
+              border: none;
+              outline: none;
+              font-size: 1em;
+              padding: 0 35px 0 5px;
+              color: white;
+            }
+
+            .labels {
+              position: absolute;
+              top: 50%;
+              left: 5px;
+              transform: translateY(-50%);
+              pointer-events: none;
+              transition: 0.5s;
+              -webkit-background-clip: text !important;
+              -webkit-text-fill-color: transparent;
+              background: linear-gradient(
+                180deg,
+                rgb(25, 245, 238) 0%,
+                rgba(1.62, 194.97, 188.82, 0.04) 100%
+              );
+              background-clip: text;
+              color: transparent;
+              font-family: PixeloidSansBold, serif;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.field:focus + .labels,
+.field:valid + .labels {
+  top: 0px;
+}
