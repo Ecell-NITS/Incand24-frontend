@@ -74,7 +74,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
 
         <div className={styles.info}>
           <a
-            href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view"
             target="_blank"
             className={styles.brochure}
           >
@@ -167,8 +167,8 @@ const Footer = ({ isHills = true, homePage = false }) => {
           </div>
         </div>
         <div className={`${styles.ecell_copyright} ${poppins.className}`}>
-          {/* <div className={styles.ecell}>
-            Designed and Developed by{" "}
+          <div className={styles.ecell}>
+            Made by{" "}
             <a href="http://ecellnits.org" target="_blank">
               <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
             </a>{" "}
@@ -176,7 +176,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
               {" "}
               E-CELL
             </a>
-          </div> */}
+          </div>
           <div className={styles.copyright}>
             ©Copyright 2024, National Institute Of Technology, Silchar
           </div>

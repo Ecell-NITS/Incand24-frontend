@@ -136,7 +136,7 @@ const Navbar = ({ navlink, defaultDark = true }) => {
               </Link>
             ))}
             <a
-              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view"
               className={
                 !navbar
                   ? `${styles.nav_items} ${styles.nav_dark}`
@@ -234,7 +234,7 @@ const Navbar = ({ navlink, defaultDark = true }) => {
               aria-label="Brochure"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
+              href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view"
             >
               <Brochure text="Brochure" />
             </a>
