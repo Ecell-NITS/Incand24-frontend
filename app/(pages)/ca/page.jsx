@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Allura as allura } from "next/font/google";
 import styles from "./CA.module.scss";
 import CAhero from "@/app/components/ca_components/Hero/CAhero";
+
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 import CAabout from "@/app/components/ca_components/Hero/CAabout";
@@ -14,7 +15,6 @@ const Allura = allura({
   weight: ["400"],
   subsets: ["latin"],
 });
-
 const CA = () => {
   const [loading, setLoading] = useState(true);
 
