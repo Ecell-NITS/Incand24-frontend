@@ -2,6 +2,7 @@
   overflow: hidden;
   background: linear-gradient(180deg, #120325 29.5%, #00143b 96.5%);
   min-height: 100vh;
+
   .scroller {
     height: 200vh;
   }
@@ -13,5 +14,12 @@
   .main {
     position: relative;
     z-index: 10;
+    margin-bottom: 10vw;
+  }
+}
+
+@media (max-width: 660px) {
+  .main {
+    margin-bottom: 20vw !important;
   }
 }
