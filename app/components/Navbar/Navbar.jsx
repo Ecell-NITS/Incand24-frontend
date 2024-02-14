@@ -53,7 +53,7 @@ const Navbar = ({ navlink }) => {
 
   useEffect(() => {
     const SetNavbar = () => {
-      if (window.scrollY >= 700) {
+      if (window.scrollY >= 400) {
         setVisibleNav(true);
       } else {
         setVisibleNav(false);

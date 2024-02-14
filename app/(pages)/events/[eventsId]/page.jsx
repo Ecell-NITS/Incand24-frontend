@@ -19,10 +19,6 @@ const EventPage = ({ params }) => {
       href: "/",
     },
     {
-      name: "Events",
-      href: "/events",
-    },
-    {
       name: "Gallery",
       href: "/gallery",
     },
@@ -51,7 +47,7 @@ const EventPage = ({ params }) => {
         <EventModal data={item} previousRoute="events" />
       </div>
       {/* <div className={styles.scroller}></div> */}
-      <Footer isHills />
+      <Footer />
     </div>
   );
 };
