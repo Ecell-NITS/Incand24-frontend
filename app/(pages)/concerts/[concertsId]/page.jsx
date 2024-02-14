@@ -12,22 +12,23 @@ const EventPage = ({ params }) => {
   const item = events.find((event) => {
     return event.id === params.concertsId;
   });
+
   const navlink = [
     {
       name: "Home",
-      link: "/",
-    },
-    {
-      name: "Events",
-      link: "events",
-    },
-    {
-      name: "Sponsors",
-      link: "sponsors",
+      href: "/",
     },
     {
       name: "Gallery",
-      link: "gallery",
+      href: "/gallery",
+    },
+    {
+      name: "Sponsors",
+      href: "/sponsors",
+    },
+    {
+      name: "Team",
+      href: "/team",
     },
   ];
 
@@ -44,7 +45,7 @@ const EventPage = ({ params }) => {
       <div className={styles.main}>
         <EventModal data={item} />
       </div>
-      <Footer isHills={false} />
+      <Footer />
 
       {/* <div className={styles.scroller}></div> */}
     </div>

@@ -5,12 +5,14 @@ import { Poppins } from "next/font/google";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Player } from "@lottiefiles/react-lottie-player";
 // import EventCard from "../Card/EventCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./NewTimeline.module.scss";
 import events from "@/_db/events";
 import NewButton from "../../Shared/NewButton/NewButton";
+import butterfly from "./butterfly";
 
 const poppins = Poppins({
   weight: ["400", "600"],
@@ -47,6 +49,15 @@ const NewTimeline = ({ data = events, route = "events" }) => {
             key={event.id}
             className={styles.timelineItem}
           >
+            <Player
+              className={styles.butterfly}
+              autoplay
+              loop
+              // keepLastFrame
+              src={butterfly}
+              id={styles.lottie}
+              style={{ height: "auto", width: "100px" }}
+            ></Player>
             <div
               data-aos={event.id % 2 === 0 && width > 768 ? "fade-right" : "fade-left"}
               data-aos-duration="1000"
