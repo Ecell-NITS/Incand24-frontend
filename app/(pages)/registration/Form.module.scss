@@ -1,94 +1,153 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  overflow: hidden;
   color: white;
+  padding: 5% 10%;
+  background-image: url("../../../public/events/registration/promBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  img {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    z-index: -99;
-  }
 
   .main {
     width: 100%;
-    margin-top: 7%;
-    z-index: 99;
-    padding-right: 50px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
 
-    display: flex;
-    justify-content: end;
+    backdrop-filter: blur(15px);
+    padding: 3% 5%;
 
     .form {
-      width: 30%;
-      padding: 1% 1%;
-      background-color: #0a0118a6;
-      border: 0.85px solid;
-      border-color: #ffffff1a;
-      border-radius: 50px;
-
       .formdata {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-        border-radius: 30px;
-        padding: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+
         h1 {
-          color: white;
-          text-align: center;
-          font-size: 50px;
+          color: #fff;
+          font-size: 3vw;
+          font-style: normal;
         }
 
         .fields {
           display: flex;
-          flex-direction: column;
-          gap: 1.2rem;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5vw;
+          color: #fff;
 
           .inputBox {
-            margin: 30px 0;
-            border-bottom: 2px solid #3b3b3b;
             position: relative;
+            display: flex;
+            width: 30vw;
+            height: 5vw;
+            padding: 17px 5px 5px 25px;
+            align-items: center;
 
             .field {
-              height: 50px;
-              background: transparent;
+              height: 100%;
+              width: 100%;
+              border-radius: 59px;
+              border: 2px solid rgba(98, 23, 23, 0);
+              background-color: transparent;
+              box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              -webkit-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              -moz-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              padding: 0% 5%;
               border: none;
               outline: none;
-              font-size: 1em;
-              padding: 0 35px 0 5px;
-              color: white;
+              color: #fff;
             }
 
             .labels {
               position: absolute;
-              top: 50%;
-              left: 5px;
-              transform: translateY(-50%);
-              pointer-events: none;
-              transition: 0.5s;
-              -webkit-background-clip: text !important;
-              -webkit-text-fill-color: transparent;
-              background: linear-gradient(
-                180deg,
-                rgb(25, 245, 238) 0%,
-                rgba(1.62, 194.97, 188.82, 0.04) 100%
-              );
-              background-clip: text;
-              color: transparent;
-              font-family: PixeloidSansBold, serif;
-              font-size: 16px;
-              font-weight: 400;
-              letter-spacing: 0;
+              top: 0;
+              left: 0;
+              padding: 17px 0px 5px 25px;
+              margin: 0% 5%;
+              color: #fff;
             }
+          }
+
+          .field:focus + .labels,
+          .field:valid + .labels {
+            top: -10px;
+          }
+        }
+
+        .qrWrapper {
+          .qr {
+            width: 15vw;
+            height: 15vw;
+            background: #d9d9d9;
+          }
+          .details {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .upload {
+          position: relative;
+          display: flex;
+          width: 40vw;
+          height: 7vw;
+          padding: 17px 5px 5px 25px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          .field {
+            height: 100%;
+            width: 100%;
+            border-radius: 59px;
+            border: 2px solid rgba(98, 23, 23, 0);
+            background-color: transparent;
+            box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            -webkit-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            -moz-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            padding: 0% 5%;
+            border: none;
+            outline: none;
+            color: #fff;
+          }
+
+          .fieldDetails{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+          }
+        }
+
+        .button {
+          border-radius: 32px;
+          border: 2px solid linear-gradient(207deg, #c53e6f 8.69%, #9b008c 92.29%);
+          background: linear-gradient(207deg, #c53e6f 8.69%, #9b008c 92.29%);
+          padding: 1% 0%;
+          padding-right: 4vw;
+          padding-left: 4vw;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            border-radius: 32px;
+            // border: 3px solid #fff;
+            background: linear-gradient(207deg, #9b008c 9.02%, #c53e6f 59.18%);
+          }
+          .layertext {
+            font-size: 2vw;
+            color: #000;
           }
         }
       }
     }
   }
-}
-
-.field:focus + .labels,
-.field:valid + .labels {
-  top: 0px;
 }

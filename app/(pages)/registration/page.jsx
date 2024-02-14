@@ -1,30 +1,11 @@
 "use client";
+
 import React, { useState } from "react";
-import Image from "next/image";
-import styles from "./Form.module.scss";
-import promBg from "../../../public/events/registration/promBg.png";
-import Navbar from "@/app/components/Navbar/Navbar";
 import { Toaster, toast } from "sonner";
+import { Icon } from '@iconify/react';
+import styles from "./Form.module.scss";
 
 const Page = () => {
-  const navlink = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "Gallery",
-      href: "/gallery",
-    },
-    {
-      name: "Sponsors",
-      href: "/sponsors",
-    },
-    {
-      name: "Team",
-      href: "/team",
-    },
-  ];
 
   const fields = [
     {
@@ -42,9 +23,13 @@ const Page = () => {
       name: "contact",
       type: "number",
     },
+    {
+      id: 4,
+      name: "Mail Id",
+      type: "email",
+    },
   ];
 
-  const [formError, setFormError] = useState({});
 
   const initialState = {};
   fields.forEach((field) => {
@@ -68,7 +53,7 @@ const Page = () => {
         errors[field.name] = `Please enter ${field.name}`;
       } else if (field.name === "contact") {
         const contactNumber = values[field.name];
-        if (isNaN(contactNumber) || contactNumber.length !== 10) {
+        if (Number.isNaN(contactNumber) || contactNumber.length !== 10) {
           errors[field.name] = "Please enter a valid 10-digit contact number";
         }
       }
@@ -77,7 +62,7 @@ const Page = () => {
     // Check if any errors found
     if (Object.keys(errors).length > 0) {
       // If errors exist, display them
-      Object.entries(errors).forEach(([fieldName, errorMessage]) => {
+      Object.entries(errors).forEach(([ fieldName, errorMessage]) => {
         toast(errorMessage);
       });
       return false;
@@ -99,15 +84,13 @@ const Page = () => {
   return (
     <div className={styles.container}>
       <Toaster />
-      <Navbar navlink={navlink} navVisible={true} />
-      <Image src={promBg} alt="image" fill layout="" />
       <div className={styles.main}>
         <form className={styles.form} onSubmit={submitHandler}>
           <div className={styles.formdata}>
             <h1>Prom Night</h1>
             <div className={styles.fields}>
               {fields.map((field) => (
-                <div className={styles.inputBox}>
+                <div  key={field.id} className={styles.inputBox}>
                   <input
                     className={styles.field}
                     key={field.id}
@@ -119,6 +102,23 @@ const Page = () => {
                   <label className={styles.labels}>{field.name}</label>
                 </div>
               ))}
+            </div>
+
+            <div className={styles.qrWrapper}>
+              <div className={styles.qr}></div>
+              <div className={styles.details}>Payment Details</div>
+            </div>
+
+            <div className={styles.upload}>
+              <input
+              className={styles.field}
+               name=""
+               value=""
+              />
+              <div className={styles.fieldDetails}>
+                <Icon icon="tdesign:cloud-upload"  style={{color: "white"}} />
+                <div className={styles.details}>Payment Sceenshot</div>
+              </div>
             </div>
 
             <button className={styles.button}>
