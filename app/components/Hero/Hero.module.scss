@@ -363,14 +363,14 @@
   }
 }
 
-@keyframes nightForeground {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
-  }
-}
+// @keyframes nightForeground {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+//     filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
+//   }
+// }
 
 // @keyframes nightHills {
 //   0% {
@@ -466,6 +466,12 @@
   }
 
   .movingtree img {
-    margin-top: -29vh;
+    margin-top: -34vh !important;
+    margin-left: 4vw;
+  }
+}
+@media (max-width: 900px) {
+  .movingtree img {
+    margin-top: -25vh;
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import events from "@/_db/events";
 import concerts from "@/_db/concerts";
 import styles from "./EventBody.module.scss";
@@ -33,15 +33,11 @@ const EventBody = () => {
     setData(concerts);
   };
 
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      if (document?.querySelectorAll(`.${styles.TabItemActive}`)) {
-        setTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-      }
-      if (document?.querySelectorAll(`.${styles.TabItemActive}`)) {
-        setPrevTag(document?.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-      }
-    }
+  // console.log("type: ", document.querySelectorAll(`.${styles.TabItemActive}`)[0])
+  useLayoutEffect(() => {
+    const activeTab = document.querySelector(`.${styles.TabItemActive}`);
+    setTag(activeTab);
+    setPrevTag(activeTab);
   }, []);
 
   useEffect(() => {
