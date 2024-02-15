@@ -16,6 +16,9 @@
 
     backdrop-filter: blur(15px);
     padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .form {
       .formdata {
@@ -43,7 +46,7 @@
             position: relative;
             display: flex;
             width: 30vw;
-            height: 5vw;
+            height: 7vw;
             padding: 17px 5px 5px 25px;
             align-items: center;
 
@@ -69,6 +72,7 @@
               padding: 17px 0px 5px 25px;
               margin: 0% 5%;
               color: #fff;
+              font-size: 2vw;
             }
           }
 
@@ -79,6 +83,10 @@
         }
 
         .qrWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           .qr {
             width: 15vw;
             height: 15vw;
@@ -95,12 +103,21 @@
         .upload {
           position: relative;
           display: flex;
-          width: 40vw;
-          height: 7vw;
+          width: 50vw;
+          height: 11vw;
           padding: 17px 5px 5px 25px;
           justify-content: center;
           align-items: center;
           cursor: pointer;
+
+          @media screen and (max-width: 573px) {
+            width: 58vw;
+            height: 14vw;
+          }
+          @media screen and (max-width: 480px) {
+            width: 65vw;
+            height: 17vw;
+          }
           .field {
             height: 100%;
             width: 100%;
@@ -124,6 +141,14 @@
             justify-content: center;
             gap: 10px;
             cursor: pointer;
+
+            @media screen and (max-width: 480px) {
+              gap: 1px;
+            }
+
+            .details{
+              font-size: 2vw;
+            }
           }
         }
 
@@ -137,6 +162,11 @@
           cursor: pointer;
           transition: all 0.5s ease-in-out;
 
+          @media screen and (max-width: 480px) {
+            padding-left: 8vw;
+            padding-right: 8vw;
+          }
+
           &:hover {
             border-radius: 32px;
             // border: 3px solid #fff;
@@ -145,7 +175,38 @@
           .layertext {
             font-size: 2vw;
             color: #000;
+
+            @media screen and (max-width: 480px) {
+              font-size: 5vw;
+            }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    padding: 0% !important;
+  }
+  .main{
+    padding: 10% 7% !important;
+    height: 100vh;
+    border-radius: 0px !important;
+  }
+
+  .form{
+    .formdata{
+      gap: 8vw !important;
+      h1{
+        font-size: 9vw !important;
+      }
+
+      .fields{
+        .inputBox{
+          width: 40vw !important;
+          height: 10vw !important;
         }
       }
     }
