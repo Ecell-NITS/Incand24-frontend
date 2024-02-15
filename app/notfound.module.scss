@@ -2,8 +2,6 @@
   background: linear-gradient(180deg, #749bff 0%, #00f2e3 100%);
   width: 100%;
   height: 100vh;
-  // overflow: hidden;
-  // display:flex;
   overflow: hidden;
 
   .wrapper {
@@ -16,6 +14,7 @@
     font-size: 5vh;
     flex-direction: column;
     text-align: center;
+
     .grp1 {
       font-size: 7vh;
       display: flex;
@@ -41,38 +40,23 @@
       }
     }
   }
+
   .numbers {
     display: flex;
-    // position: relative;
+    position: relative;
     margin-top: 5vh;
     width: 25%;
-
+    z-index: 999;
     margin: auto;
 
     // justify-content: space-around;
     align-items: center;
     gap: 5vw;
     .zero {
-      position: relative;
-      // width:200%;
-      // top:10rem;
-      // margin:auto;
-      // bottom: 0;
-      // right: 0;
-      // left: 0;
       margin: auto;
-      // width:200%;
       animation: zeroanim linear 3s infinite ease-in-out;
     }
     .four {
-      // position: absolute;
-      // top:10rem;
-      // margin:auto;
-      // bottom: 0;
-      // right: 0;
-      // left: 0;
-      // margin: auto;
-      // width:200%;
       animation: zeroanim linear 3s infinite ease-in-out;
     }
 
@@ -85,76 +69,6 @@
       }
     }
   }
-  // .waveWrapper {
-  //     position: relative;
-  //     display: flex;
-  //     background-color: red;
-
-  //     .wave{
-  //         background-color: red;
-
-  //         .waveDB{
-  //             position:absolute;
-  //             top:10rem;
-  //             // margin:auto;
-  //             bottom:0;
-  //             width:200%;
-  //             // height:50%;
-  //             z-index:20;
-  //             // animation:wave linear 5s infinite;
-  //         }
-  //         .waveB{
-  //             position:absolute;
-  //             top:10rem;
-  //             bottom:0;
-  //             z-index:15;
-  //             width:200%;
-  //             // height:50%;
-  //             // animation:wave linear 5s reverse infinite;
-  //         }
-  //         .waveLB{
-  //             position:absolute;
-  //             top:10rem;
-  //             bottom:0;
-  //             width:200%;
-  //             // height:50%;
-  //             // animation:wave linear 5s infinite;
-  //         }
-  //         // @keyframes wave {
-  //         //     0% {
-  //         //         transform: translateX(-100%) ;
-  //         //     }
-  //         //     100% {
-  //         //         transform: translateX(0) ;
-  //         //     }
-  //         // }
-
-  //         }
-
-  // }
-  // .numbers{
-  //   position: relative;
-  //   height: 80vh;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: row;
-  //   .numwrapper{
-  //     width:100%;
-  //     .zero{
-  //       width: 200%;
-  //       position: absolute;
-  //       bottom: 0;
-  //     }
-  //   }
-  // }
-  // @keyframes zeroanim {
-  //   0% {
-  //     transform: translateY(0);
-  //   }
-  //   100% {
-  //     transform: translateY(-30%);
-  //   }
-  // }
 
   .waveWrapper {
     position: relative;
@@ -214,5 +128,17 @@
         transform: translateX(0);
       }
     }
+  }
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  .numbers {
+    width: 100vw !important;
+    margin: 15vw 0 0 0 !important;
   }
 }

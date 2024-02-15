@@ -34,7 +34,12 @@ const EventModal = ({ data = events[0], previousRoute = "events" }) => {
   return (
     <div className={`${styles.modal} ${allura.className}`}>
       <div className={styles.card}>
-        <Image alt="event image" src="/events/eventsPlaceholder.png" fill layout="" />
+        <Image
+          alt="event image"
+          src={`${data.thumbnail ? data.thumbnail : "/events/eventsPlaceholder.png"}`}
+          fill
+          layout=""
+        />
         <div className={styles.info}>
           <Link href={`/${previousRoute}`} alt="" className={styles.cross}>
             <Icon icon="akar-icons:cross" color="#ffffff" width="30" />
