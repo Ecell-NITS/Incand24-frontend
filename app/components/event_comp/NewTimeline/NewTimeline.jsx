@@ -21,7 +21,7 @@ const poppins = Poppins({
 
 AOS.init();
 
-const NewTimeline = ({ data = events, route = "events" }) => {
+const NewTimeline = ({ data = events, route }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
