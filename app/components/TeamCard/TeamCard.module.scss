@@ -8,6 +8,7 @@
 
 .container:hover {
   cursor: pointer;
+
   // .card .in .image{
   //   scale: 1.2;
   // }
@@ -16,6 +17,7 @@
     transition: 0.5s ease-in-out;
   }
 }
+
 .grad {
   width: 24.375rem;
   height: 28.813rem;
@@ -27,7 +29,7 @@
 
   @media screen and (max-width: 900px) {
     width: 22rem;
-    height: 25rem;
+    height: 26rem;
   }
 }
 
@@ -49,25 +51,33 @@
   overflow: hidden;
 
   @media screen and (max-width: 900px) {
-    height: 19rem;
+    height: 19.86rem;
     width: 17rem;
   }
 }
 
 .grad {
-  z-index: -100;
   position: absolute;
-  height: 228%;
-  width: 228%;
-  left: -64%;
-  top: -64%;
+  height: 60.5%;
+  width: 111.5%;
+  left: -6%;
+  top: 19.4%;
   right: 0;
   bottom: 0;
   color: transparent;
   padding: 0 1.5rem;
   opacity: 0;
+
+  @media screen and (max-width: 900px) {
+    height: 64.7%;
+    width: 113.5%;
+    left: -7%;
+    top: 17.8%;
+  }
+
   img {
     height: 100%;
+    transform: scale(254%);
     width: 100%;
   }
 }
@@ -165,6 +175,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+
     @media screen and (max-width: 900px) {
       font-size: 1rem;
     }
