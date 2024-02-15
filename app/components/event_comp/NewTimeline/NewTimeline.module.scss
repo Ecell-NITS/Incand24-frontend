@@ -21,6 +21,14 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
+    .butterfly {
+      position: absolute;
+
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+    }
+
     .cardWrapper {
       height: fit-content;
       display: flex;
@@ -124,6 +132,11 @@
           left: 0;
           transform: translate(-50%, -50%);
         }
+        .butterfly {
+          top: 0;
+          left: 0;
+          transform: translate(-80%, -80%) rotateY(180deg);
+        }
         .cardWrapper {
           flex-direction: row;
 
@@ -155,6 +168,11 @@
           transform: translate(50%, -50%);
         }
 
+        .butterfly {
+          top: 0;
+          right: 0;
+          transform: translate(80%, -80%);
+        }
         .cardWrapper {
           flex-direction: row-reverse;
           .desc {

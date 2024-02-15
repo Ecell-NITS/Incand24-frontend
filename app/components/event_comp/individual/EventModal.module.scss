@@ -1,6 +1,6 @@
 .modal {
   width: 90vw;
-  border-radius: 50px;
+  border-radius: 2rem;
   background: rgba(0, 0, 0, 0.748);
   margin: auto;
   margin-top: 5rem;
@@ -9,6 +9,10 @@
   flex-direction: column;
   text-align: center;
   backdrop-filter: blur(5px);
+
+  @media screen and (max-width: 900px) {
+    border-radius: 1rem;
+  }
 
   .card {
     position: relative;
@@ -19,6 +23,21 @@
     background: linear-gradient(90deg, red, blue);
     overflow: hidden;
     // object-fit: cover;
+
+    .cross {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+      cursor: pointer;
+      z-index: 12;
+      @media screen and (max-width: 600px) {
+        top: 2px;
+        right: 2px;
+      }
+    }
 
     img {
       object-fit: cover;
@@ -42,14 +61,12 @@
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      padding: 1rem;
-      gap: 1rem;
       right: 0;
       color: white;
-      button {
-        height: 3rem;
-      }
 
+      @media screen and (max-width: 1080px) {
+        width: 50%;
+      }
       @media screen and (max-width: 900px) {
         width: 60%;
       }
@@ -59,8 +76,9 @@
       @media screen and (max-width: 600px) {
         width: 80%;
       }
+
       h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
 
         @media screen and (max-width: 900px) {
           font-size: 3rem;
@@ -69,13 +87,13 @@
           font-size: 2.5rem;
         }
         @media screen and (max-width: 600px) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
       p {
-        height: 50%;
+        height: 40%;
         overflow: auto;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
         @media screen and (max-width: 900px) {
           font-size: 1rem;
@@ -99,6 +117,15 @@
 
     @media screen and (max-width: 900px) {
       height: 40vw;
+      display: flex;
+      // width: 100%;
+      align-items: center;
+      justify-content: center;
+      .desc {
+        // position: static;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     @media screen and (max-width: 760px) {
       height: 50vw;

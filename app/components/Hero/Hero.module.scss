@@ -271,7 +271,7 @@
     height: 13.5vw;
     background-image: url(../../../public/images/hero_assets/Sun.svg);
     position: absolute;
-    left: 42vw;
+    left: 40vw;
     bottom: 30vw;
     z-index: 36;
     background-size: contain;
@@ -297,12 +297,12 @@
   }
   #moon {
     display: none;
-    width: 13vw;
-    height: 13vw;
+    width: 12.5vw;
+    height: 12.5vw;
     z-index: 36;
     background-image: url(../../../public/images/hero_assets/umoon.svg);
     position: absolute;
-    left: 38vw;
+    left: 40vw;
     bottom: 1vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -363,14 +363,14 @@
   }
 }
 
-@keyframes nightForeground {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
-  }
-}
+// @keyframes nightForeground {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+//     filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
+//   }
+// }
 
 // @keyframes nightHills {
 //   0% {
@@ -452,5 +452,26 @@
   }
   .starss {
     margin-top: -20vh;
+  }
+}
+
+@media (max-width: 660px) {
+  #sun {
+    top: 75vw !important;
+  }
+
+  #moon {
+    width: 23vw !important;
+    height: 23vw !important;
+  }
+
+  .movingtree img {
+    margin-top: -34vh !important;
+    margin-left: 4vw;
+  }
+}
+@media (max-width: 900px) {
+  .movingtree img {
+    margin-top: -25vh;
   }
 }

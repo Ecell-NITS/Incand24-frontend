@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+// import Link from 'next/link'
+// import {RouterLink as Link}  from "react-router-dom";
+
 import {
   // Passion_One as passionOne,
   Allura as allura,
@@ -10,14 +12,22 @@ import {
   // Montserrat_Alternates as montserratAlternates,
 } from "next/font/google";
 import Image from "next/image";
-import styles from "./Navbar.module.scss";
+import Brochure from "../Button/Button";
+import styles from "./Canavbar.module.scss";
 import menuL from "../../../public/logos/menuL.svg";
+// import menuD from "../../../public/logos/menuD.svg";
 import insta from "../../../public/logos/instagram.svg";
+// import instaD from "../../../public/logos/instaD.svg";
 import fb from "../../../public/logos/facebook.svg";
+// import fbD from "../../../public/logos/facebookD.svg";
 import linkedIn from "../../../public/logos/linkedin.svg";
+// import linkD from "../../../public/logos/linkedinD.svg";
 import line from "../../../public/logos/line.svg";
+// import lineD from "../../../public/logos/lineD.svg";
+// import dark from "../../../public/images/DarkLogoNav.svg";
 import light from "../../../public/images/LightLogoNav.svg";
 import closeL from "../../../public/logos/closeL.svg";
+// import closeD from "../../../public/logos/closeD.svg";
 
 // const passion = passionOne({
 //   weight: ["400"],
@@ -37,41 +47,44 @@ const Allura = allura({
 //   weight: ["500"],
 //   subsets: ["latin"],
 // });
-const Navbar = ({ navlink }) => {
-  // const [select, setSelect] = useState(false);
-  const [close, setClose] = useState(false);
-  const [visibleNav, setVisibleNav] = useState(false);
-  // const [navbar, setNavbar] = useState(!defaultDark);
-  const router = useRouter();
+const CaNavbar = () => {
+  const [select, setSelect] = useState(false);
+  //   const [navbar, setNavbar] = useState(false);
+  const navlink = [
+    {
+      name: "Home",
+      link: "/Hero",
+    },
+    {
+      name: "About Us",
+      link: "/about",
+    },
+    {
+      name: "Sponsors",
+      link: "/Sponsor",
+    },
+  ];
   const change = () => {
-    if (close === false) {
-      setClose(!close);
+    if (select === false) {
+      setSelect(!select);
     } else {
-      setClose(!close);
+      setSelect(!select);
     }
   };
-
-  useEffect(() => {
-    const SetNavbar = () => {
-      if (window.scrollY >= 400) {
-        setVisibleNav(true);
-      } else {
-        setVisibleNav(false);
-      }
-    };
-
-    window.addEventListener("scroll", SetNavbar);
-  });
-
+  //   useEffect(() => {
+  //     const changeColor = () => {
+  //       if (window.scrollY >= 110) {
+  //         setNavbar(true);
+  //       } else {
+  //         setNavbar(false);
+  //       }
+  //     };
+  //     window.addEventListener("scroll", changeColor);
+  //   }, []);
   return (
     <div>
       <nav>
-        <button
-          className={styles.hamburger}
-          style={{ top: visibleNav ? 0 : "" }}
-          onClick={change}
-          label="menu"
-        >
+        <button className={styles.hamburger} onClick={change} label="menu">
           {/* <label></label> */}
           <Image src={menuL} className={styles.menu} alt="" />
           {/* <div id={styles.logo}>
@@ -84,7 +97,7 @@ const Navbar = ({ navlink }) => {
         </button>
         <div
           className={
-            close
+            select
               ? `${styles.show} ${styles.active} ${Allura.className}`
               : `${styles.show} ${Allura.className}`
           }
@@ -92,23 +105,34 @@ const Navbar = ({ navlink }) => {
           <button label="close" className={styles.close}>
             <Image src={closeL} alt="" className={styles.cross} onClick={change} />
           </button>
-          <div className={`${styles.nav_menu}`}>
-            {navlink.map((link) => (
+          <div className={styles.nav_menu}>
+            {navlink.map(({ name, link }) => (
               <Link
                 onClick={change}
-                className={styles.nav_items_a}
-                key={link.name}
-                href={link.href}
-                // spy
-                // smooth
-                // hashSpy
-                // offset={10}
-                // duration={500}
+                className={styles.nav_items}
+                key={name}
+                to={link}
+                spy
+                smooth
+                hashSpy
+                offset={10}
+                duration={500}
               >
-                {link.name}
+                {name}
                 <Image className={styles.line} src={line} alt="" />
               </Link>
             ))}
+            <a
+              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view?usp=drivesdk"
+              className={`${styles.nav_items} 
+                  ${styles.nav_items_a}`}
+              target="_blank"
+              aria-label="Brochure"
+              rel="noopener noreferrer"
+            >
+              <div>Brochure</div>
+              <Image className={styles.line} src={line} alt="" />
+            </a>
           </div>
           <div className={`${styles.footer} ${Allura.className}`}>
             <span className={styles.follow}>Follow Us</span>
@@ -143,38 +167,49 @@ const Navbar = ({ navlink }) => {
             </div>
           </div>
         </div>
-        <div className={styles.menu_bar} style={{ top: visibleNav ? "2vh" : "" }}>
-          <div className={styles.wrapper}>
-            <div
-              role="button"
-              aria-label="home button"
-              tabIndex={0}
-              className={styles.logo}
-              onClick={() => {
-                router.push("/");
-              }}
-              onKeyDown={() => {
-                router.push("/");
-              }}
-            >
+        <div className={styles.menu_bar}>
+          <Link
+            href="/hero"
+            // spy
+            // smooth
+            // hashSpy
+            // offset={50}
+            // duration={500}
+            className={styles.wrapper}
+          >
+            <div className={styles.logo}>
               <Image fill style={{ cursor: "pointer" }} src={light} alt="" />
             </div>
-          </div>
+          </Link>
 
           <div className={styles.grp1}>
-            {navlink.map((link) => (
+            {navlink.map((item) => (
               <Link
                 className={`${styles.item1} ${Allura.className}`}
-                key={link.name}
-                href={link.href}
+                key={item.name}
+                href={item.link}
+                // spy
+                // smooth
+                // hashSpy
+                // offset={-40}
+                // duration={500}
               >
-                {link.name}
+                {item.name}
               </Link>
             ))}
+            <a
+              className={`styles.btn ${Allura.className}`}
+              aria-label="Brochure"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1jA6Y5fh-ZW8VYepFH7QhS6UZus-KYgHC/view"
+            >
+              <Brochure />
+            </a>
           </div>
         </div>
       </nav>
     </div>
   );
 };
-export default Navbar;
+export default CaNavbar;

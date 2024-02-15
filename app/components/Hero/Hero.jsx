@@ -203,7 +203,8 @@ const Hero = ({ loading }) => {
 
             <Image
               className={styles.light}
-              src="/images/DayLogo_noFire.png"
+              // src="/images/DayLogo_noFire.png"
+              src="/images/NightLogo_noFire-removebg-preview.png"
               alt="logo"
               fill
               sizes="!00%"

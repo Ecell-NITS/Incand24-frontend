@@ -6,6 +6,7 @@ import SponsorsHero from "@/app/components/sponsors_components/Hero/SponsorsHero
 import WhySponsors from "@/app/components/sponsors_components/Hero/WhySponsors";
 import PrevSponsors from "@/app/components/sponsors_components/Hero/PrevSponsors";
 import Navbar from "@/app/components/Navbar/Navbar";
+import Footer from "@/app/components/Footer/Footer";
 
 // const Allura = allura({
 //   weight: ["400"],
@@ -37,6 +38,7 @@ const Sponsors = () => {
       <SponsorsHero />
       <WhySponsors />
       <PrevSponsors />
+      <Footer galleryPage />
     </div>
   );
 };

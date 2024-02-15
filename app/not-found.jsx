@@ -12,6 +12,7 @@ const Allura = allura({
   weight: ["400"],
   subsets: ["latin"],
 });
+
 const Poppins = poppins({
   weight: ["600"],
   subsets: ["latin"],
@@ -28,10 +29,10 @@ const NotFound = () => {
             <div className={styles.dots}></div>
           </div>
         </div>
-        <p className={`${Allura.className} ${styles.grp2}`}>
-          Looks like you lost your way
-        </p>
+
+        <p className={`${Allura.className}`}>Looks like you lost your way</p>
       </div>
+
       <div className={styles.numbers}>
         {/* <div className={styles.numwrapper}> */}
         <svg
@@ -108,9 +109,11 @@ const NotFound = () => {
           <svg
             className={styles.waveLB}
             xmlns="http://www.w3.org/2000/svg"
+
             width="4034"
             height="777"
             viewBox="0 0 4034 777"
+
             fill="none"
           >
             <path
@@ -119,11 +122,13 @@ const NotFound = () => {
             />
           </svg>
 
+
           <div className={`${Poppins.className} ${styles.home}`}>
             <Link href="/" className={styles.link}>
               Lets go back home
             </Link>
           </div>
+
         </div>
       </div>
     </div>
