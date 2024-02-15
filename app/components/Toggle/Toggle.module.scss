@@ -1,43 +1,47 @@
-
 .buttonBox {
-	margin: 35px auto;
-	position: relative;
-	border-radius: 40px;
-	background: #1F1C2B;
-    padding: 2% 2%;
-
-    display: flex;
-    flex-direction: row;
-    filter: drop-shadow(0px 60px 100px #0E0C14);
+  margin: 35px auto;
+  position: relative;
+  border-radius: 40px;
+  background: #1f1c2b;
+  padding: 2% 2%;
+  z-index: 999999;
+  display: flex;
+  flex-direction: row;
+  filter: drop-shadow(0px 60px 100px #0e0c14);
 }
 
 .toggleBtn {
-	padding: 20px 40px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
-	text-align: center;
+  padding: 1.25rem 2.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
 
-    h1{
-        font-size: 2.5rem;
-        color: #A39EB8;
-        transition: .5s;
+  h1 {
+    font-size: 2.5rem;
+    color: #a39eb8;
+    transition: 0.5s;
+    @media screen and (max-width: 900px) {
+      font-size: 1.7rem;
     }
-    
+  }
+
+  @media screen and (max-width: 720px) {
+    padding: 0.938rem 1.875rem;
+  }
 }
 
-
 .bton {
-	left: 0;
-    padding: 2% 4%;
-	top: -4%;
-	position: absolute;
-	width: 55%;
-	height: 107%;
-	background: #2B2837;
-	border-radius: 50px;
-	transition: .5s;
-    filter: drop-shadow(40px 30px 80px #0D0B11);
+  left: 0;
+  padding: 2% 4%;
+  top: -4%;
+  position: absolute;
+  width: 55%;
+  height: 107%;
+  background: #2b2837;
+  border-radius: 50px;
+  transition: 0.5s;
+  filter: drop-shadow(40px 30px 80px #0d0b11);
 }
