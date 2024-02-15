@@ -24,6 +24,8 @@
   .qsn {
     font-size: max(6vw, 2rem);
     margin-bottom: 8vh;
+    position: relative;
+    z-index: 10;
   }
 
   .banner {
@@ -52,13 +54,15 @@
     }
 
     .lottie {
-      width: 40%;
-      height: 100%;
+      width: 30%;
       display: flex;
       align-items: center;
       @media only screen and (max-width: 480px) {
         width: 60%;
       }
+    }
+    #girlAni {
+      width: 35%;
     }
 
     .text {

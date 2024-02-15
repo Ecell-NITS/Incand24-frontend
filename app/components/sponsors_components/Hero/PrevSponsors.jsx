@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import { Allura } from "next/font/google";
-import AOS from "aos";
+// import AOS from "aos";
 import styles from "./PrevSponsors.module.scss";
 import Card from "./Card";
 import Greenleafs from "../../../../public/LeafAnimation";
@@ -13,9 +13,9 @@ const allura = Allura({
 });
 
 const PrevSponsors = () => {
-  useEffect(() => {
-    AOS.init({ duration: 500 });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 500 });
+  // }, []);
 
   const data1 = [
     {
@@ -123,7 +123,9 @@ const PrevSponsors = () => {
 
   return (
     <div className={styles.body}>
-      <p className={`${styles.text} ${allura.className}`} data-aos="zoom-in">
+      <p className={`${styles.text} ${allura.className}`}>
+        {" "}
+        {/* data-aos="zoom-in" */}
         Previous Sponsors
       </p>
       <div className={styles.content}>
@@ -131,7 +133,9 @@ const PrevSponsors = () => {
           <div id={styles.leafs2}>
             <Lottie loop animationData={Greenleafs} />
           </div>
-          <div id={styles.col1} className={styles.col} data-aos="fade-right">
+          <div id={styles.col1} className={styles.col}>
+            {" "}
+            {/* data-aos="fade-right" */}
             {
               // important : we can not use 'for each' beacsue it does not return any value
               data1.map(
@@ -152,7 +156,9 @@ const PrevSponsors = () => {
         </div>
 
         <div className={styles.sub2}>
-          <div id={styles.col3} className={styles.col} data-aos="fade-up">
+          <div id={styles.col3} className={styles.col}>
+            {" "}
+            {/* data-aos="fade-up" */}
             {data3.map((ele) => (
               <Card key={ele.title} link={ele.link} title={ele.title} />
             ))}
