@@ -92,8 +92,11 @@
           position: relative;
           z-index: 0;
           border-radius: inherit;
+          background-image: url(/events/eventsPlaceholder.png);
+          background-size: cover;
           img {
             object-fit: cover;
+            object-position: 40% 20%;
           }
         }
         .title {
@@ -102,6 +105,7 @@
           z-index: 5;
           font-size: 2rem;
           left: 5%;
+          text-transform: uppercase;
         }
 
         @media screen and (max-width: 1080px) {
