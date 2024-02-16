@@ -167,6 +167,9 @@ const Navbar = ({ navlink }) => {
                 className={`${styles.item1} ${Allura.className}`}
                 key={link.name}
                 href={link.href}
+                onClick={() => {
+                  router.push(link.href);
+                }}
               >
                 {link.name}
               </Link>
