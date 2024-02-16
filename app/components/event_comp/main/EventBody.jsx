@@ -33,7 +33,6 @@ const EventBody = () => {
     setData(concerts);
   };
 
-  // console.log("type: ", document.querySelectorAll(`.${styles.TabItemActive}`)[0])
   useLayoutEffect(() => {
     const activeTab = document.querySelector(`.${styles.TabItemActive}`);
     setTag(activeTab);
