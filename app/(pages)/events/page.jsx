@@ -1,12 +1,17 @@
 "use client";
 
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Allura } from "next/font/google";
 import styles from "./Event.module.scss";
 import GradientBg from "@/app/components/Shared/GradientBg/GradientBg";
-import EventBody from "@/app/components/event_comp/main/EventBody";
+// import EventBody from "@/app/components/event_comp/main/EventBody";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
+
+const EventBody = dynamic(() => import("@/app/components/event_comp/main/EventBody"), {
+  ssr: false,
+});
 
 const allura = Allura({
   weight: ["400"],
@@ -17,7 +22,9 @@ const allura = Allura({
 
 const Event = () => {
   useEffect(() => {
-    document.title = "Events | Incandescence 2024";
+    if (typeof document !== "undefined") {
+      document.title = "Events | Incandescence 2024";
+    }
   }, []);
 
   const navlink = [

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Allura as allura } from "next/font/google";
-import Sponsor from "./components/Sponsor/Sponsor";
+// import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
 import About from "./components/about/About";
 import Social from "./components/SocialHandles/Social";
@@ -110,7 +110,7 @@ const Home = () => {
         <Navbar navlink={navlink} />
         <Hero loading={loading} />
         <About />
-        <Sponsor />
+        {/* <Sponsor /> */}
         <ContactForm />
         <Footer homePage />
         <Social />
