@@ -52,7 +52,7 @@ const Page = () => {
             left: 0,
             width: "100%",
             height: "100%",
-            objectFit: "cover", // This ensures the image covers the entire container
+            objectFit: "cover",
           }}
         />
         <Toggle text={text} setIsCore={setIsCore} />
