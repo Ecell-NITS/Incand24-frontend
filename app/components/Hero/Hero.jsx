@@ -174,7 +174,7 @@ const Hero = ({ loading }) => {
         >
           <Image
             alt="left_Tree"
-            class={styles.stretchimage}
+            className={styles.stretchimage}
             src="/images/hero_assets/sun_setcol.svg"
             fill
             priority

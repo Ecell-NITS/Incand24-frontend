@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
-// import EventCard from "../Card/EventCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./NewTimeline.module.scss";
@@ -22,7 +21,7 @@ const poppins = Poppins({
 
 AOS.init();
 
-const NewTimeline = ({ data = events, route = "events" }) => {
+const NewTimeline = ({ data = events, route }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -31,8 +30,10 @@ const NewTimeline = ({ data = events, route = "events" }) => {
       window?.addEventListener("resize", () => {
         setWidth(window?.innerWidth);
       });
+
+      return window?.removeEventListener("resize", () => {});
     }
-    return window.removeEventListener("resize", () => {});
+    return null;
   }, []);
 
   return (
