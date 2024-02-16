@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@iconify/react':
+    specifier: ^4.1.1
+    version: 4.1.1(react@18.2.0)
   '@lottiefiles/react-lottie-player':
     specifier: ^3.5.3
     version: 3.5.3(react@18.2.0)
@@ -57,8 +60,8 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   react-intersection-observer:
-    specifier: ^9.6.0
-    version: 9.6.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^9.8.0
+    version: 9.8.0(react-dom@18.2.0)(react@18.2.0)
   react-lottie:
     specifier: ^1.2.4
     version: 1.2.4(react@18.2.0)
@@ -91,9 +94,6 @@ dependencies:
     version: 3.3.3
 
 devDependencies:
-  '@iconify/react':
-    specifier: ^4.1.1
-    version: 4.1.1(react@18.2.0)
   '@types/react':
     specifier: ^18.2.15
     version: 18.2.48
@@ -1424,11 +1424,11 @@ packages:
     dependencies:
       '@iconify/types': 2.0.0
       react: 18.2.0
-    dev: true
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -5334,8 +5334,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-intersection-observer@9.6.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ZJCi6aOY4kIulpUhWRNIFTyMUKOmSA25iw8sKH07fhlqWTaWD5CWvWarqH4N31EyjCFKsgetvr/amRpnuEWzRg==}
+  /react-intersection-observer@9.8.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wXHvMQUsTagh3X0Z6jDtGkIXc3VVCd2tjDRYR9kII3GKrZr0XF0xtpfdamo2n8BSF+zzfeeBVOTjxZWpBp9X0g==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
@@ -5454,6 +5454,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

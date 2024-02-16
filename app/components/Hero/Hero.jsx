@@ -122,9 +122,18 @@ const Hero = ({ loading }) => {
           initial={{
             x: 0,
           }}
-          animate={{
-            x: "-100%",
+          animate={!loading ? { x: "-100%" } : {}}
+          transition={{ duration: 7 }}
+        >
+          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
+        </motion.div>
+        <motion.div
+          id={`${!loading ? styles.leftTree : ""}`}
+          initial={{
+            x: 0,
+            y: "-20vh",
           }}
+          animate={!loading ? { x: "-100%" } : {}}
           transition={{ duration: 7 }}
         >
           <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
@@ -135,9 +144,18 @@ const Hero = ({ loading }) => {
           initial={{
             x: 0,
           }}
-          animate={{
-            x: "100%",
+          animate={!loading ? { x: "100%" } : {}}
+          transition={{ duration: 7 }}
+        >
+          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
+        </motion.div>
+        <motion.div
+          id={`${!loading ? styles.rightTree : ""}`}
+          initial={{
+            x: 0,
+            y: "-30vh",
           }}
+          animate={!loading ? { x: "100%" } : {}}
           transition={{ duration: 7 }}
         >
           <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
@@ -156,7 +174,7 @@ const Hero = ({ loading }) => {
         >
           <Image
             alt="left_Tree"
-            class={styles.stretchimage}
+            className={styles.stretchimage}
             src="/images/hero_assets/sun_setcol.svg"
             fill
             priority
