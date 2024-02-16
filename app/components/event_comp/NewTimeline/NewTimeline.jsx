@@ -87,7 +87,11 @@ const NewTimeline = ({ data = events, route }) => {
                   {event.id < 10 ? `0${event.id}` : event.id}
                 </div>
                 <div className={styles.image}>
-                  <Image src={event.imgUrls[0]} alt="" fill sizes="auto" priority />
+                  {event.thumbnail ? (
+                    <Image src={event.thumbnail} alt="" fill sizes="auto" priority />
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <span className={styles.title}>{event.header}</span>
               </div>

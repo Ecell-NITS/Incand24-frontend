@@ -1,39 +1,67 @@
 [
   {
     "id": "1",
-    "header": "Metal DJ",
+    "header": "CARPE DIEM",
     "subheader": "",
-    "text": "The two passions sought by many people, acting and directing, have had an impact on every person who looks at cinematic and theatrical art because they see an inspiration in not just the person essaying a character, but the character itself. With everybody's emotions in our hearts, Incandescence'23 brings to you, “The Thespian Rhapsody”, which consists of extravagant events like Director's Cut and Espimere. So embrace the actor inside you because what is possible in an act becomes thinkable in life, do your directing hats and bring what's in your mind into reality for everyone to see.",
+    "text": "With a crescendo of beats that echo the spirit of Bollywood, the concert will create an immersive experience, inviting attendees to dance beneath the vibrant lights and losethemselves in the euphoria of live music. This is not merely a concert; it's a celebration of rhythm, melody, and the timeless allure of Bollywood that will leave an indelible mark on the memories of all who seize the night.",
     "header2": "",
-    "imgUrls": ["/sponsors/Amul.png"],
-    "registrationLink": []
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
   },
   {
     "id": "2",
-    "header": "Cosplay",
-    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
-    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header": "NIRVANA",
+    "subheader": "",
+    "text": "Step into a night of musical enchantment, where the notes on a page transform into a chapter of dulcetexcellence. Nirvana brings to you live bandperformances by up-and-coming big names in the industry; an experience that propels you to visit new heights of artistic expression. Past stages have been graced by acts such as Naalayak and AsWeKeepSearching. The diverse genres represented, from classical to contemporary to indie, reflect the kaleidoscopic nature of the musical landscape. Nirvana is a stage where passion meets performance, and undoubtedly, a night of unparalleled exuberance and bliss.",
     "header2": "",
-    "imgUrls": ["/sponsors/chiiz.png", "/sponsors/Amul.png"],
-    "registrationLink": [
-      {
-        "name": "Register",
-        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
-      }
-    ]
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
   },
   {
     "id": "3",
-    "header": "Armaan Malik",
-    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
-    "text": "malik Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header": "Thundermerch",
+    "subheader": "",
+    "text": "Join us as a powerhouse rock band takes the stage, unleashing  thunderous guitar riffs and anthemic vocals. From classic rock  to modern hits, feel the raw energy  and embrace the passion of the  rock genre. Don your leather jackets  and get ready to be swept away by  the sonic prowess of Thundermarch,  where the stage becomes a  battlefield of rock and the audience  becomes part of an epic  ",
     "header2": "",
-    "imgUrls": ["/sponsors/chiiz.png", "/sponsors/Amul.png"],
-    "registrationLink": [
-      {
-        "name": "Register",
-        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
-      }
-    ]
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "4",
+    "header": "Ecstasy",
+    "subheader": "",
+    "text": "Get ready to lose yourself in the rhythm as Incandescence presents to  you the DJ night. From heart- thumping EDM to soulful rhythms, our  DJs are set to take you on a musical journey, transforming the campus into a paradise of rhythm and vibes. Just like last year’s magical night when Ninasuerte, the maestro of mixing, came all the way from Poland and took the stage at Incandescence.",
+    "header2": "",
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "5",
+    "header": "Komedi Knight",
+    "subheader": "",
+    "text": "Ladies and gentlemen, brace yourselves for the comedy extravaganza of the century – Komedi Knight! Picture this: an evening so hilarious, it's practically a cardio workout for your  laughter muscles. It's time to bid farewell to the mundane and plunge headfirst into a bubbling cauldron of mirth.  Now, I know what you're thinking: But why, oh wise and all- knowing humor maestro?/ Well, dear friends, because Komedi  Knight is not just an event – it's a laughter revolution, a chuckle uprising, a riot of merriment that will make you question why you ever wasted time on serious business.",
+    "header2": "",
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
   }
 ]
