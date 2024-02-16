@@ -1,12 +1,13 @@
 "use client";
 
+/* eslint-disable no-unused-vars */
+
 import React, { useState } from "react";
 import { Toaster, toast } from "sonner";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 import styles from "./Form.module.scss";
 
 const Page = () => {
-
   const fields = [
     {
       id: 1,
@@ -29,7 +30,6 @@ const Page = () => {
       type: "email",
     },
   ];
-
 
   const initialState = {};
   fields.forEach((field) => {
@@ -62,7 +62,7 @@ const Page = () => {
     // Check if any errors found
     if (Object.keys(errors).length > 0) {
       // If errors exist, display them
-      Object.entries(errors).forEach(([ fieldName, errorMessage]) => {
+      Object.entries(errors).forEach(([fieldName, errorMessage]) => {
         toast(errorMessage);
       });
       return false;
@@ -90,7 +90,7 @@ const Page = () => {
             <h1>Prom Night</h1>
             <div className={styles.fields}>
               {fields.map((field) => (
-                <div  key={field.id} className={styles.inputBox}>
+                <div key={field.id} className={styles.inputBox}>
                   <input
                     className={styles.field}
                     key={field.id}
@@ -110,13 +110,9 @@ const Page = () => {
             </div>
 
             <div className={styles.upload}>
-              <input
-              className={styles.field}
-               name=""
-               value=""
-              />
+              <input className={styles.field} name="" value="" />
               <div className={styles.fieldDetails}>
-                <Icon icon="tdesign:cloud-upload"  style={{color: "white"}} />
+                <Icon icon="tdesign:cloud-upload" style={{ color: "white" }} />
                 <div className={styles.details}>Payment Sceenshot</div>
               </div>
             </div>
