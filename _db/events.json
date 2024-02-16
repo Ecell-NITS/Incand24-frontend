@@ -47,13 +47,16 @@
     "id": "4",
     "header": "Prom Night",
     "subheader": "",
-    "text": "",
+    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
     "header2": "",
-    "thumbnail": "",
-    "imgUrls": [],
+    "thumbnail": "/events/promBg.png",
+    "imgUrls": [
+      "/events/promBg.png",
+      "/events/registration/promBg.png"
+    ],
     "registrationLink": {
       "name": "Register",
-      "link": ""
+      "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
     }
   },
   {
@@ -73,7 +76,7 @@
     "id": "6",
     "header": "GLITTERATI",
     "subheader": "",
-    "text": "",
+    "text": "Ever stolen glances at FTV, scrolled through Cosmopolitan, or practised your fashion walk in your dorm room? Your moment has arrived!",
     "header2": "",
     "thumbnail": "",
     "imgUrls": [],
@@ -86,7 +89,7 @@
     "id": "7",
     "header": "CARNIVAL OF BITES",
     "subheader": "",
-    "text": "",
+    "text": "Presenting you ' Carnival of Bites' which is absolutely going to sweep you off your feet with a tornado of tastes.",
     "header2": "",
     "thumbnail": "",
     "imgUrls": [],
@@ -151,7 +154,7 @@
     "id": "12",
     "header": "DEPRADOR",
     "subheader": "",
-    "text": "",
+    "text": "Slashing through your words till your opponent bites their tongue? Arguments so strong, facts so intact, questions so powerful that nobody can push you down! Sounds interesting?",
     "header2": "",
     "thumbnail": "",
     "imgUrls": [],
