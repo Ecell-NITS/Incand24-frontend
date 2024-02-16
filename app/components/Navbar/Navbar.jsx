@@ -1,8 +1,12 @@
 "use client";
 
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+// import Link from "next/link";
 import {
   // Passion_One as passionOne,
   Allura as allura,
@@ -94,20 +98,27 @@ const Navbar = ({ navlink }) => {
           </button>
           <div className={`${styles.nav_menu}`}>
             {navlink.map((link) => (
-              <Link
+              <a
                 onClick={change}
                 className={styles.nav_items_a}
                 key={link.name}
-                href={link.href}
+                // href={link.href}
                 // spy
                 // smooth
                 // hashSpy
                 // offset={10}
                 // duration={500}
               >
-                {link.name}
+                <span
+                  onClick={() => {
+                    router.push(link.href);
+                  }}
+                >
+                  {link.name}
+                </span>
+
                 <Image className={styles.line} src={line} alt="" />
-              </Link>
+              </a>
             ))}
           </div>
           <div className={`${styles.footer} ${Allura.className}`}>
@@ -163,16 +174,16 @@ const Navbar = ({ navlink }) => {
 
           <div className={styles.grp1}>
             {navlink.map((link) => (
-              <Link
+              <a
                 className={`${styles.item1} ${Allura.className}`}
                 key={link.name}
-                href={link.href}
+                // href={link.href}
                 onClick={() => {
                   router.push(link.href);
                 }}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
