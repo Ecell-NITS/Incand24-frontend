@@ -1,11 +1,25 @@
 [
   {
     "id": "1",
+    "header": "PROM NIGHT",
+    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
+    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header2": "",
+    "thumbnail": "/events/promBg.png",
+    "imgUrls": ["/events/promBg.png", "/events/registration/promBg.png"],
+    "registrationLink": [
+      {
+        "name": "Register",
+        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
+      }
+    ]
+  },
+  {
+    "id": "2",
     "header": "Espriemere",
     "subheader": "",
     "text": "The two passions sought by many people, acting and directing, have had an impact on every person who looks at cinematic and theatrical art because they see an inspiration in not just the person essaying a character, but the character itself. With everybody's emotions in our hearts, Incandescence'23 brings to you, “The Thespian Rhapsody”, which consists of extravagant events like Director's Cut and Espimere. So embrace the actor inside you because what is possible in an act becomes thinkable in life, do your directing hats and bring what's in your mind into reality for everyone to see.",
     "header2": "",
-    "thumbnail": "/sponsors/boookd.avif",
     "imgUrls": ["/sponsors/Amul.png", "/sponsors/chiiz.png"],
     "registrationLink": {
       "name": "Register",
@@ -13,7 +27,7 @@
     }
   },
   {
-    "id": "2",
+    "id": "3",
     "header": "Cosplay",
     "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
     "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
@@ -25,7 +39,7 @@
     }
   },
   {
-    "id": "3",
+    "id": "4",
     "header": "Nukkad Natak",
     "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
     "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
@@ -39,7 +53,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "5",
     "header": "NITSMUN",
     "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
     "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
@@ -53,7 +67,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "6",
     "header": "NITSMUN",
     "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
     "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
