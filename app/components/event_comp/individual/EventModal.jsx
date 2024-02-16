@@ -1,11 +1,14 @@
 "use client";
 
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 /* eslint-disable import/no-extraneous-dependencies */
 import { Icon } from "@iconify/react";
 // import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Allura, Poppins } from "next/font/google";
 import events from "@/_db/events";
@@ -31,6 +34,7 @@ const poppins = Poppins({
 });
 
 const EventModal = ({ data = events[0], previousRoute = "events" }) => {
+  const router = useRouter();
   return (
     <div className={`${styles.modal} ${allura.className}`}>
       <div className={styles.card}>
@@ -41,9 +45,18 @@ const EventModal = ({ data = events[0], previousRoute = "events" }) => {
           layout=""
         />
         <div className={styles.info}>
-          <Link href={`/${previousRoute}`} alt="" className={styles.cross}>
+          <span
+            role="button"
+            tabindex="0"
+            aria-label="dismiss"
+            onClick={() => {
+              router.push(`/${previousRoute}`);
+            }}
+            alt=""
+            className={styles.cross}
+          >
             <Icon icon="akar-icons:cross" color="#ffffff" width="30" />
-          </Link>
+          </span>
           <div className={styles.desc}>
             <h1>{data.header}</h1>
             <p className={`${poppins.className}`}>{data.text}</p>

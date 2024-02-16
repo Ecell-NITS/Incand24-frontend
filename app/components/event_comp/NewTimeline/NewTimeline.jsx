@@ -1,10 +1,13 @@
 "use client";
 
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-first-prop-new-line */
 /* eslint-disable import/no-extraneous-dependencies */
 import { Poppins } from "next/font/google";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,6 +25,7 @@ const poppins = Poppins({
 AOS.init();
 
 const NewTimeline = ({ data = events, route }) => {
+  const router = useRouter();
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -67,9 +71,16 @@ const NewTimeline = ({ data = events, route }) => {
             >
               <div className={styles.desc}>
                 {`${event.text.slice(0, 100)}...`}
-                <Link href={`/${route}/${event.id}`}>
+                <span
+                  role="button"
+                  tabindex="0"
+                  aria-label="dismiss"
+                  onClick={() => {
+                    router.push(`/${route}/${event.id}`);
+                  }}
+                >
                   <NewButton text="Know More" />
-                </Link>
+                </span>
               </div>
               <div className={`${styles.Card}`}>
                 <div className={styles.index}>
