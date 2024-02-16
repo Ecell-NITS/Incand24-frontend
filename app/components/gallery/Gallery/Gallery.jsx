@@ -8,7 +8,7 @@ import styles from "./Gallery.module.scss";
 import Modal from "../modal/Modal";
 import { gallery } from "./GalleryData";
 
-const  Gallery = () => {
+const Gallery = () => {
   const { ref: myRef, inView: isGalleryVissible } = useInView();
 
   const [isModalVissible, setIsModalVissible] = useState(false);

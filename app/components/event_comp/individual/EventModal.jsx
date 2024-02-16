@@ -90,7 +90,7 @@ const EventModal = ({ data = events[0], previousRoute = "events" }) => {
               </SwiperSlide>
             );
           })}
-        </Swiper> 
+        </Swiper>
       </div>
     </div>
   );

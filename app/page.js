@@ -113,7 +113,7 @@ const Home = () => {
         <About />
         {/* <Sponsor /> */}
         <ContactForm />
-        <Page/>
+        <Page />
         <Footer homePage />
         <Social />
       </main>
