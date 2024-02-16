@@ -29,6 +29,11 @@ const Page = () => {
       name: "Mail Id",
       type: "email",
     },
+    {
+      id: 5,
+      name: "Screenshot",
+      type: "file",
+    },
   ];
 
   const initialState = {};
@@ -40,8 +45,9 @@ const Page = () => {
 
   const changeHandler = (e) => {
     console.log(formData);
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, type } = e.target;
+    const fieldValue = type === "file" ? e.target.files[0] : value;
+    setFormData({ ...formData, [name]: fieldValue });
   };
 
   const validate = (values) => {
@@ -90,7 +96,8 @@ const Page = () => {
             <h1>Prom Night</h1>
             <div className={styles.fields}>
               {fields.map((field) => (
-                <div key={field.id} className={styles.inputBox}>
+                field.id != 5 && (
+                  <div key={field.id} className={styles.inputBox}>
                   <input
                     className={styles.field}
                     key={field.id}
@@ -101,6 +108,7 @@ const Page = () => {
                   />
                   <label className={styles.labels}>{field.name}</label>
                 </div>
+                )
               ))}
             </div>
 
@@ -110,7 +118,8 @@ const Page = () => {
             </div>
 
             <div className={styles.upload}>
-              <input className={styles.field} name="" value="" />
+               <input className={styles.field} type={fields[4].type} name={fields[4].name} onChange={changeHandler} />
+             
               <div className={styles.fieldDetails}>
                 <Icon icon="tdesign:cloud-upload" style={{ color: "white" }} />
                 <div className={styles.details}>Payment Sceenshot</div>
