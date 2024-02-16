@@ -10,25 +10,25 @@
       },
       {
         "id": 2,
-        "image": "/gallery/2.webp",
+        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090784/samples/Incand23D-0/38_igwz5n.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 3,
-        "image": "/gallery/3.webp",
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089974/Day01/evnowv4aqsqbbadzeijk.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 4,
-        "image": "/gallery/4.webp",
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708091137/Day01/pfnbzkvk3u4jmvsoyrfn.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 5,
-        "image": "/gallery/5.webp",
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089977/Day01/mfktfd59qj1djrae2nuv.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
