@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Modal.module.scss";
-import { gallery } from "../Gallery/GalleryData";
+import gallery from "@/_db/GalleryData";
 const Modal = ({ id, column, setIsModalVissible, isModalVissible }) => {
   const thatColumnAllImages = [];
   for (let i = 0; i < gallery.length; i += 1) {

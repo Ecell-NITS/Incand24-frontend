@@ -2,7 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Allura } from "next/font/google";
 import styles from "./TeamHero.module.scss";
+
+const allura = Allura({
+  weight: ["400"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--allura-font",
+});
 
 const TeamHero = ({ title = "Team" }) => {
   const [cursor, setCursor] = useState({ x: -100, y: -100 });
@@ -24,9 +32,10 @@ const TeamHero = ({ title = "Team" }) => {
       y: cursor.y - 50,
     },
   };
+
   return (
     <div className={`${styles.hero}`}>
-      <span className={styles.title}>{title}</span>
+      <span className={`${styles.title} ${allura.className}`}>{title}</span>
 
       <motion.div id={styles.cursor} variants={varients} animate="default"></motion.div>
       <div className={styles.container}>
