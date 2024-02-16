@@ -1,30 +1,34 @@
-import React from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Allura } from "next/font/google";
-// import Image from "next/image";
-// import logo from "../../../../public/images/glowingLogo.svg";
 import styles from "./TeamHero.module.scss";
 
-const allura = Allura({
-  weight: ["400"],
-  display: "swap",
-  subsets: ["latin"],
-  variable: "--allura-font",
-});
+const TeamHero = ({ title = "Team" }) => {
+  const [cursor, setCursor] = useState({ x: -100, y: -100 });
 
-const TeamHero = () => {
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setCursor({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
+  const varients = {
+    default: {
+      x: cursor.x - 100,
+      y: cursor.y - 50,
+    },
+  };
   return (
-    <div className={`${styles.hero} ${allura.className}`}>
-      <div className={styles.title}>
-        Team
-        <span>Team</span>
-        <span>Team</span>
-        <span>
-          {/* <Image id={styles.logo} src={logo} width={100} height={100} alt="Incand'24" /> */}
-        </span>
-      </div>
+    <div className={`${styles.hero}`}>
+      <span className={styles.title}>{title}</span>
 
-      <motion.div id={styles.cursor} animate="default"></motion.div>
+      <motion.div id={styles.cursor} variants={varients} animate="default"></motion.div>
       <div className={styles.container}>
         <div className={`${styles.blob1} ${styles.blobs} `}></div>
         <div className={`${styles.blob2} ${styles.blobs}`}>
