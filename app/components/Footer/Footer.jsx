@@ -175,13 +175,7 @@ const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
           <div className={styles.ecell}>
             Made by{" "}
             <a href="http://ecellnits.org" target="_blank">
-              <Image
-                src="/logos/ecell.svg"
-                alt="ecell"
-                width={10}
-                height={10}
-                layout="fill"
-              />
+              <Image src="/logos/ecell.svg" alt="ecell" width={10} height={10} />
             </a>{" "}
             <a href="https://ecellnits.org" target="_blank">
               {" "}

@@ -21,16 +21,16 @@ const Page = () => {
       href: "/",
     },
     {
+      name: "Gallery",
+      href: "/gallery",
+    },
+    {
       name: "Events",
       href: "/events",
     },
     {
       name: "Sponsors",
       href: "/sponsors",
-    },
-    {
-      name: "Team",
-      href: "/team",
     },
   ];
 
