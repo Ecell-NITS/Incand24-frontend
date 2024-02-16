@@ -95,21 +95,22 @@ const Page = () => {
           <div className={styles.formdata}>
             <h1>Prom Night</h1>
             <div className={styles.fields}>
-              {fields.map((field) => (
-                field.id != 5 && (
-                  <div key={field.id} className={styles.inputBox}>
-                  <input
-                    className={styles.field}
-                    key={field.id}
-                    type={field.type}
-                    name={field.name}
-                    value={formData[field.name]}
-                    onChange={changeHandler}
-                  />
-                  <label className={styles.labels}>{field.name}</label>
-                </div>
-                )
-              ))}
+              {fields.map(
+                (field) =>
+                  field.id !== 5 && (
+                    <div key={field.id} className={styles.inputBox}>
+                      <input
+                        className={styles.field}
+                        key={field.id}
+                        type={field.type}
+                        name={field.name}
+                        value={formData[field.name]}
+                        onChange={changeHandler}
+                      />
+                      <label className={styles.labels}>{field.name}</label>
+                    </div>
+                  )
+              )}
             </div>
 
             <div className={styles.qrWrapper}>
@@ -118,8 +119,13 @@ const Page = () => {
             </div>
 
             <div className={styles.upload}>
-               <input className={styles.field} type={fields[4].type} name={fields[4].name} onChange={changeHandler} />
-             
+              <input
+                className={styles.field}
+                type={fields[4].type}
+                name={fields[4].name}
+                onChange={changeHandler}
+              />
+
               <div className={styles.fieldDetails}>
                 <Icon icon="tdesign:cloud-upload" style={{ color: "white" }} />
                 <div className={styles.details}>Payment Sceenshot</div>

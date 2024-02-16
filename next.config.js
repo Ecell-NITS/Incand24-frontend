@@ -13,4 +13,7 @@ module.exports = {
   experimental: {
     serverActions: true,
   },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };
