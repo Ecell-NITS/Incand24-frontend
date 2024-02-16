@@ -11,6 +11,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 
 import ContactForm from "./components/ContactForm/ContactForm";
+import Page from "./components/registration/Form";
 // import LoaderAnimation from "./components/Loader/Loader";
 // import animationData from "../public/loader.lottie";
 
@@ -112,6 +113,7 @@ const Home = () => {
         <About />
         {/* <Sponsor /> */}
         <ContactForm />
+        <Page />
         <Footer homePage />
         <Social />
       </main>

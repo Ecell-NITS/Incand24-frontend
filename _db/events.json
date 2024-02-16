@@ -1,6 +1,21 @@
 [
   {
     "id": "1",
+    "header": "PROM NIGHT",
+    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
+    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header2": "",
+    "thumbnail": "/events/promBg.png",
+    "imgUrls": ["/events/promBg.png", "/events/registration/promBg.png"],
+    "registrationLink": [
+      {
+        "name": "Register",
+        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
+      }
+    ]
+  },
+  {
+    "id": "2",
     "header": "Espriemere",
     "subheader": "",
     "text": "Espremier is your platform to unleash your inner storyteller. Whether you're a seasoned performer or a budding talent, we welcome you to bring your unique voice and vision to life. From poignant social commentary to hilarious satire, from heartwarming tales to thrilling mysteries, Espremier is where your monologue takes center stage.",
@@ -13,7 +28,7 @@
     }
   },
   {
-    "id": "2",
+    "id": "3",
     "header": "Cosplay",
     "subheader": "Your one stop to awaken your dreams",
     "text": "Whether you've always dreamt of stretching like Luffy, fighting like Goku, or conjuring magical spells as a wizard from a distant fantasy realm like Hermione Granger, Cosmania has got you covered. Cosmania is your chance to bring your beloved characters to life. From galaxies far, far away to the realms of fantasy, and even the thrilling adventures of your favourite video game icons, our stage is set for you to shine. Whether you're a novice or a seasoned cosplayer, it doesn't matter; it's all about embracing the magic of pop culture and having a blast with fellow enthusiasts. So, what are you waiting for? Suit up, armor on, or cape billowing – join us at Incandescene 2k24 and let the cosplay chaos commence!",
