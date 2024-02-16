@@ -7,50 +7,50 @@ export const gallery = [
     images: [
       {
         id: 1,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708089923/samples/Incand23D-0/1_skybbu.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 2,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090233/samples/Incand23D-0/2_mj5ngd.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 3,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090289/samples/Incand23D-0/3_urfpzn.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 4,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090362/samples/Incand23D-0/4_e13zle.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 5,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090410/samples/Incand23D-0/9_sgg2s4.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 6,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090414/samples/Incand23D-0/6_zisw5r.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 7,
-        image: "/images/card/img1.svg",
+        image: "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090415/samples/Incand23D-0/8_g9xsm8.webp",
         alt: "image-gallery",
         name: "col1",
       },
       {
         id: 8,
         image:
-          "https://res.cloudinary.com/dp92qug2f/image/upload/v1706506712/img2_n3kd9v.svg",
+          "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090411/samples/Incand23D-0/7_kxujkx.webp",
         alt: "image-gallery",
         name: "col1",
       },
