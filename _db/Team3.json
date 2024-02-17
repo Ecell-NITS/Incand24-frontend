@@ -71,16 +71,6 @@
     },
     {
       "id": 5,
-      "name": "Dhiraj Das",
-      "rank": "Web Developer",
-      "image": "/team/dhirajdas.webp",
-      "fb": "https://facebook.com/dheeraj.das.7165/",
-      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
-      "insta": "https://www.instagram.com/dheerajdas19/",
-      "git": ""
-    },
-    {
-      "id": 6,
       "name": "Swarup Chanda",
       "rank": "Web Developer",
       "image": "/team/swarup.webp",
@@ -89,6 +79,17 @@
       "insta": "https://www.instagram.com/this_is_swarup_?igsh=OGQ5ZDc2ODk2ZA==",
       "git": ""
     },
+    {
+      "id": 6,
+      "name": "Dhiraj Das",
+      "rank": "Web Developer",
+      "image": "/team/dhirajdas.webp",
+      "fb": "https://facebook.com/dheeraj.das.7165/",
+      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
+      "insta": "https://www.instagram.com/dheerajdas19/",
+      "git": ""
+    },
+    
     {
       "id": 14,
       "name": "Nandini Singh",
