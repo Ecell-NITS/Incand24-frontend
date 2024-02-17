@@ -14,7 +14,7 @@ const poppins = Poppins({
   variable: "--poppins-font",
 });
 
-const TeamCard = ({ name, insta, rank, fb, linkedln, git }) => {
+const TeamCard = ({ name, insta, rank, fb, linkedln, git, image }) => {
   return (
     <div className={styles.container}>
       <div className={styles.grad}>
@@ -32,7 +32,7 @@ const TeamCard = ({ name, insta, rank, fb, linkedln, git }) => {
             {/* <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" /> */}
 
             {/* <img src={image} /> */}
-            {/* <Image src={image} height={150} width={150} alt="image"/> */}
+            <Image src={image} height={150} width={150} alt="image" />
           </div>
           <div className={`${poppins.className} ${styles.items}`}>
             <div className={styles.icons}>
