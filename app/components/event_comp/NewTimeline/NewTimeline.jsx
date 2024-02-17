@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable import/no-extraneous-dependencies */
-import { Poppins } from "next/font/google";
+import { Poppins, Allura } from "next/font/google";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./NewTimeline.module.scss";
-import events from "@/_db/events";
 import NewButton from "../../Shared/NewButton/NewButton";
 import butterfly from "./butterfly";
 
@@ -19,9 +18,14 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const allura = Allura({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 AOS.init();
 
-const NewTimeline = ({ data = events, route }) => {
+const NewTimeline = ({ data, route }) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -42,49 +46,62 @@ const NewTimeline = ({ data = events, route }) => {
         <div className={styles.timelineMilestone}></div>
       </div>
 
-      {data.map((event) => {
-        return (
-          <div
-            data-aos="fade-up"
-            data-aos-duration="500"
-            key={event.id}
-            className={styles.timelineItem}
-          >
-            <Player
-              className={styles.butterfly}
-              autoplay
-              loop
-              // keepLastFrame
-              src={butterfly}
-              id={styles.lottie}
-              style={{ height: "auto", width: "100px" }}
-            ></Player>
+      {data ? (
+        data.map((event) => {
+          return (
             <div
-              data-aos={event.id % 2 === 0 && width > 768 ? "fade-right" : "fade-left"}
-              data-aos-duration="1000"
-              data-aos-delay="500"
-              className={`${poppins.className} ${styles.cardWrapper}`}
+              data-aos="fade-up"
+              data-aos-duration="500"
+              key={event.id}
+              className={styles.timelineItem}
             >
-              <div className={styles.desc}>
-                {`${event.text.slice(0, 100)}...`}
-                <Link href={`/${route}/${event.id}`}>
-                  <NewButton text="Know More" />
-                </Link>
-              </div>
-              <div className={`${styles.Card}`}>
-                <div className={styles.index}>
-                  {event.id < 10 ? `0${event.id}` : event.id}
+              <Player
+                className={styles.butterfly}
+                autoplay
+                loop
+                // keepLastFrame
+                src={butterfly}
+                id={styles.lottie}
+                style={{ height: "auto", width: "100px" }}
+              ></Player>
+              <div
+                data-aos={event.id % 2 === 0 && width > 768 ? "fade-right" : "fade-left"}
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                className={`${poppins.className} ${styles.cardWrapper}`}
+              >
+                <div className={styles.desc}>
+                  {`${event.text.slice(0, 100)}...`}
+                  <Link href={`/${route}/${event.id}`}>
+                    <NewButton text="Know More" />
+                  </Link>
                 </div>
-                <div className={styles.image}>
-                  <Image src={event.imgUrls[0]} alt="" fill sizes="auto" priority />
+                <div className={`${styles.Card}`}>
+                  <div className={styles.index}>
+                    {event.id < 10 ? `0${event.id}` : event.id}
+                  </div>
+                  <div className={styles.image}>
+                    <Image src={event.imgUrls[0]} alt="" fill sizes="auto" priority />
+                  </div>
+                  <span className={styles.title}>{event.header}</span>
                 </div>
-                <span className={styles.title}>{event.header}</span>
               </div>
+              <div className={styles.timelineMilestone}></div>
             </div>
-            <div className={styles.timelineMilestone}></div>
-          </div>
-        );
-      })}
+          );
+        })
+      ) : (
+        <h1
+          className={allura.className}
+          style={{
+            textAlign: "center",
+            marginBlock: "5vh",
+            fontSize: "5vw",
+          }}
+        >
+          To be revealed Soon
+        </h1>
+      )}
 
       {/* <div className={styles.timelineItem}>
         <div className={styles.timelineMilestone}></div>
