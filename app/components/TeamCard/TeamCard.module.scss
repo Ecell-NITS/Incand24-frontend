@@ -119,8 +119,15 @@
   align-items: center;
   // background: rgba(255, 255, 255, 0.03);
   gap: 1rem;
+  position: relative;
+  z-index: 99999999999999;
 }
 
+a:hover {
+  .icons a svg {
+    transform: scale(1.1);
+  }
+}
 .icons a svg {
   height: 2.875rem;
   width: 4rem;
@@ -180,9 +187,4 @@
       font-size: 1rem;
     }
   }
-}
-
-.gradientBg {
-  height: 100%;
-  width: 100%;
 }
