@@ -654,7 +654,7 @@ const Gallery = () => {
                       clickHandler(image.id, gallery[galleryIndex].name);
                     }}
                   >
-                    <ImageCard image={image.image} />
+                    {/* <ImageCard image={image.image} /> */}
                   </div>
                 ))}
           </motion.div>
