@@ -90,7 +90,6 @@
 .card .in .image {
   height: 100%;
   width: 100%;
-  border-radius: 2.85rem;
   opacity: 0.8;
   border-radius: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -101,6 +100,7 @@
     object-fit: cover;
     padding: 0.5rem;
     width: 100%;
+    object-position: top;
     border-radius: 2.85rem;
   }
 }
@@ -121,6 +121,9 @@
   gap: 1rem;
   position: relative;
   z-index: 99999999999999;
+  @media screen and (max-width: 800px) {
+    padding-top: 1.2rem;
+  }
 }
 
 a:hover {
@@ -129,14 +132,18 @@ a:hover {
   }
 }
 .icons a svg {
-  height: 2.875rem;
+  height: 2.8rem;
   width: 4rem;
-  border-radius: 2.85rem;
+  border-radius: 2.83rem;
   border: 1px solid #fff;
   padding: 8px 16px 8px 16px;
-  // @media screen and (max-width: 900px) {
-  //   height: 43px;
-  //   width: ;
+  @media screen and (max-width: 800px) {
+    height: 2.4rem;
+    width: 3.3rem;
+    border-radius: 2.85rem;
+    border: 1px solid #fff;
+    padding: 7px 14px;
+  }
 }
 
 .items {
@@ -155,13 +162,12 @@ a:hover {
     text-align: center;
     background: linear-gradient(
       118deg,
-      rgba(255, 255, 255, 0.43) 24.33%,
-      rgba(255, 255, 255, 0.35) 67.21%
+      rgba(224, 208, 208, 0.8) 24.33%,
+      rgba(255, 255, 255, 0.65) 67.21%
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     @media screen and (max-width: 900px) {
       font-size: 0.7rem;
     }
@@ -187,4 +193,27 @@ a:hover {
       font-size: 1rem;
     }
   }
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -141px;
+  left: 0;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.48) 69.13%,
+    #000 100%
+  );
+  z-index: -999999991;
+  border-radius: 2.85rem;
 }
