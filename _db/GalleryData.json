@@ -22,7 +22,7 @@
       },
       {
         "id": 4,
-        "image": "/gallery/4.webp",
+        "image": "/gallery/4.jpg",
         "alt": "image-gallery",
         "name": "col1"
       },
@@ -59,6 +59,12 @@
       {
         "id": 28,
         "image": "/gallery/28.jpg",
+        "alt": "image-gallery",
+        "name": "col1"
+      },
+      {
+        "id": 31,
+        "image": "/gallery/31.jpg",
         "alt": "image-gallery",
         "name": "col1"
       }
@@ -126,6 +132,12 @@
         "image": "/gallery/29.jpg",
         "alt": "image-gallery",
         "name": "col2"
+      },
+      {
+        "id": 32,
+        "image": "/gallery/32.jpg",
+        "alt": "image-gallery",
+        "name": "col2"
       }
     ]
   },
@@ -185,11 +197,16 @@
         "image": "/gallery/27.jpg",
         "alt": "image-gallery",
         "name": "col3"
-      }
-      ,
+      },
       {
         "id": 30,
         "image": "/gallery/30.jpg",
+        "alt": "image-gallery",
+        "name": "col3"
+      },
+      {
+        "id": 33,
+        "image": "/gallery/33.jpg",
         "alt": "image-gallery",
         "name": "col3"
       }
