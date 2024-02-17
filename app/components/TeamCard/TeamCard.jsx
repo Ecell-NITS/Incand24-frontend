@@ -14,7 +14,7 @@ const poppins = Poppins({
   variable: "--poppins-font",
 });
 
-const TeamCard = ({ name, rank, fb, linkedln, git, image }) => {
+const TeamCard = ({ name, insta, rank, fb, linkedln, git, image }) => {
   return (
     <div className={styles.container}>
       <div className={styles.grad}>
@@ -60,6 +60,16 @@ const TeamCard = ({ name, rank, fb, linkedln, git, image }) => {
                 <Link target="_blank" href={git}>
                   <Icon
                     icon="mdi:github"
+                    width="2rem"
+                    height="2rem"
+                    style={{ color: "white" }}
+                  />
+                </Link>
+              )}
+              {!git && insta && (
+                <Link target="_blank" href={insta}>
+                  <Icon
+                    icon="mdi:instagram"
                     width="2rem"
                     height="2rem"
                     style={{ color: "white" }}
