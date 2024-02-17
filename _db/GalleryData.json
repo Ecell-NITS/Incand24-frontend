@@ -200,13 +200,7 @@
       },
       {
         "id": 30,
-        "image": "/gallery/30.jpg",
-        "alt": "image-gallery",
-        "name": "col3"
-      },
-      {
-        "id": 33,
-        "image": "/gallery/33.jpg",
+        "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090647/incand%272023/yzmryqqfyrfse8hfa6op.webp",
         "alt": "image-gallery",
         "name": "col3"
       }
