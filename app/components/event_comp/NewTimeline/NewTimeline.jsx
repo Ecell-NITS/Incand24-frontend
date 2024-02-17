@@ -1,10 +1,13 @@
 "use client";
 
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-first-prop-new-line */
 /* eslint-disable import/no-extraneous-dependencies */
 import { Poppins, Allura } from "next/font/google";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,6 +29,7 @@ const allura = Allura({
 AOS.init();
 
 const NewTimeline = ({ data, route }) => {
+  const router = useRouter();
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -72,16 +76,27 @@ const NewTimeline = ({ data, route }) => {
               >
                 <div className={styles.desc}>
                   {`${event.text.slice(0, 100)}...`}
-                  <Link href={`/${route}/${event.id}`}>
+                  <span
+                    role="button"
+                    tabindex="0"
+                    aria-label="dismiss"
+                    onClick={() => {
+                      router.push(`/${route}/${event.id}`);
+                    }}
+                  >
                     <NewButton text="Know More" />
-                  </Link>
+                  </span>
                 </div>
                 <div className={`${styles.Card}`}>
                   <div className={styles.index}>
                     {event.id < 10 ? `0${event.id}` : event.id}
                   </div>
                   <div className={styles.image}>
-                    <Image src={event.imgUrls[0]} alt="" fill sizes="auto" priority />
+                    {event.thumbnail ? (
+                      <Image src={event.thumbnail} alt="" fill sizes="auto" priority />
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <span className={styles.title}>{event.header}</span>
                 </div>
@@ -94,12 +109,12 @@ const NewTimeline = ({ data, route }) => {
         <h1
           className={allura.className}
           style={{
-            textAlign: "center",
-            marginBlock: "5vh",
             fontSize: "5vw",
+            marginBlock: "5vh",
+            textAlign: "center",
           }}
         >
-          To be revealed Soon
+          To be revealed soon
         </h1>
       )}
 

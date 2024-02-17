@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 import ImageCard from "../ImageCard/ImageCard";
 import styles from "./Gallery.module.scss";
 import Modal from "../modal/Modal";
-import { gallery } from "./GalleryData";
-
+import gallery from "@/_db/GalleryData";
+//  keep even no of photos
+// keep same number of images in each column
+// store png or webp format
 const Gallery = () => {
   const { ref: myRef, inView: isGalleryVissible } = useInView();
 

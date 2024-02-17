@@ -12,6 +12,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@iconify/react": "^4.1.1",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@next/font": "^14.1.0",
     "aos": "^2.3.4",
@@ -24,6 +25,7 @@
     "lottie-react": "^2.4.0",
     "mongoose": "^7.5.2",
     "next": "^13.5.6",
+    "next-cloudinary": "^5.20.0",
     "next-pwa": "^5.6.0",
     "nextjs-toploader": "^1.6.4",
     "postcss": "8.4.29",
@@ -42,7 +44,6 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.1",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.49.0",
