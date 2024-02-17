@@ -10,25 +10,25 @@
       },
       {
         "id": 2,
-        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090784/samples/Incand23D-0/38_igwz5n.webp",
+        "image": "/gallery/2.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 3,
-        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089974/Day01/evnowv4aqsqbbadzeijk.webp",
+        "image": "/gallery/3.jpg",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 4,
-        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708091137/Day01/pfnbzkvk3u4jmvsoyrfn.webp",
+        "image": "/gallery/4.jpg",
         "alt": "image-gallery",
         "name": "col1"
       },
       {
         "id": 5,
-        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089977/Day01/mfktfd59qj1djrae2nuv.webp",
+        "image": "/gallery/5.webp",
         "alt": "image-gallery",
         "name": "col1"
       },
@@ -59,6 +59,12 @@
       {
         "id": 28,
         "image": "/gallery/28.jpg",
+        "alt": "image-gallery",
+        "name": "col1"
+      },
+      {
+        "id": 31,
+        "image": "/gallery/31.jpg",
         "alt": "image-gallery",
         "name": "col1"
       }
@@ -126,6 +132,12 @@
         "image": "/gallery/29.jpg",
         "alt": "image-gallery",
         "name": "col2"
+      },
+      {
+        "id": 32,
+        "image": "/gallery/32.jpg",
+        "alt": "image-gallery",
+        "name": "col2"
       }
     ]
   },
@@ -189,6 +201,12 @@
       {
         "id": 30,
         "image": "/gallery/30.jpg",
+        "alt": "image-gallery",
+        "name": "col3"
+      },
+      {
+        "id": 33,
+        "image": "/gallery/33.jpg",
         "alt": "image-gallery",
         "name": "col3"
       }
