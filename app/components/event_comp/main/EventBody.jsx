@@ -4,7 +4,7 @@
 
 import { useState } from "react";
 import events from "@/_db/events";
-import concerts from "@/_db/concerts";
+// import concerts from "@/_db/concerts";
 import styles from "./EventBody.module.scss";
 import NewTimeline from "../NewTimeline/NewTimeline";
 
@@ -16,7 +16,7 @@ const EventBody = () => {
     if (newTab === "events") {
       setData(events);
     } else {
-      setData(concerts);
+      setData();
     }
   };
 

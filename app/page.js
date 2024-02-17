@@ -77,19 +77,19 @@ const Home = () => {
     },
     {
       name: "Gallery",
-      href: "/gallery",
+      href: "gallery",
     },
     {
       name: "Events",
-      href: "/events",
+      href: "events",
     },
     {
       name: "Sponsors",
-      href: "/sponsors",
+      href: "sponsors",
     },
     {
       name: "Team",
-      href: "/team",
+      href: "team",
     },
   ];
 

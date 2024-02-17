@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import TeamCard from "@/app/components/TeamCard/TeamCard";
 import styles from "./Team.module.scss";
@@ -34,6 +34,9 @@ const Page = () => {
     },
   ];
 
+  useEffect(() => {
+    document.title = "Team | Incandescence";
+  }, []);
   return (
     <>
       <Navbar navlink={navlink} defaultDark={false} />
