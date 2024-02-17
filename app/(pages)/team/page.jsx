@@ -69,6 +69,7 @@ const Page = () => {
                   fb={member.fb}
                   linkedln={member.linkedln}
                   git={member.git}
+                  insta={member.insta}
                 />
               ))}
             </div>
@@ -86,6 +87,7 @@ const Page = () => {
                   fb={member.fb}
                   linkedln={member.linkedln}
                   git={member.git}
+                  insta={member.insta}
                 />
               ))}
             </div>
