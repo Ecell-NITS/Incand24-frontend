@@ -110,10 +110,10 @@
     "text": "Embark on a journey where your voice shapes your global solutions. Every debate is an opportunity and every resolution paves the way for change.",
     "header2": "",
     "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090651/incand%272023/h5psqbmndtnsffjvtsoa.webp",
-    "imgUrls": [],
+    "imgUrls": ["/events/nitsmun/1.jpg","/events/nitsmun/2.jpg","/events/nitsmun/3.jpg","/events/nitsmun/4.jpg","/events/nitsmun/5.jpg","/events/nitsmun/6.jpg"],
     "registrationLink": {
       "name": "Register",
-      "link": ""
+      "link": "https://nitsmun.in/applynow"
     }
   },
   {
