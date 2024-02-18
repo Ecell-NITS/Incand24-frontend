@@ -1,72 +1,72 @@
 [
-    [
-        {
-          "id": 1,
-          "name": "Jadav Anusha ",
-          "rank": "Prom Night Module Head ",
-          "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265080/techTeam2/nfzrst1qepcfxbblnvse.webp",
-          "fb": "https://www.facebook.com/jadav.anusha.5?mibextid=ibOpuV",
-          "linkedln": "https://www.linkedin.com/in/jadav-anusha-34b56320a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-          "git": "",
-          "insta": "https://www.instagram.com/jadhav._.anusha?igsh=cXF3M3dsZWl2MTFp"
-        },
-        {
-            "id": 2,
-            "name": "Ranjan Kumar Mandal            ",
-            "rank": "Prom Night Module Head ",
-            "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/vd07hyh7j9k7orcztqi9.webp",
-            "fb": "https://m.facebook.com/ranjan.kumarii.90?mibextid=LQQJ4d",
-            "linkedln": "https://www.linkedin.com/in/ranjan-kumar-mandal-0501b420b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            "git": "",
-            "insta": "https://www.instagram.com/_ranjan_200?igsh=MTRhMmszMnhobGlrcg%3D%3D&utm_source=qr"
-        }
-    ],
-    [
-        {
-            "id": 1,
-            "name": "Eisha Halder ",
-            "rank": "NITSMUN Module Head",
-            "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
-            "fb": "https://www.facebook.com/eisha.halder.16",
-            "linkedln": "https://www.linkedin.com/in/eisha-halder-a42367200",
-            "git": "",
-            "insta": "https://www.instagram.com/eisha_s.halder/"
-        }
-    ],
-    [
-        {
-            "id": 1,
-            "name": "Sinaan Khanikar",
-            "rank": "Battle of Bands Module Head",
-            "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/odafatcoyrlkjbgwes9v.webp",
-            "fb": "https://www.facebook.com/sinaan.khanikar.9/",
-            "linkedln": "https://www.linkedin.com/in/sinaan-khanikar-755904229/",
-            "git": "",
-            "insta": "https://www.instagram.com/sinaan_31/"
-        }
-    ],
-    [
-        {
-            "id": 1,
-            "name": "Purushotam Kumar",
-            "rank": "The Thespian Rhapsody Co-Head",
-            "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265084/techTeam2/om2nfpoglzdml8gkboiz.webp",
-            "fb": "https://www.facebook.com/profile.php?id=100074689072199&mibextid=ZbWKwL",
-            "linkedln": "https://www.linkedin.com/public-profile/settings",
-            "git": "",
-            "insta": "https://www.instagram.com/sunya_1720?igsh=MWIweWIwd3U1MjN1MQ=="
-        }
-    ],
-    [
-        {
-            "id": 1,
-            "name": "Rishabh Dey ",
-            "rank": "Mr. NIT Module Head",
-            "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/xaks3bwjy9g2splhojqd.webp",
-            "fb": "https://www.facebook.com/rsvdae",
-            "linkedln": "https://www.linkedin.com/in/rishabh-dey-186626185?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            "git": "",
-            "insta": "https://www.instagram.com/rishabh_dey?igsh=MW96aW51cmJhZWk1cA=="
-        }
-    ]
+  [
+    {
+      "id": 1,
+      "name": "Jadav Anusha ",
+      "rank": "Prom Night Module Head ",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265080/techTeam2/nfzrst1qepcfxbblnvse.webp",
+      "fb": "https://www.facebook.com/jadav.anusha.5?mibextid=ibOpuV",
+      "linkedln": "https://www.linkedin.com/in/jadav-anusha-34b56320a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "git": "",
+      "insta": "https://www.instagram.com/jadhav._.anusha?igsh=cXF3M3dsZWl2MTFp"
+    },
+    {
+      "id": 2,
+      "name": "Ranjan Kumar Mandal            ",
+      "rank": "Prom Night Module Head ",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/vd07hyh7j9k7orcztqi9.webp",
+      "fb": "https://m.facebook.com/ranjan.kumarii.90?mibextid=LQQJ4d",
+      "linkedln": "https://www.linkedin.com/in/ranjan-kumar-mandal-0501b420b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "git": "",
+      "insta": "https://www.instagram.com/_ranjan_200?igsh=MTRhMmszMnhobGlrcg%3D%3D&utm_source=qr"
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Eisha Halder ",
+      "rank": "NITSMUN Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
+      "fb": "https://www.facebook.com/eisha.halder.16",
+      "linkedln": "https://www.linkedin.com/in/eisha-halder-a42367200",
+      "git": "",
+      "insta": "https://www.instagram.com/eisha_s.halder/"
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Sinaan Khanikar",
+      "rank": "Battle of Bands Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/odafatcoyrlkjbgwes9v.webp",
+      "fb": "https://www.facebook.com/sinaan.khanikar.9/",
+      "linkedln": "https://www.linkedin.com/in/sinaan-khanikar-755904229/",
+      "git": "",
+      "insta": "https://www.instagram.com/sinaan_31/"
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Purushotam Kumar",
+      "rank": "The Thespian Rhapsody Co-Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265084/techTeam2/om2nfpoglzdml8gkboiz.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100074689072199&mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/public-profile/settings",
+      "git": "",
+      "insta": "https://www.instagram.com/sunya_1720?igsh=MWIweWIwd3U1MjN1MQ=="
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Rishabh Dey ",
+      "rank": "Mr. NIT Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/xaks3bwjy9g2splhojqd.webp",
+      "fb": "https://www.facebook.com/rsvdae",
+      "linkedln": "https://www.linkedin.com/in/rishabh-dey-186626185?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/rishabh_dey?igsh=MW96aW51cmJhZWk1cA=="
+    }
+  ]
 ]
