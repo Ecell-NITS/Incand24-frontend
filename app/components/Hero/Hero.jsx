@@ -123,7 +123,7 @@ const Hero = ({ loading }) => {
             x: 0,
           }}
           animate={!loading ? { x: "-100%" } : {}}
-          transition={{ duration: 7 }}
+          transition={{ duration: 5 }}
         >
           <Image
             alt="left_Tree"
@@ -139,7 +139,7 @@ const Hero = ({ loading }) => {
             y: "-20vh",
           }}
           animate={!loading ? { x: "-100%" } : {}}
-          transition={{ duration: 7 }}
+          transition={{ duration: 5 }}
         >
           <Image
             alt="left_Tree"
@@ -155,7 +155,7 @@ const Hero = ({ loading }) => {
             x: 0,
           }}
           animate={!loading ? { x: "100%" } : {}}
-          transition={{ duration: 7 }}
+          transition={{ duration: 5 }}
         >
           <Image
             alt="left_Tree"
@@ -171,7 +171,7 @@ const Hero = ({ loading }) => {
             y: "-30vh",
           }}
           animate={!loading ? { x: "100%" } : {}}
-          transition={{ duration: 7 }}
+          transition={{ duration: 5 }}
         >
           <Image
             alt="left_Tree"
