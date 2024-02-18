@@ -25,6 +25,10 @@ const EventPage = ({ params }) => {
       href: "/",
     },
     {
+      name: "Events",
+      href: "/events",
+    },
+    {
       name: "Gallery",
       href: "/gallery",
     },

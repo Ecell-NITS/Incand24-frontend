@@ -6,7 +6,10 @@
     "text": "Whether you've always dreamt of stretching like Luffy, fighting like Goku, or conjuring magical spells as a wizard from a distant fantasy realm like Hermione Granger, Cosmania has got you covered. Cosmania is your chance to bring your beloved characters to life. From galaxies far, far away to the realms of fantasy, and even the thrilling adventures of your favourite video game icons, our stage is set for you to shine. Whether you're a novice or a seasoned cosplayer, it doesn't matter; it's all about embracing the magic of pop culture and having a blast with fellow enthusiasts. So, what are you waiting for? Suit up, armor on, or cape billowing – join us at Incandescene 2k24 and let the cosplay chaos commence!",
     "header2": "",
     "thumbnail": "/gallery/9.webp",
-    "imgUrls": ["/gallery/9.webp", "/gallery/5.webp"],
+    "imgUrls": [
+      "/gallery/9.webp",
+      "/gallery/5.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": "https://forms.gle/5eDGXoYzzNDpTSao8"
@@ -32,7 +35,10 @@
     "text": "Are you passionate about enacting the pressing issues of our society, transforming into characters who challenge norms, and becoming the voice of change? Nukkad welcomes you to bring these characters to life. From tales that unravel societal inequalities to those that challenge environmental negligence and break gender stereotypes, our street is your canvas to showcase these powerful narratives. Whether you're a novice performer or an experienced street actor, everyone's voice matters in this transformative journey. It's all about harnessing the power of street theatre to spark conversations and inspire action. So, gather your troupe, embrace your roles, and join us at Nukkad 2024 to ignite the stage with the fervor of change!",
     "header2": "",
     "thumbnail": "/events/Nukkad1.png",
-    "imgUrls": ["/events/Nukkad1.png", "/events/Nukkad2.png"],
+    "imgUrls": [
+      "/events/Nukkad1.png",
+      "/events/Nukkad2.png"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": "https://forms.gle/tQvbiLenjvCkQotz7"
@@ -42,10 +48,13 @@
     "id": "4",
     "header": "Prom Night",
     "subheader": "",
-    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "text": "Attention all, brace yourselves for a night of grandiose revelry! The Prom Night is upon us, and the theme for this year's festivities shall transport us to the glittering world of the 90s.Prepare to immerse yourselves in the magnificence of a bygone era, where music and dance reign supreme. Do not miss this opportunity to celebrate in grand style and bask in the nostalgia of a golden age. Stay tuned for more information, and secure your tickets now for an unforgettable evening of revelry and remembrance.",
     "header2": "",
     "thumbnail": "/events/promBg.png",
-    "imgUrls": ["/events/promBg.png", "/events/registration/promBg.png"],
+    "imgUrls": [
+      "/events/prom/1.jpeg",
+      "/events/promBg.png"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSdamZfBimTKkxLxHuwku8LpiRKmVWvOwUuog-BIc6ngBBMA3w/viewform"
@@ -58,7 +67,11 @@
     "text": "Ever stolen glances at FTV, scrolled through Cosmopolitan, or practised your fashion walk in your dorm room? Your moment has arrived!",
     "header2": "",
     "thumbnail": "/events/gliterati.webp",
-    "imgUrls": ["/gallery/18.webp", "/gallery/19.webp", "/gallery/20.webp"],
+    "imgUrls": [
+      "/gallery/18.webp",
+      "/gallery/19.webp",
+      "/gallery/20.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": "https://forms.gle/6CA9i7FdM5moZaZq9"
@@ -71,7 +84,10 @@
     "text": "Just like the big bang marks the beginning of our universe,every year a Flash Mob signals the start of our cultural fest,  Incandescence! It's a brief but intense burst of energy,  transforming the ordinary into an unforgettable display.  Appearing at a public spot with an air of intrigue, we  effortlessly execute a rapid and exhilarating performance  before vanishing into the surroundings. Its charm comes  from its brief, exciting moments. The performance is quick  but full of energy. In those short minutes, it breaks the  monotony and turns into a lively show that you won't forget.",
     "header2": "",
     "thumbnail": "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/ytwyldzdumeggk71sy1k",
-    "imgUrls": ["/gallery/29.jpg", "/gallery/30.jpg"],
+    "imgUrls": [
+      "/gallery/29.jpg",
+      "/gallery/30.jpg"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
@@ -110,10 +126,17 @@
     "text": "Embark on a journey where your voice shapes your global solutions. Every debate is an opportunity and every resolution paves the way for change.",
     "header2": "",
     "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090651/incand%272023/h5psqbmndtnsffjvtsoa.webp",
-    "imgUrls": [],
+    "imgUrls": [
+      "/events/nitsmun/1.jpg",
+      "/events/nitsmun/2.jpg",
+      "/events/nitsmun/3.jpg",
+      "/events/nitsmun/4.jpg",
+      "/events/nitsmun/5.jpg",
+      "/events/nitsmun/6.jpg"
+    ],
     "registrationLink": {
       "name": "Register",
-      "link": ""
+      "link": "https://nitsmun.in/applynow"
     }
   },
   {

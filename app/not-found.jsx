@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
 // import Image from "next/image";
 import { Allura as allura, Poppins as poppins } from "next/font/google";
 import styles from "./notfound.module.scss";
@@ -9,13 +12,11 @@ const Allura = allura({
   weight: ["400"],
   subsets: ["latin"],
 });
-
 const Poppins = poppins({
   weight: ["600"],
   subsets: ["latin"],
 });
-
-const notFound = () => {
+const NotFound = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -27,10 +28,10 @@ const notFound = () => {
             <div className={styles.dots}></div>
           </div>
         </div>
-
-        <p className={`${Allura.className}`}>Looks like you lost your way</p>
+        <p className={`${Allura.className} ${styles.grp2}`}>
+          Looks like you lost your way
+        </p>
       </div>
-
       <div className={styles.numbers}>
         {/* <div className={styles.numwrapper}> */}
         <svg
@@ -78,6 +79,8 @@ const notFound = () => {
         <div className={styles.wave}>
           <svg
             className={styles.waveDB}
+            width="4034"
+            height="777"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 2071 389"
             fill="none"
@@ -105,9 +108,9 @@ const notFound = () => {
           <svg
             className={styles.waveLB}
             xmlns="http://www.w3.org/2000/svg"
-            width="3355"
+            width="4034"
             height="777"
-            viewBox="0 0 3355 777"
+            viewBox="0 0 4034 777"
             fill="none"
           >
             <path
@@ -115,10 +118,16 @@ const notFound = () => {
               fill="#0B67F4"
             />
           </svg>
+
+          <div className={`${Poppins.className} ${styles.home}`}>
+            <Link href="/" className={styles.link}>
+              Lets go back home
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default notFound;
+export default NotFound;

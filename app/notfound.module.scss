@@ -2,23 +2,27 @@
   background: linear-gradient(180deg, #749bff 0%, #00f2e3 100%);
   width: 100%;
   height: 100vh;
+  // overflow: hidden;
+  // display:flex;
   overflow: hidden;
 
   .wrapper {
-    width: 30vw;
-    height: 30vh;
-    display: flex;
+    // width: 30vw;
+    // height: 30vh;
+    // display: flex;
     margin: auto;
     padding-top: 10vh;
     color: white;
-    font-size: 5vh;
+    // font-size: 5vh;
     flex-direction: column;
-    text-align: center;
-
-    .grp1 {
-      font-size: 7vh;
+    justify-content: center;
+    align-items: center;
+    .grp2 {
+      text-align: center;
       display: flex;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center;
+      font-size: 4vh;
     }
     .group1 {
       display: flex;
@@ -26,48 +30,70 @@
       align-items: center;
       // bottom:0;
       gap: 1rem;
+      .grp1 {
+        font-size: 2rem;
+        display: flex;
+        align-items: flex-end;
+      }
       // flex-direction: ;
       .dotgrp {
         display: flex;
         gap: 0.8rem;
+        padding-top: 1rem;
         // align-items: flex-end;
         .dots {
-          width: 1rem;
-          height: 1rem;
+          width: 0.7rem;
+          height: 0.7rem;
           background-color: white; /* Set your desired background color */
           border-radius: 50%;
         }
       }
     }
   }
-
   .numbers {
     display: flex;
-    position: relative;
+
+    // position: relative;
     margin-top: 5vh;
-    width: 25%;
-    z-index: 999;
+    width: 20%;
+
     margin: auto;
 
-    // justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 5vw;
-    .zero {
-      margin: auto;
-      animation: zeroanim linear 3s infinite ease-in-out;
-    }
-    .four {
-      animation: zeroanim linear 3s infinite ease-in-out;
-    }
+    gap: 1vw;
+    // .zero {
+    //   position: relative;
+    //   // width:200%;
+    //   // top:10rem;
+    //   // margin:auto;
+    //   // bottom: 0;
+    //   // right: 0;
+    //   // left: 0;
+    //   margin: auto;
+    //   // width:200%;
+    //   animation: zeroanim linear 3s infinite ease-in-out;
+    // }
+    // .four {
+    //   // position: absolute;
+    //   // top:10rem;
+    //   // margin:auto;
+    //   // bottom: 0;
+    //   // right: 0;
+    //   // left: 0;
+    //   // margin: auto;
+    //   // width:200%;
+    //   animation: zeroanim linear 3s infinite ease-in-out;
+    // }
 
-    @keyframes zeroanim {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-30%);
-      }
-    }
+    // @keyframes zeroanim {
+    //   0% {
+    //     transform: translateX(0);
+    //   }
+    //   100% {
+    //     transform: translateX(-30%);
+    //   }
+    // }
   }
 
   .waveWrapper {
@@ -79,17 +105,19 @@
 
     .wave {
       width: 100%;
-      height: 10%;
+      height: 20%;
 
       .waveDB {
         width: 200%;
         position: absolute;
         bottom: 0;
+        top: revert-layer;
         // inset:0 0 -16% 0;
         animation: wave3 linear 5s infinite alternate-reverse;
         z-index: 999;
       }
       .waveB {
+        top: revert-layer;
         width: 200%;
         z-index: 500;
         position: absolute;
@@ -97,10 +125,27 @@
         animation: wave2 linear 5s infinite alternate-reverse;
       }
       .waveLB {
+        top: revert-layer;
         width: 200%;
         position: absolute;
         bottom: 0;
         animation: wave1 linear 5s infinite alternate-reverse;
+      }
+      .home {
+        // position:absolute;
+        // bottom:0;
+        display: flex;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        // position:relative;
+        // bottom:0;
+        .link {
+          color: whitesmoke;
+          // margin-top:2vh;
+          font-size: 2.5vh;
+          text-decoration: none;
+        }
       }
     }
 
@@ -130,15 +175,34 @@
     }
   }
 }
-
-@media (max-width: 660px) {
+@media (min-width: 768px) {
   .wrapper {
-    width: 100vw !important;
-    overflow-x: hidden !important;
+    .group1 {
+      .grp1 {
+        font-size: 4rem !important;
+      }
+      .dots {
+        width: 1rem !important;
+        height: 1rem !important;
+      }
+    }
+    // .grp2 {
+    //   font-size: 1rem !important;
+    // }
   }
 
   .numbers {
-    width: 100vw !important;
-    margin: 15vw 0 0 0 !important;
+    width: 40%;
   }
+  .wave {
+    padding-top: 2rem !important;
+  }
+  // .waveB{
+  //     width: 100%;
+  //     position:absolute;
+  //     bottom: 0;
+  // }
+  // .waveLB{
+  //   width: 100%;
+  // }
 }
