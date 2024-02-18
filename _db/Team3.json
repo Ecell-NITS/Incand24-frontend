@@ -13,7 +13,7 @@
       "id": 9,
       "name": "Maharnav Deka",
       "rank": "Technical Head",
-      "image": "/team/maharnav.webp",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708273233/techTeam2/nzwijtrqh98rd4cdz8p1.jpg",
       "fb": "https://www.facebook.com/profile.php?id=100076295825121",
       "linkedln": "https://www.linkedin.com/in/maharnav-deka-06742815a/",
       "git": "https://github.com/mdekaa",
@@ -54,7 +54,7 @@
       "id": 3,
       "name": "Bedanta Kataki",
       "rank": "Web Developer",
-      "image": "/team/bedanta.webp",
+      "image": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827551/GDSC%20images/bedanta_-_EI_018_Bedanta_Kataki_bu2rny.jpg",
       "fb": "https://m.facebook.com/profile.php/?id=100029303175539&name=xhp_nt__fb__action__open_user",
       "linkedln": "https://www.linkedin.com/in/bedanta-kataki-0b5205257/",
       "git": "https://www.github.com/r4inr3aper/"
@@ -71,6 +71,16 @@
     },
     {
       "id": 5,
+      "name": "Dhiraj Das",
+      "rank": "Web Developer",
+      "image": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827574/GDSC%20images/Untitled_design_-_CSE_089_DHIRAJ_DAS_pl4fp7.png",
+      "fb": "https://facebook.com/dheeraj.das.7165/",
+      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
+      "insta": "",
+      "git": "https://github.com/dheeraj1922d"
+    },
+    {
+      "id": 6,
       "name": "Swarup Chanda",
       "rank": "Web Developer",
       "image": "/team/swarup.webp",
@@ -80,16 +90,25 @@
       "git": "https://github.com/swarupecenits"
     },
     {
-      "id": 6,
-      "name": "Dhiraj Das",
-      "rank": "Web Developer",
-      "image": "/team/dhirajdas.webp",
-      "fb": "https://facebook.com/dheeraj.das.7165/",
-      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
-      "insta": "https://www.instagram.com/dheerajdas19/",
-      "git": ""
+      "id": 19,
+      "name": "Rajdeep Sarkar",
+      "rank": "UI/UX Designer",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708258032/techTEam/zwr0ybd76lzrum4q1vq7.webp",
+      "fb": "https://www.facebook.com/freaky.Rajdeep",
+      "linkedln": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
+      "insta": "",
+      "git": "https://github.com/Rajdeepsark"
     },
-
+    {
+      "id": 1,
+      "name": "Siddharth Ghosh",
+      "rank": "UI/UX Designer",
+      "image": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827576/GDSC%20images/WhatsApp_Image_2023-09-01_at_20.15.25_-_Siddharth_Ghosh_ofceqg.jpg",
+      "fb": "https://www.facebook.com/profile.php?id=100070117330528",
+      "linkedln": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251",
+      "insta": "",
+      "git": "https://github.com/Z-Maniac-Sidd"
+    },
     {
       "id": 14,
       "name": "Nandini Singh",
@@ -99,16 +118,6 @@
       "linkedln": "https://www.linkedin.com/in/nandini-singh-33a804257/",
       "insta": "",
       "git": "https://github.com/nandini06-helix"
-    },
-    {
-      "id": 19,
-      "name": "Rajdeep Sarkar",
-      "rank": "UI/UX Designer",
-      "image": "",
-      "fb": "https://www.facebook.com/freaky.Rajdeep",
-      "linkedln": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
-      "insta": "",
-      "git": "https://github.com/Rajdeepsark"
     },
     {
       "id": 15,
@@ -121,14 +130,24 @@
       "git": "https://github.com/SurajCSENITS"
     },
     {
-      "id": 1,
-      "name": "Siddharth Ghosh",
+      "id": 18,
+      "name": "Bedika Kumari",
       "rank": "UI/UX Designer",
-      "image": "/team/ghosh.webp",
-      "fb": "https://www.facebook.com/profile.php?id=100070117330528",
-      "linkedln": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251",
+      "image": "/teamimg/bedika.jpeg",
+      "fb": "https://www.facebook.com/profile.php?id=100087943404722",
+      "linkedln": "https://www.linkedin.com/in/bedika-kumari?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "insta": "",
-      "git": "https://github.com/Z-Maniac-Sidd"
+      "git": "https://github.com/Hub-101"
+    },
+    {
+      "id": 7,
+      "name": "Anjali Mittal",
+      "rank": "Web Developer",
+      "image": "/teamimg/anjali.jpeg",
+      "fb": "https://www.facebook.com/profile.php?id=100088825016861",
+      "linkedln": "https://www.linkedin.com/in/anjali-mittal-779474262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "insta": "",
+      "git": ""
     }
   ]
 ]
