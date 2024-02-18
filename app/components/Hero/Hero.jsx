@@ -223,7 +223,7 @@ const Hero = ({ loading }) => {
           <Image
             className={styles.starss}
             alt="hero-bg"
-            src="/images/hero_assets/Stars.svg"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/vv3myk0kcpuzqhjcimm7"
             fill
             priority
           />
