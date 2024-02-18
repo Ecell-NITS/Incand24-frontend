@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable jsx-a11y/control-has-associated-label */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
@@ -23,11 +25,6 @@ const allura = Allura({
   weight: ["400"],
   subsets: ["latin"],
 });
-
-export const metadata = {
-  title: "Footer",
-  description: "Footer",
-};
 
 const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
   const router = useRouter();
