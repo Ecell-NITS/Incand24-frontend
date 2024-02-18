@@ -17,12 +17,15 @@
   },
   {
     "id": "2",
-    "header": "Espriemere",
+    "header": "Espremiere",
     "subheader": "",
-    "text": "Espremier is your platform to unleash your inner storyteller. Whether you're a seasoned performer or a budding talent, we welcome you to bring your unique voice and vision to life. From poignant social commentary to hilarious satire, from heartwarming tales to thrilling mysteries, Espremier is where your monologue takes center stage.",
+    "text": "Espremiere is your platform to unleash your inner storyteller. Whether you're a seasoned performer or a budding talent, we welcome you to bring your unique voice and vision to life. From poignant social commentary to hilarious satire, from heartwarming tales to thrilling mysteries, Espremier is where your monologue takes center stage.",
     "header2": "",
-    "thumbnail": "",
-    "imgUrls": [],
+    "thumbnail": "https://res.cloudinary.com/dz7qkvqyj/image/upload/v1708287052/incand/Incand-Monoact-_3__kxv3dr.webp",
+    "imgUrls": [
+      "https://res.cloudinary.com/dz7qkvqyj/image/upload/v1708286850/incand/IMG_20240113_125240_471_dsyiqa.webp",
+      "https://res.cloudinary.com/dz7qkvqyj/image/upload/v1708286874/incand/IMG_20240113_134522_962_tnacfs.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": "https://forms.gle/kcPLTAW4kvhLGyNz9"
@@ -184,7 +187,7 @@
     "subheader": "",
     "text": "This isn't your typical gig; it's a sonic expedition where bands break free from the mainstream and let their unique sounds resonate through the air.",
     "header2": "",
-    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090649/incand%272023/ii6yctmfs6twstot4ll6.webp",
+    "thumbnail": "https://res.cloudinary.com/dz7qkvqyj/image/upload/v1708286654/incand/WhatsApp-Image-2024-02-19-at-00.44.34_lh2wlb.webp",
     "imgUrls": [],
     "registrationLink": {
       "name": "Register",
@@ -206,19 +209,6 @@
   },
   {
     "id": "15",
-    "header": "Roadies",
-    "subheader": "",
-    "text": "Do you have it in you to go up against the likes of Rannvijay and Raghu Ram? Do you have it in you to be audacious and obnoxious when put through trials that test your physical prowess  and mental fortitude?",
-    "header2": "",
-    "thumbnail": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708108076/samples/Incand23D-0/Roadies_bffsxb.webp",
-    "imgUrls": [],
-    "registrationLink": {
-      "name": "Register",
-      "link": ""
-    }
-  },
-  {
-    "id": "16",
     "header": "Mr. NIT",
     "subheader": "",
     "text": "Get Ready to witness the epitome of strength and sculpted physiques at 'Mr. NIT,' our premier bodybuilding competition that's set to redefine fitness and showcase the embodiment of dedication",
@@ -231,7 +221,7 @@
     }
   },
   {
-    "id": "17",
+    "id": "16",
     "header": "Nataraj",
     "subheader": "",
     "text": "Welcome to InfluenceFiesta: The Ultimate Influencer Extravaganza! Get ready for a night dedicated to the digital maestros shaping our online world",
@@ -244,7 +234,7 @@
     }
   },
   {
-    "id": "18",
+    "id": "17",
     "header": "FRAMES",
     "subheader": "",
     "text": "In the heart of NIT Silchar beats a rhythm of creativity, where lenses are wielded like wands, conjuring tales from pixels and light. Obiettivo, the Photography Club, in association with Incandescence 2024, invites you to join the magical journey of FRAMES 2024.",
