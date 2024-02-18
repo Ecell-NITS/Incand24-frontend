@@ -129,6 +129,30 @@
         "name": "col2"
       },
       {
+        "id": 17,
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708091137/Day01/pfnbzkvk3u4jmvsoyrfn.webp",
+        "alt": "image-gallery",
+        "name": "col2"
+      },
+      {
+        "id": 18,
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708091136/Day01/hcdewckbdzmfm6hyhzbs.webp",
+        "alt": "image-gallery",
+        "name": "col2"
+      },
+      {
+        "id": 19,
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089974/Day01/evnowv4aqsqbbadzeijk.webp",
+        "alt": "image-gallery",
+        "name": "col2"
+      },
+      {
+        "id": 20,
+        "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089975/Day01/nmqn4tjopzmr54uudwcc.webp",
+        "alt": "image-gallery",
+        "name": "col2"
+      },
+      {
         "id": 21,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090793/samples/Incand23D-0/34_fxyytn.webp",
         "alt": "image-gallery",
@@ -220,6 +244,18 @@
       {
         "id": 35,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090823/samples/Incand23D-0/17_glymct.webp",
+        "alt": "image-gallery",
+        "name": "col3"
+      },
+      {
+        "id": 34,
+        "image": "https://res.cloudinary.com/dx2rr993w/image/upload/v1708106601/whatsapp-image-2024-02-16-at-112740-pm-65cfa302f2754_yv4pi4.webp",
+        "alt": "image-gallery",
+        "name": "col3"
+      },
+      {
+        "id": 35,
+        "image": "https://res.cloudinary.com/dx2rr993w/image/upload/v1708106587/whatsapp-image-2024-02-16-at-112653-pm-65cfa2f73876a_uux8w1.webp",
         "alt": "image-gallery",
         "name": "col3"
       },

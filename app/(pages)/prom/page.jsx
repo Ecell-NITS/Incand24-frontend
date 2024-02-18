@@ -13,7 +13,7 @@ const Page = () => {
   useEffect(() => {
     if (typeof window !== "undefined" && typeof document !== "undefined") {
       if (pathname === "/prom") {
-        router.replace("/events/1");
+        router.replace("/events/4");
       }
     }
   }, [router, pathname]);
