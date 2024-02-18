@@ -1,5 +1,35 @@
 [
   [
+    {
+      "id": 3,
+      "name": "Maruf Padaya",
+      "rank": "NITSMUN Module Head",
+      "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/nqlkoln4wndwjkojwuomhttps://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/nqlkoln4wndwjkojwuom.webp",
+      "fb": "https://www.facebook.com/maruf.padaya?mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/maruf025?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/musafir_e_ibrat?igsh=MXN6anBmd2dnaGd3NA=="
+    },
+    {
+      "id": 10,
+      "name": "Pranjal Singh",
+      "rank": "NITSMUN Module Head",
+      "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/ei2sacvaii8wby4vold3.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100005172197980&mibextid=LQQJ4d",
+      "linkedln": "https://www.linkedin.com/in/pranjal-singh-b17037201",
+      "git": "",
+      "insta": "https://www.instagram.com/pranjal__.singh?igsh=NTg3ajE2a2owNWZv&utm_source=qr"
+    },
+    {
+      "id": 31,
+      "name": "Eisha Halder ",
+      "rank": "NITSMUN Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
+      "fb": "https://www.facebook.com/eisha.halder.16",
+      "linkedln": "https://www.linkedin.com/in/eisha-halder-a42367200",
+      "git": "",
+      "insta": "https://www.instagram.com/eisha_s.halder/"
+    },
   {
     "id": 7,
     "name": "Ashish Handique",
@@ -20,6 +50,16 @@
     "git": "",
     "insta": ""
   },
+  {
+    "id": 9,
+    "name": "Darshana Handique",
+    "rank": "Glitterati Module Head",
+    "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/mrzuefppzue3etrarzfc.webp",
+    "fb": "https://www.facebook.com/maruf.padaya?mibextid=ZbWKwL",
+    "linkedln": "",
+    "git": "",
+    "insta": ""
+  },
     {
       "id": 1,
       "name": "Jadav Anusha ",
@@ -32,23 +72,13 @@
     },
     {
       "id": 2,
-      "name": "Ranjan Kumar Mandal            ",
+      "name": "Ranjan Kumar Mandal",
       "rank": "Prom Night Module Head ",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/vd07hyh7j9k7orcztqi9.webp",
       "fb": "https://m.facebook.com/ranjan.kumarii.90?mibextid=LQQJ4d",
       "linkedln": "https://www.linkedin.com/in/ranjan-kumar-mandal-0501b420b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       "git": "",
       "insta": "https://www.instagram.com/_ranjan_200?igsh=MTRhMmszMnhobGlrcg%3D%3D&utm_source=qr"
-    },
-    {
-      "id": 3,
-      "name": "Eisha Halder ",
-      "rank": "NITSMUN Module Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
-      "fb": "https://www.facebook.com/eisha.halder.16",
-      "linkedln": "https://www.linkedin.com/in/eisha-halder-a42367200",
-      "git": "",
-      "insta": "https://www.instagram.com/eisha_s.halder/"
     }
   ],
   [
@@ -86,7 +116,7 @@
       "id": 4,
       "name": "Vansh Poddar ",
       "rank": "Natraaj Module Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708277500/techTeam2/rjibprm4baf9qbpnnf1z.webp",
+      "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/hg07ricmivtsoeu8ouis.webp",
       "fb": "https://www.facebook.com/profile.php?id=100073130336199&mibextid=ZbWKwL",
       "linkedln": "https://www.linkedin.com/in/vanshkumarpoddar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "git": "",
