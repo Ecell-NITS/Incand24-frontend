@@ -16,7 +16,7 @@
       "image": "/team/maharnav.webp",
       "fb": "https://www.facebook.com/profile.php?id=100076295825121",
       "linkedln": "https://www.linkedin.com/in/maharnav-deka-06742815a/",
-      "git": "",
+      "git": "https://github.com/mdekaa",
       "insta": "https://www.instagram.com/_imaharnav_/"
     },
     {
@@ -66,8 +66,8 @@
       "image": "/team/sahin.webp",
       "fb": "https://www.facebook.com/sahin.alam.9216778?mibextid=ZbWKwL",
       "linkedln": "https://www.linkedin.com/in/sahin-alam-96250324a",
-      "insta": "https://www.instagram.com/sahinisboss",
-      "git": ""
+      "insta": "",
+      "git": "https://github.com/Ruler45"
     },
     {
       "id": 5,
@@ -76,8 +76,8 @@
       "image": "/team/dhirajdas.webp",
       "fb": "https://facebook.com/dheeraj.das.7165/",
       "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
-      "insta": "https://www.instagram.com/dheerajdas19/",
-      "git": ""
+      "insta": "",
+      "git": "https://github.com/dheeraj1922d"
     },
     {
       "id": 6,
@@ -86,8 +86,8 @@
       "image": "/team/swarup.webp",
       "fb": "https://www.facebook.com/swarup.chanda.984",
       "linkedln": "https://www.linkedin.com/in/swarup-chanda-23053724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "insta": "https://www.instagram.com/this_is_swarup_?igsh=OGQ5ZDc2ODk2ZA==",
-      "git": ""
+      "insta": "",
+      "git": "https://github.com/swarupecenits"
     },
     {
       "id": 14,
@@ -96,8 +96,18 @@
       "image": "/team/nandini.webp",
       "fb": "https://www.facebook.com/profile.php?id=100088080727189",
       "linkedln": "https://www.linkedin.com/in/nandini-singh-33a804257/",
-      "insta": "https://www.instagram.com/th.nandini_06/",
-      "git": ""
+      "insta": "",
+      "git": "https://github.com/nandini06-helix"
+    },
+    {
+      "id": 19,
+      "name": "Rajdeep Sarkar",
+      "rank": "UI/UX Designer",
+      "image": "",
+      "fb": "https://www.facebook.com/freaky.Rajdeep",
+      "linkedln": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
+      "insta": "",
+      "git": "https://github.com/Rajdeepsark"
     },
     {
       "id": 15,
@@ -106,11 +116,9 @@
       "image": "/team/sverma.webp",
       "fb": "https://www.facebook.com/profile.php?id=100036652143226",
       "linkedln": "",
-      "insta": "https://www.instagram.com/phenomenalsuraj2002/",
-      "git": ""
-    }
-  ],
-  [
+      "insta": "",
+      "git": "https://github.com/SurajCSENITS"
+    },
     {
       "id": 1,
       "name": "Siddharth Ghosh",
@@ -118,8 +126,8 @@
       "image": "/team/ghosh.webp",
       "fb": "https://www.facebook.com/profile.php?id=100070117330528",
       "linkedln": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251",
-      "insta": "https://www.instagram.com/z_maniac_sidd/",
-      "git": ""
+      "insta": "",
+      "git": "https://github.com/Z-Maniac-Sidd"
     }
   ]
 ]
