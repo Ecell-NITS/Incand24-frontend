@@ -70,16 +70,6 @@
       "git": "https://github.com/Ruler45"
     },
     {
-      "id": 5,
-      "name": "Dhiraj Das",
-      "rank": "Web Developer",
-      "image": "/team/dhirajdas.webp",
-      "fb": "https://facebook.com/dheeraj.das.7165/",
-      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
-      "insta": "",
-      "git": "https://github.com/dheeraj1922d"
-    },
-    {
       "id": 6,
       "name": "Swarup Chanda",
       "rank": "Web Developer",
@@ -89,6 +79,17 @@
       "insta": "",
       "git": "https://github.com/swarupecenits"
     },
+    {
+      "id": 5,
+      "name": "Dhiraj Das",
+      "rank": "Web Developer",
+      "image": "/team/dhirajdas.webp",
+      "fb": "https://facebook.com/dheeraj.das.7165/",
+      "linkedln": "https://www.linkedin.com/in/dhiraj-das-a26042249/",
+      "insta": "",
+      "git": "https://github.com/dheeraj1922d"
+    },
+    
     {
       "id": 14,
       "name": "Nandini Singh",
