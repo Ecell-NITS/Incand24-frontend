@@ -1,82 +1,57 @@
 "use client";
 
-import { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
+import { useState } from "react";
 import events from "@/_db/events";
 import concerts from "@/_db/concerts";
 import styles from "./EventBody.module.scss";
 import NewTimeline from "../NewTimeline/NewTimeline";
 
 const EventBody = () => {
-  // Tab component code
-  const [tag, setTag] = useState();
-  const [prevTag, setPrevTag] = useState();
+  const [activeTab, setActiveTab] = useState("events");
   const [data, setData] = useState(events);
-
-  const handleClick = (e) => {
-    setPrevTag(tag);
-    setTag(e.target);
-  };
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      setPrevTag(tag);
-      setTag(e.target);
+  const handleClick = (newTab) => {
+    setActiveTab(newTab);
+    if (newTab === "events") {
+      setData(events);
+    } else {
+      setData(concerts);
     }
   };
 
-  const handleEvent = (e) => {
-    handleClick(e);
-    setData(events);
-    // console.log(tag)
-  };
-  const handleConcert = (e) => {
-    handleClick(e);
-    setData(concerts);
-  };
-
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
-        setTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-      }
-      if (document.querySelectorAll(`.${styles.TabItemActive}`)) {
-        setPrevTag(document.querySelectorAll(`.${styles.TabItemActive}`)[0]);
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    prevTag?.classList.remove(`${styles.TabItemActive}`);
-    tag?.classList.add(`${styles.TabItemActive}`);
-    // console.log(tag?.id)
-  }, [tag, prevTag]);
-
+  // console.log(activeTab, "activeTab")
+  // console.log(data)
   return (
     <div className={styles.EventBody}>
       <div className={styles.Tab}>
         <div
-          onClick={handleEvent}
-          onKeyDown={handleKeyDown}
+          onClick={() => handleClick("events")}
           role="button"
           tabIndex={0}
-          className={`${styles.TabItem} ${styles.TabItemActive}`}
+          className={`${styles.TabItem} ${
+            activeTab === "events" ? styles.TabItemActive : ""
+          }`}
           name="events"
           id="events"
         >
           Events
         </div>
         <div
-          onClick={handleConcert}
-          onKeyDown={handleKeyDown}
+          onClick={() => handleClick("concerts")}
           role="button"
           tabIndex={0}
-          className={`${styles.TabItem}`}
+          className={`${styles.TabItem} ${
+            activeTab === "concerts" ? styles.TabItemActive : ""
+          }`}
           name="concerts"
           id="concerts"
         >
           Concerts
         </div>
       </div>
-      <NewTimeline data={data} route={tag?.id} />
+      <NewTimeline data={data} route={activeTab} />
+      {activeTab === "concerts" ? <NewTimeline /> : ""}
     </div>
   );
 };

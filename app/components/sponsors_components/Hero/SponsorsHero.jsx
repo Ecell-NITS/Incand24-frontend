@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Allura } from "next/font/google";
-import Image from "next/image";
-import logo from "../../../../public/images/glowingLogo.svg";
+// import Image from "next/image";
+// import logo from "../../../../public/images/glowingLogo.svg";
 import styles from "./SponsorsHero.module.scss";
 
 const allura = Allura({
@@ -20,7 +20,8 @@ const SponsorsHero = () => {
         <span>Sponsors</span>
         <span>Sponsors</span>
         <span>
-          <Image id={styles.logo} src={logo} width={100} height={100} alt="Incand'24" />
+          {/* <Image id={styles.logo} src={logo} width={100} height={100} alt="Incand'24" /> */}
+          Incand&apos;24
         </span>
       </div>
 

@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 import ImageCard from "../ImageCard/ImageCard";
 import styles from "./Gallery.module.scss";
 import Modal from "../modal/Modal";
-import { gallery } from "./GalleryData";
-
+import gallery from "@/_db/GalleryData";
+//  keep even no of photos
+// keep same number of images in each column
+// store png or webp format
 const Gallery = () => {
   const { ref: myRef, inView: isGalleryVissible } = useInView();
 
@@ -584,15 +586,15 @@ const Gallery = () => {
                     role="button"
                     aria-label="home button"
                     tabIndex={0}
-                    key={image.id}
+                    key={image?.id}
                     onClick={() => {
-                      clickHandler(image.id, gallery[0].name);
+                      clickHandler(image?.id, gallery[0].name);
                     }}
                     onKeyDown={() => {
-                      clickHandler(image.id, gallery[0].name);
+                      clickHandler(image?.id, gallery[0].name);
                     }}
                   >
-                    <ImageCard image={image.image} />
+                    <ImageCard image={image?.image} />
                   </div>
                 ))
               : firstColumnImagesInMobileView?.map((image) => (
@@ -600,17 +602,17 @@ const Gallery = () => {
                     role="button"
                     aria-label="home button"
                     tabIndex={0}
-                    key={image.id}
+                    key={image?.id}
                     onClick={() => {
-                      const galleryIndex = image.name === "col3" ? 2 : 0;
-                      clickHandler(image.id, gallery[galleryIndex].name);
+                      const galleryIndex = image?.name === "col3" ? 2 : 0;
+                      clickHandler(image?.id, gallery[galleryIndex].name);
                     }}
                     onKeyDown={() => {
-                      const galleryIndex = image.name === "col3" ? 2 : 0;
-                      clickHandler(image.id, gallery[galleryIndex].name);
+                      const galleryIndex = image?.name === "col3" ? 2 : 0;
+                      clickHandler(image?.id, gallery[galleryIndex].name);
                     }}
                   >
-                    <ImageCard image={image.image} />
+                    <ImageCard image={image?.image} />
                   </div>
                 ))}
           </motion.div>
@@ -626,15 +628,15 @@ const Gallery = () => {
                     role="button"
                     aria-label="home button"
                     tabIndex={0}
-                    key={image.id}
+                    key={image?.id}
                     onClick={() => {
-                      clickHandler(image.id, gallery[1].name);
+                      clickHandler(image?.id, gallery[1].name);
                     }}
                     onKeyDown={() => {
-                      clickHandler(image.id, gallery[1].name);
+                      clickHandler(image?.id, gallery[1].name);
                     }}
                   >
-                    <ImageCard image={image.image} />
+                    <ImageCard image={image?.image} />
                   </div>
                 ))
               : secondColumnImagesInMobileView?.map((image) => (
@@ -642,17 +644,17 @@ const Gallery = () => {
                     role="button"
                     aria-label="home button"
                     tabIndex={0}
-                    key={image.id}
+                    key={image?.id}
                     onClick={() => {
-                      const galleryIndex = image.name === "col3" ? 2 : 1;
-                      clickHandler(image.id, gallery[galleryIndex].name);
+                      const galleryIndex = image?.name === "col3" ? 2 : 1;
+                      clickHandler(image?.id, gallery[galleryIndex].name);
                     }}
                     onKeyDown={() => {
-                      const galleryIndex = image.name === "col3" ? 2 : 1;
-                      clickHandler(image.id, gallery[galleryIndex].name);
+                      const galleryIndex = image?.name === "col3" ? 2 : 1;
+                      clickHandler(image?.id, gallery[galleryIndex].name);
                     }}
                   >
-                    <ImageCard image={image.image} />
+                    <ImageCard image={image?.image} />
                   </div>
                 ))}
           </motion.div>
@@ -669,15 +671,15 @@ const Gallery = () => {
                   role="button"
                   aria-label="home button"
                   tabIndex={0}
-                  key={image.id}
+                  key={image?.id}
                   onClick={() => {
-                    clickHandler(image.id, gallery[2].name);
+                    clickHandler(image?.id, gallery[2].name);
                   }}
                   onKeyDown={() => {
-                    clickHandler(image.id, gallery[2].name);
+                    clickHandler(image?.id, gallery[2].name);
                   }}
                 >
-                  <ImageCard image={image.image} />
+                  <ImageCard image={image?.image} />
                 </div>
               ))}
             </motion.div>

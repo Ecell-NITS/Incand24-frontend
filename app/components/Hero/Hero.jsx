@@ -122,12 +122,31 @@ const Hero = ({ loading }) => {
           initial={{
             x: 0,
           }}
-          animate={{
-            x: "-100%",
-          }}
-          transition={{ duration: 7 }}
+          animate={!loading ? { x: "-100%" } : {}}
+          transition={{ duration: 5 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            priority
+            fill
+          />
+        </motion.div>
+        <motion.div
+          id={`${!loading ? styles.leftTree : ""}`}
+          initial={{
+            x: 0,
+            y: "-20vh",
+          }}
+          animate={!loading ? { x: "-100%" } : {}}
+          transition={{ duration: 5 }}
+        >
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            priority
+            fill
+          />
         </motion.div>
 
         <motion.div
@@ -135,12 +154,31 @@ const Hero = ({ loading }) => {
           initial={{
             x: 0,
           }}
-          animate={{
-            x: "100%",
-          }}
-          transition={{ duration: 7 }}
+          animate={!loading ? { x: "100%" } : {}}
+          transition={{ duration: 5 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            fill
+            priority
+          />
+        </motion.div>
+        <motion.div
+          id={`${!loading ? styles.rightTree : ""}`}
+          initial={{
+            x: 0,
+            y: "-30vh",
+          }}
+          animate={!loading ? { x: "100%" } : {}}
+          transition={{ duration: 5 }}
+        >
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            fill
+            priority
+          />
         </motion.div>
 
         <motion.div
@@ -156,7 +194,7 @@ const Hero = ({ loading }) => {
         >
           <Image
             alt="left_Tree"
-            class={styles.stretchimage}
+            className={styles.stretchimage}
             src="/images/hero_assets/sun_setcol.svg"
             fill
             priority
@@ -185,7 +223,7 @@ const Hero = ({ loading }) => {
           <Image
             className={styles.starss}
             alt="hero-bg"
-            src="/images/hero_assets/Stars.svg"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/vv3myk0kcpuzqhjcimm7"
             fill
             priority
           />
@@ -203,7 +241,8 @@ const Hero = ({ loading }) => {
 
             <Image
               className={styles.light}
-              src="/images/DayLogo_noFire.png"
+              // src="/images/DayLogo_noFire.png"
+              src="/images/NightLogo_noFire-removebg-preview.png"
               alt="logo"
               fill
               sizes="!00%"

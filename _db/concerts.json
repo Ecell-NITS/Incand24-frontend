@@ -1,39 +1,28 @@
 [
   {
     "id": "1",
-    "header": "Metal DJ",
+    "header": "THUNDERMARCH",
     "subheader": "",
-    "text": "The two passions sought by many people, acting and directing, have had an impact on every person who looks at cinematic and theatrical art because they see an inspiration in not just the person essaying a character, but the character itself. With everybody's emotions in our hearts, Incandescence'23 brings to you, “The Thespian Rhapsody”, which consists of extravagant events like Director's Cut and Espimere. So embrace the actor inside you because what is possible in an act becomes thinkable in life, do your directing hats and bring what's in your mind into reality for everyone to see.",
+    "text": "Get ready to rock your socks off with Thundermarch – the ultimate fusion of electrifying energy and soulful melodies! Join us on a journey through the realms of music, where every note strikes like lightning and every beat thunders through your veins. Experience the raw power of our sound as we ignite the stage with passion and rhythm.",
     "header2": "",
-    "imgUrls": ["/sponsors/Amul.png"],
-    "registrationLink": []
+    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090647/incand%272023/yzmryqqfyrfse8hfa6op.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
   },
   {
     "id": "2",
-    "header": "Cosplay",
-    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
-    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header": "NIRVANA",
+    "subheader": "",
+    "text": "Embark on a soul-stirring journey with Nirvana – the iconic band that revolutionized the music scene! Join us for an unforgettable evening as we pay homage to the legendary Kurt Cobain and his bandmates with a tribute concert like no other. From the haunting melodies of 'Smells Like Teen Spirit' to the raw emotion of 'Come As You Are,' experience the timeless magic of Nirvana's music live on stage.",
     "header2": "",
-    "imgUrls": ["/sponsors/chiiz.png", "/sponsors/Amul.png"],
-    "registrationLink": [
-      {
-        "name": "Register",
-        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "header": "Armaan Malik",
-    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
-    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
-    "header2": "",
-    "imgUrls": ["/sponsors/chiiz.png", "/sponsors/Amul.png"],
-    "registrationLink": [
-      {
-        "name": "Register",
-        "link": "https://unstop.com/o/0ZBVFdt?lb=YUKB612Follow"
-      }
-    ]
+    "thumbnail": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089975/Day01/utyqgrotjuark5x3vftf.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
   }
 ]

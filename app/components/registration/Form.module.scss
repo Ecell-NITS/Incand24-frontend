@@ -1,0 +1,213 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  padding: 5% 10%;
+  background-image: url("../../../public/events/registration/promBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .main {
+    width: 100%;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(15px);
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+      .formdata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+
+        h1 {
+          color: #fff;
+          font-size: 3vw;
+          font-style: normal;
+        }
+
+        .fields {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5vw;
+          color: #fff;
+
+          .inputBox {
+            position: relative;
+            display: flex;
+            width: 30vw;
+            height: 7vw;
+            padding: 17px 5px 5px 25px;
+            align-items: center;
+
+            .field {
+              height: 100%;
+              width: 100%;
+              border-radius: 59px;
+              border: 2px solid rgba(98, 23, 23, 0);
+              background-color: transparent;
+              box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              -webkit-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              -moz-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+              padding: 0% 5%;
+              border: none;
+              outline: none;
+              color: #fff;
+            }
+
+            .labels {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding: 17px 0px 5px 25px;
+              margin: 0% 5%;
+              color: #fff;
+              font-size: 2vw;
+            }
+          }
+
+          .field:focus + .labels,
+          .field:valid + .labels {
+            top: -10px;
+          }
+        }
+
+        .qrWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .qr {
+            width: 15vw;
+            height: 15vw;
+            background: #d9d9d9;
+          }
+          .details {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .upload {
+          position: relative;
+          display: flex;
+          width: 50vw;
+          height: 11vw;
+          padding: 17px 5px 5px 25px;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          @media screen and (max-width: 573px) {
+            width: 58vw;
+            height: 14vw;
+          }
+          @media screen and (max-width: 480px) {
+            width: 65vw;
+            height: 17vw;
+          }
+          .field {
+            height: 100%;
+            width: 100%;
+            border-radius: 59px;
+            border: 2px solid rgba(98, 23, 23, 0);
+            background-color: transparent;
+            box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            -webkit-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            -moz-box-shadow: -2px 1px 0px 1px rgba(241, 17, 17, 0.66);
+            padding: 0% 5%;
+            border: none;
+            outline: none;
+            color: #fff;
+          }
+
+          .fieldDetails {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+
+            @media screen and (max-width: 480px) {
+              gap: 1px;
+            }
+
+            .details {
+              font-size: 2vw;
+            }
+          }
+        }
+
+        .button {
+          border-radius: 32px;
+          border: 2px solid linear-gradient(207deg, #c53e6f 8.69%, #9b008c 92.29%);
+          background: linear-gradient(207deg, #c53e6f 8.69%, #9b008c 92.29%);
+          padding: 1% 0%;
+          padding-right: 4vw;
+          padding-left: 4vw;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+
+          @media screen and (max-width: 480px) {
+            padding-left: 8vw;
+            padding-right: 8vw;
+          }
+
+          &:hover {
+            border-radius: 32px;
+            // border: 3px solid #fff;
+            background: linear-gradient(207deg, #9b008c 9.02%, #c53e6f 59.18%);
+          }
+          .layertext {
+            font-size: 2vw;
+            color: #000;
+
+            @media screen and (max-width: 480px) {
+              font-size: 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0% !important;
+  }
+  .main {
+    padding: 10% 7% !important;
+    height: 100vh;
+    border-radius: 0px !important;
+  }
+
+  .form {
+    .formdata {
+      gap: 8vw !important;
+      h1 {
+        font-size: 9vw !important;
+      }
+
+      .fields {
+        .inputBox {
+          width: 40vw !important;
+          height: 10vw !important;
+        }
+      }
+    }
+  }
+}

@@ -21,6 +21,14 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
+    .butterfly {
+      position: absolute;
+
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
+    }
+
     .cardWrapper {
       height: fit-content;
       display: flex;
@@ -84,8 +92,11 @@
           position: relative;
           z-index: 0;
           border-radius: inherit;
+          background-image: url(/events/eventsPlaceholder.png);
+          background-size: cover;
           img {
             object-fit: cover;
+            object-position: 40% 20%;
           }
         }
         .title {
@@ -94,6 +105,7 @@
           z-index: 5;
           font-size: 2rem;
           left: 5%;
+          text-transform: uppercase;
         }
 
         @media screen and (max-width: 1080px) {
@@ -123,6 +135,11 @@
         .timelineMilestone {
           left: 0;
           transform: translate(-50%, -50%);
+        }
+        .butterfly {
+          top: 0;
+          left: 0;
+          transform: translate(-80%, -80%) rotateY(180deg);
         }
         .cardWrapper {
           flex-direction: row;
@@ -155,6 +172,11 @@
           transform: translate(50%, -50%);
         }
 
+        .butterfly {
+          top: 0;
+          right: 0;
+          transform: translate(80%, -80%);
+        }
         .cardWrapper {
           flex-direction: row-reverse;
           .desc {
