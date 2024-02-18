@@ -1,5 +1,25 @@
 [
   [
+  {
+    "id": 7,
+    "name": "Ashish Handique",
+    "rank": "Glitterati Module Head",
+    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278517/techTeam2/in2wtynstvtizv8p2m5f.webp",
+    "fb": "https://www.facebook.com/ashish.handique.94/",
+    "linkedln": "www.linkedin.com/in/ashish-handique-98255920a",
+    "git": "",
+    "insta": "https://www.instagram.com/_axish_10/"
+  },
+  {
+    "id": 8,
+    "name": "Nilabh Das",
+    "rank": "Glitterati Module Head",
+    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278631/techTeam2/yt3ifs4qtron2ohgbolr.jpg",
+    "fb": "https://www.facebook.com/nilabh.das.16?mibextid=ZbWKwL",
+    "linkedln": "https://www.linkedin.com/in/nilabh-das-4a39a022a",
+    "git": "",
+    "insta": ""
+  },
     {
       "id": 1,
       "name": "Jadav Anusha ",
@@ -89,26 +109,6 @@
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278225/techTeam2/vs5hyyjxfke8reupbtty.webp",
       "fb": "https://www.facebook.com/radhika.shreya.varanasi/",
       "linkedln": "",
-      "git": "",
-      "insta": ""
-    },
-    {
-      "id": 7,
-      "name": "Ashish Handique",
-      "rank": "Glitterati Module Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278517/techTeam2/in2wtynstvtizv8p2m5f.webp",
-      "fb": "https://www.facebook.com/ashish.handique.94/",
-      "linkedln": "www.linkedin.com/in/ashish-handique-98255920a",
-      "git": "",
-      "insta": "https://www.instagram.com/_axish_10/"
-    },
-    {
-      "id": 8,
-      "name": "Nilabh Das",
-      "rank": "Glitterati Module Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278631/techTeam2/yt3ifs4qtron2ohgbolr.jpg",
-      "fb": "https://www.facebook.com/nilabh.das.16?mibextid=ZbWKwL",
-      "linkedln": "https://www.linkedin.com/in/nilabh-das-4a39a022a",
       "git": "",
       "insta": ""
     }
