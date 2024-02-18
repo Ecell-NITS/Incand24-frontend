@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import { Allura } from "next/font/google";
 import styles from "./Event.module.scss";
 import GradientBg from "@/app/components/Shared/GradientBg/GradientBg";
-// import EventBody from "@/app/components/event_comp/main/EventBody";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 

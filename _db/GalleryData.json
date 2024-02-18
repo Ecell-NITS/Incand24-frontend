@@ -56,7 +56,7 @@
         "alt": "image-gallery",
         "name": "col1"
       },
-     
+
       {
         "id": 11,
         "image": "/gallery/31.jpg",
@@ -211,9 +211,6 @@
         "alt": "image-gallery",
         "name": "col3"
       }
-      
-      
-      
     ]
   }
 ]

@@ -46,9 +46,13 @@ const NewTimeline = ({ data, route }) => {
 
   return (
     <div className={styles.timeline}>
-      <div className={styles.timelineItem}>
-        <div className={styles.timelineMilestone}></div>
-      </div>
+      {data ? (
+        <div className={styles.timelineItem}>
+          <div className={styles.timelineMilestone}></div>
+        </div>
+      ) : (
+        ""
+      )}
 
       {data ? (
         data.map((event) => {
