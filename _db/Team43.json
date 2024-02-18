@@ -31,7 +31,7 @@
       "insta": "https://www.instagram.com/ashish_45_k?igsh=MWVxMTNsMXZyNjAxag=="
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Guguloth Praveen",
       "rank": "Convenor",
       "fb": "https://www.facebook.com/praveen.guguloth.509",
@@ -43,7 +43,7 @@
   ],
   [
     {
-      "id": 1,
+      "id": 5,
       "name": "Hannan Afridi ",
       "rank": "Executive Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708158630/Team/ujvstioqmltafcq3koqm.webp",
@@ -53,7 +53,7 @@
       "insta": "https://www.instagram.com/_the_thunder_emperor________/?hl=en"
     },
     {
-      "id": 2,
+      "id": 6,
       "name": "Krishnav Choudhury ",
       "rank": "Executive Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159450/Team/ovwke9fhlwy8wnryuvnw.webp",
@@ -63,10 +63,10 @@
       "insta": "https://www.instagram.com/krishnav_choudhury?igsh=YnRrbnZ1MzNnZHNx"
     },
     {
-      "id": 3,
+      "id": 7,
       "name": "Rupam Hazarika",
       "rank": "Executive Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708279945/techTeam2/vcnjx56xbo8hvrlqbfpk.png",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708279945/techTeam2/vcnjx56xbo8hvrlqbfpk.webp",
       "fb": "https://www.facebook.com/rupam.hazarika.75?mibextid=LQQJ4d",
       "linkedln": "https://www.linkedin.com/in/rupam-hazarika-718659230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       "git": "",
@@ -75,7 +75,7 @@
   ],
   [
     {
-      "id": 1,
+      "id": 8,
       "name": "Arnavjyoti Bhuyan  ",
       "rank": "Decoration Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159368/Team/thjt7rwbgxb40mwxzutu.webp",
@@ -85,7 +85,7 @@
       "insta": "https://www.instagram.com/bhuyanarnavjyoti?igsh=OWZsN2dkYTNubG1x"
     },
     {
-      "id": 2,
+      "id": 9,
       "name": "Jyotisman Malakar   ",
       "rank": "Decoration Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159891/Team/sd2zdxd2sefyf7cpdcwk.webp",
@@ -94,7 +94,7 @@
       "git": ""
     },
     {
-      "id": 3,
+      "id": 10,
       "name": "Dhanmoni Choudhury ",
       "rank": "Decoration Head",
       "fb": "https://www.facebook.com/jitumoni.deka.944",
@@ -103,7 +103,7 @@
       "git": ""
     },
     {
-      "id": 1,
+      "id": 11,
       "name": "Suraj Jyoti Saikia  ",
       "rank": "Decoration Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159512/Team/yxec5kxjdc2fo7omz6ct.webp",
@@ -111,11 +111,21 @@
       "linkedln": "https://www.linkedin.com/in/suraj-jyoti-saikia-41775b267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "git": "",
       "insta": "https://www.instagram.com/surajjyotixaikia?igsh=aTU1M25qcTc2MjU3"
+    },
+    {
+      "id": 12,
+      "name": "Aaditya Vikram ",
+      "rank": "Decoration Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265085/techTeam2/dctayutmkfwkvq6d8djm.webp",
+      "fb": "https://www.facebook.com/aditya.vikram.754570?mibextid=ZbWKwL",
+      "linkedln": "",
+      "git": "",
+      "insta": "https://www.instagram.com/vikram___adi?igsh=NjBmNjY1dnE0NHVt"
     }
   ],
   [
     {
-      "id": 1,
+      "id": 13,
       "name": "Dhiraj Deka  ",
       "rank": "Logistics head ",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708157434/Team/zaq0xtzgjnesbnrhrlko.webp",
@@ -125,7 +135,7 @@
       "insta": "https://www.instagram.com/dhirajdeka332?igsh=OThob3VtN3ZzZTR5"
     },
     {
-      "id": 2,
+      "id": 14,
       "name": "Hruday Vishal ",
       "rank": "Logistics Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159976/Team/e3jjyjed9gqp6h7dvf9m.webp",
@@ -135,7 +145,7 @@
       "insta": "https://www.instagram.com/hvhruday100?igsh=ZGQzOXd4MTcyaXRy"
     },
     {
-      "id": 3,
+      "id": 15,
       "name": "Chandra Sekhar Kurti ",
       "rank": "Logistics Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159956/Team/efikuzl477z8q41htvzn.webp",
@@ -145,17 +155,17 @@
       "insta": "https://www.instagram.com/jamal_jamaal0?igsh=MWV3Y3M1eGU2ZmE4eA=="
     },
     {
-      "id": 4,
+      "id": 16,
       "name": "Partha Pratim Patgiri ",
       "rank": "Logistics Head",
-      "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708160213/Team/ecdhrdrg3c5dhaqsv0ys.jpg",
+      "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708160213/Team/ecdhrdrg3c5dhaqsv0ys.webp",
       "fb": "https://www.facebook.com/partha.pratimpatgiri.7",
       "linkedln": "https://www.linkedin.com/in/partha-pratim-patgiri-57142a2a8/https://www.linkedin.com/in/partha-pratim-patgiri-57142a2a8/",
       "git": "",
       "insta": "https://www.instagram.com/parth_pratim_patgiri?igsh=MXJibm9zYnFxcWY1MA=="
     },
     {
-      "id": 2,
+      "id": 59,
       "name": "Ridha Rani Pradhan",
       "rank": "Event Management Head / Content Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265322/techTeam2/shsjqob1mvmxyhuiz1q5.webp",
@@ -167,7 +177,29 @@
   ],
   [
     {
-      "id": 1,
+      "id": 17,
+      "name": "Prashansa Das ",
+      "rank": "Design Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/iyy6g7awdh1rcwibo8mm.webp",
+      "fb": "https://www.facebook.com/prashansa.das.1?mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/prashansa-das-b471b020b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/prashansa___d?igsh=MW5pejd0dWJmd3l3bA=="
+    },
+    {
+      "id": 18,
+      "name": "Anindita Kakati ",
+      "rank": "Design Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708277163/techTeam2/fgf2ffylvms41ysrxblb.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100058445558933&mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/anindita-kakati-a79ab0217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/anin_dita_5?igsh=am9qcThyYThvZ215"
+    }
+  ],
+  [
+    {
+      "id": 19,
       "name": "Chandan Mahato",
       "rank": "Marketing Head ",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159194/Team/uqntn6ni79mnbxaxmvnk.webp",
@@ -179,7 +211,7 @@
   ],
   [
     {
-      "id": 1,
+      "id": 20,
       "name": "Debasish Konwar",
       "rank": "Hospitality Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708157256/Team/mqalf3rsuu7ltsjyb7da.webp",
@@ -189,7 +221,7 @@
       "insta": "https://www.instagram.com/debasish.ig_/"
     },
     {
-      "id": 2,
+      "id": 21,
       "name": "Bendram Rajashekar Reddy ",
       "rank": "Hospitality Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708157539/Team/yml45yc2wa71xhl0j4rx.webp",
@@ -199,7 +231,7 @@
       "insta": "https://www.instagram.com/rajashekar_reddy_bendram/"
     },
     {
-      "id": 3,
+      "id": 23,
       "name": "Suraj Saha ",
       "rank": "Hospitality Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708157815/Team/x6cfukvc7gutws1q1nky.webp",
@@ -208,7 +240,7 @@
       "insta": "https://www.instagram.com/s.u.r.a.j_s.a.h.a?igsh=Y2pvMDluNGIwbGpt"
     },
     {
-      "id": 4,
+      "id": 24,
       "name": "Dinesh Reddy  ",
       "rank": "Hospitality Head ",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159415/Team/akmibz4pzfse8ubx1ukf.webp",
@@ -218,30 +250,100 @@
       "insta": "https://www.instagram.com/mr___dinesh________?igsh=ZXVkejJwcG9tcTZs"
     },
     {
-      "id": 5,
+      "id": 25,
       "name": "Lohith Varma ",
-      "rank": "Hospitality head",
+      "rank": "Hospitality Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708160065/Team/oqxvapdnyprxwyqnw3zj.webp",
       "fb": "https://www.facebook.com/profile.php?id=100010709086977&mibextid=ZbWKwL",
       "linkedln": "https://www.linkedin.com/in/lohith-varma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "git": "",
       "insta": "https://www.instagram.com/_mr_._varma_?igsh=MWNuaHRza29mN25tZg=="
+    },
+    {
+      "id": 26,
+      "name": "Eisha Halder",
+      "rank": "Hospitality Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
+      "fb": "https://www.facebook.com/eisha.halder.16",
+      "linkedln": "https://www.linkedin.com/in/eisha-halder-a42367200",
+      "git": "",
+      "insta": "https://www.instagram.com/eisha_s.halder/"
+    },
+    {
+      "id": 27,
+      "name": "Priya Pal",
+      "rank": "Hospitality Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265095/techTeam2/y1smp17kryiiissst4lg.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100061192114590&mibextid=ZbWKwL",
+      "linkedln": "",
+      "git": "",
+      "insta": "https://www.instagram.com/priiya_pal?igsh=dGV2b2ljeWJ0dG83"
+    },
+    {
+      "id": 28,
+      "name": "Debopriya Das",
+      "rank": "Hospitality Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278391/techTeam2/bxnglq9j64td0sfoeydd.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100075329296001&mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/debopriya-das-683710240",
+      "git": "",
+      "insta": "https://www.instagram.com/debopriya._.17?igsh=N3FzZGdjbGYxMDRj"
     }
   ],
   [
     {
-      "id": 1,
+      "id": 29,
       "name": "Deepjyoti Kashyap",
       "rank": "Event Management Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159229/Team/wvxnqrfxh6np3ezv0nbe.webp",
       "fb": "https://www.facebook.com/deepjyoti.kashyap.3386?mibextid=JRoKGi",
       "linkedln": "",
       "git": ""
+    },
+    {
+      "id": 30,
+      "name": "Manish Sarmah",
+      "rank": "Event Management Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265097/techTeam2/gojaldydoehwty1i3tiz.webp",
+      "fb": "https://www.facebook.com/manish.sarmah.9/",
+      "linkedln": "https://www.linkedin.com/in/manish-sarmah",
+      "git": "",
+      "insta": "https://www.instagram.com/____m.a.n.i.s.h_____"
+    },
+    {
+      "id": 31,
+      "name": "Gyandeep Gogoi",
+      "rank": "Event Management Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265085/techTeam2/xj8ait0ed63lcqumtjcg.webp",
+      "fb": "https://www.facebook.com/xeuj.ranjan/",
+      "linkedln": "https://www.linkedin.com/in/gyandeep-gogoi-11178820a/",
+      "git": "",
+      "insta": "https://www.instagram.com/gyandeep_____gogoi/"
+    },
+    {
+      "id": 32,
+      "name": "Bikash Sharma",
+      "rank": "Event Management Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265087/techTeam2/cjbexhtchfigpy0brep6.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100058471091139",
+      "linkedln": "",
+      "git": "",
+      "insta": "https://www.instagram.com/bikash_18_9?igsh=amM2dW5zMHQ5ODd0"
+    },
+    {
+      "id": 33,
+      "name": "Ankit Srivastava ",
+      "rank": "Event Management Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278577/techTeam2/aic8ainv9gktajvwy04r.webp",
+      "fb": "https://www.facebook.com/ankit.srivastava.0015",
+      "linkedln": "https://www.linkedin.com/in/srivastavaankit15/",
+      "git": "",
+      "insta": "https://www.instagram.com/the_ankitsrivastava/"
     }
   ],
   [
     {
-      "id": 1,
+      "id": 34,
       "name": "Rajarshi Preetom Bora ",
       "rank": "Infra Head",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708157612/Team/tbinkqko3xrbvlu53iop.webp",
@@ -251,7 +353,7 @@
       "insta": "https://www.instagram.com/rajarshi_preetom?igsh=MXY5ZTRtYWM5cmR5cQ=="
     },
     {
-      "id": 2,
+      "id": 35,
       "name": "Abhinam Hazarika   ",
       "rank": "Infra Head",
       "fb": "https://www.facebook.com/abhinavhazarika.hazarika?mibextid=ZbWKwL",
@@ -259,11 +361,21 @@
       "linkedln": "https://in.linkedin.com/in/abhinam-hazarika-46b994236",
       "git": "",
       "insta": "https://www.instagram.com/__.just.ice?igsh=MWkya3hsNDR5OTE4MQ=="
+    },
+    {
+      "id": 36,
+      "name": "Jyoti Bhukhan Das ",
+      "rank": "Infra Head",
+      "fb": "https://www.facebook.com/jyotix.dax?mibextid=ZbWKwL",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265099/techTeam2/q0frh8vwgxfglctw5fuh.webp",
+      "linkedln": "https://www.linkedin.com/in/jyoti-bhukhan-das-426828217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/jyoti_b_das._?igsh=MWM2czg4bzNiOWlndA=="
     }
   ],
   [
     {
-      "id": 1,
+      "id": 37,
       "name": "Gudla Pranay Saran",
       "rank": "Head of Security and Crowd Management",
       "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708159998/Team/wc5t5fbsm8canpzcuo4r.webp",
@@ -271,6 +383,16 @@
       "linkedln": "https://www.linkedin.com/in/pranay-saran-gudla-20491522a/",
       "git": "",
       "insta": "https://www.instagram.com/pranaysarangudla/"
+    },
+    {
+      "id": 38,
+      "name": "Ganta Gowtham",
+      "rank": "Head of Security",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265084/techTeam2/arf3m8effxbttewdzfyt.webp",
+      "fb": "https://www.facebook.com/gowthamganta.gowthamganta?mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/gowtham-ganta-8384b2222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/_gowtham_0207?igsh=YTQwZjQ0NmI0OA=="
     }
   ]
 ]

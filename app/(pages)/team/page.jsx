@@ -5,7 +5,8 @@ import Image from "next/image";
 import TeamCard from "@/app/components/TeamCard/TeamCard";
 import styles from "./Team.module.scss";
 import teamData1 from "@/_db/Team3";
-import teamData2 from "@/_db/Team4";
+import teamData2 from "@/_db/Team43";
+import teamData3 from "@/_db/Team5";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
 import Toggle from "@/app/components/Toggle/Toggle";
@@ -13,7 +14,9 @@ import TeamHero from "@/app/components/TeamCard/TeamHero";
 
 const Page = () => {
   const [isCore, setIsCore] = useState(true);
-  const text = { Core: "Core", Tech: "Tech" };
+  const [isTech, setIsTech] = useState(false);
+  const [isModuleHead, setIsModuleHead] = useState(false);
+  const text = { Core: "Core", Tech: "Tech", ModuleHead: "Module" };
 
   const navlink = [
     {
@@ -37,6 +40,7 @@ const Page = () => {
   useEffect(() => {
     document.title = "Team | Incandescence";
   }, []);
+
   return (
     <>
       <Navbar navlink={navlink} defaultDark={false} />
@@ -58,7 +62,13 @@ const Page = () => {
             objectFit: "cover",
           }}
         />
-        <Toggle text={text} setIsCore={setIsCore} />
+
+        <Toggle
+          text={text}
+          setIsCore={setIsCore}
+          setIsTech={setIsTech}
+          setIsModuleHead={setIsModuleHead}
+        />
 
         {isCore &&
           teamData2.map((teamGroup) => (
@@ -78,8 +88,26 @@ const Page = () => {
             </div>
           ))}
 
-        {!isCore &&
+        {isTech &&
           teamData1.map((teamGroup) => (
+            <div key={teamGroup[0].id} className={styles.card}>
+              {teamGroup.map((member) => (
+                <TeamCard
+                  key={member.id}
+                  name={member.name}
+                  rank={member.rank}
+                  image={member.image}
+                  fb={member.fb}
+                  linkedln={member.linkedln}
+                  git={member.git}
+                  insta={member.insta}
+                />
+              ))}
+            </div>
+          ))}
+
+        {isModuleHead &&
+          teamData3.map((teamGroup) => (
             <div key={teamGroup[0].id} className={styles.card}>
               {teamGroup.map((member) => (
                 <TeamCard

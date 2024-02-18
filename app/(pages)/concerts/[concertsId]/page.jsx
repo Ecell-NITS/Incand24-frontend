@@ -10,7 +10,7 @@ import Footer from "@/app/components/Footer/Footer";
 
 export function generateStaticParams() {
   return events.map((event) => ({
-    eventsId: event.id,
+    concertsId: event.id,
   }));
 }
 
@@ -23,6 +23,10 @@ const EventPage = ({ params }) => {
     {
       name: "Home",
       href: "/",
+    },
+    {
+      name: "Events",
+      href: "/events",
     },
     {
       name: "Gallery",
