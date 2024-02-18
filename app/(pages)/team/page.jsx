@@ -5,7 +5,7 @@ import Image from "next/image";
 import TeamCard from "@/app/components/TeamCard/TeamCard";
 import styles from "./Team.module.scss";
 import teamData1 from "@/_db/Team3";
-import teamData2 from "@/_db/Team4";
+import teamData2 from "@/_db/Team43";
 import teamData3 from "@/_db/Team5";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
@@ -16,7 +16,7 @@ const Page = () => {
   const [isCore, setIsCore] = useState(true);
   const [isTech, setIsTech] = useState(false);
   const [isModuleHead, setIsModuleHead] = useState(false);
-  const text = { Core: "Core", Tech: "Tech", ModuleHead: "Module Head" };
+  const text = { Core: "Core", Tech: "Tech", ModuleHead: "Module" };
 
   const navlink = [
     {

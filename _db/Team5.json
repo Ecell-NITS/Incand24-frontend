@@ -1,5 +1,25 @@
 [
   [
+  {
+    "id": 7,
+    "name": "Ashish Handique",
+    "rank": "Glitterati Module Head",
+    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278517/techTeam2/in2wtynstvtizv8p2m5f.webp",
+    "fb": "https://www.facebook.com/ashish.handique.94/",
+    "linkedln": "www.linkedin.com/in/ashish-handique-98255920a",
+    "git": "",
+    "insta": "https://www.instagram.com/_axish_10/"
+  },
+  {
+    "id": 8,
+    "name": "Nilabh Das",
+    "rank": "Glitterati Module Head",
+    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278631/techTeam2/yt3ifs4qtron2ohgbolr.jpg",
+    "fb": "https://www.facebook.com/nilabh.das.16?mibextid=ZbWKwL",
+    "linkedln": "https://www.linkedin.com/in/nilabh-das-4a39a022a",
+    "git": "",
+    "insta": ""
+  },
     {
       "id": 1,
       "name": "Jadav Anusha ",
@@ -19,11 +39,9 @@
       "linkedln": "https://www.linkedin.com/in/ranjan-kumar-mandal-0501b420b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       "git": "",
       "insta": "https://www.instagram.com/_ranjan_200?igsh=MTRhMmszMnhobGlrcg%3D%3D&utm_source=qr"
-    }
-  ],
-  [
+    },
     {
-      "id": 1,
+      "id": 3,
       "name": "Eisha Halder ",
       "rank": "NITSMUN Module Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708268374/techTeam2/c8eqjevv76oaxgiwb9t5.webp",
@@ -43,11 +61,9 @@
       "linkedln": "https://www.linkedin.com/in/sinaan-khanikar-755904229/",
       "git": "",
       "insta": "https://www.instagram.com/sinaan_31/"
-    }
-  ],
-  [
+    },
     {
-      "id": 1,
+      "id": 2,
       "name": "Purushotam Kumar",
       "rank": "The Thespian Rhapsody Co-Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265084/techTeam2/om2nfpoglzdml8gkboiz.webp",
@@ -55,11 +71,9 @@
       "linkedln": "https://www.linkedin.com/public-profile/settings",
       "git": "",
       "insta": "https://www.instagram.com/sunya_1720?igsh=MWIweWIwd3U1MjN1MQ=="
-    }
-  ],
-  [
+    },
     {
-      "id": 1,
+      "id": 3,
       "name": "Rishabh Dey ",
       "rank": "Mr. NIT Module Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265088/techTeam2/xaks3bwjy9g2splhojqd.webp",
@@ -67,6 +81,36 @@
       "linkedln": "https://www.linkedin.com/in/rishabh-dey-186626185?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "git": "",
       "insta": "https://www.instagram.com/rishabh_dey?igsh=MW96aW51cmJhZWk1cA=="
+    },
+    {
+      "id": 4,
+      "name": "Vansh Poddar ",
+      "rank": "Natraaj Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708277500/techTeam2/rjibprm4baf9qbpnnf1z.webp",
+      "fb": "https://www.facebook.com/profile.php?id=100073130336199&mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/vanshkumarpoddar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/vanshpoddar_?igsh=MXBlenZ0YmI4YXRuNw=="
+    },
+    {
+      "id": 5,
+      "name": "Sneha Das",
+      "rank": "Indie Unplugged Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278136/techTeam2/cytm4by3osfwx5eakimc.webp",
+      "fb": "https://www.facebook.com/snehadiya.das?mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/sneha-das-2669b7227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "git": "",
+      "insta": "https://www.instagram.com/okaysneha__?igsh=MWxhaDhqczJkc3R0cQ=="
+    },
+    {
+      "id": 6,
+      "name": "Varanasi Radhika Shreya",
+      "rank": "Deprador Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278225/techTeam2/vs5hyyjxfke8reupbtty.webp",
+      "fb": "https://www.facebook.com/radhika.shreya.varanasi/",
+      "linkedln": "",
+      "git": "",
+      "insta": ""
     }
   ]
 ]
