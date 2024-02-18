@@ -76,7 +76,9 @@ const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
 
         <div className={styles.info}>
           <a
+
             href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view?usp=sharing"
+
             target="_blank"
             className={styles.brochure}
           >
