@@ -103,16 +103,15 @@
   {
     "name": "col2",
     "images": [
-      
       {
         "id": 17,
-        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090793/samples/Incand23D-0/32_fdnf0f.webp",
+        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090792/samples/Incand23D-0/33_d44zfu.webp",
         "alt": "image-gallery",
         "name": "col2"
       },
       {
         "id": 18,
-        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090792/samples/Incand23D-0/33_d44zfu.webp",
+        "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090793/samples/Incand23D-0/32_fdnf0f.webp",
         "alt": "image-gallery",
         "name": "col2"
       },
