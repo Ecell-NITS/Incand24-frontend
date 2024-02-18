@@ -16,7 +16,7 @@ const Page = () => {
   const [isCore, setIsCore] = useState(true);
   const [isTech, setIsTech] = useState(false);
   const [isModuleHead, setIsModuleHead] = useState(false);
-  const text = { Core: "Core", Tech: "Tech", ModuleHead: "Module Head" };
+  const text = { Core: "Core", Tech: "Tech", ModuleHead: "Module" };
 
   const navlink = [
     {
