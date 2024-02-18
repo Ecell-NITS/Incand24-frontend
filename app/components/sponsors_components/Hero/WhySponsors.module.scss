@@ -1,0 +1,75 @@
+.body {
+  margin-top: 10vh;
+  // min-height: 50vh;
+  // background: #01262b;
+  // font-family: allura;
+  color: #ffffff;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 5vh;
+  // align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+  @media only screen and (max-width: 480px) {
+    margin-top: 0;
+  }
+
+  #swiper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .qsn {
+    font-size: max(6vw, 2rem);
+    margin-bottom: 8vh;
+    position: relative;
+    z-index: 10;
+  }
+
+  .banner {
+    font-family: serif;
+    width: 90%;
+    height: 45vh;
+    padding: 0 2%;
+
+    transform: translateX(5%);
+
+    background: url(../../../../public/images/Texture.png) no-repeat;
+    background-color: #000000;
+    // box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.50);
+    background-size: 100% 100%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 480px) {
+      width: 80%;
+      transform: translateX(12%);
+      height: 13vh;
+      border-radius: 14px;
+    }
+
+    .lottie {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 480px) {
+        width: 60%;
+      }
+    }
+    #girlAni {
+      width: 35%;
+    }
+
+    .text {
+      font-size: 1rem;
+      @media only screen and (max-width: 480px) {
+        font-size: 0.4rem;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable jsx-a11y/control-has-associated-label */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from "@iconify/react";
@@ -24,12 +26,7 @@ const allura = Allura({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Footer",
-  description: "Footer",
-};
-
-const Footer = ({ isHills = true, homePage = false }) => {
+const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
   const router = useRouter();
 
   // ecell
@@ -38,7 +35,12 @@ const Footer = ({ isHills = true, homePage = false }) => {
     <div className={`${styles.Footer} ${montserrat.className}`}>
       {isHills && (
         <div className={styles.hills}>
-          <Image style={{ pointerEvents: "none" }} alt="" src={hills} fill />
+          <Image
+            className={galleryPage ? styles.galleryBg : ""}
+            alt=""
+            src={hills}
+            fill
+          />
         </div>
       )}
       <div
@@ -74,7 +76,7 @@ const Footer = ({ isHills = true, homePage = false }) => {
 
         <div className={styles.info}>
           <a
-            href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view"
+            href="https://drive.google.com/file/d/15BWe0WbimzTvTUYWOJ2M8zYTb1EIHwy2/view?usp=sharing"
             target="_blank"
             className={styles.brochure}
           >

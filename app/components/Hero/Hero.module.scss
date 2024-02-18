@@ -17,25 +17,38 @@
   margin: 0;
   background-image: linear-gradient(
     0deg,
-    #ffffdb 36%,
-    #fbfedb 47%,
-    #edfcdd 60%,
-    #d8f7df 73%,
-    #b9f2e1 86%,
-    #92eae5 100%
+    #ff7c5b 36%,
+    #ff7c5b 47%,
+    #ff7c5b 60%,
+    #ff7c5b 73%,
+    #003544 89%,
+    #003544 100%
   );
+  #background_stars {
+    z-index: 100;
+    height: 10vh !important;
+    width: 10vw !important;
+  }
 
   #leftTree {
     width: 100%;
-    height: 100%;
+    height: 180%;
     position: absolute;
     z-index: 199;
   }
   #rightTree {
     width: 100%;
-    height: 100%;
+    height: 180%;
     position: absolute;
     z-index: 195;
+  }
+  #hill_movetree {
+    width: 60%;
+    height: 60%;
+    z-index: 50;
+    margin-top: -30vw;
+    position: absolute;
+    margin-right: -73vw;
   }
 
   #foreground {
@@ -68,12 +81,12 @@
   #background {
     position: absolute;
     // margin-bottom: 30%;
-    bottom: -10vw;
+    bottom: -40vh;
     z-index: 40;
     height: 70vw;
-    width: 200vw;
-    animation: backgroundshrink 4.5s ease-in-out forwards;
-    animation-delay: 0.3s;
+    width: 130vw;
+    // animation: backgroundshrink 4.5s ease-in-out forwards;
+    // animation-delay: 0.3s;
 
     @media screen and (max-width: 900px) {
       height: 140vw;
@@ -83,7 +96,7 @@
     }
     @media screen and (max-width: 600px) {
       // height: 75vw;
-      // width: 300vw;
+      width: 300vw;
       margin-left: 0;
     }
   }
@@ -97,39 +110,48 @@
     // left: 0;
     // top: -5px;
     // margin-left: 50%;
-    bottom: 15vw;
+    bottom: -30vh;
     z-index: 35;
-    width: 100vw;
-    height: 24vw;
+    width: 70vw !important;
+    height: 12vh;
     overflow: hidden;
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    animation: hillsmagnify 4.5s ease-in-out forwards;
-    animation-delay: 0.3s;
+    // animation: hillsmagnify 4.5s ease-in-out forwards;
+    // animation-delay: 0.3s;
     svg {
-      width: 100%;
-      // height: 100%;
+      width: 200%;
+      // height: 200%;
       position: absolute;
       background-size: cover;
       transition: all 0.5s ease-in-out;
     }
-    @media screen and (max-width: 900px) {
-      height: 40vw;
-      width: 160vw;
-      bottom: 25vw;
+    @media screen and (min-width: 900px) {
+      height: 95vh;
+      width: 100vw;
+      bottom: 5vh;
     }
     @media screen and (max-width: 600px) {
-      height: 22vw;
-      width: 80vw;
-      bottom: 40vw;
+      display: none;
+      height: 130vh;
+      width: 10vw;
+      bottom: 10vw;
     }
   }
   .nightHills {
-    animation: nightHills 1s ease-in-out forwards !important;
-    // filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+    transition: 1s;
+    background-color: #101629;
   }
+
+  .nightHills img {
+    display: none;
+  }
+  // .nightHills {
+  //   animation: nightHills 1s ease-in-out forwards !important;
+  //   // filter: invert(0.5) saturate(2.7) brightness(0.2) contrast(1.2);
+  // }
 
   .textWrapper {
     z-index: 98;
@@ -245,12 +267,13 @@
 
   #sun {
     display: flex;
-    width: 10vw;
-    height: 10vw;
-    background-image: url(../../../public/images/Sun.svg);
+    width: 13.5vw;
+    height: 13.5vw;
+    background-image: url(../../../public/images/hero_assets/Sun.svg);
     position: absolute;
-    left: 50vw;
+    left: 40vw;
     bottom: 30vw;
+    z-index: 36;
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -265,19 +288,22 @@
       bottom: 50vw;
     }
     @media screen and (max-width: 600px) {
-      // width: 25vw;
-      // height: 25vw;
-      bottom: 55vw;
+      width: 25vw;
+      height: 25vw;
+      margin-left: -5vw;
+      z-index: 50;
+      bottom: 95vw;
     }
   }
   #moon {
     display: none;
-    width: 10vw;
-    height: 10vw;
-    background-image: url(../../../public/images/newMoon.svg);
+    width: 12.5vw;
+    height: 12.5vw;
+    z-index: 36;
+    background-image: url(../../../public/images/hero_assets/umoon.svg);
     position: absolute;
-    left: 20vw;
-    bottom: 18vw;
+    left: 40vw;
+    bottom: 1vw;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -295,7 +321,7 @@
     @media screen and (max-width: 600px) {
       width: 20vw;
       height: 20vw;
-      bottom: 27vw;
+      bottom: 45vw;
     }
   }
 }
@@ -337,31 +363,31 @@
   }
 }
 
-@keyframes nightForeground {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
-  }
-}
+// @keyframes nightForeground {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+//     filter: invert(0.1) saturate(2.7) brightness(0.5) contrast(1.2);
+//   }
+// }
 
-@keyframes nightHills {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: invert(0) saturate(1.8) brightness(0.3) contrast(2) hue-rotate(140deg);
-  }
-}
-@keyframes nightBackground {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: brightness(0.6) saturate(0.7) contrast(3) hue-rotate(90deg);
-  }
-}
+// @keyframes nightHills {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+
+//   }
+// }
+// @keyframes nightBackground {
+//   0% {
+//     filter: none;
+//   }
+//   100% {
+//     filter: brightness(0.6) saturate(0.7) contrast(3) hue-rotate(90deg);
+//   }
+// }
 .night {
   animation: nightbg 1s ease-in-out forwards !important;
   // backdrop-filter: brightness(0.5) contrast(1) invert(0.1);
@@ -372,34 +398,80 @@
     background-image: none;
   }
   50% {
-    background-color: #11023c;
+    background-color: #101629;
   }
   70% {
-    background-color: #01073e;
+    background-color: #101629;
     background-image: linear-gradient(
       0deg,
-      #56016b 32%,
-      #3b0a53 40%,
-      #11023c 65.26%,
-      #01073e 100%
+      #101629 32%,
+      #101629 40%,
+      #101629 65.26%,
+      #101629 100%
     );
   }
   90% {
     background-image: linear-gradient(
       0deg,
-      #56016b 35%,
-      #3b0a53 50%,
-      #11023c 75.26%,
-      #01073e 100%
+      #101629 35%,
+      #101629 50%,
+      #101629 75.26%,
+      #101629 100%
     );
   }
   100% {
     background-image: linear-gradient(
       0deg,
-      #56016b 40%,
-      #380751 67%,
-      #11023c 84.26%,
-      #01073e 100%
+      #101629 40%,
+      #101629 67%,
+      #101629 84.26%,
+      #101629 100%
     );
+  }
+}
+
+.movingtree {
+  transform-origin: bottom right;
+  animation: branchOcsilate 10s ease-in-out infinite;
+}
+@keyframes branchOcsilate {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  50% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movingtree img {
+    margin-top: -25vh;
+  }
+  .starss {
+    margin-top: 0vh;
+  }
+}
+
+@media (max-width: 660px) {
+  #sun {
+    top: 75vw !important;
+  }
+
+  #moon {
+    width: 23vw !important;
+    height: 23vw !important;
+  }
+
+  .movingtree img {
+    margin-top: -34vh !important;
+    margin-left: 4vw;
+  }
+}
+@media (max-width: 900px) {
+  .movingtree img {
+    margin-top: -25vh;
   }
 }

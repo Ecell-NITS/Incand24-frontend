@@ -1,0 +1,236 @@
+[
+  {
+    "id": "1",
+    "header": "CosTopia",
+    "subheader": "Your one stop to awaken your dreams",
+    "text": "Whether you've always dreamt of stretching like Luffy, fighting like Goku, or conjuring magical spells as a wizard from a distant fantasy realm like Hermione Granger, Cosmania has got you covered. Cosmania is your chance to bring your beloved characters to life. From galaxies far, far away to the realms of fantasy, and even the thrilling adventures of your favourite video game icons, our stage is set for you to shine. Whether you're a novice or a seasoned cosplayer, it doesn't matter; it's all about embracing the magic of pop culture and having a blast with fellow enthusiasts. So, what are you waiting for? Suit up, armor on, or cape billowing – join us at Incandescene 2k24 and let the cosplay chaos commence!",
+    "header2": "",
+    "thumbnail": "/gallery/9.webp",
+    "imgUrls": ["/gallery/9.webp", "/gallery/5.webp"],
+    "registrationLink": {
+      "name": "Register",
+      "link": "https://forms.gle/5eDGXoYzzNDpTSao8"
+    }
+  },
+  {
+    "id": "2",
+    "header": "Espriemere",
+    "subheader": "",
+    "text": "Espremier is your platform to unleash your inner storyteller. Whether you're a seasoned performer or a budding talent, we welcome you to bring your unique voice and vision to life. From poignant social commentary to hilarious satire, from heartwarming tales to thrilling mysteries, Espremier is where your monologue takes center stage.",
+    "header2": "",
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": "https://forms.gle/kcPLTAW4kvhLGyNz9"
+    }
+  },
+  {
+    "id": "3",
+    "header": "Nukkad Natak",
+    "subheader": "For good ideas and true innovation, you need human interaction, conflict, argument and debate.",
+    "text": "Are you passionate about enacting the pressing issues of our society, transforming into characters who challenge norms, and becoming the voice of change? Nukkad welcomes you to bring these characters to life. From tales that unravel societal inequalities to those that challenge environmental negligence and break gender stereotypes, our street is your canvas to showcase these powerful narratives. Whether you're a novice performer or an experienced street actor, everyone's voice matters in this transformative journey. It's all about harnessing the power of street theatre to spark conversations and inspire action. So, gather your troupe, embrace your roles, and join us at Nukkad 2024 to ignite the stage with the fervor of change!",
+    "header2": "",
+    "thumbnail": "/events/Nukkad1.png",
+    "imgUrls": ["/events/Nukkad1.png", "/events/Nukkad2.png"],
+    "registrationLink": {
+      "name": "Register",
+      "link": "https://forms.gle/tQvbiLenjvCkQotz7"
+    }
+  },
+  {
+    "id": "4",
+    "header": "Prom Night",
+    "subheader": "",
+    "text": "Incandescence 2023 brings to you a dynamic world that has world leaders, wizards, and journalists from the best news portals. NITSMUN, one of the most hyped and engaging modules of Incandescence, is all set to give you a taste of this world as you get to act as one of them. \nWith the theme, Rise : The future seeks defense, NITSMUN is sure to give you a ride of a lifetime. So, suit up delegates and be ready to attack, defend and question for each step of yours here makes a great difference!",
+    "header2": "",
+    "thumbnail": "/events/promBg.png",
+    "imgUrls": ["/events/promBg.png", "/events/registration/promBg.png"],
+    "registrationLink": {
+      "name": "Register",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdamZfBimTKkxLxHuwku8LpiRKmVWvOwUuog-BIc6ngBBMA3w/viewform"
+    }
+  },
+  {
+    "id": "5",
+    "header": "GLITTERATI",
+    "subheader": "",
+    "text": "Ever stolen glances at FTV, scrolled through Cosmopolitan, or practised your fashion walk in your dorm room? Your moment has arrived!",
+    "header2": "",
+    "thumbnail": "/events/gliterati.webp",
+    "imgUrls": ["/gallery/18.webp", "/gallery/19.webp", "/gallery/20.webp"],
+    "registrationLink": {
+      "name": "Register",
+      "link": "https://forms.gle/6CA9i7FdM5moZaZq9"
+    }
+  },
+  {
+    "id": "6",
+    "header": "THE FLASHMOB",
+    "subheader": "",
+    "text": "Just like the big bang marks the beginning of our universe,every year a Flash Mob signals the start of our cultural fest,  Incandescence! It's a brief but intense burst of energy,  transforming the ordinary into an unforgettable display.  Appearing at a public spot with an air of intrigue, we  effortlessly execute a rapid and exhilarating performance  before vanishing into the surroundings. Its charm comes  from its brief, exciting moments. The performance is quick  but full of energy. In those short minutes, it breaks the  monotony and turns into a lively show that you won't forget.",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/ytwyldzdumeggk71sy1k",
+    "imgUrls": ["/gallery/29.jpg", "/gallery/30.jpg"],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "7",
+    "header": "KALA DARSHAN",
+    "subheader": "",
+    "text": "The cultural festival, Incandescence, is showcasing a captivating exhibition of digital and fine arts on our campus.",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/tsdeavauv1wnfltrejcz",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "8",
+    "header": "DEPRADOR",
+    "subheader": "",
+    "text": "Slashing through your words till your opponent bites their tongue? Arguments so strong, facts so intact, questions so powerful that nobody can push you down! Sounds interesting?",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089976/Day01/lnqjeldzvq61mtcnqqa2.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "9",
+    "header": "NITSMUN",
+    "subheader": "",
+    "text": "Embark on a journey where your voice shapes your global solutions. Every debate is an opportunity and every resolution paves the way for change.",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090651/incand%272023/h5psqbmndtnsffjvtsoa.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "10",
+    "header": "SOKRATIC",
+    "subheader": "",
+    "text": "The quizzing module of the Incandescence'24, Sokratic, is nothing short of a cerebral adventure  where you will have to grasp on to your thinking caps.Get ready for two days of intellectual excitement as we plunge you into the realms of General and MELA  themed quizzes that might set your minds ablaze. We  have brought to you esteemed quizmasters like  Bhushan Patel, Somnath Chanda, Abhra Das, Titash  Banerjee and many more. Nervous clicking of pens,  scratching of heads, ticking of the timer and all the  victorious ‘aah’s and slightly missed ‘ooh’s awaits you  at the best platform you can possibly get to sharpen  that rust right off your brains! So, the quiz-tastic  carnival of Sokratic and its vibrant hues of bewildering  questions merge under the Incandescence’24 to give  you a once in a lifetime opportunity. Don’t miss it!",
+    "header2": "",
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "11",
+    "header": "DARPAN",
+    "subheader": "",
+    "text": "Our photography club will set up a photo gallery during the festival.",
+    "header2": "",
+    "thumbnail": "",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "12",
+    "header": "MELODIES OF INCAND",
+    "subheader": "",
+    "text": "Your Spotify wrapped but live, sounds enchanting right? This module under Incandescence’24 will bring to you, an evening filled with music that strikes those chords embedded in your heart",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708108077/samples/Incand23D-0/melodiesOfIncand_xpgp5a.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "13",
+    "header": "Battle of Bands",
+    "subheader": "",
+    "text": "This isn't your typical gig; it's a sonic expedition where bands break free from the mainstream and let their unique sounds resonate through the air.",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090649/incand%272023/ii6yctmfs6twstot4ll6.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "14",
+    "header": "Indie Unplugged",
+    "subheader": "",
+    "text": "Under the twinkle of stars and the soft glow of fairy lights, in a mood oh-so-romantic,Indie Unplugged comes to you as an escape from the mainstream",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/dqukaafw42j4t11nnrak",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "15",
+    "header": "Roadies",
+    "subheader": "",
+    "text": "Do you have it in you to go up against the likes of Rannvijay and Raghu Ram? Do you have it in you to be audacious and obnoxious when put through trials that test your physical prowess  and mental fortitude?",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708108076/samples/Incand23D-0/Roadies_bffsxb.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "16",
+    "header": "Mr. NIT",
+    "subheader": "",
+    "text": "Get Ready to witness the epitome of strength and sculpted physiques at 'Mr. NIT,' our premier bodybuilding competition that's set to redefine fitness and showcase the embodiment of dedication",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090647/incand%272023/nqz7dixrgycxxncrm6lc.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "17",
+    "header": "Nataraj",
+    "subheader": "",
+    "text": "Welcome to InfluenceFiesta: The Ultimate Influencer Extravaganza! Get ready for a night dedicated to the digital maestros shaping our online world",
+    "header2": "",
+    "thumbnail": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708108076/samples/Incand23D-0/Natraaj_uhbuxp.webp",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  },
+  {
+    "id": "18",
+    "header": "FRAMES",
+    "subheader": "",
+    "text": "In the heart of NIT Silchar beats a rhythm of creativity, where lenses are wielded like wands, conjuring tales from pixels and light. Obiettivo, the Photography Club, in association with Incandescence 2024, invites you to join the magical journey of FRAMES 2024.",
+    "header2": "",
+    "thumbnail": "/events/frames.png",
+    "imgUrls": [],
+    "registrationLink": {
+      "name": "Register",
+      "link": ""
+    }
+  }
+]

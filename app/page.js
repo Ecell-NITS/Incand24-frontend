@@ -1,35 +1,35 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-// import Lottie from "lottie-react";
+import { useState, useEffect } from "react";
 import { Allura as allura } from "next/font/google";
-import Sponsor from "./components/Sponsor/Sponsor";
+// import Sponsor from "./components/Sponsor/Sponsor";
 import styles from "./Home.module.scss";
 import About from "./components/about/About";
 import Social from "./components/SocialHandles/Social";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+
 import ContactForm from "./components/ContactForm/ContactForm";
+// import Page from "./components/registration/Form";
 // import LoaderAnimation from "./components/Loader/Loader";
 // import animationData from "../public/loader.lottie";
 
 // import LottieAnimation from "./components/Loader/Loader";
-
 const Allura = allura({
   weight: ["400"],
   subsets: ["latin"],
 });
-
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [heightFixed, setHeightFixed] = useState(true);
-
   useEffect(() => {
     document.title = "Incandescence 2024";
     const isFinishedLoading = () => {
       if (document.readyState === "complete") {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 5000);
       }
     };
     isFinishedLoading();
@@ -73,15 +73,23 @@ const Home = () => {
   const navlink = [
     {
       name: "Home",
-      link: "hero",
+      href: "/",
     },
     {
-      name: "About Us",
-      link: "about",
+      name: "Gallery",
+      href: "gallery",
+    },
+    {
+      name: "Events",
+      href: "events",
     },
     {
       name: "Sponsors",
-      link: "sponsor",
+      href: "sponsors",
+    },
+    {
+      name: "Team",
+      href: "team",
     },
   ];
 
@@ -103,8 +111,9 @@ const Home = () => {
         <Navbar navlink={navlink} />
         <Hero loading={loading} />
         <About />
-        <Sponsor />
+        {/* <Sponsor /> */}
         <ContactForm />
+        {/* <Page /> */}
         <Footer homePage />
         <Social />
       </main>

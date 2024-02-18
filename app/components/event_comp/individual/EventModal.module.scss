@@ -1,0 +1,190 @@
+.modal {
+  width: 90vw;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.748);
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  backdrop-filter: blur(5px);
+
+  @media screen and (max-width: 900px) {
+    border-radius: 1rem;
+  }
+
+  .card {
+    position: relative;
+    // width: 100%;
+    height: 30vw;
+    border-radius: 10px;
+    margin: 2rem;
+    background: linear-gradient(90deg, red, blue);
+    overflow: hidden;
+    // object-fit: cover;
+
+    .cross {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+      cursor: pointer;
+      z-index: 12;
+      @media screen and (max-width: 600px) {
+        top: 2px;
+        right: 2px;
+      }
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .info {
+      position: relative;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.251),
+        rgba(0, 0, 0, 0.958)
+      );
+      width: 100%;
+      height: 100%;
+    }
+    .desc {
+      position: absolute;
+      z-index: 10;
+      height: 100%;
+      width: 40%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      right: 0;
+      color: white;
+
+      @media screen and (max-width: 1080px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 900px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 760px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+
+        @media screen and (max-width: 900px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 760px) {
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 1.5rem;
+        }
+      }
+      p {
+        height: 40%;
+        overflow: auto;
+        font-size: 1.2rem;
+
+        @media screen and (max-width: 900px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 760px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 0.625rem;
+        }
+        &::-webkit-scrollbar {
+          width: 0.4vw;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #3ec5a4;
+          border-radius: 5vw;
+          // height: 30vh;
+        }
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      height: 40vw;
+      display: flex;
+      // width: 100%;
+      align-items: center;
+      justify-content: center;
+      .desc {
+        // position: static;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media screen and (max-width: 760px) {
+      height: 50vw;
+    }
+    @media screen and (max-width: 600px) {
+      height: 40vh;
+      // width: 60vw;
+    }
+  }
+
+  .memories {
+    h2 {
+      color: white;
+
+      @media screen and (min-width: 760px) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .carousel {
+    height: fit-content;
+    margin: 2rem;
+
+    @media screen and (max-width: 600px) {
+      margin-inline: 0;
+    }
+
+    .slides {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .slideImage {
+        width: 60%;
+        height: 50vh;
+        aspect-ratio: 1/2;
+        background-color: rgb(15, 3, 43);
+        border-radius: 1rem;
+        position: relative;
+
+        img {
+          object-fit: cover;
+          border-radius: inherit;
+        }
+
+        @media screen and (max-width: 900px) {
+          height: 30vw;
+          width: 60vw;
+        }
+        @media screen and (max-width: 760px) {
+          height: 30vh;
+          // width: 60vw;
+        }
+        @media screen and (max-width: 600px) {
+          height: 20vh;
+          // width: 60vw;
+        }
+      }
+    }
+  }
+}
