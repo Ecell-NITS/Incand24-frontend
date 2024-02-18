@@ -7,7 +7,7 @@
   margin-bottom: -10%;
   .wave {
     height: 30vh;
-
+    margin-top: 15vw;
     .absolute {
       position: absolute;
       top: -3%;
@@ -96,5 +96,11 @@
     .blur {
       filter: blur(20px);
     }
+  }
+}
+
+@media (max-width: 660px) {
+  .wave {
+    margin-top: 30vw !important;
   }
 }
