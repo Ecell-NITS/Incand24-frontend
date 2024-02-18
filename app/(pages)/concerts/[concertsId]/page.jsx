@@ -1,12 +1,18 @@
-"use client";
+// "use client";
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import events from "@/_db/concerts";
 import EventHero from "@/app/components/event_comp/hero/EventHero";
 import styles from "./Events.module.scss";
 import EventModal from "@/app/components/event_comp/individual/EventModal";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
+
+export function generateStaticParams() {
+  return events.map((event) => ({
+    concertsId: event.id,
+  }));
+}
 
 const EventPage = ({ params }) => {
   const item = events.find((event) => {
@@ -32,9 +38,9 @@ const EventPage = ({ params }) => {
     },
   ];
 
-  useEffect(() => {
-    document.title = `${item.header} | Incandescence 2024`;
-  }, [item.header]);
+  // useEffect(() => {
+  //   document.title = `${item.header} | Incandescence 2024`;
+  // }, [item.header]);
   // console.log(item);
   return (
     <div className={styles.EventPage}>
