@@ -78,25 +78,25 @@
         "id": 13,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708254188/samples/Incand23D-0/WhatsApp_Image_2024-02-18_at_4.10.59_PM_ey20bn.webp",
         "alt": "image-gallery",
-        "name": "col2"
+        "name": "col1"
       },
       {
         "id": 14,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090784/samples/Incand23D-0/38_igwz5n.webp",
         "alt": "image-gallery",
-        "name": "col2"
+        "name": "col1"
       },
       {
         "id": 15,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090785/samples/Incand23D-0/36_gqmhpm.webp",
         "alt": "image-gallery",
-        "name": "col2"
+        "name": "col1"
       },
       {
         "id": 16,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090785/samples/Incand23D-0/37_vs7oww.webp",
         "alt": "image-gallery",
-        "name": "col2"
+        "name": "col1"
       }
     ]
   },
@@ -180,49 +180,49 @@
         "id": 25,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090807/samples/Incand23D-0/23_uuyogo.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 26,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090804/samples/Incand23D-0/25_uficvg.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 27,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090806/samples/Incand23D-0/24_t0jxzk.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 28,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090791/samples/Incand23D-0/35_w89tes.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 29,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090806/samples/Incand23D-0/26_zkjomw.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 30,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090795/samples/Incand23D-0/29_sa6g1g.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 31,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090811/samples/Incand23D-0/21_hmowdx.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       },
       {
         "id": 32,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090813/samples/Incand23D-0/18_hwnnqt.webp",
         "alt": "image-gallery",
-        "name": "col3"
+        "name": "col2"
       }
     ]
   },
@@ -269,73 +269,73 @@
         "id": 37,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090827/samples/Incand23D-0/13_mriray.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 38,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090828/samples/Incand23D-0/15_inxsbo.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 39,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090829/samples/Incand23D-0/14_ervpjt.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 40,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090833/samples/Incand23D-0/12_xxf0vn.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 41,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090837/samples/Incand23D-0/10_viuzti.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 42,
         "image": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708090839/samples/Incand23D-0/11_mcslsn.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 43,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089980/Day01/g5nji5qh3nsb7vrmv4k0.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 44,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089979/Day01/rhq2mvucflvbac8ce2vw.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 45,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089979/Day01/rmytbbrzvn1ensjrhf7k.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 46,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089979/Day01/qt64ugc6fcoedayq1dfn.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 47,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089979/Day01/bd8arjttuknyz2ywjfqu.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       },
       {
         "id": 48,
         "image": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089978/Day01/xu8ifiggdukyrdn45jfo.webp",
         "alt": "image-gallery",
-        "name": "col4"
+        "name": "col3"
       }
     ]
   }
