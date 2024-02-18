@@ -17,12 +17,11 @@ const SponsorsHero = () => {
     <div className={`${styles.hero} ${allura.className}`}>
       <div className={styles.title}>
         Sponsors
-        <span>Sponsors</span>
+        {/* <span>Sponsors</span>
         <span>Sponsors</span>
         <span>
-          {/* <Image id={styles.logo} src={logo} width={100} height={100} alt="Incand'24" /> */}
           Incand&apos;24
-        </span>
+        </span> */}
       </div>
 
       <motion.div id={styles.cursor} animate="default"></motion.div>

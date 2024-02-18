@@ -11,7 +11,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 
 import ContactForm from "./components/ContactForm/ContactForm";
-import Page from "./components/registration/Form";
+// import Page from "./components/registration/Form";
 // import LoaderAnimation from "./components/Loader/Loader";
 // import animationData from "../public/loader.lottie";
 
@@ -77,19 +77,19 @@ const Home = () => {
     },
     {
       name: "Gallery",
-      href: "/gallery",
+      href: "gallery",
     },
     {
       name: "Events",
-      href: "/events",
+      href: "events",
     },
     {
       name: "Sponsors",
-      href: "/sponsors",
+      href: "sponsors",
     },
     {
       name: "Team",
-      href: "/team",
+      href: "team",
     },
   ];
 
@@ -113,7 +113,7 @@ const Home = () => {
         <About />
         {/* <Sponsor /> */}
         <ContactForm />
-        <Page />
+        {/* <Page /> */}
         <Footer homePage />
         <Social />
       </main>
