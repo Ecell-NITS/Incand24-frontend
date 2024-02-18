@@ -1,6 +1,6 @@
-"use client";
+// "use client"
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import events from "@/_db/events";
 import EventHero from "@/app/components/event_comp/hero/EventHero";
 import styles from "./Events.module.scss";
@@ -8,9 +8,16 @@ import EventModal from "@/app/components/event_comp/individual/EventModal";
 import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 
+export function generateStaticParams() {
+  return events.map((event) => ({
+    eventsId: event.id,
+  }));
+}
+
 const EventPage = ({ params }) => {
+  const { eventsId } = params;
   const item = events.find((event) => {
-    return event.id === params.eventsId;
+    return event.id === eventsId;
   });
 
   const navlink = [
@@ -32,9 +39,14 @@ const EventPage = ({ params }) => {
     },
   ];
 
-  useEffect(() => {
+  if (typeof document !== "undefined") {
     document.title = `${item.header} | Incandescence 2024`;
-  }, [item.header]);
+    // console.log("running");
+  }
+
+  // useEffect(() => {
+  //   document.title = `${item.header} | Incandescence 2024`;
+  // }, [item.header]);
   // console.log(item)
   return (
     <div className={styles.EventPage}>
