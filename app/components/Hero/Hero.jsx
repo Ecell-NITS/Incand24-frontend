@@ -125,7 +125,12 @@ const Hero = ({ loading }) => {
           animate={!loading ? { x: "-100%" } : {}}
           transition={{ duration: 7 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            priority
+            fill
+          />
         </motion.div>
         <motion.div
           id={`${!loading ? styles.leftTree : ""}`}
@@ -136,7 +141,12 @@ const Hero = ({ loading }) => {
           animate={!loading ? { x: "-100%" } : {}}
           transition={{ duration: 7 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" priority fill />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            priority
+            fill
+          />
         </motion.div>
 
         <motion.div
@@ -147,7 +157,12 @@ const Hero = ({ loading }) => {
           animate={!loading ? { x: "100%" } : {}}
           transition={{ duration: 7 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            fill
+            priority
+          />
         </motion.div>
         <motion.div
           id={`${!loading ? styles.rightTree : ""}`}
@@ -158,7 +173,12 @@ const Hero = ({ loading }) => {
           animate={!loading ? { x: "100%" } : {}}
           transition={{ duration: 7 }}
         >
-          <Image alt="left_Tree" src="/images/hero_assets/Cloud.svg" fill priority />
+          <Image
+            alt="left_Tree"
+            src="https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/a7joizsa87pxk0mdxdt6"
+            fill
+            priority
+          />
         </motion.div>
 
         <motion.div
