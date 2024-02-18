@@ -52,6 +52,7 @@
       );
       width: 100%;
       height: 100%;
+      // padding-inline: 5%;
     }
     .desc {
       position: absolute;
@@ -61,7 +62,7 @@
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      right: 0;
+      right: 5%;
       color: white;
 
       @media screen and (max-width: 1080px) {
