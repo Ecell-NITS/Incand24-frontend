@@ -35,11 +35,10 @@ const Hero = () => {
           <h1 className={allura.className}>Glimpse</h1>
           <div className={styles.glimpse}>
             <iframe
-              src="https://www.youtube.com/embed/YmjE5-_z9VM?si=ulxkQUyzFn0yqtQF&amp;start=4&amp;autoplay=1&amp;loop=1&amp;mute=1"
+              src="https://www.youtube.com/embed/YmjE5-_z9VM?si=ulxkQUyzFn0yqtQF&amp;start=4&amp;loop=1&amp;mute=1"
               title="Incandenscence"
               frameborder="0"
-              allow="accelerometer; autoplay; loop"
-              loop
+              allow="accelerometer; loop"
             ></iframe>
           </div>
         </div>
