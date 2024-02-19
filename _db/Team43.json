@@ -53,16 +53,6 @@
       "insta": "https://www.instagram.com/tropci__?igsh=eDk5bTF6Z2ViY3Y1"
     },
     {
-      "id": 89,
-      "name": "Shyantani Choudhury",
-      "rank": "Executive Head",
-      "image": "https://res.cloudinary.com/dmnndqynj/image/upload/f_auto,q_auto/edq4lrtxas5rlzavkdwu.webp",
-      "fb": "https://www.facebook.com/shyantani.choudhury.3?mibextid=ZbWKwL",
-      "linkedln": "",
-      "git": "",
-      "insta": "https://www.instagram.com/shyantani._.ch?igsh=MTRxbjdrcGl1bDBu"
-    },
-    {
       "id": 5,
       "name": "Hannan Afridi ",
       "rank": "Executive Head",
@@ -71,6 +61,16 @@
       "linkedln": "https://www.linkedin.com/in/hannan-afridi-39ab0b203/",
       "git": "",
       "insta": "https://www.instagram.com/_the_thunder_emperor________/?hl=en"
+    },
+    {
+      "id": 89,
+      "name": "Shyantani Choudhury",
+      "rank": "Executive Head",
+      "image": "https://res.cloudinary.com/dmnndqynj/image/upload/f_auto,q_auto/edq4lrtxas5rlzavkdwu.webp",
+      "fb": "https://www.facebook.com/shyantani.choudhury.3?mibextid=ZbWKwL",
+      "linkedln": "",
+      "git": "",
+      "insta": "https://www.instagram.com/shyantani._.ch?igsh=MTRxbjdrcGl1bDBu"
     },
     {
       "id": 6,
@@ -341,19 +341,9 @@
       "insta": "https://www.instagram.com/gyandeep_____gogoi/"
     },
     {
-      "id": 32,
-      "name": "Bikash Sharma",
-      "rank": "Event Management Head",
-      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265087/techTeam2/cjbexhtchfigpy0brep6.webp",
-      "fb": "https://www.facebook.com/profile.php?id=100058471091139",
-      "linkedln": "",
-      "git": "",
-      "insta": "https://www.instagram.com/bikash_18_9?igsh=amM2dW5zMHQ5ODd0"
-    },
-    {
       "id": 33,
       "name": "Ankit Srivastava ",
-      "rank": "Event Management Head & Content Head",
+      "rank": "Content Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278577/techTeam2/aic8ainv9gktajvwy04r.webp",
       "fb": "https://www.facebook.com/ankit.srivastava.0015",
       "linkedln": "https://www.linkedin.com/in/srivastavaankit15/",
