@@ -13,6 +13,10 @@ export function generateStaticParams() {
     eventsId: event.id,
   }));
 }
+export const metadata = {
+  title: "Capre Diem | Incandescence 2024",
+  description: "Bollywood night of Incandescence",
+};
 
 const EventPage = ({ params }) => {
   const { eventsId } = params;
