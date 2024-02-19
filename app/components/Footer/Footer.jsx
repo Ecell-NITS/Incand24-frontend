@@ -116,10 +116,7 @@ const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
           <div className={styles.follow}>
             Follow us
             <div className={styles.social}>
-              <a
-                href="https://www.instagram.com/incandescence.nitsilchar"
-                target="_blank"
-              >
+              <a href="https://www.instagram.com/incandescence_2024/" target="_blank">
                 <Icon
                   icon="mdi:instagram"
                   color="#acebbd"
