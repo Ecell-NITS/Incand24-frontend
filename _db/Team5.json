@@ -30,36 +30,36 @@
       "git": "",
       "insta": "https://www.instagram.com/eisha_s.halder/"
     },
-  {
-    "id": 7,
-    "name": "Ashish Handique",
-    "rank": "Glitterati Module Head",
-    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278517/techTeam2/in2wtynstvtizv8p2m5f.webp",
-    "fb": "https://www.facebook.com/ashish.handique.94/",
-    "linkedln": "www.linkedin.com/in/ashish-handique-98255920a",
-    "git": "",
-    "insta": "https://www.instagram.com/_axish_10/"
-  },
-  {
-    "id": 8,
-    "name": "Nilabh Das",
-    "rank": "Glitterati Module Head",
-    "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278631/techTeam2/yt3ifs4qtron2ohgbolr.jpg",
-    "fb": "https://www.facebook.com/nilabh.das.16?mibextid=ZbWKwL",
-    "linkedln": "https://www.linkedin.com/in/nilabh-das-4a39a022a",
-    "git": "",
-    "insta": ""
-  },
-  {
-    "id": 9,
-    "name": "Darshana Handique",
-    "rank": "Glitterati Module Head",
-    "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/mrzuefppzue3etrarzfc.webp",
-    "fb": "https://www.facebook.com/darshana.handique.71?mibextid=ZbWKwL",
-    "linkedln": "",
-    "git": "",
-    "insta": ""
-  },
+    {
+      "id": 7,
+      "name": "Ashish Handique",
+      "rank": "Glitterati Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278517/techTeam2/in2wtynstvtizv8p2m5f.webp",
+      "fb": "https://www.facebook.com/ashish.handique.94/",
+      "linkedln": "www.linkedin.com/in/ashish-handique-98255920a",
+      "git": "",
+      "insta": "https://www.instagram.com/_axish_10/"
+    },
+    {
+      "id": 8,
+      "name": "Nilabh Das",
+      "rank": "Glitterati Module Head",
+      "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708278631/techTeam2/yt3ifs4qtron2ohgbolr.jpg",
+      "fb": "https://www.facebook.com/nilabh.das.16?mibextid=ZbWKwL",
+      "linkedln": "https://www.linkedin.com/in/nilabh-das-4a39a022a",
+      "git": "",
+      "insta": ""
+    },
+    {
+      "id": 9,
+      "name": "Darshana Handique",
+      "rank": "Glitterati Module Head",
+      "image": "https://res.cloudinary.com/dg1pinjfp/image/upload/f_auto,q_auto/mrzuefppzue3etrarzfc.webp",
+      "fb": "https://www.facebook.com/darshana.handique.71?mibextid=ZbWKwL",
+      "linkedln": "",
+      "git": "",
+      "insta": ""
+    },
     {
       "id": 1,
       "name": "Jadav Anusha ",
@@ -95,7 +95,7 @@
     {
       "id": 2,
       "name": "Purushotam Kumar",
-      "rank": "The Thespian Rhapsody Co-Head",
+      "rank": "The Thespian Rhapsody Head",
       "image": "https://res.cloudinary.com/draptrzrc/image/upload/v1708265084/techTeam2/om2nfpoglzdml8gkboiz.webp",
       "fb": "https://www.facebook.com/profile.php?id=100074689072199&mibextid=ZbWKwL",
       "linkedln": "https://www.linkedin.com/public-profile/settings",
