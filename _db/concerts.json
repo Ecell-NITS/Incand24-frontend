@@ -5,8 +5,16 @@
     "subheader": "",
     "text": "Get ready to rock your socks off with Thundermarch – the ultimate fusion of electrifying energy and soulful melodies! Join us on a journey through the realms of music, where every note strikes like lightning and every beat thunders through your veins. Experience the raw power of our sound as we ignite the stage with passion and rhythm.",
     "header2": "",
-    "thumbnail": "https://res.cloudinary.com/draptrzrc/image/upload/v1708090647/incand%272023/yzmryqqfyrfse8hfa6op.webp",
-    "imgUrls": [],
+    "thumbnail": "/events/thunder/7.jpg",
+    "imgUrls": [
+      "/events/thunder/1.jpg",
+      "/events/thunder/2.jpg",
+      "/events/thunder/3.jpg",
+      "/events/thunder/4.jpg",
+      "/events/thunder/5.jpg",
+      "/events/thunder/6.jpg",
+      "https://res.cloudinary.com/draptrzrc/image/upload/v1708090647/incand%272023/yzmryqqfyrfse8hfa6op.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
@@ -18,8 +26,20 @@
     "subheader": "",
     "text": "Embark on a soul-stirring journey with Nirvana – the iconic band that revolutionized the music scene! Join us for an unforgettable evening as we pay homage to the legendary Kurt Cobain and his bandmates with a tribute concert like no other. From the haunting melodies of 'Smells Like Teen Spirit' to the raw emotion of 'Come As You Are,' experience the timeless magic of Nirvana's music live on stage.",
     "header2": "",
-    "thumbnail": "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089975/Day01/utyqgrotjuark5x3vftf.webp",
-    "imgUrls": [],
+    "thumbnail": "/events/nirvana/4.jpg",
+    "imgUrls": [
+      "/events/nirvana/1.jpg",
+      "/events/nirvana/2.jpg",
+      "/events/nirvana/3.jpg",
+      "/events/nirvana/4.jpg",
+      "/events/nirvana/5.jpg",
+      "/events/nirvana/6.jpg",
+      "/events/nirvana/7.jpg",
+      "/events/nirvana/8.jpg",
+      "/events/nirvana/9.jpg",
+      "/events/nirvana/10.jpg",
+      "https://res.cloudinary.com/drhjm5shz/image/upload/v1708089975/Day01/utyqgrotjuark5x3vftf.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
