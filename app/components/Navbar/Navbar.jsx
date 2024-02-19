@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 // import Link from "next/link";
 import {
@@ -44,7 +44,7 @@ const Allura = allura({
 const Navbar = ({ navlink }) => {
   // const [select, setSelect] = useState(false);
   const [close, setClose] = useState(false);
-  const [visibleNav, setVisibleNav] = useState(false);
+  // const [visibleNav, setVisibleNav] = useState(false);
   // const [navbar, setNavbar] = useState(!defaultDark);
   const router = useRouter();
   const change = () => {
@@ -55,24 +55,24 @@ const Navbar = ({ navlink }) => {
     }
   };
 
-  useEffect(() => {
-    const SetNavbar = () => {
-      if (window.scrollY >= 400) {
-        setVisibleNav(true);
-      } else {
-        setVisibleNav(false);
-      }
-    };
+  // useEffect(() => {
+  //   const SetNavbar = () => {
+  //     if (window.scrollY >= 400) {
+  //       setVisibleNav(true);
+  //     } else {
+  //       setVisibleNav(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", SetNavbar);
-  });
+  //   window.addEventListener("scroll", SetNavbar);
+  // });
 
   return (
     <div>
       <nav>
         <button
           className={styles.hamburger}
-          style={{ top: visibleNav ? 0 : "" }}
+          // style={{ top: visibleNav ? 0 : "" }}
           onClick={change}
           label="menu"
         >
@@ -154,7 +154,10 @@ const Navbar = ({ navlink }) => {
             </div>
           </div>
         </div>
-        <div className={styles.menu_bar} style={{ top: visibleNav ? "2vh" : "" }}>
+        <div
+          className={styles.menu_bar}
+          // style={{ top: visibleNav ? "2vh" : "" }}
+        >
           <div className={styles.wrapper}>
             <div
               role="button"

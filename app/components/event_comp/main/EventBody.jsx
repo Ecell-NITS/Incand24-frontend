@@ -50,7 +50,7 @@ const EventBody = () => {
           name="capre"
           id="capre"
         >
-          Capre Diem
+          Carpe Diem
         </div>
         <div
           onClick={() => handleClick("concerts")}
