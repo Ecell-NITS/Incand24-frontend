@@ -177,7 +177,7 @@ const Footer = ({ isHills = true, homePage = false, galleryPage = false }) => {
             </a>
           </div>
           <div className={styles.copyright}>
-            ©Copyright 2024, National Institute Of Technology, Silchar
+            ©Copyright 2024, National Institute Of Technology Silchar
           </div>
         </div>
       </div>

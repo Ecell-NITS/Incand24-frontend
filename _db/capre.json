@@ -6,7 +6,14 @@
     "text": "With a crescendo of beats that echo the spirit of Bollywood, the concert will create an immersive experience, inviting attendees to dance beneath the vibrant lights and losethemselves in the euphoria of live music. This is not merely a concert; it's a celebration of rhythm, melody, and the timeless allure of Bollywood that will leave an indelible mark on the memories of all who seize the night.",
     "header2": "",
     "thumbnail": "/gallery/36.jpg",
-    "imgUrls": ["/gallery/36.jpg", "/gallery/31.jpg","/events/carpe/1.jpg","/events/carpe/2.jpg","/events/carpe/3.jpg","/events/carpe/4.jpg"],
+    "imgUrls": [
+      "/gallery/36.jpg",
+      "/gallery/31.jpg",
+      "/events/carpe/1.jpg",
+      "/events/carpe/2.jpg",
+      "/events/carpe/3.jpg",
+      "/events/carpe/4.jpg"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
