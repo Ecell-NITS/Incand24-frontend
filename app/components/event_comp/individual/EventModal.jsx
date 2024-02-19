@@ -74,7 +74,7 @@ const EventModal = ({ data = events[0], previousRoute = "events" }) => {
         <Swiper
           loop
           autoplay={{
-            delay: 1500,
+            delay: 4000,
             disableOnInteraction: true,
           }}
           className={styles.carousel}
