@@ -82,7 +82,7 @@ const PrevSponsors = () => {
     },
     {
       link: `/sponsors/cubelelo.png`,
-      title: `Nai`,
+      title: `Cubelelo`,
     },
     {
       link: `/sponsors/interviewbuddy.avif`,
