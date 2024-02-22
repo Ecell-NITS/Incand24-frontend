@@ -55,11 +55,12 @@
     "thumbnail": "/events/promBg.png",
     "imgUrls": [
       "/events/prom/1.jpeg",
-      "/events/promBg.png"
+      "/events/promBg.png",
+      "https://res.cloudinary.com/dp92qug2f/image/upload/v1708584906/2prom_jorsg0.jpg"
     ],
     "registrationLink": {
       "name": "Register",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdamZfBimTKkxLxHuwku8LpiRKmVWvOwUuog-BIc6ngBBMA3w/viewform"
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfINTGRNY5A43oigl4W2xpSjphwoorEnvtc2oXVVe8yjG8PkQ/viewform"
     }
   },
   {
@@ -181,7 +182,10 @@
     "text": "Your Spotify wrapped but live, sounds enchanting right? This module under Incandescence’24 will bring to you, an evening filled with music that strikes those chords embedded in your heart",
     "header2": "",
     "thumbnail": "https://res.cloudinary.com/dt2zy7sny/image/upload/v1708108077/samples/Incand23D-0/melodiesOfIncand_xpgp5a.webp",
-    "imgUrls": ["/events/melodies/1.webp","/events/melodies/2.webp"],
+    "imgUrls": [
+      "/events/melodies/1.webp",
+      "/events/melodies/2.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
@@ -207,7 +211,10 @@
     "text": "Under the twinkle of stars and the soft glow of fairy lights, in a mood oh-so-romantic,Indie Unplugged comes to you as an escape from the mainstream",
     "header2": "",
     "thumbnail": "https://res.cloudinary.com/dagggqd6g/image/upload/f_auto,q_auto/dqukaafw42j4t11nnrak",
-    "imgUrls": ["/events/melodies/3.webp","/events/melodies/4.webp"],
+    "imgUrls": [
+      "/events/melodies/3.webp",
+      "/events/melodies/4.webp"
+    ],
     "registrationLink": {
       "name": "Register",
       "link": ""
