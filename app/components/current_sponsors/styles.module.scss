@@ -65,6 +65,7 @@
       img {
         border-radius: 10px;
         z-index: 9;
+        object-fit: contain;
 
         @media screen and (max-width: 915px) {
           height: 9.25rem;

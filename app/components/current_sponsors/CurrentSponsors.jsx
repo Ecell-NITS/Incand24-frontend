@@ -19,7 +19,7 @@ const CurrentSponsors = () => {
           return (
             <div key={sponsor.id} className={styles.Cardwrapper}>
               <Image
-                style={{ position: "absolute", zIndex: "0" }}
+                style={{ position: "absolute", zIndex: "0", objectFit: "cover" }}
                 src="/Card.png"
                 alt="bg"
                 fill
