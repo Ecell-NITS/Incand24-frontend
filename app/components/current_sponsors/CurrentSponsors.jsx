@@ -2,6 +2,7 @@ import React from "react";
 import { Allura } from "next/font/google";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import sponsors from "@/_db/sponsors";
 
 const allura = Allura({
   weight: ["400"],
@@ -9,44 +10,6 @@ const allura = Allura({
 });
 
 const CurrentSponsors = () => {
-  const sponsors = [
-    {
-      id: 1,
-      name: "Sponsor 1",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-    {
-      id: 2,
-      name: "Sponsor 2",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-    {
-      id: 3,
-      name: "Sponsor 2",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-    {
-      id: 4,
-      name: "Sponsor 2",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-    {
-      id: 5,
-      name: "Sponsor 2",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-    {
-      id: 6,
-      name: "Sponsor 2",
-      link: "https://www.google.com",
-      image: "/sponsors/Gplus.png",
-    },
-  ];
   return (
     <div className={styles.container}>
       <h1 className={`${styles.text} ${allura.className}`}>Current Sponsors</h1>
@@ -55,7 +18,14 @@ const CurrentSponsors = () => {
         {sponsors.map((sponsor) => {
           return (
             <div key={sponsor.id} className={styles.Cardwrapper}>
-              <Image src={sponsor.image} alt="sponsors" height={150} width={150} />
+              <Image
+                style={{ position: "absolute", zIndex: "0" }}
+                src="/Card.png"
+                alt="bg"
+                fill
+                layout=""
+              />
+              <Image src={sponsor.link} alt="sponsors" height={150} width={150} />
               <div className={styles.name}>{sponsor.name}</div>
             </div>
           );
