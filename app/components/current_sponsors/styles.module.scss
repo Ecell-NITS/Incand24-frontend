@@ -1,0 +1,120 @@
+.container {
+  margin: 9% 5%;
+
+  @media screen and (max-width: 420px) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .text {
+    text-align: center;
+    font-size: max(6vw, 2rem);
+    color: white;
+    text-wrap: wrap;
+  }
+
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+
+    .Cardwrapper {
+      position: relative;
+      padding: 2% 2.5%;
+      padding-bottom: 50px;
+      border-radius: 15px;
+      height: 290px;
+      width: 238px;
+      overflow: hidden;
+
+      background-image: url("../../../public/Lights.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 1.5px solid;
+      background-color: #010608;
+
+      border-image-source: linear-gradient(
+        270deg,
+        #3ec5ff 0%,
+        rgba(29, 132, 254, 0) 73.61%,
+        rgba(62, 197, 255, 0) 73.61%
+      );
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 915px) {
+        height: 16.5625rem;
+        width: 12.5rem;
+      }
+      @media screen and (max-width: 770px) {
+        height: 15rem;
+        width: 11rem;
+      }
+      @media screen and (max-width: 420px) {
+        height: 12rem;
+        width: 8rem;
+      }
+
+      img {
+        border-radius: 10px;
+        z-index: 9;
+        object-fit: contain;
+
+        @media screen and (max-width: 915px) {
+          height: 9.25rem;
+          width: 9.25rem;
+        }
+        @media screen and (max-width: 770px) {
+          height: 7.25rem;
+          width: 7.25rem;
+        }
+
+        @media screen and (max-width: 420px) {
+          height: 28vw;
+          width: 30vw;
+        }
+      }
+
+      .name {
+        margin-top: 2vw;
+        text-wrap: wrap;
+        text-align: center;
+        // color: linear-gradient(180deg, #FFFFFF 43.1%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(
+          180deg,
+          #ffffff 43.1%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        background-clip: text;
+        color: transparent;
+        font-size: max(1.6vw, 1.25rem);
+      }
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    .Cardwrapper {
+      padding: 4% 2.5% !important;
+      padding-bottom: 7% !important;
+
+      .img {
+        height: 20vw !important;
+        width: 20vw !important;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .Cardwrapper {
+      .name {
+        font-size: 4vw !important;
+      }
+    }
+  }
+}

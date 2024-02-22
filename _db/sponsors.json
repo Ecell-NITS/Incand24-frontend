@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Asus",
+    "link": "/currentSponsors/Asus.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Amul",
+    "link": "/currentSponsors/Amul.png"
+  },
+  {
+    "id": 3,
+    "name": "Cogg",
+    "link": "/currentSponsors/cogg.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Unstop",
+    "link": "/currentSponsors/unstop.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Learn While Travelling",
+    "link": "/currentSponsors/LWT.png"
+  },
+  {
+    "id": 6,
+    "name": "Stock Edge",
+    "link": "/currentSponsors/stockedge.png"
+  },
+  {
+    "id": 7,
+    "name": "Aroma",
+    "link": "/currentSponsors/Aroma.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "ASUP",
+    "link": "/currentSponsors/ASUP.png"
+  },
+  {
+    "id": 9,
+    "name": "The Bishal",
+    "link": "/currentSponsors/bishalhotel.jpg"
+  },
+  {
+    "id": 10,
+    "name": "C4",
+    "link": "/currentSponsors/C4logo.png"
+  },
+  {
+    "id": 11,
+    "name": "The Catering Room",
+    "link": "/currentSponsors/catering.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Fires And Flavours",
+    "link": "/currentSponsors/firesandflavours.png"
+  },
+  {
+    "id": 13,
+    "name": "Jai Hind Cafe",
+    "link": "/currentSponsors/jaihind.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Joy Dazz",
+    "link": "/currentSponsors/joydazz.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Karims's",
+    "link": "/currentSponsors/Karims.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Kurmi Enterprise",
+    "link": "/currentSponsors/kurmi.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "The London Shakes",
+    "link": "/currentSponsors/london.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Mama's Hearth",
+    "link": "/currentSponsors/Mamasheart.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Momo Magic Cafe",
+    "link": "/currentSponsors/MomoMagic.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Sky Light Restaurant",
+    "link": "/currentSponsors/Skylight.jpeg"
+  }
+]
