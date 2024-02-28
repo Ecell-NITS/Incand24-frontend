@@ -143,15 +143,21 @@ const ContactForm = () => {
           </div>
           <div className={styles.sub}>
             <button
-              disabled={submitting || !isButtonEnabled}
+              // disabled={submitting || !isButtonEnabled}
+              disabled
+              // style={{
+              //   cursor: submitting || !isButtonEnabled ? "not-allowed" : "pointer",
+              //   opacity: submitting || !isButtonEnabled ? "0.5" : "1",
+              // }}
               style={{
-                cursor: submitting || !isButtonEnabled ? "not-allowed" : "pointer",
-                opacity: submitting || !isButtonEnabled ? "0.5" : "1",
+                cursor: "not-allowed",
+                opacity: "0.5",
               }}
               onClick={handleSubmit}
               type="submit"
             >
-              {submitting ? "Submitting..." : "Send"}
+              {/* {submitting ? "Submitting..." : "Send"} */}
+              Form Closed
             </button>
           </div>
         </form>
